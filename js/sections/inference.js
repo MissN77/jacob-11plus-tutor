@@ -100,7 +100,7 @@ function renderQuestion(container) {
     </div>
     ${renderQuizProgress(currentIndex, QUIZ_LENGTH, results)}
     <div class="question-area">
-      <blockquote class="passage-box">${q.passage}</blockquote>
+      ${q.passage ? `<blockquote class="passage-box">${q.passage}</blockquote>` : ''}
       <p class="question-text">${q.question}</p>
     </div>
     <div class="options-grid options-grid--stacked">${optionBtns}</div>`;
