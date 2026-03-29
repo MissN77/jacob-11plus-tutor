@@ -118,6 +118,7 @@ function renderQuestion(container) {
 function renderScoreScreen(container) {
   const xpData = calculateQuizXP(results);
   Store.addXP(xpData.totalXP);
+  Store.recordQuiz('vocabulary', xpData.correct, xpData.total, xpData.totalXP);
 
   const sec = Store.get().sections.vocabulary || { completed: 0, correct: 0, total: 0 };
   Store.updateSection('vocabulary', {

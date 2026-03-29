@@ -172,6 +172,7 @@ function advanceQuestion(container) {
 function renderScoreScreen(container) {
   const xpData = calculateQuizXP(results);
   Store.addXP(xpData.totalXP);
+  Store.recordQuiz('inference', xpData.correct, xpData.total, xpData.totalXP);
 
   const sec = Store.get().sections.inference || { completed: 0, correct: 0, total: 0 };
   Store.updateSection('inference', {

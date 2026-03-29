@@ -1,3 +1,5 @@
+import { recordQuiz, syncStats } from './supabase.js';
+
 const STORAGE_KEY = 'j11_state';
 const XP_PER_LEVEL = 200;
 
@@ -50,6 +52,12 @@ export const Store = {
     Object.assign(state.sections[sectionId], data);
     this.save(state);
     return state;
+  },
+
+  /** Record a completed quiz and sync to Supabase (fire and forget). */
+  recordQuiz(section, correct, total, xpEarned, subSection) {
+    recordQuiz(section, correct, total, xpEarned, subSection).catch(() => {});
+    syncStats(this.get()).catch(() => {});
   },
 
   /** Return current streak info. */

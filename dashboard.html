@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jacob's Progress - Parent Dashboard</title>
+  <style>
+    :root {
+      --navy: #1B2A4A;
+      --teal: #1A8A7D;
+      --coral: #E87461;
+      --cream: #FAF5EE;
+      --cream2: #F0EBE3;
+      --white: #FFFFFF;
+      --forest: #2D8659;
+      --gold: #E8D48A;
+      --radius: 12px;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--cream);
+      color: var(--navy);
+      padding: 20px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    h1 { font-size: 1.6rem; margin-bottom: 4px; }
+    .subtitle { color: #888; font-size: 0.9rem; margin-bottom: 24px; }
+    .card {
+      background: var(--white);
+      border-radius: var(--radius);
+      padding: 20px;
+      margin-bottom: 16px;
+    }
+    .card h2 {
+      font-size: 1.1rem;
+      margin-bottom: 12px;
+      color: var(--teal);
+    }
+    .stats-row {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .stat-box {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 16px 12px;
+      text-align: center;
+    }
+    .stat-box .value {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--navy);
+    }
+    .stat-box .label {
+      font-size: 0.75rem;
+      color: #888;
+      margin-top: 4px;
+    }
+    .section-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .section-card {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 14px;
+    }
+    .section-card .name {
+      font-weight: 700;
+      font-size: 0.9rem;
+      margin-bottom: 6px;
+    }
+    .section-card .detail {
+      font-size: 0.8rem;
+      color: #666;
+    }
+    .section-card .accuracy {
+      font-size: 1.2rem;
+      font-weight: 800;
+      margin-top: 4px;
+    }
+    .accuracy.high { color: var(--forest); }
+    .accuracy.mid { color: var(--gold); }
+    .accuracy.low { color: var(--coral); }
+    .progress-bar {
+      height: 6px;
+      background: var(--cream2);
+      border-radius: 3px;
+      margin-top: 8px;
+      overflow: hidden;
+    }
+    .progress-fill {
+      height: 100%;
+      border-radius: 3px;
+      background: var(--teal);
+    }
+    .activity-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--cream2);
+      font-size: 0.85rem;
+    }
+    .activity-row:last-child { border-bottom: none; }
+    .activity-date { color: #888; }
+    .activity-xp { font-weight: 700; color: var(--teal); }
+    .activity-quizzes { color: #666; }
+    .recent-quiz {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 0;
+      border-bottom: 1px solid var(--cream2);
+      font-size: 0.85rem;
+    }
+    .recent-quiz:last-child { border-bottom: none; }
+    .quiz-section {
+      font-weight: 700;
+      text-transform: capitalize;
+    }
+    .quiz-score { font-weight: 700; }
+    .quiz-score.high { color: var(--forest); }
+    .quiz-score.mid { color: var(--gold); }
+    .quiz-score.low { color: var(--coral); }
+    .quiz-time { color: #888; font-size: 0.8rem; }
+    .loading { text-align: center; padding: 40px; color: #888; }
+    .refresh-btn {
+      background: var(--teal);
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: var(--radius);
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+    @media (max-width: 500px) {
+      .stats-row { grid-template-columns: repeat(2, 1fr); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Jacob's 11+ Progress</h1>
+  <p class="subtitle">Parent Dashboard</p>
+  <button class="refresh-btn" onclick="loadDashboard()">Refresh</button>
+  <div id="dashboard"><p class="loading">Loading...</p></div>
+
+  <script type="module">
+    const URL = 'https://bdlrmtcrjenoyullctsw.supabase.co';
+    const KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJkbHJtdGNyamVub3l1bGxjdHN3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ4MDM1NDAsImV4cCI6MjA5MDM3OTU0MH0.Wb1aEGF7U44LzJEiej1qJjRN_1r0S_fwCYJroViYfoc';
+    const PID = 'ff567baf-d27e-43b7-94f2-90dbe19fd031';
+    const hdrs = { 'apikey': KEY, 'Authorization': `Bearer ${KEY}` };
+
+    async function get(table, params) {
+      const u = new window.URL(`${URL}/rest/v1/${table}`);
+      for (const [k,v] of Object.entries(params || {})) u.searchParams.set(k, v);
+      const r = await fetch(u, { headers: hdrs });
+      return r.ok ? r.json() : [];
+    }
+
+    function pct(correct, total) {
+      return total > 0 ? Math.round((correct / total) * 100) : 0;
+    }
+
+    function accClass(p) {
+      return p >= 70 ? 'high' : p >= 40 ? 'mid' : 'low';
+    }
+
+    function fmtDate(d) {
+      return new Date(d).toLocaleDateString('en-GB', { day: 'numeric', month: 'short' });
+    }
+
+    function fmtTime(t) {
+      return new Date(t).toLocaleString('en-GB', { day: 'numeric', month: 'short', hour: '2-digit', minute: '2-digit' });
+    }
+
+    const SECTION_NAMES = {
+      vocabulary: 'Vocabulary',
+      inference: 'Inference',
+      spelling: 'Spelling',
+      punctuation: 'Punctuation',
+      'sentence-completion': 'Sentence Completion',
+      'verbal-reasoning': 'Verbal Reasoning',
+      maths: 'Maths',
+      nvr: 'NVR',
+      writing: 'Writing'
+    };
+
+    async function loadDashboard() {
+      const el = document.getElementById('dashboard');
+      el.innerHTML = '<p class="loading">Loading...</p>';
+
+      const [stats, quizzes, activity] = await Promise.all([
+        get('player_stats', { player_id: `eq.${PID}`, select: '*' }),
+        get('quiz_results', { player_id: `eq.${PID}`, select: '*', order: 'completed_at.desc', limit: '100' }),
+        get('daily_activity', { player_id: `eq.${PID}`, select: '*', order: 'date.desc', limit: '14' })
+      ]);
+
+      const s = stats[0] || { total_xp: 0, level: 1, current_streak: 0, best_streak: 0 };
+
+      // Aggregate per section
+      const sections = {};
+      for (const q of quizzes) {
+        if (!sections[q.section]) sections[q.section] = { correct: 0, total: 0, count: 0 };
+        sections[q.section].correct += q.correct;
+        sections[q.section].total += q.total;
+        sections[q.section].count += 1;
+      }
+
+      // Overview stats
+      let html = `
+        <div class="stats-row">
+          <div class="stat-box"><div class="value">${s.total_xp}</div><div class="label">Total XP</div></div>
+          <div class="stat-box"><div class="value">${s.level}</div><div class="label">Level</div></div>
+          <div class="stat-box"><div class="value">${s.current_streak}</div><div class="label">Day Streak</div></div>
+          <div class="stat-box"><div class="value">${quizzes.length}</div><div class="label">Quizzes Done</div></div>
+        </div>`;
+
+      // Per-section breakdown
+      html += `<div class="card"><h2>Performance by Section</h2><div class="section-grid">`;
+      for (const [id, name] of Object.entries(SECTION_NAMES)) {
+        const sec = sections[id];
+        if (!sec) {
+          html += `<div class="section-card">
+            <div class="name">${name}</div>
+            <div class="detail">Not started yet</div>
+            <div class="progress-bar"><div class="progress-fill" style="width:0%"></div></div>
+          </div>`;
+        } else {
+          const p = pct(sec.correct, sec.total);
+          html += `<div class="section-card">
+            <div class="name">${name}</div>
+            <div class="detail">${sec.count} quizzes, ${sec.correct}/${sec.total} correct</div>
+            <div class="accuracy ${accClass(p)}">${p}%</div>
+            <div class="progress-bar"><div class="progress-fill" style="width:${p}%"></div></div>
+          </div>`;
+        }
+      }
+      html += `</div></div>`;
+
+      // Daily activity
+      if (activity.length > 0) {
+        html += `<div class="card"><h2>Daily Activity (last 2 weeks)</h2>`;
+        for (const a of activity) {
+          html += `<div class="activity-row">
+            <span class="activity-date">${fmtDate(a.date)}</span>
+            <span class="activity-quizzes">${a.quizzes_done} quiz${a.quizzes_done === 1 ? '' : 'zes'}</span>
+            <span class="activity-xp">+${a.total_xp} XP</span>
+          </div>`;
+        }
+        html += `</div>`;
+      }
+
+      // Recent quizzes
+      if (quizzes.length > 0) {
+        html += `<div class="card"><h2>Recent Quizzes</h2>`;
+        for (const q of quizzes.slice(0, 20)) {
+          const p = pct(q.correct, q.total);
+          const sub = q.sub_section ? ` (${q.sub_section})` : '';
+          html += `<div class="recent-quiz">
+            <span class="quiz-section">${SECTION_NAMES[q.section] || q.section}${sub}</span>
+            <span class="quiz-score ${accClass(p)}">${q.correct}/${q.total} (${p}%)</span>
+            <span class="quiz-time">${fmtTime(q.completed_at)}</span>
+          </div>`;
+        }
+        html += `</div>`;
+      }
+
+      if (quizzes.length === 0) {
+        html += `<div class="card"><p style="text-align:center;color:#888;padding:20px;">No quizzes completed yet. Send Jacob the app link!</p></div>`;
+      }
+
+      el.innerHTML = html;
+    }
+
+    window.loadDashboard = loadDashboard;
+    loadDashboard();
+  </script>
+</body>
+</html>

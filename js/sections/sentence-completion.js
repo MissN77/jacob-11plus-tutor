@@ -155,6 +155,7 @@ export function renderPractice(app) {
 function renderScoreScreen(app) {
   const xpData = calculateQuizXP(results);
   Store.addXP(xpData.totalXP);
+  Store.recordQuiz('sentence-completion', xpData.correct, xpData.total, xpData.totalXP);
 
   const sectionData = Store.get().sections[SECTION_ID] || { completed: 0, correct: 0, total: 0 };
   Store.updateSection(SECTION_ID, {

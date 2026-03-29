@@ -156,6 +156,7 @@ function renderScoreScreen(container) {
   const elapsed = Date.now() - timerStart;
   const xpData = calculateQuizXP(results);
   Store.addXP(xpData.totalXP);
+  Store.recordQuiz('nvr', xpData.correct, xpData.total, xpData.totalXP, currentType);
 
   // Update NVR sub-section progress
   const state = Store.get();

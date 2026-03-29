@@ -237,6 +237,7 @@ function renderScoreScreen(container) {
 
   const xpData = calculateQuizXP(results);
   Store.addXP(xpData.totalXP);
+  Store.recordQuiz('spelling', xpData.correct, xpData.total, xpData.totalXP);
 
   const sec = Store.get().sections.spelling || { completed: 0, correct: 0, total: 0 };
   Store.updateSection('spelling', {
