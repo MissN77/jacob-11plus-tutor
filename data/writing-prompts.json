@@ -1,0 +1,709 @@
+[
+  {
+    "book": "GoldieLeigh",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "WHO are the main characters in this story?",
+        "prompts": [
+          "Who were the orphans at Goldie Leigh? What words would you use to describe their lives? (Think: vulnerable, isolated)",
+          "Who were the doctors treating ringworm? Were they kind or cruel? Can someone cause harm while trying to help?",
+          "Who were the hospital staff during the war? What kind of people were they? (Think: resilient)",
+          "Who were the children admitted in 1961? How were they treated by society?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was IMPORTANT to them? Why?",
+        "prompts": [
+          "What was important to the orphans? Did they just need a roof, or did they need something more? What was missing from their lives?",
+          "What was important to the doctors? Why did they choose radiation as a treatment? What were they trying to achieve?",
+          "What was important to the hospital staff during the Blitz? Why did they form a Home Guard company instead of just leaving?",
+          "Why was it important that the children with learning difficulties had somewhere to go in 1961? What would have happened to them otherwise?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the BLOCKER?",
+        "prompts": [
+          "What stopped the orphans from having a normal childhood? Was it just money, or something else?",
+          "What was the blocker for treating ringworm safely? Why could doctors not just use medicine? (Think about what had and had not been invented yet.)",
+          "What was the blocker during the war? What specific weapon made it impossible to stay?",
+          "What was the blocker for children with learning difficulties? Was it a medical problem or a society problem?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the FIX or solution?",
+        "prompts": [
+          "How did the Woolwich Union try to fix the problem of orphaned children? Did it actually work, or did it create new problems?",
+          "How did doctors try to fix ringworm? What was the unprecedented treatment? Did the fix turn out to be worse than the problem?",
+          "How did the hospital fix the danger from V2 rockets? What did evacuated actually look like in practice?",
+          "How did the NHS try to fix things after 1961? Has society got better at looking after vulnerable people since then?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the END?",
+        "prompts": [
+          "What happened to the children who had radiation? What does iatrogenic mean and why is it such an important word?",
+          "What happened to Goldie Leigh Hospital in 1988?",
+          "What is on the site today? Who uses it now?",
+          "How do you think the people who were treated there as children felt when they found out the radiation had harmed them?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened NEXT? What should happen next?",
+        "prompts": [
+          "What lessons did the medical profession learn from places like Goldie Leigh?",
+          "How do doctors test treatments today to make sure they are safe? (Think about clinical trials.)",
+          "Do you think there should be a memorial or plaque at Goldie Leigh for the children who were harmed? Why or why not?",
+          "You are visiting this place on Tuesday. What will you look out for? What questions would you ask if you could talk to someone who worked there?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "TowerOfLondon",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who were the most important people in this story? Describe them using adjectives.",
+          "What kind of person was Richard Duke of Gloucester? How would you describe his character?",
+          "How would you describe Henry VIII based on how he treated Anne Boleyn?",
+          "What words would you use to describe Guy Fawkes and his role in the conspiracy?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What did William the Conqueror want when he built the Tower, and why was it important?",
+          "Why was the throne so important to Richard Duke of Gloucester?",
+          "What did Guy Fawkes and his fellow conspirators believe was worth risking their lives for?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What stood in the way of Richard becoming king?",
+          "What blocked Anne Boleyn from saving herself at her trial?",
+          "What went wrong for Guy Fawkes and the Gunpowder Plot conspirators?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix/solution?",
+        "prompts": [
+          "How did Richard deal with the problem of the two princes?",
+          "How did Henry VIII solve his \"problem\" with Anne Boleyn?",
+          "How did the authorities deal with Guy Fawkes after he was captured?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "What happened to the princes in the Tower?",
+          "What was Anne Boleyn's fate?",
+          "What happened to Guy Fawkes and the other plotters?",
+          "What is the Tower of London used for today?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "What discovery was made beneath a staircase nearly two hundred years later?",
+          "How is the Gunpowder Plot remembered today?",
+          "Why do you think the Tower is now one of London's biggest tourist attractions?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "GreatPlague",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who were the key people or groups in this story? Describe them using adjectives.",
+          "What kind of leader was King Charles II? How would you describe his decision to leave London?",
+          "How would you describe William Mompesson, the rector of Eyam?",
+          "What words would you use to describe the ordinary people of London who were left behind?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What mattered most to the authorities who painted red crosses on doors?",
+          "What was most important to the villagers of Eyam when they chose to quarantine themselves?",
+          "Why was it important for the Bills of Mortality to be published each week?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What made it so difficult to stop the plague from spreading?",
+          "Why did the remedies people tried not work?",
+          "What prevented the poor from escaping the city like the wealthy?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix/solution?",
+        "prompts": [
+          "What precautions did the authorities try to put in place?",
+          "What was Eyam's solution to prevent the plague spreading further?",
+          "What unexpected event may have finally helped end the plague in London?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "How many people are estimated to have died during the Great Plague?",
+          "What happened to the village of Eyam?",
+          "How did the Great Fire of 1666 change London?",
+          "Did the plague ever return to London on the same scale?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "How did the Great Fire change the way London was rebuilt?",
+          "What do you think people learned about dealing with epidemics?",
+          "Can you think of any connections between the Great Plague and more recent outbreaks of disease?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "Bedlam",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who were the patients in Bedlam? What adjectives would you use to describe them?",
+          "Who were the spectators? What kind of people visited?",
+          "Who were the reformers? What adjectives describe their character?",
+          "Who were the staff and \"basket men\"? How would you describe their behaviour?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What was important to the hospital managers? Why did they keep the doors open to visitors?",
+          "What was important to the reformers? Why did they fight so hard for change?",
+          "What mattered to the spectators? Why did they keep coming back?",
+          "What was important to the patients? What did they desperately need?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What stopped the patients from getting proper treatment for so long?",
+          "What made it difficult for reformers to change things?",
+          "Why did ordinary people not speak up sooner?",
+          "What role did money play as a blocker to change?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix?",
+        "prompts": [
+          "Who started pushing for change, and what did they demand?",
+          "What specific improvements were made to the hospital?",
+          "How did new laws help protect patients?",
+          "How did public attitudes towards mental illness begin to shift?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "What happened to the public viewing galleries?",
+          "How are patients treated at Bethlem Royal Hospital today?",
+          "What does the word \"bedlam\" mean in modern English?",
+          "How does the author feel about the way society behaved? How can you tell?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "How do you think society's view of mental health has changed since Bedlam?",
+          "Do you think people are still \"spectators\" of other people's suffering today? How?",
+          "What lessons should we learn from the story of Bedlam?",
+          "If you could go back in time, what would you say to the people who visited Bedlam?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "Titanic",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who were the first-class passengers? What adjectives would you use to describe their lives on board?",
+          "Who were the steerage passengers? How would you describe their situation?",
+          "Who was Captain Edward Smith? What kind of leader was he?",
+          "Who were the band members? What adjectives describe their character?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What was important to the White Star Line? Why did they boast about the ship?",
+          "What was important to the steerage passengers? What were they hoping for?",
+          "What mattered to the first-class passengers on the night of the sinking?",
+          "What was important to the band members as the ship went down?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What stopped the ship from avoiding the iceberg?",
+          "What blocked the steerage passengers from reaching the lifeboats?",
+          "Why was the Californian unable to help, even though it was nearby?",
+          "What prevented there from being enough lifeboats for everyone?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix?",
+        "prompts": [
+          "How did maritime law change after the Titanic disaster?",
+          "What was the International Ice Patrol and why was it created?",
+          "How did the rules about radio operators change?",
+          "How did the disaster change the way ships were designed?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "How many people died, and how did most of them die?",
+          "What happened to the people in the lifeboats?",
+          "Where is the Titanic now?",
+          "How does the author want us to feel about what happened?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "How do you think the survivors felt in the days and weeks after the disaster?",
+          "Do you think something like the Titanic disaster could happen today? Why or why not?",
+          "What lessons should we learn from the Titanic?",
+          "If you could change one thing about that night, what would it be and why?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "PendleWitchTrials",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who were the two rival families, and what were they like?",
+          "Describe Jennet Device. How old was she, and what kind of situation was she in?",
+          "Who was Roger Nowell, and what adjectives would you use to describe him?",
+          "How would you describe the relationship between the families and their neighbours?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What was important to Roger Nowell, and why did he want to find witches?",
+          "What was important to the villagers of Pendle?",
+          "Why was survival so important to the Demdike and Chattox families?",
+          "Why might Jennet have felt it was important to do what the adults asked her to do?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What made life so dangerous for the families of Pendle Hill?",
+          "How did superstition block people from seeing the truth?",
+          "What stopped the accused from defending themselves properly?",
+          "Why could nobody stop the trials once they had started?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix or solution?",
+        "prompts": [
+          "What did the prosecution believe was the \"fix\" for the problem of witchcraft?",
+          "How did using Jennet as a witness help the prosecution get what they wanted?",
+          "Was this really a fair solution? Why or why not?",
+          "What would a truly fair solution have looked like?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "What was the verdict, and what happened to the ten accused people?",
+          "How do you think Jennet felt after the trial was over?",
+          "What happened to Jennet twenty-one years later?",
+          "Why is the ending of this story ironic (the opposite of what you would expect)?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "What do you think life was like for Jennet after her own accusation?",
+          "Did the witch trials in England eventually stop? What might have caused that?",
+          "How do you think this story changed the way people thought about children giving evidence?",
+          "Could something like this happen today? Why or why not?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "TollundMan",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who found the Tollund Man, and what were they doing at the time?",
+          "Who was the Tollund Man? Describe what he looked like when he was discovered.",
+          "Who was P.V. Glob, and what adjectives would you use to describe his work?",
+          "Who else is involved in this story - think about the people who may have killed him 2,400 years ago."
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What was important to the Iron Age people who may have sacrificed the Tollund Man?",
+          "Why was it important to the archaeologists to excavate the body carefully?",
+          "Why is the Tollund Man important to scientists today?",
+          "What was so important about his last meal?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What makes it so difficult for scientists to solve this murder mystery?",
+          "Why can we never know for certain whether the Tollund Man was a sacrifice or a criminal?",
+          "What evidence has been lost or destroyed over 2,400 years?",
+          "What are the limits of forensic science when dealing with something this ancient?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix or solution?",
+        "prompts": [
+          "How have scientists used forensic analysis to learn more about the Tollund Man?",
+          "How did the discovery of other bog bodies across Europe help build a picture of what happened?",
+          "What technologies have been used to study the body?",
+          "Has science given us a definite answer, or just better guesses?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "Where is the Tollund Man now, and how is he displayed?",
+          "What is the most widely accepted theory about his death?",
+          "How do visitors react when they see his face in the museum?",
+          "Why does the author say \"the gap between the ancient world and our own seems to vanish\"?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "What other bog bodies have been discovered since the Tollund Man?",
+          "How might future technology help solve this mystery?",
+          "What has the Tollund Man taught us about Iron Age societies?",
+          "Do you think we will ever know the full truth about how and why he died?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "ResurrectionMen",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who were Burke and Hare? Describe them using at least three adjectives.",
+          "What kind of person was Dr Robert Knox? What words would you use to describe his attitude?",
+          "Who were the victims? What do we know about the kind of people they were?",
+          "If you had to pick one word to describe each main character, what would it be and why?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What did Burke and Hare care about most? How do you know?",
+          "What was important to the physicians and anatomists? Why did they need bodies so desperately?",
+          "Why was money such a powerful motivator in this story?",
+          "Did anyone in this story care about doing the right thing? Explain your answer."
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What was the main problem that started the whole body-snatching trade?",
+          "What obstacles did the Resurrection Men face when stealing bodies?",
+          "What finally blocked Burke and Hare from continuing their murders?",
+          "Why was it so difficult for the prosecution to build a case against both men?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix or solution?",
+        "prompts": [
+          "How did the prosecution solve the problem of not having enough evidence?",
+          "What deal was Hare offered, and why did it work?",
+          "How did Parliament try to fix the wider problem after the trial?",
+          "Do you think the Anatomy Act was a good solution? Why or why not?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "What happened to William Burke?",
+          "What happened to William Hare and Dr Knox?",
+          "What happened to Burke's body after his execution?",
+          "How did the public react to the whole affair?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "How did the Anatomy Act of 1832 change things for medical schools?",
+          "Why do you think Burke's skeleton is still on display today?",
+          "Could something like this happen in modern times? Why or why not?",
+          "What lessons can we learn from this story about greed and morality?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "TheBlitz",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who were the ordinary people of London during the Blitz? Use at least three adjectives to describe them.",
+          "Describe the children who were evacuated. What were they feeling?",
+          "Who were the heroes of the Blitz? Think about firefighters, wardens and ambulance drivers.",
+          "Who was the enemy? What kind of leader was Hitler in this story?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What mattered most to the families sheltering in the Underground?",
+          "Why was morale so important during the Blitz?",
+          "What was important to Hitler? Why did he believe the bombing would work?",
+          "What did the evacuated children care about most?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What was the biggest threat to the people of London?",
+          "What obstacles did evacuated children face in the countryside?",
+          "What made the Balham station disaster so shocking?",
+          "Why could the British government not simply stop the bombing?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix or solution?",
+        "prompts": [
+          "How did people protect themselves during the bombing?",
+          "How did the Underground stations become shelters, even though the government said no?",
+          "What role did community spirit play in surviving the Blitz?",
+          "What eventually stopped the Blitz?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "When and why did the Blitz finally stop?",
+          "How many people were killed and how many homes destroyed?",
+          "What did children find when they returned from evacuation?",
+          "Did Hitler achieve his goal? Explain your answer."
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "How do you think London rebuilt itself after the Blitz?",
+          "Why is the \"Blitz spirit\" still talked about today?",
+          "How might the experience of evacuation have affected children for the rest of their lives?",
+          "Could something like the Blitz happen in London today? Why or why not?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "Alcatraz",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who was Frank Morris and what kind of person was he? What adjectives best describe his personality?",
+          "Who were the Anglin brothers and what role did they play?",
+          "Who was Al Capone and why was he important to the Alcatraz story?",
+          "What about the guards and the FBI - how would you describe them?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What did Morris and the Anglins want more than anything, and why?",
+          "Why was freedom so important to them that they risked their lives?",
+          "What was important to the authorities and why did they care so much about keeping prisoners locked up?",
+          "Why did the FBI care about proving the men had drowned?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What physical barriers stood between the prisoners and freedom?",
+          "How did the constant surveillance make escape seem impossible?",
+          "What natural dangers surrounded the island?",
+          "Why had every previous escape attempt failed?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix/solution?",
+        "prompts": [
+          "How did they solve the problem of getting out of their cells?",
+          "How did they solve the problem of the nightly bed checks?",
+          "How did they plan to cross the dangerous water?",
+          "What materials did they use and where did they get them?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "What did the guards find the next morning?",
+          "What happened during the massive search?",
+          "What was the FBI's official conclusion and do you agree with it?",
+          "What happened to Alcatraz prison itself?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "What was the mysterious 2013 letter and what did it claim?",
+          "Why couldn't experts agree on whether the letter was real?",
+          "What is Alcatraz used for today?",
+          "Why do you think this mystery still fascinates people over sixty years later?"
+        ]
+      }
+    ]
+  },
+  {
+    "book": "MaryCeleste",
+    "sections": [
+      {
+        "letter": "W",
+        "title": "Who are the main characters?",
+        "prompts": [
+          "Who was Captain Benjamin Briggs? What kind of man does he seem to have been?",
+          "Who else was on board and what do we know about them?",
+          "Who was Captain Morehouse and what was his role in the story?",
+          "How would you describe the Mary Celeste herself - can a ship be a \"character\"?"
+        ]
+      },
+      {
+        "letter": "I",
+        "title": "What was Important to them?",
+        "prompts": [
+          "What was important to Captain Briggs about this voyage?",
+          "Why was the safety of his family and crew his responsibility?",
+          "Why was it important to the Dei Gratia crew to investigate the drifting ship?",
+          "Why was solving this mystery important to the authorities?"
+        ]
+      },
+      {
+        "letter": "B",
+        "title": "What was the Blocker?",
+        "prompts": [
+          "What problem or danger might have forced the crew to abandon a perfectly good ship?",
+          "Why couldn't investigators work out what happened?",
+          "What made this mystery so much harder to solve than a normal crime?",
+          "Why did none of the theories fully explain all the evidence?"
+        ]
+      },
+      {
+        "letter": "F",
+        "title": "What was the Fix/solution?",
+        "prompts": [
+          "What is the most plausible theory and why does it make sense?",
+          "How does the alcohol fumes theory explain the missing lifeboat, the rope, and the panic?",
+          "Why hasn't this theory been proven beyond doubt?",
+          "Has anyone come up with a better explanation? What do YOU think happened?"
+        ]
+      },
+      {
+        "letter": "E",
+        "title": "What happened in the End?",
+        "prompts": [
+          "What happened to the ten people on board? Were they ever found?",
+          "What happened to the Mary Celeste after she was recovered?",
+          "How did the investigation end - was it satisfying?",
+          "What was the official conclusion?"
+        ]
+      },
+      {
+        "letter": "N",
+        "title": "What happened Next?",
+        "prompts": [
+          "How did the story of the Mary Celeste become so famous?",
+          "Why do people still talk about it over 150 years later?",
+          "Do you think we will ever know the truth?",
+          "If you were a detective, what would you look for to solve this case?"
+        ]
+      }
+    ]
+  }
+]

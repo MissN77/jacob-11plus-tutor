@@ -1,0 +1,722 @@
+[
+  {
+    "id": "i001",
+    "book": "GoldieLeigh",
+    "question": "What does this tell us about how orphaned children were treated in 1902?",
+    "options": [
+      "They were given lots of freedom and choice",
+      "They were treated as equals to adults",
+      "They were expected to be thankful for what little they had, with strict rules and no voice of their own",
+      "They were spoiled and given everything they wanted"
+    ],
+    "answer": 1,
+    "explanation": "",
+    "passage": "The children were expected to be clean, obedient, and grateful."
+  },
+  {
+    "id": "i002",
+    "book": "GoldieLeigh",
+    "question": "Why does the author say \"nobody knew\"? What is the author suggesting about blame?",
+    "options": [
+      "The doctors were deliberately hurting the children",
+      "The doctors were careless and should have known better",
+      "The author is suggesting that the harm was unintentional — the doctors believed they were helping",
+      "Nobody cared what happened to the children"
+    ],
+    "answer": 1,
+    "explanation": "",
+    "passage": "What nobody knew at the time was that this radiation was also causing terrible damage inside the children's bodies."
+  },
+  {
+    "id": "i003",
+    "book": "GoldieLeigh",
+    "question": "What does the phrase \"out of sight and out of mind\" imply about how society treated these children?",
+    "options": [
+      "The children enjoyed living on a hill with nice views",
+      "Society deliberately placed vulnerable children where they would be forgotten about",
+      "The hill was too far for visitors to reach",
+      "The children chose to live away from everyone"
+    ],
+    "answer": 1,
+    "explanation": "",
+    "passage": "The author describes the children as \"hidden away on a hill, out of sight and out of mind."
+  },
+  {
+    "id": "i004",
+    "book": "GoldieLeigh",
+    "question": "Why does the author include this detail about V2 rockets?",
+    "options": [
+      "To explain how rockets work scientifically",
+      "To show that the danger was invisible and unavoidable, making it even more terrifying",
+      "To prove that the staff were not brave enough",
+      "To describe what all rockets sound like"
+    ],
+    "answer": 1,
+    "explanation": "",
+    "passage": "You could not hear them coming. By the time you heard the explosion, the rocket had already hit."
+  },
+  {
+    "id": "i005",
+    "book": "GoldieLeigh",
+    "question": "What is the author's main message in this final line?",
+    "options": [
+      "History is boring but we should study it anyway",
+      "We should demolish old buildings so we forget the past",
+      "The mistakes made at Goldie Leigh should serve as lessons so we never repeat them",
+      "The hospital should be reopened"
+    ],
+    "answer": 1,
+    "explanation": "",
+    "passage": "The author ends by saying: \"History, if we pay attention to it, teaches us to do better."
+  },
+  {
+    "id": "i006",
+    "book": "TowerOfLondon",
+    "question": "Why do you think William the Conqueror chose to build the White Tower so much taller than the surrounding houses?",
+    "options": [
+      "He wanted a better view of the River Thames",
+      "He wanted to intimidate the people of London into submission",
+      "He needed the extra space for his soldiers",
+      "He was copying a building style from France"
+    ],
+    "answer": 1,
+    "explanation": "He wanted to intimidate the people of London into submission"
+  },
+  {
+    "id": "i007",
+    "book": "TowerOfLondon",
+    "question": "Why do you think Richard Duke of Gloucester declared the princes were not legitimate heirs?",
+    "options": [
+      "He had discovered genuine evidence about their birth",
+      "He needed a legal excuse to remove them from the line of succession",
+      "The princes had asked him to take the throne",
+      "Parliament had voted to remove them"
+    ],
+    "answer": 1,
+    "explanation": "He needed a legal excuse to remove them from the line of succession"
+  },
+  {
+    "id": "i008",
+    "book": "TowerOfLondon",
+    "question": "What does it suggest about Henry VIII that Anne Boleyn's trial was described as \"a sham\"?",
+    "options": [
+      "Henry genuinely believed Anne was guilty",
+      "Henry had already decided Anne would die and the trial was just for show",
+      "Henry was too upset to pay attention to the trial",
+      "The judges made mistakes by accident"
+    ],
+    "answer": 1,
+    "explanation": "Henry had already decided Anne would die and the trial was just for show"
+  },
+  {
+    "id": "i009",
+    "book": "TowerOfLondon",
+    "question": "Why might the author have mentioned that Guy Fawkes could \"barely sign his own name\" after being tortured?",
+    "options": [
+      "To show that Fawkes could not read or write",
+      "To suggest the torture was so severe it left him physically broken",
+      "To prove that Fawkes was not very intelligent",
+      "To explain why his confession was not accepted"
+    ],
+    "answer": 1,
+    "explanation": "To suggest the torture was so severe it left him physically broken"
+  },
+  {
+    "id": "i010",
+    "book": "TowerOfLondon",
+    "question": "What does the ravens legend tell us about how people in the past viewed the Tower?",
+    "options": [
+      "People thought the Tower was just an ordinary building",
+      "People believed the Tower held a kind of magical importance linked to the kingdom's survival",
+      "People did not care about the Tower at all",
+      "People wanted the ravens to be released into the wild"
+    ],
+    "answer": 1,
+    "explanation": "People believed the Tower held a kind of magical importance linked to the kingdom's survival"
+  },
+  {
+    "id": "i011",
+    "book": "GreatPlague",
+    "question": "Why do you think the wealthy fled London while the poor stayed behind?",
+    "options": [
+      "The poor enjoyed living in London during the plague",
+      "The poor could not afford transport or a place to stay in the countryside",
+      "The poor did not believe the plague was real",
+      "The wealthy were ordered to leave by the King"
+    ],
+    "answer": 1,
+    "explanation": "The poor could not afford transport or a place to stay in the countryside"
+  },
+  {
+    "id": "i012",
+    "book": "GreatPlague",
+    "question": "Why might locking healthy family members inside a quarantined house have actually made the epidemic worse for those families?",
+    "options": [
+      "The families got bored being stuck indoors",
+      "The healthy members were forced to stay near the infection and were almost certain to catch it",
+      "The guards forgot to bring them food",
+      "The red cross on the door attracted more rats"
+    ],
+    "answer": 1,
+    "explanation": "The healthy members were forced to stay near the infection and were almost certain to catch it"
+  },
+  {
+    "id": "i013",
+    "book": "GreatPlague",
+    "question": "Why did plague doctors stuff their bird-shaped masks with flowers and spices?",
+    "options": [
+      "They wanted to look frightening to scare away the disease",
+      "They believed bad smells carried the plague, so sweet smells would protect them",
+      "They were trying to disguise their identity",
+      "The flowers contained a genuine medical cure"
+    ],
+    "answer": 1,
+    "explanation": "They believed bad smells carried the plague, so sweet smells would protect them"
+  },
+  {
+    "id": "i014",
+    "book": "GreatPlague",
+    "question": "What does the story of Eyam village suggest about the character of its inhabitants?",
+    "options": [
+      "They were too frightened to leave their village",
+      "They were selfless and willing to sacrifice their own lives to protect others",
+      "They did not understand how the plague spread",
+      "They were forced to stay by the government"
+    ],
+    "answer": 1,
+    "explanation": "They were selfless and willing to sacrifice their own lives to protect others"
+  },
+  {
+    "id": "i015",
+    "book": "GreatPlague",
+    "question": "Why might the Great Fire have helped end the plague, according to historians?",
+    "options": [
+      "The fire scared people into washing their hands more often",
+      "The fire destroyed the cramped, rat-infested buildings where the disease thrived",
+      "The smoke from the fire killed the plague bacteria",
+      "The fire made London too hot for the plague to survive"
+    ],
+    "answer": 1,
+    "explanation": "The fire destroyed the cramped, rat-infested buildings where the disease thrived"
+  },
+  {
+    "id": "i016",
+    "book": "Bedlam",
+    "question": "Why do you think families brought their children to visit Bedlam?",
+    "options": [
+      "They wanted their children to learn about medicine",
+      "They saw it as cheap, exciting entertainment - like visiting a zoo",
+      "They wanted their children to become doctors",
+      "The hospital required children to visit"
+    ],
+    "answer": 1,
+    "explanation": "The story describes it as entertainment, like a show at the theatre. Families treated it as a day out."
+  },
+  {
+    "id": "i017",
+    "book": "Bedlam",
+    "question": "What does the existence of \"basket men\" suggest about how Londoners felt about Bedlam?",
+    "options": [
+      "Everyone in London loved the hospital",
+      "People knew the conditions were wrong but preferred giving money to taking real action",
+      "The basket men were patients who had been released",
+      "London was a very generous city"
+    ],
+    "answer": 1,
+    "explanation": "People gave coins to ease their conscience rather than demanding real change, which suggests guilt without action."
+  },
+  {
+    "id": "i018",
+    "book": "Bedlam",
+    "question": "Why did the hospital allow public visitors for so many years?",
+    "options": [
+      "Because the law required it",
+      "Because doctors wanted the public to understand mental illness",
+      "Because the ticket money was too profitable to give up",
+      "Because patients enjoyed having visitors"
+    ],
+    "answer": 2,
+    "explanation": "The story says it was \"lucrative\" and the money helped pay for the building, so profit was the main reason."
+  },
+  {
+    "id": "i019",
+    "book": "Bedlam",
+    "question": "Why does the author say \"the real madness was never inside those cells\"?",
+    "options": [
+      "Because the patients were not really ill",
+      "Because it was society's cruelty and indifference that was truly insane",
+      "Because the cells were actually quite comfortable",
+      "Because the staff were also patients"
+    ],
+    "answer": 1,
+    "explanation": "The author is making the point that treating suffering people as entertainment is the truly \"mad\" behaviour."
+  },
+  {
+    "id": "i020",
+    "book": "Bedlam",
+    "question": "What can you infer about why the reformers \"faced fierce resistance\"?",
+    "options": [
+      "Because improving conditions would cost money and end a profitable business",
+      "Because the patients did not want change",
+      "Because reformers were unpopular people",
+      "Because the government did not know about Bedlam"
+    ],
+    "answer": 0,
+    "explanation": "The hospital made money from visitors, so closing the galleries and improving conditions would threaten that income."
+  },
+  {
+    "id": "i021",
+    "book": "Titanic",
+    "question": "Why do you think the steerage passengers had locked gates blocking their path to the lifeboats?",
+    "options": [
+      "The gates were always locked at night for safety",
+      "The ship's owners valued wealthy passengers' lives more than poor passengers' lives",
+      "The steerage passengers did not know where the lifeboats were",
+      "The gates were stuck because of the collision"
+    ],
+    "answer": 1,
+    "explanation": "The locked gates suggest the ship's class system extended to who was allowed to survive. Wealthy passengers were prioritised."
+  },
+  {
+    "id": "i022",
+    "book": "Titanic",
+    "question": "Why did the band keep playing music even though they knew the ship was sinking?",
+    "options": [
+      "The captain ordered them to play",
+      "They were trying to prevent panic and bring some comfort to the terrified passengers",
+      "They did not realise the ship was actually sinking",
+      "They were playing to entertain the people in lifeboats"
+    ],
+    "answer": 1,
+    "explanation": "The band knew they were going to die but chose to keep playing to calm people. This shows extraordinary bravery and selflessness."
+  },
+  {
+    "id": "i023",
+    "book": "Titanic",
+    "question": "What does the fact that many lifeboats left half-empty tell us about that night?",
+    "options": [
+      "There were not enough passengers to fill them",
+      "The evacuation was chaotic and poorly organised, and some people still believed the ship would not sink",
+      "People preferred to stay on the ship",
+      "The lifeboats were too small for more passengers"
+    ],
+    "answer": 1,
+    "explanation": "Half-empty lifeboats suggest the evacuation was rushed and confused, and some people may not have believed the \"unsinkable\" ship was really going down."
+  },
+  {
+    "id": "i024",
+    "book": "Titanic",
+    "question": "Why does the author say the 1,500 people \"died not because of an iceberg\"?",
+    "options": [
+      "Because there was no iceberg",
+      "Because the real cause was human decisions - not enough lifeboats, locked gates, and ignored warnings",
+      "Because the cold water killed them, not the iceberg",
+      "Because the ship hit a rock, not an iceberg"
+    ],
+    "answer": 1,
+    "explanation": "The author's point is that the iceberg was the trigger, but human negligence and arrogance were the real killers. Proper precautions would have saved lives."
+  },
+  {
+    "id": "i025",
+    "book": "Titanic",
+    "question": "Why do you think the Californian's radio operator had gone to bed?",
+    "options": [
+      "There were no regulations requiring 24-hour radio watch, so nobody thought it mattered",
+      "He was lazy",
+      "The captain told him to sleep",
+      "The radio was broken"
+    ],
+    "answer": 0,
+    "explanation": "Before the Titanic disaster, there were no rules about 24-hour radio watches. This is exactly why the regulations changed afterwards."
+  },
+  {
+    "id": "i026",
+    "book": "PendleWitchTrials",
+    "question": "Why do you think Old Demdike and Old Chattox confessed to witchcraft, even though they may not have been witches?",
+    "options": [
+      "They wanted to become famous",
+      "They were proud of their powers",
+      "They were frightened, confused, and pressured by a powerful man",
+      "They enjoyed being in court"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i027",
+    "book": "PendleWitchTrials",
+    "question": "Why do you think the prosecution chose a child as their star witness instead of an adult?",
+    "options": [
+      "Children were the only people allowed to speak in court",
+      "A child's words would seem innocent and trustworthy to the judges",
+      "No adults were available to speak",
+      "Children were paid more money for their testimony"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i028",
+    "book": "PendleWitchTrials",
+    "question": "What does the fact that Jennet herself was later accused of witchcraft suggest about the justice system at the time?",
+    "options": [
+      "The system was fair and balanced",
+      "Only guilty people were ever accused",
+      "Anyone could become a victim - the system was based on fear, not facts",
+      "Jennet had actually become a witch by then"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i029",
+    "book": "PendleWitchTrials",
+    "question": "Why does the author describe Pendle Hill as \"lonely\" and \"windswept\"?",
+    "options": [
+      "To make the reader want to visit the area",
+      "To create an atmosphere of isolation where fear and suspicion could easily grow",
+      "To show that the weather was nice that year",
+      "To explain why the families were wealthy"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i030",
+    "book": "PendleWitchTrials",
+    "question": "The story says Jennet \"disappears from history.\" What does this suggest about how society treated her after her own accusation?",
+    "options": [
+      "She became a famous author",
+      "She was celebrated as a hero",
+      "She was abandoned and forgotten - nobody cared what happened to her",
+      "She moved to a bigger house"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i031",
+    "book": "TollundMan",
+    "question": "Why do you think the Tollund Man's last meal was made from so many different wild plants?",
+    "options": [
+      "He was a very fussy eater",
+      "The meal may have had special ritual or religious significance",
+      "There was nothing else available to eat in Denmark",
+      "He was testing recipes for a cookbook"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i032",
+    "book": "TollundMan",
+    "question": "Why did the brothers who found the body think it was a recent murder victim?",
+    "options": [
+      "They saw blood on the ground",
+      "The body was so well preserved that it looked like a modern person",
+      "The police told them it was recent",
+      "They recognised the face"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i033",
+    "book": "TollundMan",
+    "question": "The author says the Tollund Man's expression was \"strangely peaceful.\" What does this suggest about the way he might have died?",
+    "options": [
+      "He died fighting and in great pain",
+      "He may have accepted his death willingly, perhaps as part of a ritual",
+      "He was asleep when he fell into the bog",
+      "Someone arranged his face after death to look that way"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i034",
+    "book": "TollundMan",
+    "question": "Why does the author compare the bog's effect to \"turning animal skin into leather\"?",
+    "options": [
+      "To explain that the same chemical process preserved the body",
+      "To show that the man was wearing leather clothes",
+      "To prove that the man was a leather worker",
+      "To describe the colour of the bog water"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i035",
+    "book": "TollundMan",
+    "question": "The story mentions other bog bodies found across Europe. Why does the author include this information?",
+    "options": [
+      "To show this was just a Danish tradition",
+      "To suggest that ritual killing and bog preservation were widespread, making the mystery even bigger",
+      "To list every museum in Europe",
+      "To prove that bogs are dangerous places to walk"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i036",
+    "book": "ResurrectionMen",
+    "question": "Why do you think Dr Knox never asked Burke and Hare where they got the bodies from?",
+    "options": [
+      "He was too busy teaching to care",
+      "He probably suspected the truth but needed the bodies too badly to ask",
+      "He thought they were professional grave diggers",
+      "He did not know it was illegal"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i037",
+    "book": "ResurrectionMen",
+    "question": "Why were poor people the main targets of the Resurrection Men?",
+    "options": [
+      "Poor people were smaller and easier to carry",
+      "Poor people died more often from disease",
+      "Their families could not afford to protect their graves and nobody powerful would investigate",
+      "Rich people were buried too deep underground"
+    ],
+    "answer": 2,
+    "explanation": ""
+  },
+  {
+    "id": "i038",
+    "book": "ResurrectionMen",
+    "question": "What does the fact that 25,000 people attended Burke's hanging suggest about how the public felt?",
+    "options": [
+      "People in Edinburgh loved public entertainment",
+      "The public were deeply angry and wanted to see justice done",
+      "There was nothing else to do in Edinburgh that day",
+      "Most people felt sorry for Burke"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i039",
+    "book": "ResurrectionMen",
+    "question": "Why is it ironic that Burke's body was used for public dissection?",
+    "options": [
+      "Because Burke was afraid of doctors",
+      "Because he had murdered people so their bodies could be dissected - now the same thing happened to him",
+      "Because dissection was illegal in 1829",
+      "Because Burke had once been a medical student himself"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i040",
+    "book": "ResurrectionMen",
+    "question": "Why do you think Hare agreed to betray Burke and give testimony against him?",
+    "options": [
+      "He felt guilty about the murders",
+      "He wanted revenge on Burke for a personal argument",
+      "He was more interested in saving himself than being loyal",
+      "The police tortured him into confessing"
+    ],
+    "answer": 2,
+    "explanation": ""
+  },
+  {
+    "id": "i041",
+    "book": "TheBlitz",
+    "question": "Why do you think the government originally banned people from sheltering in Underground stations?",
+    "options": [
+      "They were worried people would damage the trains",
+      "They feared that if people felt too safe underground, they would refuse to come out and keep working or fighting",
+      "The Underground stations did not have enough space",
+      "Sheltering underground was illegal during wartime"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i042",
+    "book": "TheBlitz",
+    "question": "Why was Woolwich targeted more heavily than other parts of London?",
+    "options": [
+      "Hitler had a personal grudge against the people of Woolwich",
+      "It was the closest part of London to Germany",
+      "Destroying the Royal Arsenal would damage Britain's ability to produce weapons",
+      "Woolwich had the tallest buildings, making it easy to spot"
+    ],
+    "answer": 2,
+    "explanation": ""
+  },
+  {
+    "id": "i043",
+    "book": "TheBlitz",
+    "question": "What does the phrase \"London can take it\" suggest about how the newspapers wanted people to feel?",
+    "options": [
+      "That Londoners should feel proud and keep going, even when things were terrible",
+      "That the bombing was not actually that serious",
+      "That London's buildings were strong enough to survive the bombs",
+      "That the war was nearly over"
+    ],
+    "answer": 0,
+    "explanation": ""
+  },
+  {
+    "id": "i044",
+    "book": "TheBlitz",
+    "question": "Why do you think some evacuated children were treated badly by their host families?",
+    "options": [
+      "The host families were paid too little to care properly",
+      "Some people saw evacuees as a burden or free labour rather than children who needed care",
+      "The children were badly behaved",
+      "The government told host families to be strict"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i045",
+    "book": "TheBlitz",
+    "question": "Why did the Blitz ultimately fail as a strategy for Hitler?",
+    "options": [
+      "The bombs were not powerful enough to destroy buildings",
+      "He underestimated the resilience and defiance of ordinary Londoners - terror made them more determined, not less",
+      "Britain had better planes than Germany",
+      "The weather in London protected it from bombing"
+    ],
+    "answer": 1,
+    "explanation": ""
+  },
+  {
+    "id": "i046",
+    "book": "Alcatraz",
+    "question": "Why do you think Frank Morris was sent to Alcatraz specifically?",
+    "options": [
+      "He had committed a very minor crime",
+      "He had escaped from other prisons and was considered too dangerous for normal ones",
+      "He requested to be moved there",
+      "He was friends with Al Capone"
+    ],
+    "answer": 1,
+    "explanation": "The story says he had escaped from other prisons before, so Alcatraz was used for prisoners who were too clever or dangerous for normal facilities."
+  },
+  {
+    "id": "i047",
+    "book": "Alcatraz",
+    "question": "Why did the escapees collect hair from the prison barbershop?",
+    "options": [
+      "They wanted to sell it",
+      "They needed it to make their dummy heads look realistic enough to fool guards",
+      "They were bored and had nothing else to do",
+      "The guards told them to collect it"
+    ],
+    "answer": 1,
+    "explanation": "They put the hair on the dummy heads so that during night checks, the guards would think real people were sleeping in the beds."
+  },
+  {
+    "id": "i048",
+    "book": "Alcatraz",
+    "question": "What can you infer about why Alcatraz closed in 1963?",
+    "options": [
+      "It ran out of prisoners",
+      "The escape embarrassed the authorities and proved the prison was not as secure as they claimed",
+      "Al Capone asked them to close it",
+      "The island sank into the sea"
+    ],
+    "answer": 1,
+    "explanation": "The escape happened in 1962 and the prison closed in 1963. The timing suggests the escape damaged confidence in the prison's security."
+  },
+  {
+    "id": "i049",
+    "book": "Alcatraz",
+    "question": "Why do you think the FBI officially concluded the men drowned?",
+    "options": [
+      "They found the bodies",
+      "Admitting the men escaped would mean admitting their \"escape-proof\" prison had failed",
+      "The men called the FBI and told them",
+      "A shark told them"
+    ],
+    "answer": 1,
+    "explanation": "The FBI had always said Alcatraz was escape-proof. Admitting the men survived would mean admitting they were wrong."
+  },
+  {
+    "id": "i050",
+    "book": "Alcatraz",
+    "question": "What does the 2013 letter suggest about the escapees' lives after the escape?",
+    "options": [
+      "They immediately turned themselves in",
+      "They may have survived and lived secret lives for decades, always staying one step ahead",
+      "They became prison guards",
+      "They swam back to Alcatraz"
+    ],
+    "answer": 1,
+    "explanation": "The letter claimed they made it to South America and lived under false names, suggesting they used their cunning to stay hidden for decades."
+  },
+  {
+    "id": "i051",
+    "book": "MaryCeleste",
+    "question": "Why do you think Captain Briggs took his wife and two-year-old daughter on the voyage?",
+    "options": [
+      "He wanted them to suffer",
+      "It was common for captains' families to travel with them, and he expected a safe, routine voyage",
+      "There was no one at home to look after them",
+      "The crew asked him to bring them"
+    ],
+    "answer": 1,
+    "explanation": "Captains often brought families on voyages. The fact that Briggs brought his wife and baby shows he expected nothing dangerous."
+  },
+  {
+    "id": "i052",
+    "book": "MaryCeleste",
+    "question": "Why is the piracy theory unlikely?",
+    "options": [
+      "Pirates did not exist in 1872",
+      "Pirates would have taken the valuable cargo, but nothing was stolen",
+      "The pirates left a note saying sorry",
+      "The ship was too fast for pirates"
+    ],
+    "answer": 1,
+    "explanation": "Pirates attack ships to steal cargo. The 1,701 barrels of alcohol were untouched, making piracy very unlikely."
+  },
+  {
+    "id": "i053",
+    "book": "MaryCeleste",
+    "question": "The crew's personal belongings were left behind. What does this suggest about how they left?",
+    "options": [
+      "They didn't care about their things",
+      "They left in such a rush that there was no time to gather belongings",
+      "They planned to come back later",
+      "The belongings were worthless"
+    ],
+    "answer": 1,
+    "explanation": "Leaving personal belongings behind suggests the crew left in a sudden panic, with no time to pack."
+  },
+  {
+    "id": "i054",
+    "book": "MaryCeleste",
+    "question": "Why might the alcohol fumes theory explain why no bodies were ever found?",
+    "options": [
+      "The fumes made them invisible",
+      "If the lifeboat's rope snapped and the ship drifted away, the crew would be stranded in a tiny boat in the open ocean with little chance of survival",
+      "The fumes dissolved the bodies",
+      "They were rescued by another ship"
+    ],
+    "answer": 1,
+    "explanation": "If they fled to the lifeboat and the rope broke, they would be stranded on the open ocean in a tiny boat with no way to navigate, making survival almost impossible."
+  },
+  {
+    "id": "i055",
+    "book": "MaryCeleste",
+    "question": "What does the fact that the Mary Celeste was later wrecked \"deliberately\" suggest about how people felt about the ship?",
+    "options": [
+      "Everyone loved the ship",
+      "The ship had gained such a bad reputation that owners may have wanted to be rid of it",
+      "The ship was brand new",
+      "Insurance companies liked the ship"
+    ],
+    "answer": 1,
+    "explanation": "The Mary Celeste became known as an unlucky ship. Owners may have deliberately wrecked it because its dark reputation made it difficult to use."
+  }
+]

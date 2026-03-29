@@ -1,0 +1,1762 @@
+[
+  {
+    "id": "s001",
+    "word": "establishment",
+    "definition": "A place set up for a particular purpose",
+    "hint": "e____________ (13 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s002",
+    "word": "administered",
+    "definition": "Managed or run by a person or group in charge",
+    "hint": "a___________ (12 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s003",
+    "word": "prevalent",
+    "definition": "Widespread; found or happening often",
+    "hint": "p________ (9 letters)",
+    "difficulty": 2,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s004",
+    "word": "infirmary",
+    "definition": "A place where sick people are looked after within a larger institution",
+    "hint": "i________ (9 letters)",
+    "difficulty": 2,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s005",
+    "word": "devastating",
+    "definition": "Causing great damage, shock, or sadness",
+    "hint": "d__________ (11 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s006",
+    "word": "distinguished",
+    "definition": "Well-known and respected",
+    "hint": "d____________ (13 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s007",
+    "word": "isolated",
+    "definition": "Set apart from others; alone or cut off",
+    "hint": "i_______ (8 letters)",
+    "difficulty": 2,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s008",
+    "word": "vulnerable",
+    "definition": "Easily hurt, influenced, or attacked",
+    "hint": "v_________ (10 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s009",
+    "word": "resilient",
+    "definition": "Able to recover quickly from difficulties",
+    "hint": "r________ (9 letters)",
+    "difficulty": 2,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s010",
+    "word": "evacuated",
+    "definition": "Removed from a dangerous place to somewhere safe",
+    "hint": "e________ (9 letters)",
+    "difficulty": 2,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s011",
+    "word": "unprecedented",
+    "definition": "Never done or known before",
+    "hint": "u____________ (13 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s012",
+    "word": "iatrogenic",
+    "definition": "Caused by medical treatment",
+    "hint": "i_________ (10 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s013",
+    "word": "humanitarian",
+    "definition": "Concerned with reducing suffering",
+    "hint": "h___________ (12 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s014",
+    "word": "subsequently",
+    "definition": "After that; as a result",
+    "hint": "s___________ (12 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s015",
+    "word": "transformed",
+    "definition": "Changed completely",
+    "hint": "t__________ (11 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s016",
+    "word": "inhabitants",
+    "definition": "People who live in a particular place",
+    "hint": "i__________ (11 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s017",
+    "word": "deteriorated",
+    "definition": "Became worse over time",
+    "hint": "d___________ (12 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s018",
+    "word": "accommodated",
+    "definition": "Provided a place to stay",
+    "hint": "a___________ (12 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s019",
+    "word": "commenced",
+    "definition": "Began or started",
+    "hint": "c________ (9 letters)",
+    "difficulty": 2,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s020",
+    "word": "institution",
+    "definition": "A large important organisation",
+    "hint": "i__________ (11 letters)",
+    "difficulty": 3,
+    "book": "GoldieLeigh"
+  },
+  {
+    "id": "s021",
+    "word": "treacherous",
+    "definition": "Guilty of betrayal or deception; not to be trusted",
+    "hint": "t__________ (11 letters)",
+    "difficulty": 3,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s022",
+    "word": "confinement",
+    "definition": "The state of being locked up or kept in a restricted space",
+    "hint": "c__________ (11 letters)",
+    "difficulty": 3,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s023",
+    "word": "execution",
+    "definition": "The carrying out of a death sentence",
+    "hint": "e________ (9 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s024",
+    "word": "fortress",
+    "definition": "A large, strong building built to defend against attack",
+    "hint": "f_______ (8 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s025",
+    "word": "monarch",
+    "definition": "A king or queen who rules a country",
+    "hint": "m______ (7 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s026",
+    "word": "conspiracy",
+    "definition": "A secret plan by a group to do something harmful or unlawful",
+    "hint": "c_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s027",
+    "word": "imprisoned",
+    "definition": "Put into prison; locked up",
+    "hint": "i_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s028",
+    "word": "notorious",
+    "definition": "Famous for something bad",
+    "hint": "n________ (9 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s029",
+    "word": "treason",
+    "definition": "The crime of betraying your country or ruler",
+    "hint": "t______ (7 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s030",
+    "word": "sovereign",
+    "definition": "A supreme ruler, especially a king or queen",
+    "hint": "s________ (9 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s031",
+    "word": "condemned",
+    "definition": "Sentenced to a particular punishment, especially death",
+    "hint": "c________ (9 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s032",
+    "word": "ruthless",
+    "definition": "Showing no pity or compassion; cruel",
+    "hint": "r_______ (8 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s033",
+    "word": "betrayal",
+    "definition": "The act of being disloyal to someone who trusts you",
+    "hint": "b_______ (8 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s034",
+    "word": "legitimate",
+    "definition": "Lawful; having a legal right",
+    "hint": "l_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s035",
+    "word": "heir",
+    "definition": "A person who is legally entitled to inherit a title or property",
+    "hint": "h___ (4 letters)",
+    "difficulty": 1,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s036",
+    "word": "formidable",
+    "definition": "Inspiring fear or respect through being impressively powerful",
+    "hint": "f_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s037",
+    "word": "testimony",
+    "definition": "A formal statement, especially given in a court of law",
+    "hint": "t________ (9 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s038",
+    "word": "dungeon",
+    "definition": "A dark underground prison cell",
+    "hint": "d______ (7 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s039",
+    "word": "merciless",
+    "definition": "Showing no mercy or kindness; cruel",
+    "hint": "m________ (9 letters)",
+    "difficulty": 2,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s040",
+    "word": "succession",
+    "definition": "The process of inheriting a title or throne",
+    "hint": "s_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TowerOfLondon"
+  },
+  {
+    "id": "s041",
+    "word": "contagious",
+    "definition": "Able to be spread from one person to another by contact",
+    "hint": "c_________ (10 letters)",
+    "difficulty": 3,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s042",
+    "word": "quarantine",
+    "definition": "A period of isolation to prevent the spread of disease",
+    "hint": "q_________ (10 letters)",
+    "difficulty": 3,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s043",
+    "word": "epidemic",
+    "definition": "A widespread outbreak of a disease in a community",
+    "hint": "e_______ (8 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s044",
+    "word": "symptoms",
+    "definition": "Signs that show a person has a disease or illness",
+    "hint": "s_______ (8 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s045",
+    "word": "mortality",
+    "definition": "Death, especially on a large scale; the death rate",
+    "hint": "m________ (9 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s046",
+    "word": "devastating",
+    "definition": "Causing great destruction or damage; extremely upsetting",
+    "hint": "d__________ (11 letters)",
+    "difficulty": 3,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s047",
+    "word": "putrid",
+    "definition": "Rotting and foul-smelling",
+    "hint": "p_____ (6 letters)",
+    "difficulty": 1,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s048",
+    "word": "remedies",
+    "definition": "Treatments or cures for a disease or problem",
+    "hint": "r_______ (8 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s049",
+    "word": "precautions",
+    "definition": "Actions taken in advance to prevent something dangerous",
+    "hint": "p__________ (11 letters)",
+    "difficulty": 3,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s050",
+    "word": "contaminated",
+    "definition": "Made impure or poisonous by contact with something harmful",
+    "hint": "c___________ (12 letters)",
+    "difficulty": 3,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s051",
+    "word": "afflicted",
+    "definition": "Suffering from a disease or condition",
+    "hint": "a________ (9 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s052",
+    "word": "inhabitants",
+    "definition": "The people who live in a particular place",
+    "hint": "i__________ (11 letters)",
+    "difficulty": 3,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s053",
+    "word": "perished",
+    "definition": "Died, especially in a sudden or violent way",
+    "hint": "p_______ (8 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s054",
+    "word": "desperate",
+    "definition": "Feeling hopeless and willing to try anything",
+    "hint": "d________ (9 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s055",
+    "word": "isolation",
+    "definition": "Being separated from other people",
+    "hint": "i________ (9 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s056",
+    "word": "infection",
+    "definition": "The process of being invaded by germs that cause disease",
+    "hint": "i________ (9 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s057",
+    "word": "vigilant",
+    "definition": "Keeping careful watch for danger",
+    "hint": "v_______ (8 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s058",
+    "word": "hazardous",
+    "definition": "Dangerous; risky",
+    "hint": "h________ (9 letters)",
+    "difficulty": 2,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s059",
+    "word": "superstition",
+    "definition": "A belief based on fear or magic rather than facts",
+    "hint": "s___________ (12 letters)",
+    "difficulty": 3,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s060",
+    "word": "inevitable",
+    "definition": "Certain to happen; unavoidable",
+    "hint": "i_________ (10 letters)",
+    "difficulty": 3,
+    "book": "GreatPlague"
+  },
+  {
+    "id": "s061",
+    "word": "asylum",
+    "definition": "A place of shelter or protection, especially for people who are mentally ill",
+    "hint": "a_____ (6 letters)",
+    "difficulty": 1,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s062",
+    "word": "spectacle",
+    "definition": "A public display or performance, often one that is shocking or impressive",
+    "hint": "s________ (9 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s063",
+    "word": "degrading",
+    "definition": "Causing someone to lose their dignity or self-respect",
+    "hint": "d________ (9 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s064",
+    "word": "compassion",
+    "definition": "A feeling of deep sympathy and a desire to help someone who is suffering",
+    "hint": "c_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s065",
+    "word": "confined",
+    "definition": "Kept in a small, enclosed space; not free to leave",
+    "hint": "c_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s066",
+    "word": "torment",
+    "definition": "Severe physical or mental suffering; to cause someone great pain",
+    "hint": "t______ (7 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s067",
+    "word": "exhibition",
+    "definition": "A public showing of something, often for entertainment or education",
+    "hint": "e_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s068",
+    "word": "humiliation",
+    "definition": "The feeling of being made to look foolish or ashamed in front of others",
+    "hint": "h__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s069",
+    "word": "neglected",
+    "definition": "Not given proper care or attention; abandoned",
+    "hint": "n________ (9 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s070",
+    "word": "barbaric",
+    "definition": "Extremely cruel and brutal; uncivilised",
+    "hint": "b_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s071",
+    "word": "restrained",
+    "definition": "Held back or tied down to prevent movement",
+    "hint": "r_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s072",
+    "word": "lucrative",
+    "definition": "Producing a great deal of profit or money",
+    "hint": "l________ (9 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s073",
+    "word": "exploited",
+    "definition": "Used unfairly for someone else's benefit or profit",
+    "hint": "e________ (9 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s074",
+    "word": "inhumane",
+    "definition": "Without compassion; cruel and causing unnecessary suffering",
+    "hint": "i_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s075",
+    "word": "distressing",
+    "definition": "Causing anxiety, sorrow, or pain",
+    "hint": "d__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s076",
+    "word": "pitiful",
+    "definition": "Deserving or arousing pity; very sad or inadequate",
+    "hint": "p______ (7 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s077",
+    "word": "reformer",
+    "definition": "A person who works to change something for the better",
+    "hint": "r_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s078",
+    "word": "conscience",
+    "definition": "An inner feeling that tells you whether something is right or wrong",
+    "hint": "c_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s079",
+    "word": "spectators",
+    "definition": "People who watch an event, especially a show or performance",
+    "hint": "s_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s080",
+    "word": "dignified",
+    "definition": "Having or showing a calm, serious manner that deserves respect",
+    "hint": "d________ (9 letters)",
+    "difficulty": 2,
+    "book": "Bedlam"
+  },
+  {
+    "id": "s081",
+    "word": "catastrophe",
+    "definition": "A sudden disaster causing great damage or suffering",
+    "hint": "c__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s082",
+    "word": "unsinkable",
+    "definition": "Believed to be impossible to sink",
+    "hint": "u_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s083",
+    "word": "prestigious",
+    "definition": "Highly respected and admired; having high status",
+    "hint": "p__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s084",
+    "word": "collision",
+    "definition": "An instance of two objects crashing into each other",
+    "hint": "c________ (9 letters)",
+    "difficulty": 2,
+    "book": "Titanic"
+  },
+  {
+    "id": "s085",
+    "word": "perilous",
+    "definition": "Full of danger or risk",
+    "hint": "p_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Titanic"
+  },
+  {
+    "id": "s086",
+    "word": "inadequate",
+    "definition": "Not enough; not good enough for what is needed",
+    "hint": "i_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s087",
+    "word": "distinguished",
+    "definition": "Successful, important, and respected by many people",
+    "hint": "d____________ (13 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s088",
+    "word": "arrogant",
+    "definition": "Having an exaggerated sense of one's own importance; too proud",
+    "hint": "a_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Titanic"
+  },
+  {
+    "id": "s089",
+    "word": "pandemonium",
+    "definition": "Wild, noisy chaos and confusion",
+    "hint": "p__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s090",
+    "word": "submerged",
+    "definition": "Under the surface of water; completely covered by water",
+    "hint": "s________ (9 letters)",
+    "difficulty": 2,
+    "book": "Titanic"
+  },
+  {
+    "id": "s091",
+    "word": "distress",
+    "definition": "Extreme anxiety, sorrow, or suffering; a signal calling for help",
+    "hint": "d_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Titanic"
+  },
+  {
+    "id": "s092",
+    "word": "luxury",
+    "definition": "Great comfort and expensive living",
+    "hint": "l_____ (6 letters)",
+    "difficulty": 1,
+    "book": "Titanic"
+  },
+  {
+    "id": "s093",
+    "word": "precautions",
+    "definition": "Actions taken in advance to prevent something dangerous from happening",
+    "hint": "p__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s094",
+    "word": "negligence",
+    "definition": "Failure to take proper care or attention; carelessness that causes harm",
+    "hint": "n_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s095",
+    "word": "maritime",
+    "definition": "Connected with the sea, especially relating to ships and sailing",
+    "hint": "m_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Titanic"
+  },
+  {
+    "id": "s096",
+    "word": "vicinity",
+    "definition": "The area near or surrounding a particular place",
+    "hint": "v_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Titanic"
+  },
+  {
+    "id": "s097",
+    "word": "regulations",
+    "definition": "Official rules made by an authority",
+    "hint": "r__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Titanic"
+  },
+  {
+    "id": "s098",
+    "word": "doomed",
+    "definition": "Certain to fail, suffer, or be destroyed",
+    "hint": "d_____ (6 letters)",
+    "difficulty": 1,
+    "book": "Titanic"
+  },
+  {
+    "id": "s099",
+    "word": "immense",
+    "definition": "Extremely large or great in size, scale, or degree",
+    "hint": "i______ (7 letters)",
+    "difficulty": 2,
+    "book": "Titanic"
+  },
+  {
+    "id": "s100",
+    "word": "futile",
+    "definition": "Having no useful result; pointless",
+    "hint": "f_____ (6 letters)",
+    "difficulty": 1,
+    "book": "Titanic"
+  },
+  {
+    "id": "s101",
+    "word": "testimony",
+    "definition": "A formal statement given as evidence, especially in court",
+    "hint": "t________ (9 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s102",
+    "word": "accused",
+    "definition": "Charged with a crime or wrongdoing",
+    "hint": "a______ (7 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s103",
+    "word": "superstition",
+    "definition": "A belief in magic or supernatural things that is not based on fact",
+    "hint": "s___________ (12 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s104",
+    "word": "condemned",
+    "definition": "Sentenced to a severe punishment, especially death",
+    "hint": "c________ (9 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s105",
+    "word": "persecution",
+    "definition": "Cruel or unfair treatment of someone, especially because of who they are",
+    "hint": "p__________ (11 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s106",
+    "word": "allegations",
+    "definition": "Claims that someone has done something wrong, without proof",
+    "hint": "a__________ (11 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s107",
+    "word": "magistrate",
+    "definition": "A judge who deals with less serious crimes in a local court",
+    "hint": "m_________ (10 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s108",
+    "word": "confession",
+    "definition": "Admitting that you have done something wrong or committed a crime",
+    "hint": "c_________ (10 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s109",
+    "word": "bewildered",
+    "definition": "Completely confused and unable to understand what is happening",
+    "hint": "b_________ (10 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s110",
+    "word": "gallows",
+    "definition": "A wooden frame used for hanging criminals as punishment",
+    "hint": "g______ (7 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s111",
+    "word": "interrogation",
+    "definition": "The act of questioning someone thoroughly, often in an aggressive way",
+    "hint": "i____________ (13 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s112",
+    "word": "desperate",
+    "definition": "Feeling that you have no hope and will do anything to change the situation",
+    "hint": "d________ (9 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s113",
+    "word": "incriminating",
+    "definition": "Making someone appear guilty of a crime",
+    "hint": "i____________ (13 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s114",
+    "word": "terrified",
+    "definition": "Extremely frightened",
+    "hint": "t________ (9 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s115",
+    "word": "influential",
+    "definition": "Having great power to affect or change things",
+    "hint": "i__________ (11 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s116",
+    "word": "manipulation",
+    "definition": "Controlling or influencing someone cleverly and often unfairly",
+    "hint": "m___________ (12 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s117",
+    "word": "defenceless",
+    "definition": "Unable to protect yourself from attack or harm",
+    "hint": "d__________ (11 letters)",
+    "difficulty": 3,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s118",
+    "word": "ruthless",
+    "definition": "Having no pity or compassion; willing to do anything to get what you want",
+    "hint": "r_______ (8 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s119",
+    "word": "malicious",
+    "definition": "Intending to cause harm or suffering to someone",
+    "hint": "m________ (9 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s120",
+    "word": "prejudice",
+    "definition": "An unfair opinion about someone based on their group, not who they actually are",
+    "hint": "p________ (9 letters)",
+    "difficulty": 2,
+    "book": "PendleWitchTrials"
+  },
+  {
+    "id": "s121",
+    "word": "preserved",
+    "definition": "Kept in its original state; protected from decay",
+    "hint": "p________ (9 letters)",
+    "difficulty": 2,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s122",
+    "word": "excavation",
+    "definition": "The process of digging something out of the ground carefully",
+    "hint": "e_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s123",
+    "word": "archaeologist",
+    "definition": "A person who studies human history by examining objects and remains",
+    "hint": "a____________ (13 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s124",
+    "word": "remarkable",
+    "definition": "Worthy of attention; unusual or impressive",
+    "hint": "r_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s125",
+    "word": "decomposed",
+    "definition": "Decayed; rotted away over time",
+    "hint": "d_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s126",
+    "word": "ritual",
+    "definition": "A ceremony or set of actions performed in a specific order, often for religious reasons",
+    "hint": "r_____ (6 letters)",
+    "difficulty": 1,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s127",
+    "word": "sacrifice",
+    "definition": "The act of offering something (or someone) to a god, often by killing",
+    "hint": "s________ (9 letters)",
+    "difficulty": 2,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s128",
+    "word": "specimen",
+    "definition": "An individual example of something, used for study",
+    "hint": "s_______ (8 letters)",
+    "difficulty": 2,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s129",
+    "word": "analysis",
+    "definition": "A detailed examination of something to understand it better",
+    "hint": "a_______ (8 letters)",
+    "difficulty": 2,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s130",
+    "word": "hypothesis",
+    "definition": "An educated guess or theory that can be tested",
+    "hint": "h_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s131",
+    "word": "astonishing",
+    "definition": "Extremely surprising or impressive",
+    "hint": "a__________ (11 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s132",
+    "word": "investigation",
+    "definition": "A careful search for facts or information about something",
+    "hint": "i____________ (13 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s133",
+    "word": "undisturbed",
+    "definition": "Not touched, moved, or interfered with",
+    "hint": "u__________ (11 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s134",
+    "word": "forensic",
+    "definition": "Relating to scientific methods used to investigate crimes",
+    "hint": "f_______ (8 letters)",
+    "difficulty": 2,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s135",
+    "word": "enigma",
+    "definition": "Something that is mysterious and difficult to understand",
+    "hint": "e_____ (6 letters)",
+    "difficulty": 1,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s136",
+    "word": "ancient",
+    "definition": "Belonging to a time long ago, especially thousands of years in the past",
+    "hint": "a______ (7 letters)",
+    "difficulty": 2,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s137",
+    "word": "meticulous",
+    "definition": "Very careful and precise, paying close attention to every detail",
+    "hint": "m_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s138",
+    "word": "intact",
+    "definition": "Not damaged; complete and in one piece",
+    "hint": "i_____ (6 letters)",
+    "difficulty": 1,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s139",
+    "word": "compelling",
+    "definition": "Very convincing; making you believe something is true",
+    "hint": "c_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s140",
+    "word": "centuries",
+    "definition": "Periods of one hundred years",
+    "hint": "c________ (9 letters)",
+    "difficulty": 2,
+    "book": "TollundMan"
+  },
+  {
+    "id": "s141",
+    "word": "clandestine",
+    "definition": "Done secretly or kept hidden",
+    "hint": "c__________ (11 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s142",
+    "word": "anatomist",
+    "definition": "A scientist who studies the structure of the body",
+    "hint": "a________ (9 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s143",
+    "word": "dissection",
+    "definition": "The act of cutting open a body to study it",
+    "hint": "d_________ (10 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s144",
+    "word": "accomplice",
+    "definition": "A person who helps someone commit a crime",
+    "hint": "a_________ (10 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s145",
+    "word": "macabre",
+    "definition": "Disturbing because it involves death or horror",
+    "hint": "m______ (7 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s146",
+    "word": "sinister",
+    "definition": "Giving the impression that something harmful or evil will happen",
+    "hint": "s_______ (8 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s147",
+    "word": "lucrative",
+    "definition": "Making a lot of money; profitable",
+    "hint": "l________ (9 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s148",
+    "word": "perpetrators",
+    "definition": "People who carry out a harmful or illegal act",
+    "hint": "p___________ (12 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s149",
+    "word": "gruesome",
+    "definition": "Causing horror or disgust",
+    "hint": "g_______ (8 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s150",
+    "word": "notorious",
+    "definition": "Famous for something bad",
+    "hint": "n________ (9 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s151",
+    "word": "deceived",
+    "definition": "Tricked someone into believing something untrue",
+    "hint": "d_______ (8 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s152",
+    "word": "physicians",
+    "definition": "Doctors; people qualified to practise medicine",
+    "hint": "p_________ (10 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s153",
+    "word": "unsuspecting",
+    "definition": "Not aware of a danger or threat",
+    "hint": "u___________ (12 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s154",
+    "word": "illicit",
+    "definition": "Not allowed by law or rules; illegal",
+    "hint": "i______ (7 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s155",
+    "word": "prosecution",
+    "definition": "The process of taking legal action against someone in court",
+    "hint": "p__________ (11 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s156",
+    "word": "impoverished",
+    "definition": "Very poor; living in poverty",
+    "hint": "i___________ (12 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s157",
+    "word": "cadaver",
+    "definition": "A dead body, especially one used for medical study",
+    "hint": "c______ (7 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s158",
+    "word": "testimony",
+    "definition": "A formal statement given in court or as evidence",
+    "hint": "t________ (9 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s159",
+    "word": "condemned",
+    "definition": "Sentenced to a particular punishment, especially death",
+    "hint": "c________ (9 letters)",
+    "difficulty": 2,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s160",
+    "word": "procurement",
+    "definition": "The process of obtaining or acquiring something",
+    "hint": "p__________ (11 letters)",
+    "difficulty": 3,
+    "book": "ResurrectionMen"
+  },
+  {
+    "id": "s161",
+    "word": "relentless",
+    "definition": "Never stopping; constant and intense",
+    "hint": "r_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s162",
+    "word": "evacuated",
+    "definition": "Moved away from a dangerous place to somewhere safer",
+    "hint": "e________ (9 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s163",
+    "word": "devastation",
+    "definition": "Severe and widespread destruction",
+    "hint": "d__________ (11 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s164",
+    "word": "endurance",
+    "definition": "The ability to keep going through something difficult over a long time",
+    "hint": "e________ (9 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s165",
+    "word": "courageous",
+    "definition": "Brave; willing to face danger or difficulty",
+    "hint": "c_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s166",
+    "word": "demolished",
+    "definition": "Completely destroyed or knocked down",
+    "hint": "d_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s167",
+    "word": "rubble",
+    "definition": "Broken pieces of brick, stone and concrete from destroyed buildings",
+    "hint": "r_____ (6 letters)",
+    "difficulty": 1,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s168",
+    "word": "onslaught",
+    "definition": "A fierce or destructive attack",
+    "hint": "o________ (9 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s169",
+    "word": "resilient",
+    "definition": "Able to recover quickly from difficulties; tough",
+    "hint": "r________ (9 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s170",
+    "word": "incendiary",
+    "definition": "Designed to cause fires",
+    "hint": "i_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s171",
+    "word": "perilous",
+    "definition": "Full of danger; extremely risky",
+    "hint": "p_______ (8 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s172",
+    "word": "morale",
+    "definition": "The confidence and enthusiasm of a person or group",
+    "hint": "m_____ (6 letters)",
+    "difficulty": 1,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s173",
+    "word": "defiant",
+    "definition": "Boldly resisting authority or a powerful force",
+    "hint": "d______ (7 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s174",
+    "word": "sanctuary",
+    "definition": "A place of safety or protection",
+    "hint": "s________ (9 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s175",
+    "word": "systematic",
+    "definition": "Done in a planned, organised, step-by-step way",
+    "hint": "s_________ (10 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s176",
+    "word": "inhabitants",
+    "definition": "People who live in a particular place",
+    "hint": "i__________ (11 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s177",
+    "word": "catastrophic",
+    "definition": "Causing sudden and terrible damage or suffering",
+    "hint": "c___________ (12 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s178",
+    "word": "displaced",
+    "definition": "Forced to leave your home",
+    "hint": "d________ (9 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s179",
+    "word": "unprecedented",
+    "definition": "Never done or known before",
+    "hint": "u____________ (13 letters)",
+    "difficulty": 3,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s180",
+    "word": "fortitude",
+    "definition": "Mental and emotional strength when facing difficulty or danger",
+    "hint": "f________ (9 letters)",
+    "difficulty": 2,
+    "book": "TheBlitz"
+  },
+  {
+    "id": "s181",
+    "word": "notorious",
+    "definition": "Famous for something bad",
+    "hint": "n________ (9 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s182",
+    "word": "incarceration",
+    "definition": "The state of being locked up in prison",
+    "hint": "i____________ (13 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s183",
+    "word": "maximum",
+    "definition": "The greatest amount possible",
+    "hint": "m______ (7 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s184",
+    "word": "surveillance",
+    "definition": "Close watching or monitoring",
+    "hint": "s___________ (12 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s185",
+    "word": "accomplice",
+    "definition": "A person who helps someone commit a crime",
+    "hint": "a_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s186",
+    "word": "ingenious",
+    "definition": "Clever, original, and inventive",
+    "hint": "i________ (9 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s187",
+    "word": "elaborate",
+    "definition": "Very detailed and carefully planned",
+    "hint": "e________ (9 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s188",
+    "word": "perilous",
+    "definition": "Full of danger or risk",
+    "hint": "p_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s189",
+    "word": "audacious",
+    "definition": "Showing a willingness to take bold risks",
+    "hint": "a________ (9 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s190",
+    "word": "fugitives",
+    "definition": "People who have escaped and are in hiding",
+    "hint": "f________ (9 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s191",
+    "word": "treacherous",
+    "definition": "Dangerous and unpredictable",
+    "hint": "t__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s192",
+    "word": "authorities",
+    "definition": "People in charge, especially police or government",
+    "hint": "a__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s193",
+    "word": "formidable",
+    "definition": "Inspiring fear or respect through being powerful",
+    "hint": "f_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s194",
+    "word": "cunning",
+    "definition": "Skilled at achieving things in a clever, sneaky way",
+    "hint": "c______ (7 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s195",
+    "word": "concealed",
+    "definition": "Hidden; kept out of sight",
+    "hint": "c________ (9 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s196",
+    "word": "makeshift",
+    "definition": "Made from whatever is available; temporary",
+    "hint": "m________ (9 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s197",
+    "word": "desolate",
+    "definition": "Empty, bleak, and without comfort",
+    "hint": "d_______ (8 letters)",
+    "difficulty": 2,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s198",
+    "word": "confinement",
+    "definition": "Being kept in a restricted space",
+    "hint": "c__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s199",
+    "word": "relentless",
+    "definition": "Never stopping; persistent",
+    "hint": "r_________ (10 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s200",
+    "word": "resourceful",
+    "definition": "Good at finding quick and clever ways to overcome difficulties",
+    "hint": "r__________ (11 letters)",
+    "difficulty": 3,
+    "book": "Alcatraz"
+  },
+  {
+    "id": "s201",
+    "word": "abandoned",
+    "definition": "Left behind; deserted",
+    "hint": "a________ (9 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s202",
+    "word": "vessel",
+    "definition": "A ship or large boat",
+    "hint": "v_____ (6 letters)",
+    "difficulty": 1,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s203",
+    "word": "inexplicable",
+    "definition": "Impossible to explain or understand",
+    "hint": "i___________ (12 letters)",
+    "difficulty": 3,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s204",
+    "word": "baffling",
+    "definition": "Completely puzzling or confusing",
+    "hint": "b_______ (8 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s205",
+    "word": "maritime",
+    "definition": "Connected to the sea, especially sailing or shipping",
+    "hint": "m_______ (8 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s206",
+    "word": "cargo",
+    "definition": "Goods carried by a ship, plane, or vehicle",
+    "hint": "c____ (5 letters)",
+    "difficulty": 1,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s207",
+    "word": "speculation",
+    "definition": "Guessing or forming opinions without firm evidence",
+    "hint": "s__________ (11 letters)",
+    "difficulty": 3,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s208",
+    "word": "seaworthy",
+    "definition": "In a good enough condition to sail safely",
+    "hint": "s________ (9 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s209",
+    "word": "hypothesis",
+    "definition": "A suggested explanation based on limited evidence",
+    "hint": "h_________ (10 letters)",
+    "difficulty": 3,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s210",
+    "word": "desolate",
+    "definition": "Empty, bleak, and without comfort",
+    "hint": "d_______ (8 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s211",
+    "word": "peculiar",
+    "definition": "Strange or unusual",
+    "hint": "p_______ (8 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s212",
+    "word": "investigation",
+    "definition": "A careful search or examination to discover facts",
+    "hint": "i____________ (13 letters)",
+    "difficulty": 3,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s213",
+    "word": "uncharted",
+    "definition": "Not mapped or explored",
+    "hint": "u________ (9 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s214",
+    "word": "mutiny",
+    "definition": "A rebellion by sailors or soldiers against their leaders",
+    "hint": "m_____ (6 letters)",
+    "difficulty": 1,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s215",
+    "word": "plausible",
+    "definition": "Seeming reasonable or likely to be true",
+    "hint": "p________ (9 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s216",
+    "word": "unaccounted",
+    "definition": "Not explained or not found",
+    "hint": "u__________ (11 letters)",
+    "difficulty": 3,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s217",
+    "word": "perplexing",
+    "definition": "Completely puzzling; hard to understand",
+    "hint": "p_________ (10 letters)",
+    "difficulty": 3,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s218",
+    "word": "ominous",
+    "definition": "Giving the feeling that something bad is going to happen",
+    "hint": "o______ (7 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s219",
+    "word": "disturbance",
+    "definition": "An interruption or disruption",
+    "hint": "d__________ (11 letters)",
+    "difficulty": 3,
+    "book": "MaryCeleste"
+  },
+  {
+    "id": "s220",
+    "word": "vanished",
+    "definition": "Disappeared suddenly and completely",
+    "hint": "v_______ (8 letters)",
+    "difficulty": 2,
+    "book": "MaryCeleste"
+  }
+]
