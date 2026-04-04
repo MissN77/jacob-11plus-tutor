@@ -128,6 +128,89 @@
     .quiz-score.mid { color: var(--gold); }
     .quiz-score.low { color: var(--coral); }
     .quiz-time { color: #888; font-size: 0.8rem; }
+    .countdown-card {
+      background: var(--navy);
+      color: white;
+      border-radius: var(--radius);
+      padding: 20px;
+      text-align: center;
+      margin-bottom: 16px;
+    }
+    .countdown-card .days {
+      font-size: 3rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .countdown-card .days-label {
+      font-size: 0.9rem;
+      color: #ccc;
+      margin-top: 4px;
+    }
+    .countdown-card .days-msg {
+      font-size: 0.85rem;
+      color: var(--teal);
+      font-weight: 600;
+      margin-top: 8px;
+    }
+    .weekly-plan-card { margin-bottom: 16px; }
+    .weekly-focus-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-top: 12px;
+    }
+    .weekly-focus-item {
+      background: var(--cream);
+      border-radius: var(--radius);
+      padding: 12px;
+      text-align: center;
+    }
+    .weekly-focus-item .sec-name {
+      font-weight: 700;
+      font-size: 0.85rem;
+      margin-bottom: 4px;
+    }
+    .weekly-focus-item .sec-target {
+      font-size: 0.75rem;
+      color: #888;
+    }
+    .weekly-focus-item.met {
+      border: 2px solid var(--forest);
+      background: #e6f4ec;
+    }
+    .weekly-focus-item.not-met {
+      border: 2px solid var(--coral);
+    }
+    .day-dots {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      margin-top: 12px;
+    }
+    .day-dot {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+    }
+    .day-dot .dot {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: var(--cream2);
+    }
+    .day-dot .dot.active {
+      background: var(--teal);
+    }
+    .day-dot .day-label {
+      font-size: 0.65rem;
+      color: #888;
+      font-weight: 600;
+    }
+    @media (max-width: 500px) {
+      .weekly-focus-row { grid-template-columns: 1fr; }
+    }
     .loading { text-align: center; padding: 40px; color: #888; }
     .refresh-btn {
       background: var(--teal);
@@ -189,8 +272,61 @@
       'verbal-reasoning': 'Verbal Reasoning',
       maths: 'Maths',
       nvr: 'NVR',
-      writing: 'Writing'
+      writing: 'Writing',
+      collocations: 'Collocations'
     };
+
+    // GL Assessment countdown
+    const GL_DATE = new Date('2027-09-18T00:00:00');
+    function daysUntilGL() {
+      const now = new Date();
+      now.setHours(0, 0, 0, 0);
+      return Math.ceil((GL_DATE - now) / (1000 * 60 * 60 * 24));
+    }
+    function glMessage(days) {
+      if (days <= 0) return 'Good luck Jacob!';
+      if (days < 50) return "Nearly there \u2014 he's got this!";
+      if (days < 100) return 'Getting closer \u2014 stay focused!';
+      if (days < 150) return "He's doing great \u2014 keep going!";
+      return 'Plenty of time \u2014 keep building!';
+    }
+
+    // Weekly plan (mirrors ui.js)
+    const WEEKLY_PLAN = [
+      { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '10 words', maths: '15 questions', spelling: '10 words' } },
+      { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '3 passages', nvr: '10 questions', punctuation: '10 questions' } },
+      { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '10 questions', writing: '1 prompt', 'sentence-completion': '10 questions' } },
+      { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '15 words', maths: '20 questions', spelling: '15 words' } },
+      { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '4 passages', nvr: '15 questions', punctuation: '15 questions' } },
+      { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '15 questions', writing: '1 prompt', 'sentence-completion': '15 questions' } },
+      { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '20 words', maths: '25 questions', spelling: '20 words' } },
+      { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '5 passages', nvr: '20 questions', punctuation: '20 questions' } },
+      { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '20 questions', writing: '2 prompts', 'sentence-completion': '20 questions' } },
+      { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '20 words', maths: '30 questions', spelling: '20 words' } },
+      { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '5 passages', nvr: '25 questions', punctuation: '20 questions' } },
+      { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '25 questions', writing: '2 prompts', 'sentence-completion': '20 questions' } },
+      { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '25 words', maths: '30 questions', spelling: '25 words' } },
+      { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '6 passages', nvr: '25 questions', punctuation: '25 questions' } },
+      { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '25 questions', writing: '2 prompts', 'sentence-completion': '25 questions' } },
+      { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '25 words', maths: '35 questions', spelling: '25 words' } },
+      { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '6 passages', nvr: '30 questions', punctuation: '25 questions' } },
+      { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '30 questions', writing: '3 prompts', 'sentence-completion': '25 questions' } },
+      { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '30 words', maths: '40 questions', spelling: '30 words' } },
+      { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '7 passages', nvr: '30 questions', punctuation: '30 questions' } },
+      { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '30 questions', writing: '3 prompts', 'sentence-completion': '30 questions' } },
+      { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '30 words', maths: '40 questions', spelling: '30 words' } },
+      { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '8 passages', nvr: '35 questions', punctuation: '30 questions' } },
+      { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '35 questions', writing: '3 prompts', 'sentence-completion': '30 questions' } }
+    ];
+
+    function getCurrentWeekIndex() {
+      const epoch = new Date('2025-01-06T00:00:00');
+      const now = new Date();
+      now.setHours(0, 0, 0, 0);
+      const diffMs = now - epoch;
+      const diffWeeks = Math.floor(diffMs / (7 * 24 * 60 * 60 * 1000));
+      return ((diffWeeks % WEEKLY_PLAN.length) + WEEKLY_PLAN.length) % WEEKLY_PLAN.length;
+    }
 
     async function loadDashboard() {
       const el = document.getElementById('dashboard');
@@ -213,8 +349,75 @@
         sections[q.section].count += 1;
       }
 
-      // Overview stats
+      // GL Countdown
+      const glDays = daysUntilGL();
+      const glMsg = glMessage(glDays);
+      const glLabel = glDays <= 0 ? 'GL Assessment day!' : `day${glDays === 1 ? '' : 's'} until GL Assessment`;
+
       let html = `
+        <div class="countdown-card">
+          <div class="days">${Math.max(glDays, 0)}</div>
+          <div class="days-label">${glLabel}</div>
+          <div class="days-msg">${glMsg}</div>
+        </div>`;
+
+      // Weekly Study Plan
+      const weekIdx = getCurrentWeekIndex();
+      const plan = WEEKLY_PLAN[weekIdx];
+
+      // Check which focus sections have activity this week
+      const now = new Date();
+      const dayOfWeek = now.getDay();
+      const mondayOffset = dayOfWeek === 0 ? 6 : dayOfWeek - 1;
+      const weekStart = new Date(now);
+      weekStart.setDate(now.getDate() - mondayOffset);
+      weekStart.setHours(0, 0, 0, 0);
+      const weekStartStr = weekStart.toISOString().slice(0, 10);
+
+      // Check activity from quizzes this week
+      const thisWeekQuizzes = quizzes.filter(q => q.completed_at >= weekStartStr);
+      const sectionQuizCounts = {};
+      for (const q of thisWeekQuizzes) {
+        sectionQuizCounts[q.section] = (sectionQuizCounts[q.section] || 0) + 1;
+      }
+
+      html += `<div class="card weekly-plan-card"><h2>This Week's Plan (Week ${weekIdx + 1} of 24)</h2>`;
+      html += `<div class="weekly-focus-row">`;
+      for (const secId of plan.sections) {
+        const name = SECTION_NAMES[secId] || secId;
+        const target = plan.targets[secId] || '';
+        const hasDone = (sectionQuizCounts[secId] || 0) > 0;
+        const cls = hasDone ? 'met' : 'not-met';
+        html += `<div class="weekly-focus-item ${cls}">
+          <div class="sec-name">${name} ${hasDone ? '\u2713' : ''}</div>
+          <div class="sec-target">Target: ${target}</div>
+          <div class="sec-target">${sectionQuizCounts[secId] || 0} done this week</div>
+        </div>`;
+      }
+      html += `</div></div>`;
+
+      // Weekly Activity - which days Jacob practised
+      const dayNames = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'];
+      const daysWithActivity = new Set();
+      for (const q of thisWeekQuizzes) {
+        const d = new Date(q.completed_at);
+        const dayIdx = d.getDay() === 0 ? 6 : d.getDay() - 1;
+        daysWithActivity.add(dayIdx);
+      }
+      html += `<div class="card"><h2>Weekly Activity</h2>`;
+      html += `<div class="day-dots">`;
+      for (let i = 0; i < 7; i++) {
+        const isToday = i === mondayOffset;
+        const active = daysWithActivity.has(i);
+        html += `<div class="day-dot">
+          <div class="dot ${active ? 'active' : ''}" ${isToday ? 'style="outline:2px solid var(--navy);outline-offset:2px;"' : ''}></div>
+          <span class="day-label">${dayNames[i]}</span>
+        </div>`;
+      }
+      html += `</div></div>`;
+
+      // Overview stats
+      html += `
         <div class="stats-row">
           <div class="stat-box"><div class="value">${s.total_xp}</div><div class="label">Total XP</div></div>
           <div class="stat-box"><div class="value">${s.level}</div><div class="label">Level</div></div>

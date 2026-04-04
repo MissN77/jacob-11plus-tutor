@@ -1,0 +1,292 @@
+[
+  {
+    "category": "Adjective + Noun",
+    "passage": "He looked about him with growing unease. The silence was absolute, the darkness impenetrable. He had a sudden and overwhelming desire to run.",
+    "source": "Kensuke's Kingdom by Michael Morpurgo",
+    "collocations": ["growing unease", "absolute silence", "impenetrable darkness", "overwhelming desire"],
+    "questions": [
+      {
+        "stem": "She felt ___ when she failed the test.",
+        "options": ["a fierce disappointment", "a bitter disappointment", "a large disappointment", "a heavy disappointment"],
+        "answer": 1
+      },
+      {
+        "stem": "He showed ___ and refused to give up.",
+        "options": ["large determination", "big determination", "fierce determination", "heavy determination"],
+        "answer": 2
+      },
+      {
+        "stem": "The cave ahead was dark and ___.",
+        "options": ["unpassable", "impenetrable", "unbreakable", "unreachable"],
+        "answer": 1
+      },
+      {
+        "stem": "She had an ___ desire to run away.",
+        "options": ["enormous", "overwhelming", "gigantic", "massive"],
+        "answer": 1
+      },
+      {
+        "stem": "A ___ unease settled over the village.",
+        "options": ["raising", "growing", "building", "lifting"],
+        "answer": 1
+      },
+      {
+        "stem": "The hall fell into ___ silence.",
+        "options": ["absolute", "full", "heavy", "deep"],
+        "answer": 0
+      },
+      {
+        "stem": "There was a sense of ___ dread as the storm approached.",
+        "options": ["lifting", "raising", "mounting", "climbing"],
+        "answer": 2
+      },
+      {
+        "stem": "She felt ___ terror when she saw the shadow move.",
+        "options": ["pure", "sheer", "total", "raw"],
+        "answer": 1
+      },
+      {
+        "stem": "The news brought ___ relief to the whole family.",
+        "options": ["big", "overwhelming", "large", "heavy"],
+        "answer": 1
+      },
+      {
+        "stem": "A ___ disappointment filled the room when the results were read.",
+        "options": ["heavy", "strong", "bitter", "hard"],
+        "answer": 2
+      }
+    ]
+  },
+  {
+    "category": "Verb + Noun",
+    "passage": "He made a decision then and there. He would harbour no more resentment, make no accusations, and seize every chance that was offered to him.",
+    "source": "Goodnight Mister Tom by Michelle Magorian",
+    "collocations": ["made a decision", "harbour resentment", "make accusations", "seize every chance"],
+    "questions": [
+      {
+        "stem": "She ___ a decision to leave at dawn.",
+        "options": ["did", "made", "took", "had"],
+        "answer": 1
+      },
+      {
+        "stem": "He ___ a grudge against his neighbour for years.",
+        "options": ["kept", "harboured", "carried", "held"],
+        "answer": 1
+      },
+      {
+        "stem": "She ___ every opportunity to improve her writing.",
+        "options": ["seized", "took", "grabbed", "pulled"],
+        "answer": 0
+      },
+      {
+        "stem": "After long talks, they finally ___ an agreement.",
+        "options": ["got", "reached", "found", "had"],
+        "answer": 1
+      },
+      {
+        "stem": "He ___ no attention to the noise outside.",
+        "options": ["gave", "paid", "had", "put"],
+        "answer": 1
+      },
+      {
+        "stem": "The tall building ___ a shadow over the garden.",
+        "options": ["threw", "cast", "put", "made"],
+        "answer": 1
+      },
+      {
+        "stem": "Several parents ___ concerns about the new policy.",
+        "options": ["raised", "said", "made", "told"],
+        "answer": 0
+      },
+      {
+        "stem": "He ___ a promise to his grandmother that he would return.",
+        "options": ["did", "said", "made", "gave"],
+        "answer": 2
+      },
+      {
+        "stem": "She ___ the conclusion that they had been wrong all along.",
+        "options": ["got", "came to", "reached", "found"],
+        "answer": 2
+      },
+      {
+        "stem": "He ___ tribute to his teacher at the ceremony.",
+        "options": ["gave", "paid", "offered", "made"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "category": "Precision Verbs",
+    "passage": "\"It's not fair,\" he muttered, turning away from the window. He trudged upstairs, his shoulders hunched, dragging his feet on every step. At the top, he paused and peered back down into the gloom below.",
+    "source": "Tom's Midnight Garden by Philippa Pearce",
+    "collocations": ["muttered", "trudged", "peered"],
+    "questions": [
+      {
+        "stem": "Which precision verb means 'spoke quietly and unhappily'?",
+        "options": ["whispered", "muttered", "shouted", "called"],
+        "answer": 1
+      },
+      {
+        "stem": "Which precision verb means 'walked slowly and heavily'?",
+        "options": ["strolled", "marched", "trudged", "wandered"],
+        "answer": 2
+      },
+      {
+        "stem": "Which precision verb means 'looked carefully into the dark'?",
+        "options": ["stared", "glanced", "peered", "gazed"],
+        "answer": 2
+      },
+      {
+        "stem": "Which is the better sentence? A: 'She said quietly, I don't want to go.' B: 'I don't want to go, she muttered.'",
+        "options": ["Sentence A", "Sentence B"],
+        "answer": 1
+      },
+      {
+        "stem": "Which precision verb means 'appeared large and threatening'?",
+        "options": ["appeared", "loomed", "stood", "rose"],
+        "answer": 1
+      },
+      {
+        "stem": "Which precision verb means 'ate very quickly and hungrily'?",
+        "options": ["ate", "consumed", "devoured", "finished"],
+        "answer": 2
+      },
+      {
+        "stem": "Which precision verb means 'jumped forcefully into something'?",
+        "options": ["jumped", "dived", "plunged", "fell"],
+        "answer": 2
+      },
+      {
+        "stem": "Which precision verb means 'stayed longer than expected'?",
+        "options": ["waited", "remained", "lingered", "paused"],
+        "answer": 2
+      },
+      {
+        "stem": "She ___ across the muddy field, too tired to lift her feet.",
+        "options": ["walked", "trudged", "moved", "went"],
+        "answer": 1
+      },
+      {
+        "stem": "He ___ through the keyhole, trying to see who was inside.",
+        "options": ["looked", "peered", "watched", "saw"],
+        "answer": 1
+      }
+    ]
+  },
+  {
+    "category": "Adverb + Adjective",
+    "passage": "He was utterly exhausted and deeply troubled by what he had seen. It was bitterly cold, and yet he remained perfectly still, watching the tree line.",
+    "source": "The Midnight Fox by Betsy Byars",
+    "collocations": ["utterly exhausted", "deeply troubled", "bitterly cold", "perfectly still"],
+    "questions": [
+      {
+        "stem": "She was ___ exhausted after the climb.",
+        "options": ["very", "utterly", "strongly", "highly"],
+        "answer": 1
+      },
+      {
+        "stem": "He was ___ troubled by what he had found.",
+        "options": ["deeply", "very", "strongly", "largely"],
+        "answer": 0
+      },
+      {
+        "stem": "It was ___ cold that January.",
+        "options": ["strongly", "bitterly", "deeply", "heavily"],
+        "answer": 1
+      },
+      {
+        "stem": "The fox stood ___ still at the edge of the field.",
+        "options": ["perfectly", "completely", "very", "really"],
+        "answer": 0
+      },
+      {
+        "stem": "She was ___ loyal to her friends, no matter what.",
+        "options": ["very", "strongly", "fiercely", "largely"],
+        "answer": 2
+      },
+      {
+        "stem": "It was ___ obvious that he had been lying.",
+        "options": ["very", "painfully", "strongly", "largely"],
+        "answer": 1
+      },
+      {
+        "stem": "She remained ___ calm despite the chaos around her.",
+        "options": ["very", "strongly", "remarkably", "largely"],
+        "answer": 2
+      },
+      {
+        "stem": "Which adverb does NOT work with 'exhausted'?",
+        "options": ["utterly", "completely", "strongly", "totally"],
+        "answer": 2
+      },
+      {
+        "stem": "Which adverb does NOT work with 'cold' as a weather description?",
+        "options": ["bitterly", "deeply", "piercingly", "freezing"],
+        "answer": 1
+      },
+      {
+        "stem": "He was ___ exhausted and ___ troubled by the day's events.",
+        "options": ["utterly / deeply", "very / very", "strongly / largely", "highly / greatly"],
+        "answer": 0
+      }
+    ]
+  },
+  {
+    "category": "Formal Register",
+    "passage": "Despite every obstacle that lay before them, they pressed on with steadfast determination. It fell to Ruth, the eldest, to make provision for the younger children and to keep a watchful eye on those in her care.",
+    "source": "The Silver Sword by Ian Serraillier",
+    "collocations": ["pressed on", "steadfast determination", "it fell to Ruth", "make provision for", "keep a watchful eye on"],
+    "questions": [
+      {
+        "stem": "Which is the formal version of 'She kept going even though it was hard'?",
+        "options": ["She carried on despite the difficulty.", "She pressed on despite every obstacle.", "She continued even though it was tough.", "She went on though it was hard."],
+        "answer": 1
+      },
+      {
+        "stem": "Which is the formal version of 'It was his job to lead the group safely'?",
+        "options": ["He had to lead the group safely.", "It fell to him to lead the group safely.", "He was supposed to lead the group.", "Leading the group was his thing."],
+        "answer": 1
+      },
+      {
+        "stem": "Which is the formal version of 'She sorted out things for the younger children'?",
+        "options": ["She fixed things for the younger children.", "She organised things for the younger children.", "She made provision for the younger children.", "She dealt with the younger children."],
+        "answer": 2
+      },
+      {
+        "stem": "Which is the formal version of 'He watched them carefully at all times'?",
+        "options": ["He observed them constantly.", "He kept a watchful eye on them at all times.", "He kept looking at them carefully.", "He never stopped watching them."],
+        "answer": 1
+      },
+      {
+        "stem": "Which is the formal version of 'She was really determined'?",
+        "options": ["She was very determined indeed.", "She showed steadfast determination.", "She was super determined.", "She had lots of determination."],
+        "answer": 1
+      },
+      {
+        "stem": "She ___ despite the rain and cold.",
+        "options": ["kept going", "pressed on", "carried on", "went on"],
+        "answer": 1
+      },
+      {
+        "stem": "___ to protect her younger brother during the journey.",
+        "options": ["She had", "It was her job", "It fell to her", "She needed"],
+        "answer": 2
+      },
+      {
+        "stem": "She ___ the children as they played near the river.",
+        "options": ["watched", "observed", "kept a watchful eye on", "looked at"],
+        "answer": 2
+      },
+      {
+        "stem": "The charity worked hard to ___ the refugees.",
+        "options": ["look after", "care for", "make provision for", "help out"],
+        "answer": 2
+      },
+      {
+        "stem": "He ___ throughout every setback.",
+        "options": ["was very determined", "showed steadfast determination", "stayed determined", "kept being determined"],
+        "answer": 1
+      }
+    ]
+  }
+]

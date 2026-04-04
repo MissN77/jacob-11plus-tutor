@@ -1,4 +1,4 @@
-const CACHE_NAME = 'j11-tutor-v1';
+const CACHE_NAME = 'j11-tutor-v2';
 const ASSETS = [
   '/',
   '/index.html',
@@ -7,6 +7,8 @@ const ASSETS = [
   '/js/store.js',
   '/js/xp.js',
   '/js/ui.js',
+  '/js/sections/collocations.js',
+  '/data/collocations.json',
   '/manifest.json'
 ];
 

@@ -1,5 +1,5 @@
 import { Store } from './store.js';
-import { renderHome, renderComingSoon, SECTIONS } from './ui.js';
+import { renderHome, renderComingSoon, SECTIONS, getCurrentWeekPlan } from './ui.js';
 
 const app = document.getElementById('app');
 
@@ -15,6 +15,7 @@ const SECTION_MODULES = {
   'maths':               () => import('./sections/maths.js'),
   'nvr':                 () => import('./sections/nvr.js'),
   'writing':             () => import('./sections/writing.js'),
+  'collocations':        () => import('./sections/collocations.js'),
 };
 
 /** Resolve the current route from the hash. */
@@ -86,6 +87,83 @@ app.addEventListener('click', (e) => {
 // Listen for route changes
 window.addEventListener('hashchange', render);
 
+// ── Activity logging ──────────────────────────────────────────────────────
+
+/** Log that a section was practised today. Used by the weekly plan tracker. */
+function logSectionActivity(sectionId) {
+  const state = Store.get();
+  if (!state.activityLog) state.activityLog = [];
+  const today = new Date().toISOString().slice(0, 10);
+  // Avoid duplicates for same section on same day
+  const exists = state.activityLog.some(
+    (e) => e.section === sectionId && e.date === today
+  );
+  if (!exists) {
+    state.activityLog.push({ section: sectionId, date: today });
+    // Keep only the last 90 days of logs
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - 90);
+    const cutoffStr = cutoff.toISOString().slice(0, 10);
+    state.activityLog = state.activityLog.filter((e) => e.date >= cutoffStr);
+    Store.save(state);
+  }
+}
+
+// Log activity whenever a section is visited
+window.addEventListener('hashchange', () => {
+  const route = location.hash.replace('#/', '').replace('#', '');
+  if (route && SECTIONS.find((s) => s.id === route.split('/')[0])) {
+    logSectionActivity(route.split('/')[0]);
+  }
+});
+
+// ── Browser Notifications ─────────────────────────────────────────────────
+
+function requestNotificationPermission() {
+  if (!('Notification' in window)) return;
+  if (Notification.permission === 'default') {
+    setTimeout(() => {
+      Notification.requestPermission();
+    }, 2000);
+  }
+}
+
+/** Check if we should show a reminder notification (Mondays at 4pm). */
+function checkWeeklyReminder() {
+  if (!('Notification' in window) || Notification.permission !== 'granted') return;
+
+  const now = new Date();
+  // Only on Mondays, after 4pm
+  if (now.getDay() !== 1 || now.getHours() < 16) return;
+
+  // Check if we already sent a notification this week
+  const lastNotif = localStorage.getItem('j11_last_notif');
+  const today = now.toISOString().slice(0, 10);
+  if (lastNotif === today) return;
+
+  // Check if Jacob has practised today
+  const state = Store.get();
+  const activityLog = state.activityLog || [];
+  const practicedToday = activityLog.some((e) => e.date === today);
+  if (practicedToday) return;
+
+  // Get this week's focus sections
+  const plan = getCurrentWeekPlan();
+  const focusNames = plan.sections.map((id) => {
+    const sec = SECTIONS.find((s) => s.id === id);
+    return sec ? sec.name : id;
+  }).join(', ');
+
+  // Show the notification
+  new Notification("Hey Jacob! Time for your 11+ practice.", {
+    body: `This week: ${focusNames}`,
+    icon: 'icons/icon-192.png',
+    tag: 'weekly-reminder'
+  });
+
+  localStorage.setItem('j11_last_notif', today);
+}
+
 // Initialise
 function init() {
   // Update daily streak
@@ -94,6 +172,12 @@ function init() {
     // Show a brief toast (non-blocking)
     setTimeout(() => showXPToast(`+${streakXP} XP daily streak!`), 500);
   }
+
+  // Request notification permission on first visit
+  requestNotificationPermission();
+
+  // Check if we should show a weekly reminder
+  checkWeeklyReminder();
 
   // Initial render
   render();
