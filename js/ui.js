@@ -3,6 +3,7 @@ import { xpPercent, xpInCurrentLevel } from './xp.js';
 const XP_PER_LEVEL = 200;
 
 const SECTIONS = [
+  { id: 'learn-first',         name: 'Learn New Words',      icon: '\u{1F4D6}' },
   { id: 'vocabulary',          name: 'Vocabulary',           icon: '\u{1F4DA}' },
   { id: 'inference',           name: 'Inference',            icon: '\u{1F50D}' },
   { id: 'spelling',            name: 'Spelling',             icon: '\u{270F}\uFE0F' },

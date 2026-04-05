@@ -1,0 +1,694 @@
+{
+  "lessons": [
+    {
+      "id": "lesson1",
+      "title": "Lesson 1: Thinking Words",
+      "theme": "Words about thinking and knowing",
+      "words": [
+        {
+          "word": "speculate",
+          "syllables": "spec-u-late",
+          "emoji": "\uD83E\uDD14",
+          "definition": "to guess or think about something without knowing for sure",
+          "example": "I speculate that tomorrow will be sunny because the sky is clear tonight.",
+          "thinkOfIt": "like guessing what's in a wrapped present before you open it",
+          "synonyms": ["guess", "wonder", "imagine"],
+          "antonyms": ["know", "confirm"],
+          "family": ["speculation", "speculative"]
+        },
+        {
+          "word": "ponder",
+          "syllables": "pon-der",
+          "emoji": "\uD83E\uDDD0",
+          "definition": "to think about something carefully for a long time",
+          "example": "She sat by the window to ponder which sport to choose for PE.",
+          "thinkOfIt": "like staring at a chess board trying to plan your next move",
+          "synonyms": ["think", "consider", "reflect"],
+          "antonyms": ["ignore", "forget"],
+          "family": ["pondering", "pondered"]
+        },
+        {
+          "word": "assume",
+          "syllables": "as-sume",
+          "emoji": "\uD83E\uDD37",
+          "definition": "to believe something is true without checking it first",
+          "example": "I assume the bus will be on time, but I should check the app.",
+          "thinkOfIt": "like thinking your mum made dinner without looking in the kitchen",
+          "synonyms": ["suppose", "presume", "believe"],
+          "antonyms": ["doubt", "verify"],
+          "family": ["assumption", "assuming"]
+        },
+        {
+          "word": "realise",
+          "syllables": "re-a-lise",
+          "emoji": "\uD83D\uDCA1",
+          "definition": "to suddenly understand or become aware of something",
+          "example": "I realise now that I left my book at school.",
+          "thinkOfIt": "like a lightbulb switching on inside your head",
+          "synonyms": ["understand", "notice", "grasp"],
+          "antonyms": ["miss", "overlook"],
+          "family": ["realisation", "realised"]
+        },
+        {
+          "word": "recall",
+          "syllables": "re-call",
+          "emoji": "\uD83E\uDDE0",
+          "definition": "to remember something from before",
+          "example": "I can recall exactly what we had for dinner last Sunday.",
+          "thinkOfIt": "like pulling a memory out of a drawer in your mind",
+          "synonyms": ["remember", "recollect", "recognise"],
+          "antonyms": ["forget"],
+          "family": ["recalling", "recalled"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'to guess without knowing for sure'?", "options": ["speculate", "recall", "ponder", "realise", "assume"], "correct": 0 },
+        { "question": "Which word means 'to think about something carefully for a long time'?", "options": ["assume", "ponder", "recall", "speculate", "realise"], "correct": 1 },
+        { "question": "Which word means 'to believe something without checking'?", "options": ["recall", "ponder", "assume", "realise", "speculate"], "correct": 2 },
+        { "question": "Which word means 'to suddenly understand'?", "options": ["assume", "speculate", "recall", "realise", "ponder"], "correct": 3 },
+        { "question": "Which word means 'to remember something'?", "options": ["ponder", "assume", "speculate", "realise", "recall"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson2",
+      "title": "Lesson 2: Size & Amount Words",
+      "theme": "Words about how big or how much",
+      "words": [
+        {
+          "word": "abundant",
+          "syllables": "a-bun-dant",
+          "emoji": "\uD83C\uDF3E",
+          "definition": "more than enough of something",
+          "example": "There were abundant apples on the tree, enough for the whole class.",
+          "thinkOfIt": "like a bowl so full of sweets it's about to overflow",
+          "synonyms": ["plentiful", "loads", "overflowing"],
+          "antonyms": ["scarce", "rare"],
+          "family": ["abundance", "abundantly"]
+        },
+        {
+          "word": "diminish",
+          "syllables": "di-min-ish",
+          "emoji": "\uD83D\uDCC9",
+          "definition": "to get smaller or less",
+          "example": "The ice cream began to diminish as we all took big scoops.",
+          "thinkOfIt": "like a bar of soap shrinking each time you use it",
+          "synonyms": ["shrink", "reduce", "lessen"],
+          "antonyms": ["grow", "increase"],
+          "family": ["diminishing", "diminished"]
+        },
+        {
+          "word": "immense",
+          "syllables": "im-mense",
+          "emoji": "\uD83C\uDFD4\uFE0F",
+          "definition": "extremely big",
+          "example": "The blue whale is an immense animal, bigger than a bus.",
+          "thinkOfIt": "like a mountain that you can't see the top of",
+          "synonyms": ["huge", "massive", "enormous"],
+          "antonyms": ["tiny", "small"],
+          "family": ["immensely", "immensity"]
+        },
+        {
+          "word": "scarce",
+          "syllables": "scarce",
+          "emoji": "\uD83D\uDD0D",
+          "definition": "hard to find because there isn't much of it",
+          "example": "Water is scarce in the desert, so every drop matters.",
+          "thinkOfIt": "like the last piece of cake that everyone wants",
+          "synonyms": ["rare", "limited", "few"],
+          "antonyms": ["plenty", "abundant"],
+          "family": ["scarcely", "scarcity"]
+        },
+        {
+          "word": "sufficient",
+          "syllables": "suf-fi-cient",
+          "emoji": "\u2705",
+          "definition": "enough for what you need",
+          "example": "One sandwich is sufficient for my lunch today.",
+          "thinkOfIt": "like a cup filled exactly to the line, not more, not less",
+          "synonyms": ["enough", "adequate", "plenty"],
+          "antonyms": ["insufficient", "lacking"],
+          "family": ["sufficiently", "sufficiency"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'more than enough'?", "options": ["abundant", "diminish", "scarce", "immense", "sufficient"], "correct": 0 },
+        { "question": "Which word means 'to get smaller'?", "options": ["abundant", "diminish", "immense", "sufficient", "scarce"], "correct": 1 },
+        { "question": "Which word means 'extremely big'?", "options": ["scarce", "sufficient", "immense", "diminish", "abundant"], "correct": 2 },
+        { "question": "Which word means 'hard to find, not much of it'?", "options": ["immense", "abundant", "sufficient", "scarce", "diminish"], "correct": 3 },
+        { "question": "Which word means 'enough for what you need'?", "options": ["diminish", "immense", "abundant", "scarce", "sufficient"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson3",
+      "title": "Lesson 3: Feelings & Emotions Words",
+      "theme": "Words about how people feel",
+      "words": [
+        {
+          "word": "reluctant",
+          "syllables": "re-luc-tant",
+          "emoji": "\uD83D\uDE15",
+          "definition": "not wanting to do something",
+          "example": "Jacob was reluctant to get out of bed on the cold morning.",
+          "thinkOfIt": "like dragging your feet when you're told to tidy your room",
+          "synonyms": ["unwilling", "hesitant", "uneager"],
+          "antonyms": ["eager", "willing"],
+          "family": ["reluctantly", "reluctance"]
+        },
+        {
+          "word": "content",
+          "syllables": "con-tent",
+          "emoji": "\uD83D\uDE0C",
+          "definition": "happy and calm with what you have",
+          "example": "She was content reading her book in the garden.",
+          "thinkOfIt": "like a cat curled up in a sunny spot",
+          "synonyms": ["happy", "satisfied", "pleased"],
+          "antonyms": ["unhappy", "discontent"],
+          "family": ["contentment", "contented"]
+        },
+        {
+          "word": "anxious",
+          "syllables": "anx-ious",
+          "emoji": "\uD83D\uDE30",
+          "definition": "worried and nervous about something",
+          "example": "He felt anxious before the spelling test.",
+          "thinkOfIt": "like butterflies fluttering around in your tummy",
+          "synonyms": ["worried", "nervous", "uneasy"],
+          "antonyms": ["calm", "relaxed"],
+          "family": ["anxiety", "anxiously"]
+        },
+        {
+          "word": "delighted",
+          "syllables": "de-light-ed",
+          "emoji": "\uD83E\uDD29",
+          "definition": "very happy about something",
+          "example": "Jacob was delighted when he got a new LEGO set.",
+          "thinkOfIt": "like the feeling when you open the perfect birthday present",
+          "synonyms": ["thrilled", "overjoyed", "pleased"],
+          "antonyms": ["disappointed", "upset"],
+          "family": ["delight", "delightful"]
+        },
+        {
+          "word": "furious",
+          "syllables": "fur-i-ous",
+          "emoji": "\uD83D\uDE21",
+          "definition": "extremely angry",
+          "example": "Mum was furious when the dog ate her dinner.",
+          "thinkOfIt": "like a kettle whistling at full steam",
+          "synonyms": ["angry", "enraged", "livid"],
+          "antonyms": ["calm", "pleased"],
+          "family": ["fury", "furiously"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'not wanting to do something'?", "options": ["reluctant", "content", "anxious", "delighted", "furious"], "correct": 0 },
+        { "question": "Which word means 'happy and calm with what you have'?", "options": ["furious", "content", "anxious", "delighted", "reluctant"], "correct": 1 },
+        { "question": "Which word means 'worried and nervous'?", "options": ["content", "delighted", "anxious", "reluctant", "furious"], "correct": 2 },
+        { "question": "Which word means 'very happy'?", "options": ["anxious", "furious", "reluctant", "delighted", "content"], "correct": 3 },
+        { "question": "Which word means 'extremely angry'?", "options": ["content", "delighted", "reluctant", "anxious", "furious"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson4",
+      "title": "Lesson 4: Actions & Movement Words",
+      "theme": "Words about how people and things move or act",
+      "words": [
+        {
+          "word": "dash",
+          "syllables": "dash",
+          "emoji": "\uD83C\uDFC3",
+          "definition": "to run very fast for a short distance",
+          "example": "He had to dash to catch the bus before it left.",
+          "thinkOfIt": "like sprinting across the playground when the bell rings",
+          "synonyms": ["sprint", "race", "rush"],
+          "antonyms": ["stroll", "dawdle"],
+          "family": ["dashing", "dashed"]
+        },
+        {
+          "word": "stumble",
+          "syllables": "stum-ble",
+          "emoji": "\uD83E\uDDCD",
+          "definition": "to trip or nearly fall over while walking",
+          "example": "I tried not to stumble over the toy car in the hallway.",
+          "thinkOfIt": "like tripping on a rug and catching yourself just in time",
+          "synonyms": ["trip", "stagger", "lurch"],
+          "antonyms": ["glide", "stride"],
+          "family": ["stumbling", "stumbled"]
+        },
+        {
+          "word": "hurl",
+          "syllables": "hurl",
+          "emoji": "\u26BE",
+          "definition": "to throw something hard and fast",
+          "example": "The pitcher will hurl the ball towards the batter.",
+          "thinkOfIt": "like chucking a snowball at a tree as hard as you can",
+          "synonyms": ["throw", "fling", "chuck"],
+          "antonyms": ["catch", "place"],
+          "family": ["hurling", "hurled"]
+        },
+        {
+          "word": "creep",
+          "syllables": "creep",
+          "emoji": "\uD83D\uDC63",
+          "definition": "to move slowly and quietly so nobody notices",
+          "example": "The cat began to creep up on the sleeping bird.",
+          "thinkOfIt": "like tiptoeing downstairs on Christmas morning",
+          "synonyms": ["sneak", "tiptoe", "slink"],
+          "antonyms": ["march", "stomp"],
+          "family": ["creeping", "crept"]
+        },
+        {
+          "word": "seize",
+          "syllables": "seize",
+          "emoji": "\u270A",
+          "definition": "to grab something quickly and firmly",
+          "example": "She had to seize the rope before it slipped away.",
+          "thinkOfIt": "like catching a balloon before it floats away",
+          "synonyms": ["grab", "snatch", "grasp"],
+          "antonyms": ["release", "drop"],
+          "family": ["seizing", "seized"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'to run very fast for a short distance'?", "options": ["dash", "stumble", "hurl", "creep", "seize"], "correct": 0 },
+        { "question": "Which word means 'to trip while walking'?", "options": ["dash", "stumble", "hurl", "creep", "seize"], "correct": 1 },
+        { "question": "Which word means 'to throw hard and fast'?", "options": ["dash", "stumble", "hurl", "creep", "seize"], "correct": 2 },
+        { "question": "Which word means 'to move slowly and quietly'?", "options": ["dash", "stumble", "hurl", "creep", "seize"], "correct": 3 },
+        { "question": "Which word means 'to grab something quickly and firmly'?", "options": ["dash", "stumble", "hurl", "creep", "seize"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson5",
+      "title": "Lesson 5: Describing People Words",
+      "theme": "Words that describe what people are like",
+      "words": [
+        {
+          "word": "meticulous",
+          "syllables": "me-tic-u-lous",
+          "emoji": "\uD83D\uDD0E",
+          "definition": "very careful and paying attention to every tiny detail",
+          "example": "Jacob is meticulous when he builds his LEGO models.",
+          "thinkOfIt": "like checking every single piece is straight before moving on",
+          "synonyms": ["careful", "thorough", "precise"],
+          "antonyms": ["careless", "sloppy"],
+          "family": ["meticulously", "meticulousness"]
+        },
+        {
+          "word": "generous",
+          "syllables": "gen-er-ous",
+          "emoji": "\uD83C\uDF81",
+          "definition": "willing to share and give lots to others",
+          "example": "Grandma is generous and always shares her biscuits.",
+          "thinkOfIt": "like always offering the biggest slice of cake to a friend",
+          "synonyms": ["giving", "kind", "charitable"],
+          "antonyms": ["selfish", "stingy"],
+          "family": ["generosity", "generously"]
+        },
+        {
+          "word": "timid",
+          "syllables": "tim-id",
+          "emoji": "\uD83D\uDE4A",
+          "definition": "shy and easily frightened",
+          "example": "The timid puppy hid behind the sofa when visitors arrived.",
+          "thinkOfIt": "like a mouse peeping out from behind a cupboard",
+          "synonyms": ["shy", "nervous", "fearful"],
+          "antonyms": ["bold", "brave"],
+          "family": ["timidly", "timidity"]
+        },
+        {
+          "word": "stubborn",
+          "syllables": "stub-born",
+          "emoji": "\uD83D\uDE24",
+          "definition": "not willing to change your mind",
+          "example": "My brother is stubborn and always wants the blue cup.",
+          "thinkOfIt": "like a donkey that won't budge no matter how hard you pull",
+          "synonyms": ["determined", "obstinate", "firm"],
+          "antonyms": ["flexible", "agreeable"],
+          "family": ["stubbornly", "stubbornness"]
+        },
+        {
+          "word": "cunning",
+          "syllables": "cun-ning",
+          "emoji": "\uD83E\uDD8A",
+          "definition": "clever in a sneaky, tricky way",
+          "example": "The cunning fox tricked the farmer and took the chicken.",
+          "thinkOfIt": "like a fox planning a clever plan to get dinner",
+          "synonyms": ["crafty", "sly", "clever"],
+          "antonyms": ["honest", "straightforward"],
+          "family": ["cunningly"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'very careful with every tiny detail'?", "options": ["meticulous", "generous", "timid", "stubborn", "cunning"], "correct": 0 },
+        { "question": "Which word means 'willing to share and give'?", "options": ["meticulous", "generous", "timid", "stubborn", "cunning"], "correct": 1 },
+        { "question": "Which word means 'shy and easily frightened'?", "options": ["meticulous", "generous", "timid", "stubborn", "cunning"], "correct": 2 },
+        { "question": "Which word means 'not willing to change your mind'?", "options": ["meticulous", "generous", "timid", "stubborn", "cunning"], "correct": 3 },
+        { "question": "Which word means 'clever in a sneaky way'?", "options": ["meticulous", "generous", "timid", "stubborn", "cunning"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson6",
+      "title": "Lesson 6: Time Words",
+      "theme": "Words about when things happen",
+      "words": [
+        {
+          "word": "ancient",
+          "syllables": "an-cient",
+          "emoji": "\uD83C\uDFDB\uFE0F",
+          "definition": "extremely old, from a very long time ago",
+          "example": "We learned about ancient Egypt and the pyramids in school.",
+          "thinkOfIt": "like a fossil that's been in the ground for millions of years",
+          "synonyms": ["old", "historic", "antique"],
+          "antonyms": ["modern", "new"],
+          "family": ["ancients", "anciently"]
+        },
+        {
+          "word": "brief",
+          "syllables": "brief",
+          "emoji": "\u23F1\uFE0F",
+          "definition": "lasting only a short time",
+          "example": "We had a brief chat before class started.",
+          "thinkOfIt": "like a blink, over before you notice",
+          "synonyms": ["short", "quick", "fleeting"],
+          "antonyms": ["long", "lengthy"],
+          "family": ["briefly", "briefness"]
+        },
+        {
+          "word": "eventual",
+          "syllables": "e-ven-tu-al",
+          "emoji": "\uD83C\uDFC1",
+          "definition": "happening in the end, after a long time",
+          "example": "After many tries, her eventual victory made her smile.",
+          "thinkOfIt": "like finally reaching the end of a really long level",
+          "synonyms": ["final", "ultimate", "resulting"],
+          "antonyms": ["initial", "immediate"],
+          "family": ["eventually"]
+        },
+        {
+          "word": "prompt",
+          "syllables": "prompt",
+          "emoji": "\u26A1",
+          "definition": "done quickly without delay",
+          "example": "She sent a prompt reply to my text within a minute.",
+          "thinkOfIt": "like answering the door as soon as the bell rings",
+          "synonyms": ["quick", "immediate", "swift"],
+          "antonyms": ["late", "delayed"],
+          "family": ["promptly", "promptness"]
+        },
+        {
+          "word": "frequent",
+          "syllables": "fre-quent",
+          "emoji": "\uD83D\uDD01",
+          "definition": "happening often, again and again",
+          "example": "Jacob's frequent visits to the library helped him read lots of books.",
+          "thinkOfIt": "like a bus that comes every few minutes",
+          "synonyms": ["regular", "repeated", "constant"],
+          "antonyms": ["rare", "occasional"],
+          "family": ["frequently", "frequency"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'extremely old'?", "options": ["ancient", "brief", "eventual", "prompt", "frequent"], "correct": 0 },
+        { "question": "Which word means 'lasting only a short time'?", "options": ["ancient", "brief", "eventual", "prompt", "frequent"], "correct": 1 },
+        { "question": "Which word means 'happening in the end'?", "options": ["ancient", "brief", "eventual", "prompt", "frequent"], "correct": 2 },
+        { "question": "Which word means 'done quickly without delay'?", "options": ["ancient", "brief", "eventual", "prompt", "frequent"], "correct": 3 },
+        { "question": "Which word means 'happening often'?", "options": ["ancient", "brief", "eventual", "prompt", "frequent"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson7",
+      "title": "Lesson 7: Cause & Effect Words",
+      "theme": "Words about what makes things happen",
+      "words": [
+        {
+          "word": "devastating",
+          "syllables": "dev-a-sta-ting",
+          "emoji": "\uD83C\uDF2A\uFE0F",
+          "definition": "causing terrible damage or sadness",
+          "example": "The devastating storm knocked down trees all along the street.",
+          "thinkOfIt": "like a tornado leaving a flattened trail behind it",
+          "synonyms": ["damaging", "destructive", "crushing"],
+          "antonyms": ["harmless", "helpful"],
+          "family": ["devastate", "devastation"]
+        },
+        {
+          "word": "influence",
+          "syllables": "in-flu-ence",
+          "emoji": "\uD83E\uDDF2",
+          "definition": "the power to change how someone thinks or acts",
+          "example": "Jacob's teacher has a good influence on his reading habits.",
+          "thinkOfIt": "like a magnet pulling metal towards it",
+          "synonyms": ["effect", "impact", "sway"],
+          "antonyms": [],
+          "family": ["influential", "influenced"]
+        },
+        {
+          "word": "trigger",
+          "syllables": "trig-ger",
+          "emoji": "\uD83C\uDFAF",
+          "definition": "to make something happen straight away",
+          "example": "Loud noises can trigger a fire alarm to start ringing.",
+          "thinkOfIt": "like pressing a button that instantly starts a machine",
+          "synonyms": ["start", "cause", "spark"],
+          "antonyms": ["prevent", "stop"],
+          "family": ["triggered", "triggering"]
+        },
+        {
+          "word": "consequence",
+          "syllables": "con-se-quence",
+          "emoji": "\u2696\uFE0F",
+          "definition": "something that happens as a result of something else",
+          "example": "The consequence of staying up late is being tired the next day.",
+          "thinkOfIt": "like dominoes falling: push one and the rest follow",
+          "synonyms": ["result", "outcome", "effect"],
+          "antonyms": ["cause"],
+          "family": ["consequences", "consequential"]
+        },
+        {
+          "word": "prevent",
+          "syllables": "pre-vent",
+          "emoji": "\uD83D\uDEAB",
+          "definition": "to stop something from happening",
+          "example": "Wearing a helmet can prevent a bump on the head.",
+          "thinkOfIt": "like putting up an umbrella before the rain starts",
+          "synonyms": ["stop", "avoid", "block"],
+          "antonyms": ["allow", "cause"],
+          "family": ["prevention", "preventing"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'causing terrible damage'?", "options": ["devastating", "influence", "trigger", "consequence", "prevent"], "correct": 0 },
+        { "question": "Which word means 'the power to change how someone acts'?", "options": ["devastating", "influence", "trigger", "consequence", "prevent"], "correct": 1 },
+        { "question": "Which word means 'to make something happen straight away'?", "options": ["devastating", "influence", "trigger", "consequence", "prevent"], "correct": 2 },
+        { "question": "Which word means 'something that happens as a result'?", "options": ["devastating", "influence", "trigger", "consequence", "prevent"], "correct": 3 },
+        { "question": "Which word means 'to stop something from happening'?", "options": ["devastating", "influence", "trigger", "consequence", "prevent"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson8",
+      "title": "Lesson 8: Formal & Fancy Words",
+      "theme": "Grown-up words that mean simple things",
+      "words": [
+        {
+          "word": "elaborate",
+          "syllables": "e-lab-o-rate",
+          "emoji": "\uD83C\uDFA8",
+          "definition": "having lots of detail and carefully planned parts",
+          "example": "She drew an elaborate map with every room in the castle.",
+          "thinkOfIt": "like a birthday cake with loads of icing, sprinkles and decorations",
+          "synonyms": ["detailed", "fancy", "complex"],
+          "antonyms": ["simple", "plain"],
+          "family": ["elaboration", "elaborately"]
+        },
+        {
+          "word": "commence",
+          "syllables": "com-mence",
+          "emoji": "\uD83D\uDEA6",
+          "definition": "to start or begin something",
+          "example": "The lesson will commence as soon as everyone sits down.",
+          "thinkOfIt": "like the starter flag dropping at the start of a race",
+          "synonyms": ["start", "begin", "launch"],
+          "antonyms": ["end", "finish"],
+          "family": ["commenced", "commencement"]
+        },
+        {
+          "word": "purchase",
+          "syllables": "pur-chase",
+          "emoji": "\uD83D\uDED2",
+          "definition": "to buy something",
+          "example": "Dad went to purchase some milk from the shop.",
+          "thinkOfIt": "like swapping money for something you want in a shop",
+          "synonyms": ["buy", "acquire", "get"],
+          "antonyms": ["sell", "return"],
+          "family": ["purchased", "purchasing"]
+        },
+        {
+          "word": "reside",
+          "syllables": "re-side",
+          "emoji": "\uD83C\uDFE0",
+          "definition": "to live in a place",
+          "example": "We reside in a house near the park.",
+          "thinkOfIt": "like marking your house on a map: that's where you reside",
+          "synonyms": ["live", "stay", "dwell"],
+          "antonyms": ["leave", "move"],
+          "family": ["resident", "residence"]
+        },
+        {
+          "word": "observe",
+          "syllables": "ob-serve",
+          "emoji": "\uD83D\uDC40",
+          "definition": "to watch something carefully",
+          "example": "The scientist will observe the ants for an hour.",
+          "thinkOfIt": "like a detective watching everything that happens",
+          "synonyms": ["watch", "notice", "see"],
+          "antonyms": ["ignore", "miss"],
+          "family": ["observation", "observer"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'having lots of detail'?", "options": ["elaborate", "commence", "purchase", "reside", "observe"], "correct": 0 },
+        { "question": "Which word means 'to start'?", "options": ["elaborate", "commence", "purchase", "reside", "observe"], "correct": 1 },
+        { "question": "Which word means 'to buy something'?", "options": ["elaborate", "commence", "purchase", "reside", "observe"], "correct": 2 },
+        { "question": "Which word means 'to live in a place'?", "options": ["elaborate", "commence", "purchase", "reside", "observe"], "correct": 3 },
+        { "question": "Which word means 'to watch carefully'?", "options": ["elaborate", "commence", "purchase", "reside", "observe"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson9",
+      "title": "Lesson 9: Problem & Solution Words",
+      "theme": "Words about tricky situations and fixing them",
+      "words": [
+        {
+          "word": "dilemma",
+          "syllables": "di-lem-ma",
+          "emoji": "\uD83E\uDD2F",
+          "definition": "a tough choice where both options are hard",
+          "example": "I had a dilemma: watch the match or finish my homework.",
+          "thinkOfIt": "like choosing between two ice cream flavours you both love",
+          "synonyms": ["problem", "puzzle", "predicament"],
+          "antonyms": ["solution"],
+          "family": ["dilemmas"]
+        },
+        {
+          "word": "resolve",
+          "syllables": "re-solve",
+          "emoji": "\uD83E\uDD1D",
+          "definition": "to find an answer to a problem",
+          "example": "We had to resolve the argument about whose turn it was.",
+          "thinkOfIt": "like fitting the last piece of a jigsaw puzzle",
+          "synonyms": ["solve", "settle", "fix"],
+          "antonyms": ["worsen", "start"],
+          "family": ["resolved", "resolution"]
+        },
+        {
+          "word": "obstacle",
+          "syllables": "ob-sta-cle",
+          "emoji": "\uD83D\uDEA7",
+          "definition": "something in the way that stops you",
+          "example": "The fallen tree was an obstacle on the running path.",
+          "thinkOfIt": "like a wall blocking the door you want to walk through",
+          "synonyms": ["barrier", "block", "hurdle"],
+          "antonyms": ["help", "opening"],
+          "family": ["obstacles"]
+        },
+        {
+          "word": "overcome",
+          "syllables": "o-ver-come",
+          "emoji": "\uD83C\uDFC6",
+          "definition": "to beat a problem or difficulty",
+          "example": "Jacob worked hard to overcome his fear of swimming.",
+          "thinkOfIt": "like climbing over a wall that was blocking your way",
+          "synonyms": ["beat", "conquer", "defeat"],
+          "antonyms": ["fail", "give up"],
+          "family": ["overcame", "overcoming"]
+        },
+        {
+          "word": "strategy",
+          "syllables": "strat-e-gy",
+          "emoji": "\uD83D\uDCCB",
+          "definition": "a plan for how to do something well",
+          "example": "My strategy for the test is to read every question twice.",
+          "thinkOfIt": "like the plan you use to win at chess",
+          "synonyms": ["plan", "tactic", "method"],
+          "antonyms": ["guess"],
+          "family": ["strategic", "strategies"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'a tough choice where both options are hard'?", "options": ["dilemma", "resolve", "obstacle", "overcome", "strategy"], "correct": 0 },
+        { "question": "Which word means 'to find an answer to a problem'?", "options": ["dilemma", "resolve", "obstacle", "overcome", "strategy"], "correct": 1 },
+        { "question": "Which word means 'something in the way'?", "options": ["dilemma", "resolve", "obstacle", "overcome", "strategy"], "correct": 2 },
+        { "question": "Which word means 'to beat a problem'?", "options": ["dilemma", "resolve", "obstacle", "overcome", "strategy"], "correct": 3 },
+        { "question": "Which word means 'a plan for how to do something'?", "options": ["dilemma", "resolve", "obstacle", "overcome", "strategy"], "correct": 4 }
+      ]
+    },
+    {
+      "id": "lesson10",
+      "title": "Lesson 10: Positive & Negative Words",
+      "theme": "Words for good and not-so-good things",
+      "words": [
+        {
+          "word": "resolute",
+          "syllables": "res-o-lute",
+          "emoji": "\uD83D\uDCAA",
+          "definition": "very determined and not giving up",
+          "example": "She was resolute about finishing the race, even with a sore knee.",
+          "thinkOfIt": "like a tree standing firm in a strong wind",
+          "synonyms": ["determined", "firm", "steadfast"],
+          "antonyms": ["uncertain", "weak"],
+          "family": ["resolutely", "resolution"]
+        },
+        {
+          "word": "vigilant",
+          "syllables": "vig-i-lant",
+          "emoji": "\uD83D\uDC41\uFE0F",
+          "definition": "watching carefully for trouble or danger",
+          "example": "The lifeguard was vigilant as he watched the swimmers.",
+          "thinkOfIt": "like an owl keeping a close eye on the forest at night",
+          "synonyms": ["alert", "watchful", "observant"],
+          "antonyms": ["careless", "distracted"],
+          "family": ["vigilance", "vigilantly"]
+        },
+        {
+          "word": "feeble",
+          "syllables": "fee-ble",
+          "emoji": "\uD83E\uDEB6",
+          "definition": "weak and without much strength",
+          "example": "His feeble attempt to lift the box made everyone laugh kindly.",
+          "thinkOfIt": "like a twig that snaps as soon as you bend it",
+          "synonyms": ["weak", "frail", "flimsy"],
+          "antonyms": ["strong", "powerful"],
+          "family": ["feebly", "feebleness"]
+        },
+        {
+          "word": "splendid",
+          "syllables": "splen-did",
+          "emoji": "\u2728",
+          "definition": "very impressive and wonderful",
+          "example": "We had a splendid day at the seaside with ice cream and sandcastles.",
+          "thinkOfIt": "like fireworks lighting up the whole sky",
+          "synonyms": ["wonderful", "excellent", "magnificent"],
+          "antonyms": ["awful", "dreadful"],
+          "family": ["splendidly", "splendour"]
+        },
+        {
+          "word": "dreadful",
+          "syllables": "dread-ful",
+          "emoji": "\uD83D\uDE16",
+          "definition": "very bad or unpleasant",
+          "example": "The weather was dreadful, so we stayed inside all day.",
+          "thinkOfIt": "like a rainy day when your shoes get soaked",
+          "synonyms": ["awful", "terrible", "horrible"],
+          "antonyms": ["wonderful", "splendid"],
+          "family": ["dreadfully", "dread"]
+        }
+      ],
+      "quickCheck": [
+        { "question": "Which word means 'very determined and not giving up'?", "options": ["resolute", "vigilant", "feeble", "splendid", "dreadful"], "correct": 0 },
+        { "question": "Which word means 'watching carefully for danger'?", "options": ["resolute", "vigilant", "feeble", "splendid", "dreadful"], "correct": 1 },
+        { "question": "Which word means 'weak and without much strength'?", "options": ["resolute", "vigilant", "feeble", "splendid", "dreadful"], "correct": 2 },
+        { "question": "Which word means 'very impressive and wonderful'?", "options": ["resolute", "vigilant", "feeble", "splendid", "dreadful"], "correct": 3 },
+        { "question": "Which word means 'very bad or unpleasant'?", "options": ["resolute", "vigilant", "feeble", "splendid", "dreadful"], "correct": 4 }
+      ]
+    }
+  ]
+}

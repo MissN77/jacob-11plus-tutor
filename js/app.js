@@ -7,6 +7,7 @@ const app = document.getElementById('app');
 // Section module map - sections that have been built get an entry here.
 // Dynamic imports keep the initial bundle small.
 const SECTION_MODULES = {
+  'learn-first':         () => import('./sections/learn-first.js'),
   'vocabulary':          () => import('./sections/vocabulary.js'),
   'inference':           () => import('./sections/inference.js'),
   'spelling':            () => import('./sections/spelling.js'),
