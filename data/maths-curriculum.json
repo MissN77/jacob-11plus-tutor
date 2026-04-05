@@ -1,0 +1,801 @@
+{
+  "strands": [
+    {
+      "id": "place-value",
+      "name": "Number & Place Value",
+      "icon": "🔢",
+      "level": "Year 4",
+      "available": true,
+      "description": "Reading, writing, comparing and rounding numbers.",
+      "subtopics": [
+        {
+          "id": "place-value-intro",
+          "name": "Place value up to 10,000",
+          "teach": {
+            "title": "Place value",
+            "plain": "Place value tells you how much each digit is worth. The same digit means something different depending on where it sits.",
+            "rules": [
+              "Reading right to left: ones, tens, hundreds, thousands, ten thousands.",
+              "A 4 in the ones column is worth 4. A 4 in the hundreds column is worth 400.",
+              "Zeros are placeholders. They keep other digits in the right column."
+            ],
+            "example": "In 3,472 the 4 is in the hundreds column, so it means 400. The 3 is in the thousands column, so it means 3,000.",
+            "tryThis": "What is the value of the 7 in 8,741?",
+            "tryAnswer": "700 (the 7 is in the hundreds column)"
+          },
+          "workedExample": {
+            "question": "Write the value of each digit in 5,283.",
+            "steps": [
+              "Start at the right-hand digit: 3 is in the ones column, so it means 3.",
+              "Next is 8, in the tens column, so it means 80.",
+              "Next is 2, in the hundreds column, so it means 200.",
+              "Last is 5, in the thousands column, so it means 5,000."
+            ],
+            "answer": "5,000 + 200 + 80 + 3"
+          },
+          "practice": [
+            { "question": "What is the value of the 6 in 4,632?", "options": ["6", "60", "600", "6,000"], "correct": 2, "workingOut": "The 6 sits in the hundreds column, so it is worth 600." },
+            { "question": "What is the value of the 9 in 9,214?", "options": ["9", "900", "9,000", "90"], "correct": 2, "workingOut": "The 9 is in the thousands column, so it is worth 9,000." },
+            { "question": "Which number has a 5 worth 50?", "options": ["5,214", "1,572", "2,051", "8,125"], "correct": 2, "workingOut": "In 2,051 the 5 is in the tens column, so it means 50." },
+            { "question": "In 7,408, what is the value of the 4?", "options": ["4", "40", "400", "4,000"], "correct": 2, "workingOut": "The 4 sits in the hundreds column, so it is worth 400." },
+            { "question": "Which number is made from 3,000 + 600 + 20 + 5?", "options": ["3,652", "3,625", "3,265", "3,560"], "correct": 1, "workingOut": "3,000 + 600 + 20 + 5 = 3,625." },
+            { "question": "What is the value of the 0 in 5,031?", "options": ["0", "100", "10", "1,000"], "correct": 0, "workingOut": "The 0 is a placeholder in the hundreds column. It holds the column but is worth nothing." }
+          ]
+        },
+        {
+          "id": "compare-order",
+          "name": "Comparing & ordering numbers",
+          "teach": {
+            "title": "Comparing numbers",
+            "plain": "To compare two numbers, look at the digits from the left. The first digit that is different tells you which number is bigger.",
+            "rules": [
+              "First, count the digits. More digits = bigger number.",
+              "If both numbers have the same number of digits, compare from the left.",
+              "Use < for 'less than' and > for 'greater than'. The open mouth points to the bigger number."
+            ],
+            "example": "Compare 4,523 and 4,498. Same digits (4). Next: 5 is bigger than 4. So 4,523 > 4,498.",
+            "tryThis": "Which is bigger: 3,207 or 3,270?",
+            "tryAnswer": "3,270 (hundreds digit 2 vs tens digit 0, the hundreds differ: 2 > 0)"
+          },
+          "workedExample": {
+            "question": "Put these numbers in order, smallest first: 2,341, 2,314, 2,431, 2,143",
+            "steps": [
+              "All start with 2 (thousands).",
+              "Compare hundreds: 2,143 has 1; the other three have 3 or 4.",
+              "2,143 is smallest.",
+              "Of the others, 2,314 and 2,341 have hundreds digit 3; 2,431 has 4, so it is largest.",
+              "Between 2,314 and 2,341 compare tens: 1 < 4, so 2,314 < 2,341."
+            ],
+            "answer": "2,143, 2,314, 2,341, 2,431"
+          },
+          "practice": [
+            { "question": "Which symbol goes in the box? 4,523 □ 4,532", "options": ["<", ">", "=", "None"], "correct": 0, "workingOut": "Tens: 2 < 3. So 4,523 is less than 4,532." },
+            { "question": "Which is the largest?", "options": ["3,409", "3,490", "3,904", "3,049"], "correct": 2, "workingOut": "Hundreds digits: 4, 4, 9, 0. Largest hundreds is 9. So 3,904." },
+            { "question": "Which is the smallest?", "options": ["1,234", "1,324", "1,243", "1,432"], "correct": 0, "workingOut": "All start 1. Hundreds: 2, 3, 2, 4. Two start 1,2. Tens: 3 vs 4. 1,234 is smallest." },
+            { "question": "Order smallest first: 567, 657, 576. Which is in the middle?", "options": ["567", "576", "657", "None"], "correct": 1, "workingOut": "In order: 567, 576, 657. The middle one is 576." },
+            { "question": "Which statement is true?", "options": ["1,099 > 1,100", "1,099 < 1,100", "1,099 = 1,100", "Cannot tell"], "correct": 1, "workingOut": "1,100 is bigger because the hundreds digit is 1 vs 0." },
+            { "question": "Which is the largest?", "options": ["9,087", "9,807", "9,708", "9,078"], "correct": 1, "workingOut": "Hundreds: 0, 8, 7, 0. 8 is biggest, so 9,807." }
+          ]
+        },
+        {
+          "id": "rounding",
+          "name": "Rounding to 10, 100, 1000",
+          "teach": {
+            "title": "Rounding numbers",
+            "plain": "Rounding means making a number simpler. We round to the nearest 10, 100 or 1,000 so numbers are easier to work with.",
+            "rules": [
+              "Find the digit to the RIGHT of the place you are rounding to.",
+              "If it is 5 or more, round UP.",
+              "If it is 4 or less, round DOWN.",
+              "All digits after the rounded place become zero."
+            ],
+            "example": "Round 347 to the nearest 100. Look at the tens digit (4). 4 is less than 5, so round DOWN to 300.",
+            "tryThis": "Round 872 to the nearest 100.",
+            "tryAnswer": "900 (tens digit is 7, so round up)"
+          },
+          "workedExample": {
+            "question": "Round 4,650 to the nearest 1,000.",
+            "steps": [
+              "We are rounding to the nearest 1,000, so look at the hundreds digit.",
+              "The hundreds digit is 6.",
+              "6 is 5 or more, so round UP.",
+              "The thousands digit 4 becomes 5, and all digits after become zero."
+            ],
+            "answer": "5,000"
+          },
+          "practice": [
+            { "question": "Round 67 to the nearest 10.", "options": ["60", "70", "65", "80"], "correct": 1, "workingOut": "Ones digit is 7, which is 5 or more. Round up to 70." },
+            { "question": "Round 432 to the nearest 100.", "options": ["400", "500", "430", "440"], "correct": 0, "workingOut": "Tens digit is 3, less than 5. Round down to 400." },
+            { "question": "Round 2,750 to the nearest 1,000.", "options": ["2,000", "3,000", "2,700", "2,800"], "correct": 1, "workingOut": "Hundreds digit is 7, so round up to 3,000." },
+            { "question": "Round 849 to the nearest 10.", "options": ["840", "850", "800", "900"], "correct": 1, "workingOut": "Ones digit is 9, so round up to 850." },
+            { "question": "Round 6,320 to the nearest 100.", "options": ["6,000", "6,300", "6,400", "6,320"], "correct": 1, "workingOut": "Tens digit is 2, less than 5. Round down to 6,300." },
+            { "question": "Round 9,499 to the nearest 1,000.", "options": ["9,000", "10,000", "9,500", "9,400"], "correct": 0, "workingOut": "Hundreds digit is 4, less than 5. Round down to 9,000." },
+            { "question": "Round 5,551 to the nearest 100.", "options": ["5,500", "5,600", "5,550", "6,000"], "correct": 1, "workingOut": "For nearest 100, look at the tens digit. Tens digit is 5, so round up to 5,600." }
+          ]
+        },
+        {
+          "id": "negatives",
+          "name": "Negative numbers",
+          "teach": {
+            "title": "Negative numbers",
+            "plain": "Negative numbers are less than zero. We see them in temperatures, money owed and going below ground floor.",
+            "rules": [
+              "Numbers get bigger going right on a number line.",
+              "-5 is SMALLER than -2 (further from zero).",
+              "To go from a negative to a positive, count up through zero.",
+              "The difference between two temperatures is how many steps between them."
+            ],
+            "example": "The temperature was 4°C, then dropped by 7°C. 4 - 7 = -3°C. Count back from 4 past zero: 4, 3, 2, 1, 0, -1, -2, -3.",
+            "tryThis": "The temperature is -2°C. It rises by 5°C. What is the new temperature?",
+            "tryAnswer": "3°C (count up 5 from -2: -1, 0, 1, 2, 3)"
+          },
+          "workedExample": {
+            "question": "The temperature at midnight was 3°C. By 5am it had dropped by 8°C. What was the new temperature?",
+            "steps": [
+              "Start at 3.",
+              "We need to go DOWN by 8.",
+              "3 - 8 means go back 8 steps on the number line.",
+              "3 → 0 is 3 steps. We still need 5 more steps BELOW zero.",
+              "5 steps below zero is -5."
+            ],
+            "answer": "-5°C"
+          },
+          "practice": [
+            { "question": "11°C drops by 17°C. What is the new temperature?", "options": ["-6°C", "6°C", "-8°C", "28°C"], "correct": 0, "workingOut": "11 - 17 = -6°C. Go back 11 to reach 0, then 6 more below zero." },
+            { "question": "What is the difference between -3°C and 6°C?", "options": ["3°C", "6°C", "9°C", "-9°C"], "correct": 2, "workingOut": "From -3 to 0 is 3 steps. From 0 to 6 is 6 steps. Total: 9°C." },
+            { "question": "Which is colder?", "options": ["-2°C", "-7°C", "0°C", "3°C"], "correct": 1, "workingOut": "-7 is further below zero, so it is colder." },
+            { "question": "Order from smallest: -4, 2, -1, 0, 3. Which is smallest?", "options": ["-4", "-1", "0", "2"], "correct": 0, "workingOut": "-4 is furthest below zero, so it is smallest." },
+            { "question": "The temperature is -5°C. It rises by 9°C. What is it now?", "options": ["4°C", "-4°C", "14°C", "-14°C"], "correct": 0, "workingOut": "-5 + 9: go up 5 to 0, then 4 more to 4°C." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "four-operations",
+      "name": "Four Operations",
+      "icon": "➕",
+      "level": "Year 4",
+      "available": true,
+      "description": "Adding, subtracting, multiplying and dividing with bigger numbers.",
+      "subtopics": [
+        {
+          "id": "column-addition",
+          "name": "Column addition",
+          "teach": {
+            "title": "Column addition",
+            "plain": "Column addition lines up the digits under each other so you can add one column at a time.",
+            "rules": [
+              "Line up the ones, tens, hundreds and thousands columns.",
+              "Start adding from the RIGHT (ones first).",
+              "If a column adds to 10 or more, carry the tens digit to the next column.",
+              "Write the carried digit small under the next column."
+            ],
+            "example": "3,456 + 2,789. Ones: 6+9=15, write 5, carry 1. Tens: 5+8+1=14, write 4, carry 1. Hundreds: 4+7+1=12, write 2, carry 1. Thousands: 3+2+1=6. Answer: 6,245.",
+            "tryThis": "Add 1,234 + 567.",
+            "tryAnswer": "1,801"
+          },
+          "workedExample": {
+            "question": "Work out 15,678 + 9,432 using column addition.",
+            "steps": [
+              "Line up: 15,678 above 9,432 (line up the ones).",
+              "Ones: 8 + 2 = 10. Write 0, carry 1.",
+              "Tens: 7 + 3 + 1 = 11. Write 1, carry 1.",
+              "Hundreds: 6 + 4 + 1 = 11. Write 1, carry 1.",
+              "Thousands: 5 + 9 + 1 = 15. Write 5, carry 1.",
+              "Ten thousands: 1 + 1 = 2. Write 2."
+            ],
+            "answer": "25,110"
+          },
+          "practice": [
+            { "question": "3,456 + 2,789 = ?", "options": ["6,245", "5,245", "6,145", "6,255"], "correct": 0, "workingOut": "Line up and add: ones 6+9=15 carry 1; tens 5+8+1=14 carry 1; hundreds 4+7+1=12 carry 1; thousands 3+2+1=6. Answer 6,245." },
+            { "question": "234 + 567 = ?", "options": ["791", "801", "811", "891"], "correct": 1, "workingOut": "4+7=11 carry 1; 3+6+1=10 carry 1; 2+5+1=8. Answer 801." },
+            { "question": "4,567 + 3,298 + 1,456 = ?", "options": ["9,221", "9,321", "9,421", "9,311"], "correct": 1, "workingOut": "4,567+3,298 = 7,865. Then 7,865+1,456 = 9,321." },
+            { "question": "Year 5 has 156 pupils and Year 6 has 143. How many altogether?", "options": ["289", "299", "309", "319"], "correct": 1, "workingOut": "156 + 143. Ones 6+3=9; tens 5+4=9; hundreds 1+1=2. Answer 299 pupils." },
+            { "question": "A library has 3,456 fiction and 2,789 non-fiction books. How many books in total?", "options": ["6,145", "6,245", "5,245", "6,255"], "correct": 1, "workingOut": "3,456 + 2,789 = 6,245 books." },
+            { "question": "78 + 145 + 22 = ?", "options": ["235", "240", "245", "255"], "correct": 2, "workingOut": "78+22=100 (easy pair first). Then 100+145=245." },
+            { "question": "A cinema sold 1,234 on Friday, 1,567 on Saturday and 1,098 on Sunday. Total tickets?", "options": ["3,799", "3,899", "3,999", "3,879"], "correct": 1, "workingOut": "1,234+1,567=2,801. Then 2,801+1,098=3,899." }
+          ]
+        },
+        {
+          "id": "column-subtraction",
+          "name": "Column subtraction",
+          "teach": {
+            "title": "Column subtraction",
+            "plain": "Column subtraction lines up the digits so you can take away one column at a time. When you can't take a bigger digit from a smaller one, you borrow from the next column.",
+            "rules": [
+              "Line up the columns (ones under ones, tens under tens).",
+              "Start from the RIGHT (ones first).",
+              "If the top digit is smaller than the bottom, borrow 1 from the next column.",
+              "Borrowing from tens means the top ones digit gets 10 extra."
+            ],
+            "example": "52 - 38. Ones: 2 - 8 can't do. Borrow 1 from tens: 12 - 8 = 4. Tens: 4 - 3 = 1. Answer: 14.",
+            "tryThis": "Work out 1,000 - 347.",
+            "tryAnswer": "653"
+          },
+          "workedExample": {
+            "question": "Work out 8,234 - 3,567.",
+            "steps": [
+              "Line up the columns.",
+              "Ones: 4 - 7 can't do. Borrow from tens. 3 becomes 2, ones becomes 14. 14 - 7 = 7.",
+              "Tens: 2 - 6 can't do. Borrow from hundreds. 2 becomes 1, tens becomes 12. 12 - 6 = 6.",
+              "Hundreds: 1 - 5 can't do. Borrow from thousands. 8 becomes 7, hundreds becomes 11. 11 - 5 = 6.",
+              "Thousands: 7 - 3 = 4."
+            ],
+            "answer": "4,667"
+          },
+          "practice": [
+            { "question": "156 - 89 = ?", "options": ["57", "67", "77", "87"], "correct": 1, "workingOut": "Borrow: ones 16-9=7; tens 4-8 borrow → 14-8=6; hundreds 0. Answer 67." },
+            { "question": "1,000 - 347 = ?", "options": ["553", "653", "663", "753"], "correct": 1, "workingOut": "Borrow across zeros. 1,000 - 347 = 653." },
+            { "question": "20,000 - 8,756 = ?", "options": ["11,234", "11,244", "11,344", "12,244"], "correct": 1, "workingOut": "20,000 - 8,756 = 11,244." },
+            { "question": "A shop had 5,000 footballs. They sold 2,847. How many are left?", "options": ["2,153", "2,253", "2,163", "3,153"], "correct": 0, "workingOut": "5,000 - 2,847 = 2,153." },
+            { "question": "A farmer had 8,000 apples. He sold 3,245. How many left?", "options": ["4,755", "4,855", "4,745", "5,755"], "correct": 0, "workingOut": "8,000 - 3,245 = 4,755 apples." },
+            { "question": "The museum had 1,567 visitors on Tuesday and 1,234 on Monday. How many MORE on Tuesday?", "options": ["323", "333", "343", "433"], "correct": 1, "workingOut": "1,567 - 1,234 = 333 people." },
+            { "question": "School needs £5,000. They have £2,750. How much more to raise?", "options": ["£2,150", "£2,250", "£2,350", "£3,250"], "correct": 1, "workingOut": "£5,000 - £2,750 = £2,250." }
+          ]
+        },
+        {
+          "id": "times-tables",
+          "name": "Times tables & multiplication",
+          "teach": {
+            "title": "Times tables",
+            "plain": "Times tables are the building blocks of multiplication. Knowing them by heart makes every other bit of maths quicker.",
+            "rules": [
+              "Multiplying is repeated adding. 4 × 3 means 4 + 4 + 4.",
+              "Order doesn't matter: 3 × 4 = 4 × 3.",
+              "To multiply by 10, add a zero to the end.",
+              "To multiply by 100, add two zeros."
+            ],
+            "example": "7 × 8 = 56. Check: 7+7+7+7+7+7+7+7 = 56.",
+            "tryThis": "What is 6 × 9?",
+            "tryAnswer": "54"
+          },
+          "workedExample": {
+            "question": "Work out 6 × 8 step by step.",
+            "steps": [
+              "6 × 8 is 'six lots of eight' OR 'eight lots of six' — same answer.",
+              "Use what you know: 5 × 8 = 40.",
+              "Add one more 8: 40 + 8 = 48.",
+              "So 6 × 8 = 48."
+            ],
+            "answer": "48"
+          },
+          "practice": [
+            { "question": "7 × 6 = ?", "options": ["36", "42", "48", "49"], "correct": 1, "workingOut": "7 × 6 = 42." },
+            { "question": "8 × 9 = ?", "options": ["63", "72", "81", "64"], "correct": 1, "workingOut": "8 × 9 = 72." },
+            { "question": "12 × 4 = ?", "options": ["36", "44", "48", "52"], "correct": 2, "workingOut": "12 × 4 = 48 (or 10×4 + 2×4 = 40+8)." },
+            { "question": "11 × 11 = ?", "options": ["111", "121", "131", "22"], "correct": 1, "workingOut": "11 × 11 = 121." },
+            { "question": "9 × 7 = ?", "options": ["54", "63", "72", "56"], "correct": 1, "workingOut": "9 × 7 = 63." },
+            { "question": "25 × 4 = ?", "options": ["50", "75", "100", "125"], "correct": 2, "workingOut": "25 × 4 = 100 (like four 25p coins = £1)." },
+            { "question": "6 × 12 = ?", "options": ["60", "66", "72", "84"], "correct": 2, "workingOut": "6 × 12 = 72." }
+          ]
+        },
+        {
+          "id": "long-multiplication",
+          "name": "Long multiplication",
+          "teach": {
+            "title": "Long multiplication",
+            "plain": "When a number is too big for your times tables, you can split it up, multiply each part, and add the answers together.",
+            "rules": [
+              "Write the bigger number on top.",
+              "Multiply the top number by the ONES of the bottom.",
+              "Multiply the top number by the TENS of the bottom (remember to put a 0 in the ones place).",
+              "Add the two answers together."
+            ],
+            "example": "23 × 14. First: 23 × 4 = 92. Second: 23 × 10 = 230. Add: 92 + 230 = 322.",
+            "tryThis": "What is 45 × 12?",
+            "tryAnswer": "540"
+          },
+          "workedExample": {
+            "question": "Work out 4,289 × 24.",
+            "steps": [
+              "Step 1: Multiply 4,289 by 4 (the ones). 4,289 × 4 = 17,156.",
+              "Step 2: Multiply 4,289 by 20 (the tens). First do 4,289 × 2 = 8,578, then add a zero: 85,780.",
+              "Step 3: Add the two answers: 17,156 + 85,780.",
+              "17,156 + 85,780 = 102,936."
+            ],
+            "answer": "102,936"
+          },
+          "practice": [
+            { "question": "4,289 × 24 = ?", "options": ["102,836", "102,936", "103,036", "101,936"], "correct": 1, "workingOut": "4,289 × 4 = 17,156. 4,289 × 20 = 85,780. Add: 102,936." },
+            { "question": "36 × 24 = ?", "options": ["684", "864", "724", "824"], "correct": 1, "workingOut": "36 × 4 = 144. 36 × 20 = 720. Add: 864." },
+            { "question": "A school orders 36 boxes of pencils with 24 in each. How many pencils?", "options": ["764", "824", "864", "924"], "correct": 2, "workingOut": "36 × 24 = 864 pencils." },
+            { "question": "125 × 8 = ?", "options": ["800", "900", "1,000", "1,025"], "correct": 2, "workingOut": "100×8=800, 25×8=200, total 1,000." },
+            { "question": "23 × 15 = ?", "options": ["335", "345", "355", "375"], "correct": 1, "workingOut": "23 × 5 = 115. 23 × 10 = 230. Add: 345." }
+          ]
+        },
+        {
+          "id": "division",
+          "name": "Division & remainders",
+          "teach": {
+            "title": "Division",
+            "plain": "Dividing means sharing equally or grouping. 20 ÷ 4 means 'how many fours fit into 20?'",
+            "rules": [
+              "Division is the OPPOSITE of multiplication.",
+              "If 6 × 7 = 42, then 42 ÷ 6 = 7 AND 42 ÷ 7 = 6.",
+              "A remainder is what is left over after grouping.",
+              "If a question asks 'how many full buses/boxes?' you IGNORE the remainder. If it asks 'how many buses needed?' you ROUND UP."
+            ],
+            "example": "20 ÷ 6. How many sixes in 20? Three sixes is 18. We have 2 left. Answer: 3 remainder 2.",
+            "tryThis": "What is 29 ÷ 4?",
+            "tryAnswer": "7 remainder 1 (4 × 7 = 28, and 29 - 28 = 1)"
+          },
+          "workedExample": {
+            "question": "216 children, max 20 per class. What is the minimum number of classes needed?",
+            "steps": [
+              "We need to divide 216 ÷ 20.",
+              "20 × 10 = 200. So 10 classes hold 200 children.",
+              "216 - 200 = 16 children left without a class.",
+              "Those 16 still need a class, so we need one MORE.",
+              "10 + 1 = 11 classes."
+            ],
+            "answer": "11 classes"
+          },
+          "practice": [
+            { "question": "756 ÷ 12 = ?", "options": ["62", "63", "64", "60"], "correct": 1, "workingOut": "12 × 60 = 720. 756 - 720 = 36. 36 ÷ 12 = 3. So 63." },
+            { "question": "468 children split into 9 teams. How many per team?", "options": ["52", "54", "48", "56"], "correct": 0, "workingOut": "468 ÷ 9 = 52." },
+            { "question": "216 cupcakes put into boxes of 27. How many boxes?", "options": ["6", "7", "8", "9"], "correct": 2, "workingOut": "27 × 8 = 216. Answer: 8 boxes." },
+            { "question": "A bus holds 52. 320 passengers need a ride. How many buses?", "options": ["5", "6", "7", "8"], "correct": 2, "workingOut": "320 ÷ 52 = 6 remainder 8. 6 buses leave 8 people behind, so 7 buses needed." },
+            { "question": "8 kg of rice into 500g bags. How many bags?", "options": ["12", "14", "16", "18"], "correct": 2, "workingOut": "8 kg = 8,000 g. 8,000 ÷ 500 = 16 bags." },
+            { "question": "96 ÷ 8 = ?", "options": ["11", "12", "13", "14"], "correct": 1, "workingOut": "8 × 12 = 96, so 96 ÷ 8 = 12." },
+            { "question": "Tom saves £2.50 each week. How many weeks to save £40?", "options": ["14", "15", "16", "18"], "correct": 2, "workingOut": "£40 ÷ £2.50 = 16 weeks." }
+          ]
+        },
+        {
+          "id": "factors-multiples",
+          "name": "Factors & multiples",
+          "teach": {
+            "title": "Factors & multiples",
+            "plain": "Factors are numbers that divide evenly into another number. Multiples are the answers you get from times tables.",
+            "rules": [
+              "A factor of 12 is a number that divides into 12 with NO remainder.",
+              "The factors of 12 are: 1, 2, 3, 4, 6, 12.",
+              "Multiples of 5 are: 5, 10, 15, 20, 25... (the 5 times table).",
+              "Every number is a factor of itself and has 1 as a factor."
+            ],
+            "example": "Factors of 10: 1, 2, 5, 10 (because 1×10=10 and 2×5=10). Multiples of 4: 4, 8, 12, 16, 20...",
+            "tryThis": "List all the factors of 8.",
+            "tryAnswer": "1, 2, 4, 8"
+          },
+          "workedExample": {
+            "question": "List all the factors of 18.",
+            "steps": [
+              "Start with 1: 1 × 18 = 18. Factors: 1 and 18.",
+              "Try 2: 2 × 9 = 18. Factors: 2 and 9.",
+              "Try 3: 3 × 6 = 18. Factors: 3 and 6.",
+              "Try 4: 18 ÷ 4 has a remainder, so 4 is not a factor.",
+              "Try 5: 18 ÷ 5 has a remainder, so 5 is not a factor.",
+              "6 already on the list, so we stop."
+            ],
+            "answer": "1, 2, 3, 6, 9, 18"
+          },
+          "practice": [
+            { "question": "Which of these is a factor of 24?", "options": ["5", "7", "8", "9"], "correct": 2, "workingOut": "8 × 3 = 24, so 8 is a factor of 24." },
+            { "question": "Which is NOT a multiple of 6?", "options": ["12", "18", "26", "30"], "correct": 2, "workingOut": "26 ÷ 6 = 4 remainder 2, so 26 is not a multiple of 6." },
+            { "question": "How many factors does 10 have?", "options": ["2", "3", "4", "5"], "correct": 2, "workingOut": "Factors of 10: 1, 2, 5, 10. That is 4 factors." },
+            { "question": "What is the smallest number that is a multiple of both 3 and 4?", "options": ["7", "12", "24", "6"], "correct": 1, "workingOut": "Multiples of 3: 3,6,9,12. Multiples of 4: 4,8,12. Smallest common one is 12." },
+            { "question": "Which number has exactly 2 factors?", "options": ["6", "7", "8", "9"], "correct": 1, "workingOut": "7 has only 1 and 7 as factors. This makes it a prime number." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fractions-decimals-percentages",
+      "name": "Fractions, Decimals & Percentages",
+      "icon": "🍕",
+      "level": "Year 4",
+      "available": true,
+      "description": "Parts of a whole — three different ways of showing them.",
+      "subtopics": [
+        {
+          "id": "fractions-basics",
+          "name": "Fractions of amounts",
+          "teach": {
+            "title": "Fractions of amounts",
+            "plain": "A fraction tells you how many equal parts to split something into, and how many of those parts you want.",
+            "rules": [
+              "The BOTTOM number (denominator) tells you how many equal parts.",
+              "The TOP number (numerator) tells you how many parts you want.",
+              "To find 3/5 of a number: divide by 5, then multiply by 3.",
+              "Divide first, then multiply. Bottom number first, top number second."
+            ],
+            "example": "1/4 of 20 = 20 ÷ 4 = 5. 3/4 of 20 = 20 ÷ 4 × 3 = 5 × 3 = 15.",
+            "tryThis": "What is 2/3 of 18?",
+            "tryAnswer": "12 (18 ÷ 3 = 6, then 6 × 2 = 12)"
+          },
+          "workedExample": {
+            "question": "What is 3/5 of 70?",
+            "steps": [
+              "Divide the amount by the BOTTOM number: 70 ÷ 5 = 14.",
+              "This gives 1/5 of 70.",
+              "Multiply by the TOP number: 14 × 3 = 42.",
+              "So 3/5 of 70 = 42."
+            ],
+            "answer": "42"
+          },
+          "practice": [
+            { "question": "3/5 of 70 = ?", "options": ["28", "35", "42", "49"], "correct": 2, "workingOut": "70 ÷ 5 = 14. 14 × 3 = 42." },
+            { "question": "5/8 of 72 = ?", "options": ["40", "45", "48", "54"], "correct": 1, "workingOut": "72 ÷ 8 = 9. 9 × 5 = 45." },
+            { "question": "1/4 of 60 = ?", "options": ["12", "15", "20", "30"], "correct": 1, "workingOut": "60 ÷ 4 = 15." },
+            { "question": "2/3 of 24 = ?", "options": ["8", "12", "16", "18"], "correct": 2, "workingOut": "24 ÷ 3 = 8. 8 × 2 = 16." },
+            { "question": "3/4 of 40 = ?", "options": ["10", "20", "30", "35"], "correct": 2, "workingOut": "40 ÷ 4 = 10. 10 × 3 = 30." },
+            { "question": "4/5 of 25 = ?", "options": ["15", "20", "21", "24"], "correct": 1, "workingOut": "25 ÷ 5 = 5. 5 × 4 = 20." }
+          ]
+        },
+        {
+          "id": "equivalent-fractions",
+          "name": "Equivalent fractions & simplifying",
+          "teach": {
+            "title": "Equivalent fractions",
+            "plain": "Equivalent fractions are different ways of writing the same amount. 1/2 and 2/4 look different but mean the same.",
+            "rules": [
+              "Multiply (or divide) the TOP and BOTTOM by the SAME number.",
+              "This makes a new fraction equal to the first.",
+              "To simplify: find the biggest number that divides into BOTH top and bottom.",
+              "Keep simplifying until no number (except 1) divides both."
+            ],
+            "example": "6/8: divide top and bottom by 2 → 3/4. Cannot simplify further. So 6/8 = 3/4.",
+            "tryThis": "Simplify 4/10.",
+            "tryAnswer": "2/5 (divide both by 2)"
+          },
+          "workedExample": {
+            "question": "Convert 5 and 6/8 into an improper fraction.",
+            "steps": [
+              "An improper fraction has the top number bigger than the bottom.",
+              "Take the whole number (5) and multiply it by the denominator (8): 5 × 8 = 40.",
+              "Add the numerator (6): 40 + 6 = 46.",
+              "Keep the same denominator (8)."
+            ],
+            "answer": "46/8"
+          },
+          "practice": [
+            { "question": "Which is equivalent to 1/2?", "options": ["2/3", "3/6", "2/5", "4/6"], "correct": 1, "workingOut": "3/6 → divide both by 3 → 1/2." },
+            { "question": "Simplify 8/12.", "options": ["2/3", "3/4", "4/6", "1/2"], "correct": 0, "workingOut": "Divide both by 4: 8÷4=2, 12÷4=3. Answer 2/3." },
+            { "question": "5 and 6/8 as an improper fraction?", "options": ["40/8", "46/8", "30/8", "56/8"], "correct": 1, "workingOut": "5 × 8 = 40, + 6 = 46. So 46/8." },
+            { "question": "Which fraction is equivalent to 4/6?", "options": ["2/4", "2/3", "3/4", "6/8"], "correct": 1, "workingOut": "4/6 ÷ 2 = 2/3." },
+            { "question": "Simplify 10/15.", "options": ["2/3", "3/5", "5/10", "1/5"], "correct": 0, "workingOut": "Divide both by 5: 10÷5=2, 15÷5=3. Answer 2/3." },
+            { "question": "3/4 = ?/12", "options": ["6", "8", "9", "10"], "correct": 2, "workingOut": "Multiply top and bottom by 3: 3×3=9, 4×3=12. Answer 9." }
+          ]
+        },
+        {
+          "id": "decimals-basics",
+          "name": "Decimals & place value",
+          "teach": {
+            "title": "Decimals",
+            "plain": "Decimals are another way of writing fractions. The decimal point separates whole numbers from parts of a whole.",
+            "rules": [
+              "First digit after the point = TENTHS (1/10).",
+              "Second digit after the point = HUNDREDTHS (1/100).",
+              "Third digit = THOUSANDTHS (1/1000).",
+              "To divide by 10, move the decimal point ONE place LEFT. By 100, TWO places. By 1000, THREE places."
+            ],
+            "example": "0.7 means 7 tenths, or 7/10. 0.25 means 25 hundredths, or 25/100 = 1/4.",
+            "tryThis": "What is 0.5 as a fraction?",
+            "tryAnswer": "5/10 = 1/2"
+          },
+          "workedExample": {
+            "question": "What is 30,785 ÷ 1,000?",
+            "steps": [
+              "Dividing by 1,000 means moving the decimal point THREE places LEFT.",
+              "30,785 has the decimal point at the end: 30,785. (or 30,785.0).",
+              "Move left 3 places: 30.785",
+              "So 30,785 ÷ 1,000 = 30.785."
+            ],
+            "answer": "30.785"
+          },
+          "practice": [
+            { "question": "30,785 ÷ 1,000 = ?", "options": ["307.85", "30.785", "3.0785", "3,078.5"], "correct": 1, "workingOut": "Move decimal 3 places left: 30.785." },
+            { "question": "4 × 2.68 = ?", "options": ["8.72", "10.72", "10.82", "11.72"], "correct": 1, "workingOut": "4 × 2 = 8; 4 × 0.68 = 2.72; total 10.72." },
+            { "question": "Which is the largest?", "options": ["0.45", "0.504", "0.54", "0.405"], "correct": 2, "workingOut": "Compare tenths: 0.5, 0.5, 0.5, 0.4. First three tied at 5 tenths; then hundredths: 0.45 has 5, 0.50 has 0, 0.54 has 4. Largest is 0.54." },
+            { "question": "0.6 × 0.3 = ?", "options": ["1.8", "0.18", "0.018", "18"], "correct": 1, "workingOut": "6 × 3 = 18. Two decimal places total, so 0.18." },
+            { "question": "2.5 ÷ 10 = ?", "options": ["0.25", "25", "0.025", "0.5"], "correct": 0, "workingOut": "Move decimal 1 place left: 0.25." },
+            { "question": "What is 0.75 as a fraction in simplest form?", "options": ["75/100", "3/4", "1/2", "7/10"], "correct": 1, "workingOut": "0.75 = 75/100 = 3/4." }
+          ]
+        },
+        {
+          "id": "percentages-basics",
+          "name": "Percentages of amounts",
+          "teach": {
+            "title": "Percentages",
+            "plain": "Per cent means 'out of 100'. 50% means 50 out of every 100, which is a half.",
+            "rules": [
+              "10% of anything = divide by 10.",
+              "50% = a half = divide by 2.",
+              "25% = a quarter = divide by 4.",
+              "1% = divide by 100.",
+              "To find other percentages, build them from the easy ones."
+            ],
+            "example": "Find 15% of £360. 10% = £36. 5% = half of 10% = £18. 15% = £36 + £18 = £54.",
+            "tryThis": "What is 20% of 40?",
+            "tryAnswer": "8 (10% of 40 = 4, so 20% = 8)"
+          },
+          "workedExample": {
+            "question": "Find 15% of £360.",
+            "steps": [
+              "Start with 10% of £360. Divide by 10: £360 ÷ 10 = £36.",
+              "Find 5%. That is half of 10%: £36 ÷ 2 = £18.",
+              "15% = 10% + 5% = £36 + £18 = £54."
+            ],
+            "answer": "£54"
+          },
+          "practice": [
+            { "question": "15% of £360 = ?", "options": ["£36", "£54", "£72", "£45"], "correct": 1, "workingOut": "10% = £36. 5% = £18. 15% = £54." },
+            { "question": "25% of 80 = ?", "options": ["10", "20", "25", "40"], "correct": 1, "workingOut": "25% = quarter. 80 ÷ 4 = 20." },
+            { "question": "50% of 130 = ?", "options": ["50", "65", "75", "130"], "correct": 1, "workingOut": "50% = half. 130 ÷ 2 = 65." },
+            { "question": "10% of 250 = ?", "options": ["2.5", "10", "25", "250"], "correct": 2, "workingOut": "10% = divide by 10. 250 ÷ 10 = 25." },
+            { "question": "A coat costs £80, reduced by 25%. Sale price?", "options": ["£55", "£60", "£65", "£70"], "correct": 1, "workingOut": "25% of £80 = £20. £80 - £20 = £60." },
+            { "question": "20 out of 80 pupils walk. What percentage?", "options": ["20%", "25%", "30%", "40%"], "correct": 1, "workingOut": "20/80 = 1/4 = 25%." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "measurement",
+      "name": "Measurement",
+      "icon": "📏",
+      "level": "Year 4",
+      "available": true,
+      "description": "Money, time, length, weight and metric units.",
+      "subtopics": [
+        {
+          "id": "money",
+          "name": "Money problems",
+          "teach": {
+            "title": "Money problems",
+            "plain": "Money uses pounds and pence. £1 = 100p. Write amounts with 2 decimal places (like £4.50, not £4.5).",
+            "rules": [
+              "Line up the decimal points when you add or subtract money.",
+              "Always write money with 2 decimal places: £4.50, £0.05, £12.00.",
+              "To change pence to pounds, divide by 100 (move decimal 2 places left).",
+              "To change pounds to pence, multiply by 100."
+            ],
+            "example": "£20 - £8.25. Line up: 20.00 - 8.25. Answer: £11.75.",
+            "tryThis": "If a pen is 45p and a rubber is 30p, how much for both?",
+            "tryAnswer": "75p (or £0.75)"
+          },
+          "workedExample": {
+            "question": "A bike costs £120. Jacob has saved £72.50. How much more does he need?",
+            "steps": [
+              "We need: £120 - £72.50.",
+              "Line up the decimal points: 120.00 minus 72.50.",
+              "Subtract: 120.00 - 72.50 = 47.50.",
+              "Jacob needs £47.50 more."
+            ],
+            "answer": "£47.50"
+          },
+          "practice": [
+            { "question": "A £120 bike. Jacob saved £72.50. How much more needed?", "options": ["£47.50", "£52.50", "£57.50", "£47.00"], "correct": 0, "workingOut": "£120 - £72.50 = £47.50." },
+            { "question": "2 pizzas cost £17. What is the cost of 5 pizzas?", "options": ["£40.00", "£42.50", "£45.00", "£35.00"], "correct": 1, "workingOut": "£17 ÷ 2 = £8.50 per pizza. £8.50 × 5 = £42.50." },
+            { "question": "Sam has £20. Buys 3 notebooks at £2.75 each. Change?", "options": ["£11.75", "£11.25", "£12.75", "£11.50"], "correct": 0, "workingOut": "3 × £2.75 = £8.25. £20 - £8.25 = £11.75." },
+            { "question": "Tom has £2,500. Spends £875 on laptop, £345 on phone. How much left?", "options": ["£1,180", "£1,280", "£1,380", "£1,220"], "correct": 1, "workingOut": "£875 + £345 = £1,220. £2,500 - £1,220 = £1,280." },
+            { "question": "Mean of 4 amounts is £16. Three are £15, £9, £21. What is the 4th?", "options": ["£19", "£20", "£22", "£24"], "correct": 0, "workingOut": "Total = 4 × £16 = £64. Sum of three = £15 + £9 + £21 = £45. 4th amount = £64 - £45 = £19." },
+            { "question": "Emma has £450, saves £125, £150, £175 more. How much now?", "options": ["£850", "£900", "£950", "£800"], "correct": 1, "workingOut": "£450 + £125 + £150 + £175 = £900." }
+          ]
+        },
+        {
+          "id": "time",
+          "name": "Time & the 24-hour clock",
+          "teach": {
+            "title": "Time",
+            "plain": "Time uses base 60, not base 10! 60 minutes = 1 hour. The 24-hour clock goes 00:00 to 23:59.",
+            "rules": [
+              "60 seconds = 1 minute. 60 minutes = 1 hour. 24 hours = 1 day.",
+              "After midday, 1pm = 13:00, 2pm = 14:00... add 12 to pm times.",
+              "To find a time gap, count up to the next whole hour, then onwards.",
+              "Do NOT subtract 52 minutes from 25 minutes directly — borrow 60, not 100."
+            ],
+            "example": "From 08:40 to 10:15: 08:40 → 09:00 (20 min), 09:00 → 10:00 (60 min), 10:00 → 10:15 (15 min). Total: 20 + 60 + 15 = 95 minutes = 1 hour 35 minutes.",
+            "tryThis": "A film starts 14:45 and lasts 1 hour 35 minutes. What time does it end?",
+            "tryAnswer": "16:20"
+          },
+          "workedExample": {
+            "question": "From 08:52 to 17:23, how many minutes pass?",
+            "steps": [
+              "From 08:52 to 09:00 is 8 minutes.",
+              "From 09:00 to 17:00 is 8 hours = 8 × 60 = 480 minutes.",
+              "From 17:00 to 17:23 is 23 minutes.",
+              "Total: 8 + 480 + 23 = 511 minutes."
+            ],
+            "answer": "511 minutes"
+          },
+          "practice": [
+            { "question": "From 08:52 to 17:23, how many minutes?", "options": ["501", "511", "521", "531"], "correct": 1, "workingOut": "8 min to 9:00, then 8 hours (480), then 23 min. Total: 511." },
+            { "question": "A film starts 14:45, lasts 1hr 35min. End time?", "options": ["16:10", "16:20", "15:80", "16:15"], "correct": 1, "workingOut": "14:45 + 1hr = 15:45. + 35 min = 16:20." },
+            { "question": "Train leaves 09:35 arrives 11:12. Journey length?", "options": ["1hr 37min", "1hr 47min", "2hr 37min", "1hr 27min"], "correct": 0, "workingOut": "09:35 to 10:35 is 1 hour. 10:35 to 11:12 is 37 min. Total: 1hr 37min." },
+            { "question": "How many minutes in 3 hours?", "options": ["120", "150", "180", "200"], "correct": 2, "workingOut": "3 × 60 = 180 minutes." },
+            { "question": "3pm using the 24-hour clock?", "options": ["03:00", "13:00", "15:00", "23:00"], "correct": 2, "workingOut": "After midday, add 12: 3 + 12 = 15:00." }
+          ]
+        },
+        {
+          "id": "metric",
+          "name": "Metric units & conversions",
+          "teach": {
+            "title": "Metric conversions",
+            "plain": "Metric units work in tens, hundreds and thousands — so converting means multiplying or dividing by 10, 100 or 1,000.",
+            "rules": [
+              "1 km = 1,000 m. 1 m = 100 cm. 1 cm = 10 mm.",
+              "1 kg = 1,000 g. 1 litre = 1,000 ml.",
+              "To go from BIG to SMALL units (e.g. km to m), MULTIPLY.",
+              "To go from SMALL to BIG units (e.g. cm to m), DIVIDE."
+            ],
+            "example": "Convert 3.5 km to m: big to small, so × 1,000. 3.5 × 1,000 = 3,500 m.",
+            "tryThis": "Convert 4,200 g to kg.",
+            "tryAnswer": "4.2 kg (4,200 ÷ 1,000)"
+          },
+          "workedExample": {
+            "question": "What is 3.75m - 68cm?",
+            "steps": [
+              "Make the units the SAME first.",
+              "Convert 68cm to metres: 68 ÷ 100 = 0.68m.",
+              "Now subtract: 3.75 - 0.68.",
+              "3.75 - 0.68 = 3.07m."
+            ],
+            "answer": "3.07m"
+          },
+          "practice": [
+            { "question": "3.75m - 68cm = ?", "options": ["3.07m", "3.68m", "3.17m", "4.43m"], "correct": 0, "workingOut": "68cm = 0.68m. 3.75 - 0.68 = 3.07m." },
+            { "question": "How many metres in 3.5 km?", "options": ["350", "3,500", "35,000", "35"], "correct": 1, "workingOut": "1 km = 1,000 m. 3.5 × 1,000 = 3,500 m." },
+            { "question": "Convert 4,200 g to kg.", "options": ["42 kg", "4.2 kg", "0.42 kg", "420 kg"], "correct": 1, "workingOut": "4,200 ÷ 1,000 = 4.2 kg." },
+            { "question": "How many ml in 2.4 litres?", "options": ["24 ml", "240 ml", "2,400 ml", "24,000 ml"], "correct": 2, "workingOut": "1 litre = 1,000 ml. 2.4 × 1,000 = 2,400 ml." },
+            { "question": "How many cm in 2.3 m?", "options": ["23", "230", "2,300", "2.3"], "correct": 1, "workingOut": "1 m = 100 cm. 2.3 × 100 = 230 cm." },
+            { "question": "A ribbon is 1.5 m long. Cut 40 cm off. How much left?", "options": ["1.10 m", "1.46 m", "1.20 m", "1.05 m"], "correct": 0, "workingOut": "40 cm = 0.40 m. 1.50 - 0.40 = 1.10 m." }
+          ]
+        },
+        {
+          "id": "perimeter-area",
+          "name": "Perimeter & area",
+          "teach": {
+            "title": "Perimeter & area",
+            "plain": "Perimeter is the distance AROUND a shape. Area is the space INSIDE a shape.",
+            "rules": [
+              "Perimeter: add up ALL the sides.",
+              "Area of a rectangle: length × width.",
+              "Perimeter is measured in cm, m, km (length units).",
+              "Area is measured in SQUARE units: cm², m²."
+            ],
+            "example": "A rectangle 8 cm by 5 cm. Perimeter = 8+5+8+5 = 26 cm. Area = 8 × 5 = 40 cm².",
+            "tryThis": "Find the perimeter and area of a rectangle 10 cm × 4 cm.",
+            "tryAnswer": "Perimeter = 28 cm, Area = 40 cm²"
+          },
+          "workedExample": {
+            "question": "A rectangle is 12 cm long and 5 cm wide. Find its perimeter AND area.",
+            "steps": [
+              "Perimeter = add all sides. A rectangle has two longs and two widths.",
+              "Perimeter = 12 + 5 + 12 + 5 = 34 cm.",
+              "Quicker: Perimeter = 2 × (12 + 5) = 2 × 17 = 34 cm.",
+              "Area = length × width = 12 × 5 = 60 cm²."
+            ],
+            "answer": "Perimeter = 34 cm, Area = 60 cm²"
+          },
+          "practice": [
+            { "question": "A rectangle 12cm by 5cm. Perimeter?", "options": ["17 cm", "34 cm", "60 cm", "24 cm"], "correct": 1, "workingOut": "2 × (12+5) = 34 cm." },
+            { "question": "Area of a rectangle 8cm by 6cm?", "options": ["28 cm²", "48 cm²", "14 cm²", "96 cm²"], "correct": 1, "workingOut": "8 × 6 = 48 cm²." },
+            { "question": "A square has area 64 cm². Length of one side?", "options": ["6 cm", "7 cm", "8 cm", "16 cm"], "correct": 2, "workingOut": "8 × 8 = 64, so side = 8 cm." },
+            { "question": "Perimeter of a regular pentagon with one side 7 cm?", "options": ["14 cm", "28 cm", "35 cm", "49 cm"], "correct": 2, "workingOut": "Regular pentagon has 5 equal sides. 5 × 7 = 35 cm." },
+            { "question": "A garden is 20m by 15m. What is its perimeter?", "options": ["35 m", "70 m", "300 m", "50 m"], "correct": 1, "workingOut": "2 × (20+15) = 2 × 35 = 70 m." },
+            { "question": "Area of a square with sides 9 cm?", "options": ["18 cm²", "36 cm²", "72 cm²", "81 cm²"], "correct": 3, "workingOut": "9 × 9 = 81 cm²." }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "algebra-basics",
+      "name": "Algebra Basics",
+      "icon": "✖️",
+      "level": "Year 4",
+      "available": true,
+      "description": "Missing numbers, simple equations and sequences.",
+      "subtopics": [
+        {
+          "id": "missing-numbers",
+          "name": "Missing number problems",
+          "teach": {
+            "title": "Missing numbers",
+            "plain": "In a missing-number problem, you work backwards. Use the OPPOSITE operation to the one in the question.",
+            "rules": [
+              "+ and - are opposites. × and ÷ are opposites.",
+              "If ? + 6 = 10, then ? = 10 - 6.",
+              "If ? × 4 = 20, then ? = 20 ÷ 4.",
+              "Always CHECK by putting your answer back into the question."
+            ],
+            "example": "? + 14 = 23. Opposite of + is -. So ? = 23 - 14 = 9. Check: 9 + 14 = 23. ✓",
+            "tryThis": "What goes in the box? 48 ÷ ? = 6",
+            "tryAnswer": "8 (because 48 ÷ 8 = 6)"
+          },
+          "workedExample": {
+            "question": "Solve 4a = 16.",
+            "steps": [
+              "4a means 4 × a.",
+              "We need a number that, multiplied by 4, gives 16.",
+              "Opposite of × is ÷. So a = 16 ÷ 4.",
+              "a = 4.",
+              "Check: 4 × 4 = 16. ✓"
+            ],
+            "answer": "a = 4"
+          },
+          "practice": [
+            { "question": "What goes in the box? □ × 8 = 96", "options": ["11", "12", "13", "14"], "correct": 1, "workingOut": "96 ÷ 8 = 12." },
+            { "question": "Solve 4a = 16.", "options": ["a = 2", "a = 3", "a = 4", "a = 5"], "correct": 2, "workingOut": "a = 16 ÷ 4 = 4." },
+            { "question": "456 + ? = 1,000", "options": ["454", "544", "554", "644"], "correct": 1, "workingOut": "1,000 - 456 = 544." },
+            { "question": "? - 345 = 655", "options": ["310", "900", "1,000", "1,100"], "correct": 2, "workingOut": "655 + 345 = 1,000." },
+            { "question": "A number minus 3,456 equals 5,432. What is the number?", "options": ["7,888", "8,888", "9,888", "1,976"], "correct": 1, "workingOut": "5,432 + 3,456 = 8,888." },
+            { "question": "Sum of two numbers is 10,000. One is 4,567. The other?", "options": ["4,433", "5,433", "5,443", "6,433"], "correct": 1, "workingOut": "10,000 - 4,567 = 5,433." }
+          ]
+        },
+        {
+          "id": "simple-equations",
+          "name": "Simple equations",
+          "teach": {
+            "title": "Simple equations",
+            "plain": "An equation is a maths sentence with an equals sign. Letters stand for unknown numbers.",
+            "rules": [
+              "The letter is a number we don't know yet.",
+              "Whatever you do to one side, do to the other.",
+              "To find the letter, undo the operation with its opposite.",
+              "2a means 2 × a. 3y means 3 × y."
+            ],
+            "example": "y + 5 = 12. Take 5 from both sides: y = 7.",
+            "tryThis": "If 2x = 14, what is x?",
+            "tryAnswer": "7 (14 ÷ 2)"
+          },
+          "workedExample": {
+            "question": "Expand 3(2y - 5).",
+            "steps": [
+              "'3(2y - 5)' means 3 lots of everything inside the bracket.",
+              "Multiply 3 by 2y: 3 × 2y = 6y.",
+              "Multiply 3 by -5: 3 × -5 = -15.",
+              "Put it together: 6y - 15."
+            ],
+            "answer": "6y - 15"
+          },
+          "practice": [
+            { "question": "Simplify 3(2y - 5).", "options": ["5y - 8", "6y - 15", "6y - 5", "2y - 15"], "correct": 1, "workingOut": "3 × 2y = 6y. 3 × (-5) = -15. Answer: 6y - 15." },
+            { "question": "Solve 4a = 16. a = ?", "options": ["2", "4", "8", "12"], "correct": 1, "workingOut": "a = 16 ÷ 4 = 4." },
+            { "question": "If n + 7 = 15, what is n?", "options": ["7", "8", "9", "22"], "correct": 1, "workingOut": "n = 15 - 7 = 8." },
+            { "question": "If 3x = 21, what is x?", "options": ["6", "7", "8", "18"], "correct": 1, "workingOut": "x = 21 ÷ 3 = 7." },
+            { "question": "What is the value of 2a + 3 when a = 5?", "options": ["10", "13", "16", "25"], "correct": 1, "workingOut": "2(5) + 3 = 10 + 3 = 13." }
+          ]
+        },
+        {
+          "id": "sequences",
+          "name": "Number sequences",
+          "teach": {
+            "title": "Number sequences",
+            "plain": "A sequence is a list of numbers that follow a rule. Find the rule by looking at how the numbers change.",
+            "rules": [
+              "Look at the difference between consecutive numbers.",
+              "If the gap is the same each time, the rule is ADD or SUBTRACT that number.",
+              "If the numbers double or triple, the rule is MULTIPLY.",
+              "Check the rule works for EVERY pair in the sequence."
+            ],
+            "example": "3, 7, 11, 15, ... Gap is +4 each time. Next term: 15 + 4 = 19.",
+            "tryThis": "Find the next term: 2, 6, 18, 54, ...",
+            "tryAnswer": "162 (each term is multiplied by 3)"
+          },
+          "workedExample": {
+            "question": "What is the next number? 2, 6, 18, 54, ?",
+            "steps": [
+              "Look at each gap: 2 to 6, 6 to 18, 18 to 54.",
+              "Is it adding? 6 - 2 = 4, 18 - 6 = 12, 54 - 18 = 36. The differences change, so NOT adding a constant.",
+              "Try multiplying: 2 × 3 = 6 ✓, 6 × 3 = 18 ✓, 18 × 3 = 54 ✓.",
+              "The rule is × 3. Next: 54 × 3 = 162."
+            ],
+            "answer": "162"
+          },
+          "practice": [
+            { "question": "Next number? 3, 7, 11, 15, ___", "options": ["17", "18", "19", "20"], "correct": 2, "workingOut": "Add 4 each time. 15 + 4 = 19." },
+            { "question": "Next number? 2, 6, 18, 54, ___", "options": ["108", "162", "72", "96"], "correct": 1, "workingOut": "Multiply by 3 each time. 54 × 3 = 162." },
+            { "question": "Next number? 100, 87, 74, 61, ___", "options": ["48", "51", "54", "47"], "correct": 0, "workingOut": "Subtract 13 each time. 61 - 13 = 48." },
+            { "question": "Next number? 1, 4, 9, 16, ___", "options": ["20", "24", "25", "32"], "correct": 2, "workingOut": "Square numbers: 1², 2², 3², 4², 5² = 25." },
+            { "question": "Next number? 64, 32, 16, 8, ___", "options": ["2", "4", "6", "0"], "correct": 1, "workingOut": "Halve each time. 8 ÷ 2 = 4." }
+          ]
+        }
+      ]
+    }
+  ],
+  "comingSoon": [
+    { "id": "ratio", "name": "Ratio & Proportion", "icon": "⚖️", "level": "Year 5/6" },
+    { "id": "geometry", "name": "Geometry & Shape", "icon": "🔺", "level": "Year 5/6" },
+    { "id": "statistics", "name": "Statistics", "icon": "📊", "level": "Year 5/6" },
+    { "id": "multi-step", "name": "Multi-step Problems", "icon": "🧩", "level": "Year 5/6" }
+  ]
+}
