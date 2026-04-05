@@ -1,6 +1,6 @@
 // ── TWINKL NVR SECTION MODULE ────────────────────────────────────────────
-// Shows real exam practice pages from the Twinkl NVR Ultimate Practice Pack.
-// Each section = one image with 6 questions, answered via a-e option buttons.
+// Shows real exam practice questions from the Twinkl NVR Ultimate Practice Pack.
+// One question at a time with immediate feedback, then a final score summary.
 import { Store } from '../store.js';
 import { playSound } from '../audio.js';
 import { calculateQuizXP } from '../xp.js';
@@ -24,23 +24,12 @@ async function loadManifest() {
 }
 
 // ── Module state ─────────────────────────────────────────────────────────
-let currentSectionIdx = null; // index into manifest.sections
-let currentAnswers = {};      // { "1": "c", ... }
-let timerStart = 0;
+let currentSectionIdx = null;
+let currentQuestionIdx = 0;     // 0-based into section.questions
+let results = [];               // array of booleans
+let answered = false;           // whether current question has been answered
 
-function pad(n) { return String(n).padStart(3, '0'); }
-
-function pageImagePath(pageNum) {
-  return `${IMG_BASE}page_${pad(pageNum)}.png`;
-}
-
-function getProgress(typeId) {
-  const state = Store.get();
-  const twinkl = state.sections['twinkl-nvr'] || {};
-  return twinkl[typeId] || { completed: 0, bestScore: 0 };
-}
-
-// ── Screens ──────────────────────────────────────────────────────────────
+// ── Menu ─────────────────────────────────────────────────────────────────
 
 function renderMenu(container) {
   if (!manifest) {
@@ -78,25 +67,26 @@ function renderMenu(container) {
     </div>`;
 }
 
-function renderPractice(container, sectionIdx) {
-  const section = manifest.sections[sectionIdx];
+// ── Question flow ────────────────────────────────────────────────────────
+
+function startSection(container, sectionIdx) {
+  currentSectionIdx = sectionIdx;
+  currentQuestionIdx = 0;
+  results = [];
+  answered = false;
+  renderQuestion(container);
+}
+
+function renderQuestion(container) {
+  const section = manifest.sections[currentSectionIdx];
   if (!section) { renderMenu(container); return; }
+  const q = section.questions[currentQuestionIdx];
+  const total = section.questions.length;
+  answered = false;
 
-  const img = pageImagePath(section.startPage);
-  currentAnswers = {};
-  timerStart = Date.now();
-
-  const rows = [];
-  for (let q = 1; q <= section.questionCount; q++) {
-    const opts = OPTION_LABELS.map(lbl => `
-      <button class="twinkl-opt-btn" data-action="twinkl-answer" data-q="${q}" data-opt="${lbl}">${lbl}</button>
-    `).join('');
-    rows.push(`
-      <div class="twinkl-row" data-row="${q}">
-        <span class="twinkl-row-label">Q${q}</span>
-        <div class="twinkl-opts">${opts}</div>
-      </div>`);
-  }
+  const optButtons = OPTION_LABELS.map(lbl => `
+    <button class="twinkl-opt-btn" data-action="twinkl-answer" data-opt="${lbl}">${lbl}</button>
+  `).join('');
 
   container.innerHTML = `
     <div class="quiz-header">
@@ -104,56 +94,67 @@ function renderPractice(container, sectionIdx) {
       <span class="quiz-title">${section.name}</span>
     </div>
     <div class="twinkl-practice">
+      <div class="twinkl-progress">Question ${currentQuestionIdx + 1} of ${total}</div>
       <p class="twinkl-instruction">${section.instruction}</p>
-      <img class="twinkl-page-img" src="${img}" alt="${section.name} page" />
-      <div class="twinkl-rows">${rows.join('')}</div>
-      <button class="btn btn-primary" data-action="twinkl-submit" disabled>Submit (0/${section.questionCount})</button>
+      <img class="twinkl-q-img" src="${IMG_BASE}${q.image}" alt="Question ${q.number}" />
+      <div class="twinkl-opts twinkl-opts-big">${optButtons}</div>
+      <div class="twinkl-feedback" data-feedback></div>
+      <button class="btn btn-primary twinkl-next-btn" data-action="twinkl-next" style="display:none">Next</button>
     </div>`;
 }
 
-function updateSubmitState(container, section) {
-  const answered = Object.keys(currentAnswers).length;
-  const btn = container.querySelector('[data-action="twinkl-submit"]');
-  if (!btn) return;
-  btn.textContent = `Submit (${answered}/${section.questionCount})`;
-  btn.disabled = answered < section.questionCount;
-}
-
-function handleOptionClick(container, qNum, optLabel) {
+function handleAnswerClick(container, optLabel) {
+  if (answered) return;
+  answered = true;
   const section = manifest.sections[currentSectionIdx];
-  currentAnswers[String(qNum)] = optLabel;
-  // Visual: highlight selected, clear siblings
-  const row = container.querySelector(`.twinkl-row[data-row="${qNum}"]`);
-  if (row) {
-    row.querySelectorAll('.twinkl-opt-btn').forEach(b => {
-      b.classList.toggle('selected', b.dataset.opt === optLabel);
-    });
+  const q = section.questions[currentQuestionIdx];
+  const correctAnswer = q.answer;
+  const isCorrect = optLabel === correctAnswer;
+  results.push(isCorrect);
+
+  // Visual feedback on all option buttons
+  const btns = container.querySelectorAll('.twinkl-opt-btn');
+  btns.forEach(b => {
+    b.disabled = true;
+    if (b.dataset.opt === correctAnswer) {
+      b.classList.add('twinkl-opt-correct');
+    }
+    if (b.dataset.opt === optLabel && !isCorrect) {
+      b.classList.add('twinkl-opt-wrong');
+    }
+  });
+
+  const fb = container.querySelector('[data-feedback]');
+  if (fb) {
+    fb.innerHTML = isCorrect
+      ? `<span class="twinkl-fb-correct">\u2713 Correct</span>`
+      : `<span class="twinkl-fb-wrong">\u2717 Answer was <strong>${correctAnswer}</strong></span>`;
   }
-  updateSubmitState(container, section);
+
+  const state = Store.get();
+  if (state.settings.soundOn) playSound(isCorrect);
+
+  // Show Next button
+  const nextBtn = container.querySelector('.twinkl-next-btn');
+  if (nextBtn) {
+    const isLast = currentQuestionIdx >= section.questions.length - 1;
+    nextBtn.textContent = isLast ? 'See results' : 'Next';
+    nextBtn.style.display = 'inline-block';
+  }
 }
 
-function renderResults(container, sectionIdx) {
-  const section = manifest.sections[sectionIdx];
-  const pageNum = String(section.startPage);
-  const key = manifest.answerKey.byQuestionPage[pageNum];
-  const correctAnswers = key ? key.answers : {};
-
-  const results = [];
-  const rows = [];
-  for (let q = 1; q <= section.questionCount; q++) {
-    const given = currentAnswers[String(q)] || '-';
-    const correct = correctAnswers[String(q)] || '?';
-    const isCorrect = given === correct;
-    results.push(isCorrect);
-    rows.push(`
-      <tr class="${isCorrect ? 'twinkl-r-correct' : 'twinkl-r-wrong'}">
-        <td>Q${q}</td>
-        <td>Your answer: <strong>${given}</strong></td>
-        <td>Correct: <strong>${correct}</strong></td>
-        <td>${isCorrect ? '\u2713' : '\u2717'}</td>
-      </tr>`);
+function handleNext(container) {
+  const section = manifest.sections[currentSectionIdx];
+  if (currentQuestionIdx >= section.questions.length - 1) {
+    renderResults(container);
+    return;
   }
+  currentQuestionIdx++;
+  renderQuestion(container);
+}
 
+function renderResults(container) {
+  const section = manifest.sections[currentSectionIdx];
   const xpData = calculateQuizXP(results);
   Store.addXP(xpData.totalXP);
   Store.recordQuiz('twinkl-nvr', xpData.correct, xpData.total, xpData.totalXP, section.typeId);
@@ -167,21 +168,27 @@ function renderResults(container, sectionIdx) {
     [section.typeId]: { completed: prev.completed + 1, bestScore: newBest }
   });
 
-  if (state.settings.soundOn) {
-    playSound(xpData.correct >= Math.ceil(xpData.total / 2));
-  }
+  // Per-question review
+  const rows = section.questions.map((q, i) => {
+    const got = results[i];
+    return `
+      <tr class="${got ? 'twinkl-r-correct' : 'twinkl-r-wrong'}">
+        <td>Q${q.number}</td>
+        <td>Correct answer: <strong>${q.answer}</strong></td>
+        <td>${got ? '\u2713' : '\u2717'}</td>
+      </tr>`;
+  }).join('');
 
   container.innerHTML = renderScore(results, section.name, xpData.totalXP) + `
     <div class="twinkl-review">
-      <h3>Answers</h3>
-      <table class="twinkl-review-table">${rows.join('')}</table>
+      <h3>Review</h3>
+      <table class="twinkl-review-table">${rows}</table>
     </div>`;
 
-  // Replace score action buttons
   const scoreActions = container.querySelector('.score-actions');
   if (scoreActions) {
     scoreActions.innerHTML = `
-      <button class="btn btn-primary" data-action="twinkl-retry" data-idx="${sectionIdx}">Try again</button>
+      <button class="btn btn-primary" data-action="twinkl-retry" data-idx="${currentSectionIdx}">Try again</button>
       <a class="btn btn-secondary" href="#/twinkl-nvr" data-action="twinkl-back-menu">All sections</a>
       <a class="btn btn-secondary" href="#/">Home</a>`;
   }
@@ -210,8 +217,7 @@ export async function init(container) {
   const route = routeFromHash();
 
   if (route.screen === 'practice' && manifest) {
-    currentSectionIdx = route.idx;
-    renderPractice(container, route.idx);
+    startSection(container, route.idx);
   } else {
     renderMenu(container);
   }
@@ -224,9 +230,8 @@ export async function init(container) {
     if (action === 'select-twinkl-section') {
       e.preventDefault();
       const idx = parseInt(el.dataset.idx, 10);
-      currentSectionIdx = idx;
       location.hash = `#/twinkl-nvr/${idx}`;
-      renderPractice(container, idx);
+      startSection(container, idx);
     }
 
     if (action === 'twinkl-back-menu') {
@@ -236,20 +241,16 @@ export async function init(container) {
     }
 
     if (action === 'twinkl-answer') {
-      const q = parseInt(el.dataset.q, 10);
-      const opt = el.dataset.opt;
-      handleOptionClick(container, q, opt);
+      handleAnswerClick(container, el.dataset.opt);
     }
 
-    if (action === 'twinkl-submit') {
-      if (el.disabled) return;
-      renderResults(container, currentSectionIdx);
+    if (action === 'twinkl-next') {
+      handleNext(container);
     }
 
     if (action === 'twinkl-retry') {
       const idx = parseInt(el.dataset.idx, 10);
-      currentSectionIdx = idx;
-      renderPractice(container, idx);
+      startSection(container, idx);
     }
   };
 

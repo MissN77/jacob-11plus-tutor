@@ -6,7 +6,13 @@
   "totalAnswerPages": 7,
   "totalQuestions": 42,
   "questionsPerPage": 6,
-  "optionLabels": ["a", "b", "c", "d", "e"],
+  "optionLabels": [
+    "a",
+    "b",
+    "c",
+    "d",
+    "e"
+  ],
   "layoutNote": "Each question page presents 6 numbered questions (1-6) arranged in a single section focused on one question type. Each question shows the stimulus figure(s) on the left with five multiple-choice options labelled a-e on the right. Children tick the correct box. A short instruction sits at the top of the page.",
   "sections": [
     {
@@ -15,7 +21,39 @@
       "startPage": 1,
       "endPage": 1,
       "questionCount": 6,
-      "instruction": "Which figure is the odd one out? Tick the correct box."
+      "instruction": "Which figure is the odd one out? Tick the correct box.",
+      "questions": [
+        {
+          "number": 1,
+          "image": "q_ooo_1.png",
+          "answer": "d"
+        },
+        {
+          "number": 2,
+          "image": "q_ooo_2.png",
+          "answer": "c"
+        },
+        {
+          "number": 3,
+          "image": "q_ooo_3.png",
+          "answer": "e"
+        },
+        {
+          "number": 4,
+          "image": "q_ooo_4.png",
+          "answer": "a"
+        },
+        {
+          "number": 5,
+          "image": "q_ooo_5.png",
+          "answer": "c"
+        },
+        {
+          "number": 6,
+          "image": "q_ooo_6.png",
+          "answer": "b"
+        }
+      ]
     },
     {
       "name": "Changing Pairs (Analogies)",
@@ -23,7 +61,39 @@
       "startPage": 2,
       "endPage": 2,
       "questionCount": 6,
-      "instruction": "Look at how the first figure changes to become the second figure. Tick the figure that the third figure will become if it is changed in the same way."
+      "instruction": "Look at how the first figure changes to become the second figure. Tick the figure that the third figure will become if it is changed in the same way.",
+      "questions": [
+        {
+          "number": 1,
+          "image": "q_analogy_1.png",
+          "answer": "d"
+        },
+        {
+          "number": 2,
+          "image": "q_analogy_2.png",
+          "answer": "a"
+        },
+        {
+          "number": 3,
+          "image": "q_analogy_3.png",
+          "answer": "b"
+        },
+        {
+          "number": 4,
+          "image": "q_analogy_4.png",
+          "answer": "c"
+        },
+        {
+          "number": 5,
+          "image": "q_analogy_5.png",
+          "answer": "a"
+        },
+        {
+          "number": 6,
+          "image": "q_analogy_6.png",
+          "answer": "d"
+        }
+      ]
     },
     {
       "name": "Complete the Sequence",
@@ -31,7 +101,39 @@
       "startPage": 3,
       "endPage": 3,
       "questionCount": 6,
-      "instruction": "A figure is missing from each of these sequences. Tick the figure that is missing."
+      "instruction": "A figure is missing from each of these sequences. Tick the figure that is missing.",
+      "questions": [
+        {
+          "number": 1,
+          "image": "q_sequence_1.png",
+          "answer": "b"
+        },
+        {
+          "number": 2,
+          "image": "q_sequence_2.png",
+          "answer": "a"
+        },
+        {
+          "number": 3,
+          "image": "q_sequence_3.png",
+          "answer": "e"
+        },
+        {
+          "number": 4,
+          "image": "q_sequence_4.png",
+          "answer": "b"
+        },
+        {
+          "number": 5,
+          "image": "q_sequence_5.png",
+          "answer": "d"
+        },
+        {
+          "number": 6,
+          "image": "q_sequence_6.png",
+          "answer": "a"
+        }
+      ]
     },
     {
       "name": "Similar Figures",
@@ -39,7 +141,39 @@
       "startPage": 4,
       "endPage": 4,
       "questionCount": 6,
-      "instruction": "In each question there are three figures on the left which are alike in one or more ways. Choose which of the five options on the right is most like the figures on the left."
+      "instruction": "In each question there are three figures on the left which are alike in one or more ways. Choose which of the five options on the right is most like the figures on the left.",
+      "questions": [
+        {
+          "number": 1,
+          "image": "q_similar_1.png",
+          "answer": "c"
+        },
+        {
+          "number": 2,
+          "image": "q_similar_2.png",
+          "answer": "e"
+        },
+        {
+          "number": 3,
+          "image": "q_similar_3.png",
+          "answer": "a"
+        },
+        {
+          "number": 4,
+          "image": "q_similar_4.png",
+          "answer": "e"
+        },
+        {
+          "number": 5,
+          "image": "q_similar_5.png",
+          "answer": "b"
+        },
+        {
+          "number": 6,
+          "image": "q_similar_6.png",
+          "answer": "d"
+        }
+      ]
     },
     {
       "name": "Reflections",
@@ -47,7 +181,39 @@
       "startPage": 5,
       "endPage": 5,
       "questionCount": 6,
-      "instruction": "Which of the five options on the right is the reflection of the figure on the left? Use the mirror line provided."
+      "instruction": "Which of the five options on the right is the reflection of the figure on the left? Use the mirror line provided.",
+      "questions": [
+        {
+          "number": 1,
+          "image": "q_reflection_1.png",
+          "answer": "b"
+        },
+        {
+          "number": 2,
+          "image": "q_reflection_2.png",
+          "answer": "d"
+        },
+        {
+          "number": 3,
+          "image": "q_reflection_3.png",
+          "answer": "e"
+        },
+        {
+          "number": 4,
+          "image": "q_reflection_4.png",
+          "answer": "c"
+        },
+        {
+          "number": 5,
+          "image": "q_reflection_5.png",
+          "answer": "a"
+        },
+        {
+          "number": 6,
+          "image": "q_reflection_6.png",
+          "answer": "c"
+        }
+      ]
     },
     {
       "name": "Complete the Grid (Matrix)",
@@ -55,7 +221,39 @@
       "startPage": 6,
       "endPage": 6,
       "questionCount": 6,
-      "instruction": "Which square completes the grid? Tick the correct answer."
+      "instruction": "Which square completes the grid? Tick the correct answer.",
+      "questions": [
+        {
+          "number": 1,
+          "image": "q_matrix_1.png",
+          "answer": "a"
+        },
+        {
+          "number": 2,
+          "image": "q_matrix_2.png",
+          "answer": "b"
+        },
+        {
+          "number": 3,
+          "image": "q_matrix_3.png",
+          "answer": "d"
+        },
+        {
+          "number": 4,
+          "image": "q_matrix_4.png",
+          "answer": "c"
+        },
+        {
+          "number": 5,
+          "image": "q_matrix_5.png",
+          "answer": "a"
+        },
+        {
+          "number": 6,
+          "image": "q_matrix_6.png",
+          "answer": "e"
+        }
+      ]
     },
     {
       "name": "Missing Codes",
@@ -63,7 +261,39 @@
       "startPage": 7,
       "endPage": 7,
       "questionCount": 6,
-      "instruction": "In each question there are five shapes on the left. Four have a pair of code letters that describe them but the last shape is missing these. Work out what the code letters mean and then tick the code that is missing."
+      "instruction": "In each question there are five shapes on the left. Four have a pair of code letters that describe them but the last shape is missing these. Work out what the code letters mean and then tick the code that is missing.",
+      "questions": [
+        {
+          "number": 1,
+          "image": "q_codes_1.png",
+          "answer": "b"
+        },
+        {
+          "number": 2,
+          "image": "q_codes_2.png",
+          "answer": "a"
+        },
+        {
+          "number": 3,
+          "image": "q_codes_3.png",
+          "answer": "c"
+        },
+        {
+          "number": 4,
+          "image": "q_codes_4.png",
+          "answer": "e"
+        },
+        {
+          "number": 5,
+          "image": "q_codes_5.png",
+          "answer": "d"
+        },
+        {
+          "number": 6,
+          "image": "q_codes_6.png",
+          "answer": "a"
+        }
+      ]
     }
   ],
   "answerKey": {
@@ -75,37 +305,86 @@
       "1": {
         "section": "Odd One Out",
         "answerPage": 8,
-        "answers": {"1": "d", "2": "c", "3": "e", "4": "a", "5": "c", "6": "b"}
+        "answers": {
+          "1": "d",
+          "2": "c",
+          "3": "e",
+          "4": "a",
+          "5": "c",
+          "6": "b"
+        }
       },
       "2": {
         "section": "Changing Pairs",
         "answerPage": 9,
-        "answers": {"1": "d", "2": "a", "3": "b", "4": "c", "5": "a", "6": "d"}
+        "answers": {
+          "1": "d",
+          "2": "a",
+          "3": "b",
+          "4": "c",
+          "5": "a",
+          "6": "d"
+        }
       },
       "3": {
         "section": "Complete the Sequence",
         "answerPage": 10,
-        "answers": {"1": "b", "2": "a", "3": "e", "4": "b", "5": "d", "6": "a"}
+        "answers": {
+          "1": "b",
+          "2": "a",
+          "3": "e",
+          "4": "b",
+          "5": "d",
+          "6": "a"
+        }
       },
       "4": {
         "section": "Similar Figures",
         "answerPage": 11,
-        "answers": {"1": "c", "2": "e", "3": "a", "4": "e", "5": "b", "6": "d"}
+        "answers": {
+          "1": "c",
+          "2": "e",
+          "3": "a",
+          "4": "e",
+          "5": "b",
+          "6": "d"
+        }
       },
       "5": {
         "section": "Reflections",
         "answerPage": 12,
-        "answers": {"1": "b", "2": "d", "3": "e", "4": "c", "5": "a", "6": "c"}
+        "answers": {
+          "1": "b",
+          "2": "d",
+          "3": "e",
+          "4": "c",
+          "5": "a",
+          "6": "c"
+        }
       },
       "6": {
         "section": "Complete the Grid",
         "answerPage": 13,
-        "answers": {"1": "a", "2": "b", "3": "d", "4": "c", "5": "a", "6": "e"}
+        "answers": {
+          "1": "a",
+          "2": "b",
+          "3": "d",
+          "4": "c",
+          "5": "a",
+          "6": "e"
+        }
       },
       "7": {
         "section": "Missing Codes",
         "answerPage": 14,
-        "answers": {"1": "b", "2": "a", "3": "c", "4": "e", "5": "d", "6": "a"}
+        "answers": {
+          "1": "b",
+          "2": "a",
+          "3": "c",
+          "4": "e",
+          "5": "d",
+          "6": "a"
+        }
       }
     }
   }

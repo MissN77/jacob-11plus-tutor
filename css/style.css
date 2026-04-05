@@ -1234,3 +1234,52 @@ body {
 }
 .twinkl-r-correct td { color: #1a8a7d; }
 .twinkl-r-wrong td { color: #c64040; }
+.twinkl-progress {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.twinkl-q-img {
+  width: 100%;
+  height: auto;
+  display: block;
+  background: #fff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+.twinkl-opts-big {
+  gap: 8px;
+  margin-bottom: 12px;
+}
+.twinkl-opts-big .twinkl-opt-btn {
+  padding: 16px 0;
+  font-size: 1.2rem;
+}
+.twinkl-opt-btn:disabled {
+  cursor: default;
+  opacity: 0.85;
+}
+.twinkl-opt-btn.twinkl-opt-correct {
+  background: #1a8a7d;
+  color: #fff;
+  border-color: #1a8a7d;
+  opacity: 1;
+}
+.twinkl-opt-btn.twinkl-opt-wrong {
+  background: #c64040;
+  color: #fff;
+  border-color: #c64040;
+  opacity: 1;
+}
+.twinkl-feedback {
+  min-height: 28px;
+  margin: 8px 0;
+  font-weight: 600;
+  text-align: center;
+}
+.twinkl-fb-correct { color: #1a8a7d; }
+.twinkl-fb-wrong { color: #c64040; }
+.twinkl-next-btn { width: 100%; margin-top: 8px; }
