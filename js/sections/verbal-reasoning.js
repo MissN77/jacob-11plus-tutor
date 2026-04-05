@@ -291,7 +291,7 @@ function handleAnswer(app, index) {
     if (grid) grid.after(tip);
   }
 
-  const delay = currentMode === 'traps' ? 2800 : 2000;
+  const delay = currentMode === 'traps' ? 6000 : 4000;
   setTimeout(() => {
     currentIndex++;
     renderQuestion(app);

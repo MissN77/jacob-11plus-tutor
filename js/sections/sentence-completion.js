@@ -205,7 +205,7 @@ function handleAnswer(index) {
   setTimeout(() => {
     currentIndex++;
     renderPractice(document.getElementById('app'));
-  }, 1600);
+  }, 4000);
 }
 
 // ── Init ──

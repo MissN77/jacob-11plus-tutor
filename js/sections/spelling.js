@@ -7,7 +7,7 @@ import { renderQuizProgress, renderScore } from '../ui.js';
 
 const QUIZ_LENGTH = 10;
 const DATA_URL = 'data/spelling.json';
-const LOOK_TIME = 4000; // ms to show the word before hiding
+const LOOK_TIME = 12000; // ms to show the word before hiding (12s for ASD-friendly reading time)
 
 let allWords = [];
 let quizQueue = [];
@@ -89,7 +89,7 @@ function renderLook(container, isRetry) {
 
   const q = quizQueue[currentIndex];
   const label = isRetry ? 'Look again carefully!' : 'Study this word';
-  const time = isRetry ? 5 : 4;
+  const time = isRetry ? 15 : 12;
   let remaining = time;
 
   container.innerHTML = `
@@ -194,7 +194,7 @@ function checkSpelling(container) {
     feedback.innerHTML = `<p class="feedback-correct">\u2705 Correct! Well done.</p>`;
     if (state.settings.soundOn) playSound(true);
 
-    setTimeout(() => advance(container), 1200);
+    setTimeout(() => advance(container), 3500);
 
   } else if (attempt === 0) {
     // Wrong on first attempt - show the word again
@@ -218,7 +218,7 @@ function checkSpelling(container) {
       <p class="spelling-show-word spelling-show-word--correction">${q.word}</p>
       <p class="feedback-try-again">Keep practising this one!</p>`;
 
-    setTimeout(() => advance(container), 3000);
+    setTimeout(() => advance(container), 6000);
   }
 }
 

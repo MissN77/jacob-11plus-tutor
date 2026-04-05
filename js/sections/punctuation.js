@@ -218,7 +218,7 @@ function handleAnswer(index) {
   setTimeout(() => {
     currentIndex++;
     renderPractice(document.getElementById('app'));
-  }, 1800);
+  }, 4000);
 }
 
 // ── Init (called by app.js) ──

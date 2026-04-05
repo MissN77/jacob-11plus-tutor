@@ -169,7 +169,7 @@ function handleAnswer(container, idx) {
   }
 
   // Pause then advance
-  const delay = isCorrect ? 800 : 1500;
+  const delay = isCorrect ? 2500 : 5000;
   setTimeout(() => {
     currentIndex++;
     answered = false;
