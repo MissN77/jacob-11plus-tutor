@@ -10,7 +10,8 @@ const SECTIONS = [
   { id: 'sentence-completion', name: 'Sentence Completion',  icon: '\u{1F4DD}' },
   { id: 'verbal-reasoning',    name: 'Verbal Reasoning',     icon: '\u{1F524}' },
   { id: 'maths',               name: 'Maths',                icon: '\u{1F522}' },
-  { id: 'nvr',                 name: 'NVR',                  icon: '\u{1F532}' },
+  { id: 'nvr',                 name: 'NVR Foundations',      icon: '\u{1F532}' },
+  { id: 'twinkl-nvr',          name: 'Exam Practice (Twinkl)', icon: '\u{1F48E}' },
   { id: 'writing',             name: 'Writing',              icon: '\u{270D}\uFE0F' },
   { id: 'collocations',        name: 'Collocations',         icon: '\u{1F517}' }
 ];
@@ -307,6 +308,12 @@ export function renderSettings() {
       <div class="settings-section">
         <h3>Parent Dashboard</h3>
         <a class="btn btn-secondary" href="dashboard.html">Open parent dashboard</a>
+      </div>
+
+      <div class="settings-section">
+        <h3>Lock app</h3>
+        <p class="settings-hint">Sign out and require the password on the next visit.</p>
+        <button class="btn btn-secondary" data-action="lock-app">Lock app</button>
       </div>
     </div>`;
 }

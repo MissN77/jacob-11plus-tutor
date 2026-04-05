@@ -1,5 +1,6 @@
 import { Store } from './store.js';
 import { renderHome, renderComingSoon, SECTIONS, loadBexleyPlan, getCurrentBexleyWeek, renderSettings, setStartDate, DEFAULT_START_DATE } from './ui.js';
+import { requireAuth, logout } from './auth.js';
 
 const app = document.getElementById('app');
 
@@ -14,6 +15,7 @@ const SECTION_MODULES = {
   'verbal-reasoning':    () => import('./sections/verbal-reasoning.js'),
   'maths':               () => import('./sections/maths.js'),
   'nvr':                 () => import('./sections/nvr.js'),
+  'twinkl-nvr':          () => import('./sections/twinkl-nvr.js'),
   'writing':             () => import('./sections/writing.js'),
   'collocations':        () => import('./sections/collocations.js'),
 };
@@ -102,6 +104,12 @@ app.addEventListener('click', (e) => {
     const input = document.getElementById('settings-start-date');
     if (input) input.value = DEFAULT_START_DATE;
     if (window.__showXPToast) window.__showXPToast('Reset to default');
+  }
+
+  if (action === 'lock-app') {
+    logout();
+    location.reload();
+    return;
   }
 
   if (action === 'reset-progress') {
@@ -198,6 +206,10 @@ async function checkWeeklyReminder() {
 
 // Initialise
 function init() {
+  // Gate behind the password. If not authenticated, render the auth
+  // screen and stop. Once the correct password is entered, re-run init().
+  if (!requireAuth(() => init())) return;
+
   // Update daily streak
   const streakXP = Store.updateStreak();
   if (streakXP > 0) {
