@@ -1,4 +1,4 @@
-const CACHE_NAME = 'j11-tutor-v2';
+const CACHE_NAME = 'j11-tutor-v3';
 const ASSETS = [
   '/',
   '/index.html',
@@ -8,7 +8,16 @@ const ASSETS = [
   '/js/xp.js',
   '/js/ui.js',
   '/js/sections/collocations.js',
+  '/js/sections/nvr.js',
+  '/js/sections/verbal-reasoning.js',
+  '/js/nvr/questions.js',
+  '/js/nvr/renderers.js',
+  '/js/nvr/shapes.js',
+  '/js/nvr/svg-renderers.js',
   '/data/collocations.json',
+  '/data/bexley-20-week-plan.json',
+  '/data/nvr-questions.json',
+  '/data/verbal-reasoning.json',
   '/manifest.json'
 ];
 

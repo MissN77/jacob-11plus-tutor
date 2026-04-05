@@ -52,50 +52,68 @@ export function renderCountdown() {
     </div>`;
 }
 
-// ── Weekly Study Plan ─────────────────────────────────────────────────────
+// ── Bexley 20-Week Study Plan ────────────────────────────────────────────
 
-const WEEKLY_PLAN = [
-  { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '10 words', maths: '15 questions', spelling: '10 words' } },
-  { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '3 passages', nvr: '10 questions', punctuation: '10 questions' } },
-  { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '10 questions', writing: '1 prompt', 'sentence-completion': '10 questions' } },
-  { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '15 words', maths: '20 questions', spelling: '15 words' } },
-  { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '4 passages', nvr: '15 questions', punctuation: '15 questions' } },
-  { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '15 questions', writing: '1 prompt', 'sentence-completion': '15 questions' } },
-  { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '20 words', maths: '25 questions', spelling: '20 words' } },
-  { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '5 passages', nvr: '20 questions', punctuation: '20 questions' } },
-  { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '20 questions', writing: '2 prompts', 'sentence-completion': '20 questions' } },
-  { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '20 words', maths: '30 questions', spelling: '20 words' } },
-  { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '5 passages', nvr: '25 questions', punctuation: '20 questions' } },
-  { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '25 questions', writing: '2 prompts', 'sentence-completion': '20 questions' } },
-  { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '25 words', maths: '30 questions', spelling: '25 words' } },
-  { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '6 passages', nvr: '25 questions', punctuation: '25 questions' } },
-  { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '25 questions', writing: '2 prompts', 'sentence-completion': '25 questions' } },
-  { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '25 words', maths: '35 questions', spelling: '25 words' } },
-  { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '6 passages', nvr: '30 questions', punctuation: '25 questions' } },
-  { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '30 questions', writing: '3 prompts', 'sentence-completion': '25 questions' } },
-  { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '30 words', maths: '40 questions', spelling: '30 words' } },
-  { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '7 passages', nvr: '30 questions', punctuation: '30 questions' } },
-  { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '30 questions', writing: '3 prompts', 'sentence-completion': '30 questions' } },
-  { sections: ['vocabulary', 'maths', 'spelling'], targets: { vocabulary: '30 words', maths: '40 questions', spelling: '30 words' } },
-  { sections: ['inference', 'nvr', 'punctuation'], targets: { inference: '8 passages', nvr: '35 questions', punctuation: '30 questions' } },
-  { sections: ['verbal-reasoning', 'writing', 'sentence-completion'], targets: { 'verbal-reasoning': '35 questions', writing: '3 prompts', 'sentence-completion': '30 questions' } }
-];
+const DEFAULT_START_DATE = '2027-04-19';
+const START_DATE_KEY = 'j11_start_date';
+let _bexleyPlan = null;
 
-/** Get the current week number (0-based) in the 24-week rotation. */
-export function getCurrentWeekIndex() {
-  // Use a fixed epoch (Monday 6 Jan 2025) so weeks are consistent
-  const epoch = new Date('2025-01-06T00:00:00');
+/** Map Bexley plan subject keys to app section ids. */
+const SUBJECT_TO_SECTION = {
+  english: 'inference',
+  verbalReasoning: 'verbal-reasoning',
+  maths: 'maths',
+  nonVerbalReasoning: 'nvr'
+};
+
+const SUBJECT_LABELS = {
+  english: 'English',
+  verbalReasoning: 'Verbal Reasoning',
+  maths: 'Maths',
+  nonVerbalReasoning: 'Non-Verbal Reasoning'
+};
+
+/** Get user's configured start date (or default). */
+export function getStartDate() {
+  try {
+    return localStorage.getItem(START_DATE_KEY) || DEFAULT_START_DATE;
+  } catch {
+    return DEFAULT_START_DATE;
+  }
+}
+
+/** Save user's start date. */
+export function setStartDate(dateStr) {
+  try {
+    localStorage.setItem(START_DATE_KEY, dateStr || DEFAULT_START_DATE);
+  } catch {}
+}
+
+/** Load the Bexley plan JSON (cached). */
+export async function loadBexleyPlan() {
+  if (_bexleyPlan) return _bexleyPlan;
+  try {
+    const res = await fetch('data/bexley-20-week-plan.json');
+    _bexleyPlan = await res.json();
+  } catch (e) {
+    console.error('Failed to load Bexley plan:', e);
+    _bexleyPlan = { weeks: [], totalWeeks: 20 };
+  }
+  return _bexleyPlan;
+}
+
+/** Current week number (1-based) relative to START_DATE. 0 = before start, >20 = after end. */
+export function getCurrentBexleyWeek() {
+  const start = new Date(getStartDate() + 'T00:00:00');
   const now = new Date();
   now.setHours(0, 0, 0, 0);
-  const diffMs = now - epoch;
-  const diffWeeks = Math.floor(diffMs / (7 * 24 * 60 * 60 * 1000));
-  return ((diffWeeks % WEEKLY_PLAN.length) + WEEKLY_PLAN.length) % WEEKLY_PLAN.length;
+  const diffMs = now - start;
+  if (diffMs < 0) return 0;
+  const weekNum = Math.floor(diffMs / (7 * 24 * 60 * 60 * 1000)) + 1;
+  return weekNum;
 }
 
-/** Get the current week's plan. */
-export function getCurrentWeekPlan() {
-  return WEEKLY_PLAN[getCurrentWeekIndex()];
-}
+export { DEFAULT_START_DATE };
 
 /** Check if a section was practised this week (by checking localStorage activity). */
 function wasPracticedThisWeek(sectionId) {
@@ -121,32 +139,85 @@ function wasPracticedThisWeek(sectionId) {
   }
 }
 
-/** Render the weekly study plan. */
-export function renderWeeklyPlan() {
-  const weekIndex = getCurrentWeekIndex();
-  const plan = WEEKLY_PLAN[weekIndex];
+/** Format a YYYY-MM-DD date as DD Mon YYYY. */
+function fmtDate(dateStr) {
+  try {
+    const d = new Date(dateStr + 'T00:00:00');
+    return d.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+  } catch {
+    return dateStr;
+  }
+}
 
-  const focusCards = plan.sections.map((secId) => {
+/** Render the Bexley 20-week study plan for current week. */
+export function renderBexleyPlan(planData) {
+  const weekNum = getCurrentBexleyWeek();
+  const startDate = getStartDate();
+
+  // Before plan starts
+  if (weekNum === 0) {
+    return `
+      <div class="weekly-plan">
+        <h2 class="weekly-title">Bexley 20-Week Plan</h2>
+        <p class="weekly-subtitle">Plan starts ${fmtDate(startDate)}</p>
+        <p class="weekly-subtitle">20 weeks of focused prep before the GL assessment.</p>
+      </div>`;
+  }
+
+  // After plan ends
+  if (weekNum > 20) {
+    return `
+      <div class="weekly-plan">
+        <h2 class="weekly-title">Exam week \u2014 good luck Jacob!</h2>
+        <p class="weekly-subtitle">You've done the work. Trust your practice.</p>
+      </div>`;
+  }
+
+  const weeks = (planData && planData.weeks) || [];
+  const week = weeks.find((w) => w.week === weekNum);
+  if (!week) {
+    return `
+      <div class="weekly-plan">
+        <h2 class="weekly-title">Week ${weekNum} of 20</h2>
+      </div>`;
+  }
+
+  const isCheckpoint = !!week.checkpoint;
+
+  const subjectKeys = ['english', 'verbalReasoning', 'maths', 'nonVerbalReasoning'];
+  const focusCards = subjectKeys.map((key) => {
+    const secId = SUBJECT_TO_SECTION[key];
     const sec = SECTIONS.find((s) => s.id === secId);
-    if (!sec) return '';
-    const target = plan.targets[secId] || '';
+    const icon = sec ? sec.icon : '\u{1F4D6}';
+    const label = SUBJECT_LABELS[key];
+    const text = week[key] || '';
     const done = wasPracticedThisWeek(secId);
     const doneClass = done ? 'weekly-card--done' : '';
 
     return `
       <a class="weekly-focus-card ${doneClass}" href="#/${secId}">
-        <span class="weekly-card-icon">${sec.icon}</span>
-        <span class="weekly-card-name">${sec.name}</span>
-        <span class="weekly-card-target">${target}</span>
+        <span class="weekly-card-icon">${icon}</span>
+        <span class="weekly-card-name">${label}</span>
+        <span class="weekly-card-target">${text}</span>
         ${done ? '<span class="weekly-card-tick">\u2713</span>' : ''}
       </a>`;
   }).join('');
 
+  const checkpointBanner = isCheckpoint
+    ? `<div class="weekly-checkpoint">\u{1F3AF} Checkpoint week \u2014 full mock!</div>`
+    : '';
+
+  const homework = week.homework
+    ? `<div class="weekly-homework"><strong>Homework:</strong> ${week.homework}</div>`
+    : '';
+
   return `
-    <div class="weekly-plan">
+    <div class="weekly-plan ${isCheckpoint ? 'weekly-plan--checkpoint' : ''}">
       <h2 class="weekly-title">This Week</h2>
-      <p class="weekly-subtitle">Week ${weekIndex + 1} of 24</p>
+      <p class="weekly-subtitle">Week ${weekNum} of 20 \u2014 Bexley plan</p>
+      ${checkpointBanner}
       <div class="weekly-focus-grid">${focusCards}</div>
+      ${homework}
     </div>`;
 }
 
@@ -169,11 +240,12 @@ export function renderHeader(state) {
         <span class="streak-icon">\u{1F525}</span>
         <span>${streak}</span>
       </div>
+      <a class="settings-icon" href="#/settings" title="Settings" aria-label="Settings">\u2699\uFE0F</a>
     </div>`;
 }
 
-/** Render the 9-section home grid. */
-export function renderHome(state) {
+/** Render the 9-section home grid. Async so it can load the Bexley plan. */
+export async function renderHome(state) {
   const cards = SECTIONS.map((sec) => {
     const data = state.sections[sec.id] || { completed: 0, correct: 0, total: 0 };
     const pct = data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0;
@@ -189,13 +261,54 @@ export function renderHome(state) {
       </a>`;
   }).join('');
 
+  const planData = await loadBexleyPlan();
+
   return `
     ${renderHeader(state)}
     <h1 class="app-title">Jacob's 11 Plus Tutor</h1>
     <p class="app-subtitle">Choose a subject to practise</p>
     ${renderCountdown()}
-    ${renderWeeklyPlan()}
+    ${renderBexleyPlan(planData)}
     <div class="section-grid">${cards}</div>`;
+}
+
+// ── Settings Page ─────────────────────────────────────────────────────────
+
+const GL_DATE_STR = '18 September 2027';
+
+/** Render the settings page. */
+export function renderSettings() {
+  const startDate = getStartDate();
+  return `
+    <div class="quiz-header">
+      <a class="quiz-back" href="#/">\u2190</a>
+      <span class="quiz-title">Settings</span>
+    </div>
+    <div class="settings-page">
+      <div class="settings-section">
+        <h3>20-Week Plan Start Date</h3>
+        <p class="settings-hint">The Bexley 20-week plan begins on this date. Default is 20 weeks before the GL assessment.</p>
+        <input type="date" id="settings-start-date" class="settings-input" value="${startDate}">
+        <button class="btn btn-primary" data-action="save-start-date">Save</button>
+        <button class="btn btn-secondary" data-action="reset-start-date">Reset to default</button>
+      </div>
+
+      <div class="settings-section">
+        <h3>GL Assessment</h3>
+        <p class="settings-readonly">${GL_DATE_STR}</p>
+      </div>
+
+      <div class="settings-section">
+        <h3>Progress</h3>
+        <p class="settings-hint">Clear all XP, streaks and activity. Settings are kept.</p>
+        <button class="btn btn-danger" data-action="reset-progress">Reset progress</button>
+      </div>
+
+      <div class="settings-section">
+        <h3>Parent Dashboard</h3>
+        <a class="btn btn-secondary" href="dashboard.html">Open parent dashboard</a>
+      </div>
+    </div>`;
 }
 
 /** Progress dots for a quiz (coloured by result). */

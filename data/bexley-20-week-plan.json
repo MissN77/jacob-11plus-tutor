@@ -1,0 +1,27 @@
+{
+  "name": "Bexley 11+ 20-Week Preparation Plan",
+  "totalWeeks": 20,
+  "defaultStartDate": "2027-04-19",
+  "weeks": [
+    {"week":1,"english":"Reading comprehension basics: main idea, inference, author's purpose","verbalReasoning":"Synonyms and antonyms; word relationships","maths":"Number operations: addition, subtraction","nonVerbalReasoning":"Sequences and patterns; shape recognition","homework":"2 comprehension passages, 10 VR, 15 maths, 10 NVR sequences"},
+    {"week":2,"english":"Text structure; identifying key details","verbalReasoning":"Word meanings in context; analogies","maths":"Multiplication and division (multi-digit)","nonVerbalReasoning":"2D manipulation; reflection and symmetry","homework":"Read 20 mins daily, 15 analogies, 20 word problems, 15 shape transformations"},
+    {"week":3,"english":"Vocabulary in context; figurative language","verbalReasoning":"Compound words; letter sequences","maths":"Fractions: understanding and comparing","nonVerbalReasoning":"3D visualisation; cube nets","homework":"2 passages with inference, 20 word problems, 15 fractions, 10 cube nets"},
+    {"week":4,"english":"Predictions and conclusions; character analysis","verbalReasoning":"Word codes; odd one out","maths":"Decimals: place value and ordering","nonVerbalReasoning":"Pattern completion; series reasoning","homework":"Poetry comprehension, 25 VR mixed, 20 decimals, 15 patterns"},
+    {"week":5,"english":"Poetry; tone and mood","verbalReasoning":"Double meanings; number sequences","maths":"Percentages: concepts and conversions","nonVerbalReasoning":"Matrices and grids","homework":"2 fiction passages, 20 homophones, 20 percentages, 15 matrices"},
+    {"week":6,"english":"Non-fiction: fact vs opinion","verbalReasoning":"Hidden words; rearranging letters","maths":"Ratio and proportion basics","nonVerbalReasoning":"Shape analogies; rotation","homework":"2 non-fiction articles, 25 VR, 20 ratio, 15 shape analogies"},
+    {"week":7,"english":"Summarising; note-taking","verbalReasoning":"Prefixes and suffixes","maths":"Algebra: simple equations","nonVerbalReasoning":"Code breaking with shapes","homework":"Summarise 3 texts, 30 prefix/suffix, 20 algebra, 15 coded shapes"},
+    {"week":8,"english":"Multiple choice strategies","verbalReasoning":"Logical reasoning with words","maths":"Multi-step word problems","nonVerbalReasoning":"Complex sequences","homework":"2 timed tests, 25 logic, 25 word problems, 15 complex sequences"},
+    {"week":9,"english":"Evaluating arguments; bias","verbalReasoning":"Sentence completion","maths":"Mental maths; estimation","nonVerbalReasoning":"Overlapping and hidden shapes","homework":"2 persuasive texts, 30 sentence completion, 30 mental maths, 20 overlapping"},
+    {"week":10,"english":"REVISION: timed comprehension","verbalReasoning":"REVISION: VR speed building","maths":"REVISION: all topics","nonVerbalReasoning":"REVISION: NVR mixed","homework":"2 full mock papers","checkpoint":true},
+    {"week":11,"english":"Implicit meaning; subtext","verbalReasoning":"Advanced analogies","maths":"Measurement: area, perimeter, volume","nonVerbalReasoning":"Advanced matrices","homework":"2 challenging passages, 25 analogies, 20 measurement, 15 matrices"},
+    {"week":12,"english":"Grammar and SPAG","verbalReasoning":"Word substitution","maths":"Time; speed/distance/time","nonVerbalReasoning":"Combination transformations","homework":"Grammar worksheet, 25 patterns, 20 time, 15 combinations"},
+    {"week":13,"english":"Comparing texts","verbalReasoning":"Advanced codes and ciphers","maths":"Data handling: charts, averages","nonVerbalReasoning":"Progressive sequences","homework":"Compare 2 texts, 25 ciphers, 20 data, 15 progressive sequences"},
+    {"week":14,"english":"Inference and deduction","verbalReasoning":"Mixed VR exam-style","maths":"Logic puzzles with numbers","nonVerbalReasoning":"3D spatial reasoning","homework":"3 inference passages, 30 VR, 25 logic, 20 3D"},
+    {"week":15,"english":"Vocabulary enhancement","verbalReasoning":"Speed practice timed","maths":"Advanced fractions and decimals","nonVerbalReasoning":"Multi-step transformations","homework":"50-word vocab list, 40 quick VR, 25 conversions, 20 complex patterns"},
+    {"week":16,"english":"Formal vs informal language","verbalReasoning":"VR passage comprehension","maths":"Real-life maths scenarios","nonVerbalReasoning":"Complete NVR test practice","homework":"2 formal texts, 30 cross-over, 30 word problems, Full NVR test"},
+    {"week":17,"english":"MOCK: full comprehension paper","verbalReasoning":"MOCK: full VR paper","maths":"MOCK: full maths paper","nonVerbalReasoning":"MOCK: full NVR paper","homework":"Review mock, build revision plan","checkpoint":true},
+    {"week":18,"english":"Focus on weak areas","verbalReasoning":"Focus on weak areas","maths":"Focus on weak areas","nonVerbalReasoning":"Focus on weak areas","homework":"Targeted practice on 3 weakest topics per subject"},
+    {"week":19,"english":"Final review; confidence","verbalReasoning":"All VR types revision","maths":"Key topics; no-calculator","nonVerbalReasoning":"All NVR patterns","homework":"Light practice; focus on technique"},
+    {"week":20,"english":"Exam technique; stay calm","verbalReasoning":"Common patterns revision","maths":"Key formulas","nonVerbalReasoning":"Trust first instinct","homework":"Rest well; prepare materials","checkpoint":true}
+  ]
+}

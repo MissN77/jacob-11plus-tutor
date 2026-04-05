@@ -4,10 +4,24 @@ import { Store } from '../store.js';
 import { playSound } from '../audio.js';
 import { calculateQuizXP } from '../xp.js';
 import { renderQuizProgress, renderScore } from '../ui.js';
-import { TYPES, TEACH, Q } from '../nvr/questions.js';
+import { TYPES, TEACH } from '../nvr/questions.js';
 import { renderQArea, renderOpts } from '../nvr/renderers.js';
 
 const QUIZ_LENGTH = 10;
+
+// Question bank loaded from nvr-questions.json on demand
+let Q = null;
+let _loading = null;
+
+async function loadQuestions() {
+  if (Q) return Q;
+  if (_loading) return _loading;
+  _loading = fetch('data/nvr-questions.json')
+    .then(r => r.json())
+    .then(d => { Q = d.questions || {}; return Q; })
+    .catch(err => { console.error('Failed to load NVR questions:', err); Q = {}; return Q; });
+  return _loading;
+}
 
 // ── Module state ─────────────────────────────────────────────────────────
 let currentType = null;   // e.g. 'ooo'
@@ -193,8 +207,8 @@ function renderScoreScreen(container) {
 
 function startQuiz(typeId) {
   currentType = typeId;
-  const bank = Q[typeId];
-  if (!bank || !bank.length) return;
+  const bank = (Q && Q[typeId]) || [];
+  if (!bank.length) return;
 
   quizQueue = pickRandom(bank, Math.min(QUIZ_LENGTH, bank.length));
   currentIndex = 0;
@@ -264,7 +278,11 @@ function routeFromHash() {
 
 // ── Public init ──────────────────────────────────────────────────────────
 
-export function init(container) {
+export async function init(container) {
+  // Show a quick loading state while we fetch the question bank
+  container.innerHTML = `<div class="quiz-header"><a class="quiz-back" href="#/">\u2190</a><span class="quiz-title">NVR</span></div><div class="section-home"><p>Loading questions\u2026</p></div>`;
+  await loadQuestions();
+
   const route = routeFromHash();
 
   if (route.screen === 'practice' && route.typeId) {

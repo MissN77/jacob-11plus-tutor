@@ -1,0 +1,2510 @@
+{
+  "questionTypes": [
+    {
+      "id": "synonyms",
+      "title": "Synonyms",
+      "rule": "Synonyms are words with the same or closest meaning. They must be the same word class.",
+      "examples": [
+        "happy=pleased, glad, joyful, delighted",
+        "big=large, huge, enormous, gigantic",
+        "run=sprint, dash, race, jog"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Find the synonym: ancient = ?",
+          "options": [
+            "old",
+            "modern",
+            "new",
+            "future"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Find the synonym: quiet = ?",
+          "options": [
+            "silent",
+            "noisy",
+            "loud",
+            "booming"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Find the synonym: rapid = ?",
+          "options": [
+            "quick",
+            "slow",
+            "delayed",
+            "late"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose the closest meaning: cautious = ?",
+          "options": [
+            "careful",
+            "bright",
+            "angry",
+            "noisy"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Choose the closest meaning: reluctant = ?",
+          "options": [
+            "unwilling",
+            "eager",
+            "tired",
+            "proud"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Which word is a synonym of vital?",
+          "options": [
+            "essential",
+            "optional",
+            "useless",
+            "minor"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Say your own synonym first, then eliminate wrong word type and wrong strength.",
+      "traps": [
+        {
+          "heading": "Trap 1: wrong strength",
+          "explanation": "annoyed vs furious (not the same strength)",
+          "practiceQuestion": {
+            "stem": "Pick the closest synonym for cautious.",
+            "options": [
+              "careful",
+              "fearful",
+              "terrified",
+              "bright"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: wrong word class",
+          "explanation": "adjective picked when the blank needs a verb",
+          "practiceQuestion": {
+            "stem": "Pick the closest synonym for ancient.",
+            "options": [
+              "old",
+              "modern",
+              "young",
+              "recent"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: wrong meaning sense",
+          "explanation": "sharp=pointy vs sharp=clever",
+          "practiceQuestion": {
+            "stem": "Pick the closest synonym for assist.",
+            "options": [
+              "help",
+              "hurt",
+              "ignore",
+              "watch"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: related not same",
+          "explanation": "doctor and nurse are related, not synonyms",
+          "practiceQuestion": {
+            "stem": "Spot the odd one out: pleased, cheerful, delighted, furious.",
+            "options": [
+              "furious",
+              "pleased",
+              "cheerful",
+              "delighted"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: ignore context",
+          "explanation": "sentence meaning changes with your choice",
+          "practiceQuestion": {
+            "stem": "Which sentence uses delighted correctly?",
+            "options": [
+              "She was delighted to win the prize.",
+              "The rock was delighted in the field.",
+              "He delighted the math problem.",
+              "Delighted is a type of food."
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency synonym sets worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "feelings",
+            "examples": "happy=pleased, cheerful, delighted; sad=unhappy, gloomy, miserable; scared=frightened, nervous, terrified"
+          },
+          {
+            "name": "good and bad",
+            "examples": "good=excellent, great, superb; bad=awful, terrible, poor; kind=caring, helpful, thoughtful"
+          },
+          {
+            "name": "size and amount",
+            "examples": "big=huge, enormous, massive; small=tiny, little, miniature; many=numerous, several, plenty"
+          },
+          {
+            "name": "speed and movement",
+            "examples": "fast=quick, rapid, swift; slow=sluggish, steady, gradual; run=sprint, dash, race"
+          },
+          {
+            "name": "thinking",
+            "examples": "think=believe, suppose, imagine; know=realise, recognise, be aware; understand=grasp, comprehend, figure out"
+          },
+          {
+            "name": "speaking and writing",
+            "examples": "say=state, tell, mention; shout=yell, scream, roar; reply=respond, answer, return"
+          },
+          {
+            "name": "time words",
+            "examples": "start=begin, commence, launch; finish=complete, end, conclude; early=soon, prompt, ahead of time"
+          },
+          {
+            "name": "school and learning",
+            "examples": "teach=educate, instruct, train; learn=study, practise, master; help=assist, support, aid"
+          }
+        ]
+      }
+    },
+    {
+      "id": "antonyms",
+      "title": "Antonyms",
+      "rule": "Antonyms are words with opposite meaning. They must be the same word class.",
+      "examples": [
+        "hot/cold",
+        "day/night",
+        "love/hate",
+        "arrive/depart",
+        "generous/selfish",
+        "increase/decrease"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Find the antonym: valuable = ?",
+          "options": [
+            "worthless",
+            "expensive",
+            "precious",
+            "priceless"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Find the antonym: permit = ?",
+          "options": [
+            "allow",
+            "grant",
+            "forbid",
+            "accept"
+          ],
+          "correct": 2,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose most opposite: intentional = ?",
+          "options": [
+            "accidental",
+            "careful",
+            "planned",
+            "deliberate"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Choose most opposite: release = ?",
+          "options": [
+            "detain",
+            "free",
+            "liberate",
+            "discharge"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Which word is an antonym of cautious?",
+          "options": [
+            "reckless",
+            "careful",
+            "wary",
+            "alert"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Pick the pair that are most opposite, not just different. Re-read the question for choose two.",
+      "traps": [
+        {
+          "heading": "Trap 1: related not opposite",
+          "explanation": "careful is related to cautious, not opposite",
+          "practiceQuestion": {
+            "stem": "Pick the antonym of expand.",
+            "options": [
+              "shrink",
+              "grow",
+              "stretch",
+              "enlarge"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: wrong word class",
+          "explanation": "noun vs verb pair mixed",
+          "practiceQuestion": {
+            "stem": "Pick the antonym of permit.",
+            "options": [
+              "forbid",
+              "allow",
+              "grant",
+              "accept"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: weak opposite",
+          "explanation": "good vs OK (not a true opposite)",
+          "practiceQuestion": {
+            "stem": "Pick the antonym of brave.",
+            "options": [
+              "cowardly",
+              "bold",
+              "fearless",
+              "daring"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: wrong meaning sense",
+          "explanation": "light (not heavy) vs light (not dark)",
+          "practiceQuestion": {
+            "stem": "Odd one out: early, late, before, after, sandwich.",
+            "options": [
+              "sandwich",
+              "early",
+              "late",
+              "before"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: ignore context",
+          "explanation": "sentence meaning flips in an unexpected way",
+          "practiceQuestion": {
+            "stem": "Which sentence uses forbid correctly?",
+            "options": [
+              "The rules forbid running in the corridor.",
+              "The forbid was open.",
+              "She forbid happily.",
+              "Forbid is a fruit."
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency antonym pairs worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "time",
+            "examples": "early/late; before/after; first/last; start/finish"
+          },
+          {
+            "name": "size and amount",
+            "examples": "big/small; more/less; many/few; empty/full"
+          },
+          {
+            "name": "speed and effort",
+            "examples": "fast/slow; easy/hard; simple/difficult"
+          },
+          {
+            "name": "sound and light",
+            "examples": "loud/quiet; bright/dull; light/dark"
+          },
+          {
+            "name": "character",
+            "examples": "kind/cruel; polite/rude; honest/dishonest; brave/timid"
+          },
+          {
+            "name": "actions",
+            "examples": "accept/reject; allow/forbid; arrive/depart; increase/decrease"
+          },
+          {
+            "name": "direction and position",
+            "examples": "up/down; left/right; inside/outside; near/far"
+          },
+          {
+            "name": "feelings",
+            "examples": "happy/sad; calm/anxious; proud/ashamed"
+          }
+        ]
+      }
+    },
+    {
+      "id": "homonyms",
+      "title": "Homonyms",
+      "rule": "Homophones sound the same but have different spelling and meaning. Homographs have the same spelling but different meaning.",
+      "examples": [
+        "their/there/they're",
+        "to/too/two",
+        "hear/here",
+        "right/write",
+        "lead (metal / lead the team)"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Choose the correct homophone: I can ___ the music.",
+          "options": [
+            "hear",
+            "here",
+            "heer",
+            "heir"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose the correct homophone: ___ going now.",
+          "options": [
+            "They're",
+            "Their",
+            "There",
+            "Thair"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose the correct homophone: I ___ an apple yesterday.",
+          "options": [
+            "ate",
+            "eight",
+            "eat",
+            "aight"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose the correct homophone: Please ___ for me.",
+          "options": [
+            "wait",
+            "weight",
+            "waite",
+            "whate"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose the correct word: The head teacher is the ___.",
+          "options": [
+            "principal",
+            "principle",
+            "principel",
+            "prinsipal"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "What are the two meanings of bank?",
+          "options": [
+            "river edge / money place",
+            "tree / fruit",
+            "car / road",
+            "day / night"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "What are the two meanings of bat?",
+          "options": [
+            "animal / sports equipment",
+            "fruit / car",
+            "house / book",
+            "river / tree"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Which sentence uses they're correctly?",
+          "options": [
+            "They're going home.",
+            "Put it over they're.",
+            "That is they're dog.",
+            "They're is a book."
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Decide the meaning first. Then choose the spelling. For they're, replace with they are to check.",
+      "traps": [
+        {
+          "heading": "Trap 1: choose by sound only",
+          "explanation": "pick the word you have seen before, not the one that fits",
+          "practiceQuestion": {
+            "stem": "Choose: I can (hear/here) the music.",
+            "options": [
+              "hear",
+              "here",
+              "heer",
+              "heir"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: ignore grammar",
+          "explanation": "they're used where their is needed",
+          "practiceQuestion": {
+            "stem": "Choose: (Their/There/They're) going now.",
+            "options": [
+              "They're",
+              "Their",
+              "There",
+              "Thair"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: mix up pair",
+          "explanation": "principal vs principle",
+          "practiceQuestion": {
+            "stem": "Choose: I have (two/too/to) pens.",
+            "options": [
+              "two",
+              "too",
+              "to",
+              "tow"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: miss homograph meaning",
+          "explanation": "close (near) vs close (shut)",
+          "practiceQuestion": {
+            "stem": "Which are two meanings of tear?",
+            "options": [
+              "rip / drop from eye",
+              "fruit / tree",
+              "car / road",
+              "book / page"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: rush without reread",
+          "explanation": "not reading the full sentence again",
+          "practiceQuestion": {
+            "stem": "Which sentence uses right correctly?",
+            "options": [
+              "Turn right at the corner.",
+              "I right a letter.",
+              "Right is a fruit.",
+              "The right is a tree."
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency homonyms worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "there set",
+            "examples": "their, there, they're"
+          },
+          {
+            "name": "to set",
+            "examples": "to, too, two"
+          },
+          {
+            "name": "sound pairs",
+            "examples": "hear/here; right/write; one/won; no/know"
+          },
+          {
+            "name": "numbers and food",
+            "examples": "eight/ate; flour/flower"
+          },
+          {
+            "name": "time and place",
+            "examples": "where/wear; weather/whether"
+          },
+          {
+            "name": "school words",
+            "examples": "principal/principle"
+          },
+          {
+            "name": "homographs 1",
+            "examples": "lead, bow, tear, close"
+          },
+          {
+            "name": "homographs 2",
+            "examples": "wind, row, object, match"
+          }
+        ]
+      }
+    },
+    {
+      "id": "adjectives",
+      "title": "Adjectives",
+      "rule": "Adjectives describe nouns. They answer what kind, how many, or which one.",
+      "examples": [
+        "enormous elephant",
+        "beautiful dress",
+        "three tiny puppies",
+        "cold dark night"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Which word is an adjective: brave knight?",
+          "options": [
+            "brave",
+            "knight",
+            "the",
+            "is"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which word is an adjective: fierce dragon?",
+          "options": [
+            "fierce",
+            "dragon",
+            "the",
+            "was"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which word is an adjective: younger sister?",
+          "options": [
+            "younger",
+            "sister",
+            "the",
+            "my"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which word is an adjective: ancient castle?",
+          "options": [
+            "ancient",
+            "castle",
+            "the",
+            "stood"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which word is an adjective: high hill?",
+          "options": [
+            "high",
+            "hill",
+            "the",
+            "on"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which adjective fits best: The ___ teacher explained the problem.",
+          "options": [
+            "patient",
+            "quickly",
+            "runs",
+            "teacher"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Which adjective fits best: A ___ storm destroyed the village.",
+          "options": [
+            "violent",
+            "softly",
+            "storm",
+            "destroy"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Which adjective fits best: The ___ children played in the garden.",
+          "options": [
+            "happy",
+            "happily",
+            "play",
+            "garden"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Match the describing word to the noun it modifies. Point to the noun, then check the adjective.",
+      "traps": [
+        {
+          "heading": "Trap 1: adjective vs adverb",
+          "explanation": "quiet vs quietly",
+          "practiceQuestion": {
+            "stem": "Which adjective fits: The ancient castle stood on the high hill. Which word is an adjective?",
+            "options": [
+              "ancient",
+              "castle",
+              "stood",
+              "hill"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: miss the noun",
+          "explanation": "the adjective describes a different noun than you think",
+          "practiceQuestion": {
+            "stem": "Choose an adjective for: storm (wild/slowly).",
+            "options": [
+              "wild",
+              "slowly",
+              "storm",
+              "loudly"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: ignore number words",
+          "explanation": "three, several, many are adjectives too",
+          "practiceQuestion": {
+            "stem": "Add one adjective: The ___ dog barked.",
+            "options": [
+              "noisy",
+              "quickly",
+              "barked",
+              "dog"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: forget lists",
+          "explanation": "cold, dark night has 2 adjectives",
+          "practiceQuestion": {
+            "stem": "Spot an adjective in: a cold dark night.",
+            "options": [
+              "cold",
+              "night",
+              "a",
+              "the"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: confusing ed/ing",
+          "explanation": "bored child vs boring film",
+          "practiceQuestion": {
+            "stem": "Which sentence has two adjectives before one noun?",
+            "options": [
+              "The big red ball bounced.",
+              "The dog barked loudly.",
+              "She ran quickly.",
+              "It rained yesterday."
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency adjective banks worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "size",
+            "examples": "tiny, small, huge, enormous, massive"
+          },
+          {
+            "name": "colour",
+            "examples": "bright, dark, pale, golden, red, blue"
+          },
+          {
+            "name": "shape",
+            "examples": "round, square, curved, straight, flat"
+          },
+          {
+            "name": "age",
+            "examples": "ancient, old, new, modern, recent"
+          },
+          {
+            "name": "opinion",
+            "examples": "wonderful, awful, excellent, terrible, amazing"
+          },
+          {
+            "name": "quantity",
+            "examples": "many, few, several, numerous, some"
+          },
+          {
+            "name": "material",
+            "examples": "wooden, metal, plastic, glass, paper"
+          },
+          {
+            "name": "texture",
+            "examples": "rough, smooth, soft, hard, sharp"
+          }
+        ]
+      }
+    },
+    {
+      "id": "adverbs",
+      "title": "Adverbs",
+      "rule": "Adverbs modify verbs, adjectives, or other adverbs. They tell how, when, where, how often, or how much.",
+      "examples": [
+        "sang beautifully",
+        "arrived yesterday",
+        "outside",
+        "always",
+        "extremely difficult"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Which word is an adverb: She sang beautifully.",
+          "options": [
+            "beautifully",
+            "sang",
+            "she",
+            "song"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which word is an adverb: They arrived yesterday.",
+          "options": [
+            "yesterday",
+            "arrived",
+            "they",
+            "day"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which word is an adverb: The cat is outside.",
+          "options": [
+            "outside",
+            "cat",
+            "the",
+            "is"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which word is an adverb: He always does his homework.",
+          "options": [
+            "always",
+            "does",
+            "homework",
+            "his"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which word is an adverb: The test was extremely difficult.",
+          "options": [
+            "extremely",
+            "difficult",
+            "test",
+            "was"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Which adverb of manner fits: He answered ___.",
+          "options": [
+            "calmly",
+            "calm",
+            "answer",
+            "question"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Which adverb of time fits: We will leave ___.",
+          "options": [
+            "soon",
+            "soft",
+            "leaving",
+            "sooner"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Which adverb of frequency fits: She ___ practises.",
+          "options": [
+            "always",
+            "careful",
+            "practise",
+            "quick"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Ask: how, when, where, how often, how much. Many end in ly, but not all.",
+      "traps": [
+        {
+          "heading": "Trap 1: assume ly always",
+          "explanation": "friendly is an adjective, not an adverb",
+          "practiceQuestion": {
+            "stem": "Choose: He spoke (quiet/quietly).",
+            "options": [
+              "quietly",
+              "quiet",
+              "quieter",
+              "quietness"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: adjective vs adverb",
+          "explanation": "quiet vs quietly",
+          "practiceQuestion": {
+            "stem": "Spot the adverb: She arrived yesterday.",
+            "options": [
+              "yesterday",
+              "arrived",
+              "she",
+              "day"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: place in sentence",
+          "explanation": "putting the adverb in a place that changes meaning",
+          "practiceQuestion": {
+            "stem": "Add an adverb: The dog barked ___.",
+            "options": [
+              "loudly",
+              "loud",
+              "loudness",
+              "dog"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: degree words",
+          "explanation": "very, extremely are adverbs of degree",
+          "practiceQuestion": {
+            "stem": "Which is an adverb: careful/carefully?",
+            "options": [
+              "carefully",
+              "careful",
+              "care",
+              "cared"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: well vs good",
+          "explanation": "I did well (not good)",
+          "practiceQuestion": {
+            "stem": "Which sentence uses always correctly?",
+            "options": [
+              "She always walks to school.",
+              "Always is a fruit.",
+              "The always ran quickly.",
+              "Always the dog barked."
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency adverbs worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "manner",
+            "examples": "quickly, slowly, carefully, badly, well, neatly"
+          },
+          {
+            "name": "time",
+            "examples": "yesterday, today, soon, now, later, finally"
+          },
+          {
+            "name": "place",
+            "examples": "here, there, outside, nearby, everywhere"
+          },
+          {
+            "name": "frequency",
+            "examples": "always, usually, often, sometimes, never, rarely"
+          },
+          {
+            "name": "degree",
+            "examples": "very, extremely, quite, too, rather"
+          },
+          {
+            "name": "certainty",
+            "examples": "probably, definitely, maybe, surely"
+          },
+          {
+            "name": "sequence",
+            "examples": "first, next, then, finally"
+          },
+          {
+            "name": "exam pairs",
+            "examples": "quiet/quietly; careful/carefully; happy/happily"
+          }
+        ]
+      }
+    },
+    {
+      "id": "analogies",
+      "title": "Word Relationships and Analogies",
+      "rule": "Analogies compare relationships: A is to B as C is to D. Match the same relationship.",
+      "examples": [
+        "lion:pride :: wolf:pack",
+        "doctor:hospital :: chef:kitchen",
+        "wheel:bike (part:whole)"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Complete: bird:nest :: bee:?",
+          "options": [
+            "hive",
+            "honey",
+            "flower",
+            "sting"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Complete: knife:cut :: pen:?",
+          "options": [
+            "write",
+            "ink",
+            "paper",
+            "draw"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Complete: winter:cold :: summer:?",
+          "options": [
+            "hot",
+            "sun",
+            "holiday",
+            "beach"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Complete: sip:drink :: nibble:?",
+          "options": [
+            "eat",
+            "food",
+            "mouse",
+            "bite"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Complete: pupil:school :: patient:?",
+          "options": [
+            "hospital",
+            "doctor",
+            "illness",
+            "medicine"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Complete: whisper:quiet :: shout:?",
+          "options": [
+            "loud",
+            "voice",
+            "angry",
+            "scream"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Say the relationship in words first. Then apply the same relationship to the second pair.",
+      "traps": [
+        {
+          "heading": "Trap 1: linked but wrong relationship",
+          "explanation": "both about school, but not the same relationship",
+          "practiceQuestion": {
+            "stem": "What is the relationship in doctor:hospital?",
+            "options": [
+              "person and workplace",
+              "tool and action",
+              "part and whole",
+              "cause and effect"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: category vs example",
+          "explanation": "fruit:apple vs apple:fruit confusion",
+          "practiceQuestion": {
+            "stem": "Complete: fish:shoal :: bee:?",
+            "options": [
+              "swarm",
+              "hive",
+              "honey",
+              "nest"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: tool vs place mix",
+          "explanation": "chef:knife vs chef:kitchen",
+          "practiceQuestion": {
+            "stem": "Complete: scissors:cut :: pen:?",
+            "options": [
+              "write",
+              "paper",
+              "ink",
+              "draw"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: two rules at once",
+          "explanation": "mix place and purpose",
+          "practiceQuestion": {
+            "stem": "Complete: kitten:cat :: calf:?",
+            "options": [
+              "cow",
+              "horse",
+              "sheep",
+              "dog"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: grammar mismatch",
+          "explanation": "verb pair must stay verb pair",
+          "practiceQuestion": {
+            "stem": "Complete: whisper:quiet :: shout:?",
+            "options": [
+              "loud",
+              "voice",
+              "angry",
+              "scream"
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency analogy patterns worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "group names",
+            "examples": "lion:pride; wolf:pack; fish:shoal; bees:swarm; birds:flock"
+          },
+          {
+            "name": "place",
+            "examples": "chef:kitchen; doctor:hospital; pilot:cockpit; librarian:library"
+          },
+          {
+            "name": "tool and action",
+            "examples": "knife:cut; pen:write; broom:sweep; scissors:snip"
+          },
+          {
+            "name": "part and whole",
+            "examples": "wheel:bike; page:book; petal:flower; room:house"
+          },
+          {
+            "name": "cause and effect",
+            "examples": "fire:smoke; rain:flood; study:success; illness:fever"
+          },
+          {
+            "name": "animal and home",
+            "examples": "bird:nest; bee:hive; dog:kennel; horse:stable"
+          },
+          {
+            "name": "object and material",
+            "examples": "ring:gold; bottle:glass; table:wood"
+          },
+          {
+            "name": "opposites",
+            "examples": "hot:cold; accept:reject; increase:decrease; early:late"
+          }
+        ]
+      }
+    },
+    {
+      "id": "letter-codes",
+      "title": "Letter Codes (A1-Z26 and shifts)",
+      "rule": "Letters can be coded as numbers (A1 to Z26) or shifted by a fixed move. Apply the same move to every letter.",
+      "examples": [
+        "A=1, B=2 ... Z=26",
+        "shift +2: C->E",
+        "wrap: Z+1->A"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Shift +1: A becomes?",
+          "options": [
+            "B",
+            "C",
+            "Z",
+            "A"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Shift +1: D becomes?",
+          "options": [
+            "E",
+            "F",
+            "C",
+            "D"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Shift +1: Y becomes?",
+          "options": [
+            "Z",
+            "A",
+            "X",
+            "W"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "A1-Z26: What is the code for DOG?",
+          "options": [
+            "4-15-7",
+            "3-14-6",
+            "5-16-8",
+            "4-14-7"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Shift -2: B becomes?",
+          "options": [
+            "Z",
+            "A",
+            "C",
+            "D"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Decode 6-1-20 (A1-Z26)",
+          "options": [
+            "FAT",
+            "GAT",
+            "FAS",
+            "EAT"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Write the move (+ or -) before you start. Work one letter at a time in a neat row.",
+      "traps": [
+        {
+          "heading": "Trap 1: no wrap-around",
+          "explanation": "Z+1 is A, not a non-letter",
+          "practiceQuestion": {
+            "stem": "What number is M?",
+            "options": [
+              "13",
+              "12",
+              "14",
+              "11"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: move changes",
+          "explanation": "first letter +2, next letter +1 by mistake",
+          "practiceQuestion": {
+            "stem": "Shift +2: D becomes?",
+            "options": [
+              "F",
+              "E",
+              "G",
+              "C"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: wrong direction",
+          "explanation": "forward instead of backward",
+          "practiceQuestion": {
+            "stem": "Shift -1: A becomes?",
+            "options": [
+              "Z",
+              "B",
+              "Y",
+              "A"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: skip a letter",
+          "explanation": "jumping two letters when move is +1",
+          "practiceQuestion": {
+            "stem": "Decode 3-1-20.",
+            "options": [
+              "CAT",
+              "BAT",
+              "DAT",
+              "CAS"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: misread instruction",
+          "explanation": "answer needed as letters but you leave numbers",
+          "practiceQuestion": {
+            "stem": "Shift +3: X becomes?",
+            "options": [
+              "A",
+              "Z",
+              "B",
+              "Y"
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency code moves worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "A1-Z26 anchors",
+            "examples": "A=1; E=5; J=10; M=13; Z=26"
+          },
+          {
+            "name": "shift forward",
+            "examples": "+1, +2, +3 examples"
+          },
+          {
+            "name": "shift backward",
+            "examples": "-1, -2, -3 examples"
+          },
+          {
+            "name": "wrap-around",
+            "examples": "Z+1=A; Z+2=B; A-1=Z; A-2=Y"
+          },
+          {
+            "name": "reverse",
+            "examples": "CAT->TAC; STOP->POTS"
+          },
+          {
+            "name": "count letters",
+            "examples": "BOOK=4; PENCIL=6; vowels count; consonants count"
+          },
+          {
+            "name": "sum of positions",
+            "examples": "DOG=4+15+7"
+          },
+          {
+            "name": "difference of positions",
+            "examples": "C->E is +2; H->E is -3"
+          }
+        ]
+      }
+    },
+    {
+      "id": "letter-sequences",
+      "title": "Letter Sequences",
+      "rule": "A sequence uses a repeated rule across positions: step size, alternating moves, or a cycle.",
+      "examples": [
+        "A,C,E,G (skip one)",
+        "Z,X,V,T (back 2)",
+        "A,B,A,B (cycle)"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Next letter: D, F, H, ?",
+          "options": [
+            "J",
+            "I",
+            "K",
+            "G"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Next letter: M, K, I, ?",
+          "options": [
+            "G",
+            "H",
+            "J",
+            "F"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Next letter: A, D, G, ?",
+          "options": [
+            "J",
+            "I",
+            "H",
+            "K"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Next letter: B, E, H, K, ?",
+          "options": [
+            "N",
+            "M",
+            "L",
+            "O"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Next letter: Z, W, T, Q, ?",
+          "options": [
+            "N",
+            "O",
+            "P",
+            "M"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Next letter: A, C, B, D, C, ?",
+          "options": [
+            "E",
+            "D",
+            "F",
+            "B"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Convert to A1-Z26 positions to spot the number pattern quickly.",
+      "traps": [
+        {
+          "heading": "Trap 1: assume too early",
+          "explanation": "rule fits first 2 terms but not all terms",
+          "practiceQuestion": {
+            "stem": "Next: A, C, E, ?",
+            "options": [
+              "G",
+              "F",
+              "H",
+              "D"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: miss alternation",
+          "explanation": "up then down pattern missed",
+          "practiceQuestion": {
+            "stem": "Next: Z, X, V, ?",
+            "options": [
+              "T",
+              "U",
+              "S",
+              "W"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: miss cycle length",
+          "explanation": "A,B,C cycle missed",
+          "practiceQuestion": {
+            "stem": "Next: A, B, A, B, ?",
+            "options": [
+              "A",
+              "B",
+              "C",
+              "D"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: wrong letter positions",
+          "explanation": "thinking E is 6",
+          "practiceQuestion": {
+            "stem": "Next: B, E, H, ?",
+            "options": [
+              "K",
+              "J",
+              "L",
+              "I"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: no wrap-around check",
+          "explanation": "sequence may pass Z back to A",
+          "practiceQuestion": {
+            "stem": "Next: A, C, B, D, ?",
+            "options": [
+              "C",
+              "D",
+              "E",
+              "B"
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency sequence rules worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "step +1",
+            "examples": "A,B,C; M,N,O"
+          },
+          {
+            "name": "step +2",
+            "examples": "A,C,E; D,F,H"
+          },
+          {
+            "name": "step +3",
+            "examples": "A,D,G; B,E,H"
+          },
+          {
+            "name": "step -1",
+            "examples": "D,C,B; M,L,K"
+          },
+          {
+            "name": "step -2",
+            "examples": "Z,X,V; Y,W,U"
+          },
+          {
+            "name": "alternating",
+            "examples": "+2 then -1; +1 then +2"
+          },
+          {
+            "name": "cycles",
+            "examples": "A,B; A,B,C; vowel cycle"
+          },
+          {
+            "name": "position-based",
+            "examples": "prime positions; square positions mapped to letters"
+          }
+        ]
+      }
+    },
+    {
+      "id": "anagrams",
+      "title": "Anagrams and Word Building",
+      "rule": "Anagrams rearrange letters to make a new word. Word building may add, remove, or swap letters to form a real word.",
+      "examples": [
+        "STOP->POTS",
+        "LISTEN->SILENT",
+        "tone->stone (add one letter)"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Anagram of EAST = ?",
+          "options": [
+            "SEAT",
+            "STEA",
+            "EATS only",
+            "TEAS only"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Change one letter in COLD to make a word.",
+          "options": [
+            "GOLD",
+            "CLOD",
+            "DOLD",
+            "COLE"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Add one letter to TONE to make a word.",
+          "options": [
+            "STONE",
+            "TONEY",
+            "TONES only",
+            "TONER only"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Anagram of SPARE = ?",
+          "options": [
+            "SPEAR",
+            "SPRAY",
+            "STARE",
+            "PEARS"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Remove one letter from PLATE to make a word.",
+          "options": [
+            "LATE",
+            "PLAT",
+            "PLAE",
+            "PLET"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Change two letters in LATE to make a new word.",
+          "options": [
+            "LIME",
+            "LATE",
+            "LAKE",
+            "LANE"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Sort vowels and consonants, then build using common endings like ed, ing, er.",
+      "traps": [
+        {
+          "heading": "Trap 1: missing a letter",
+          "explanation": "you forget one letter from the set",
+          "practiceQuestion": {
+            "stem": "Anagram of STOP = ?",
+            "options": [
+              "POTS",
+              "STOP",
+              "OPTS only",
+              "TOPS only"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: repeat a letter",
+          "explanation": "you use a letter twice",
+          "practiceQuestion": {
+            "stem": "Anagram of EAST = ?",
+            "options": [
+              "SEAT",
+              "EAST",
+              "ATES",
+              "TEAS only"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: not a real word",
+          "explanation": "looks plausible but not a word",
+          "practiceQuestion": {
+            "stem": "Add a letter to TONE to make a word.",
+            "options": [
+              "STONE",
+              "TONEX",
+              "TONEY",
+              "TONEE"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: ignore common chunks",
+          "explanation": "missing endings like ing or ed",
+          "practiceQuestion": {
+            "stem": "Change one letter: COLD to ___.",
+            "options": [
+              "GOLD",
+              "CAMP",
+              "BOLT",
+              "HOLE"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: spelling not checked",
+          "explanation": "word built but misspelt",
+          "practiceQuestion": {
+            "stem": "Remove one letter: PLATE becomes ___.",
+            "options": [
+              "LATE",
+              "PLAY",
+              "GATE",
+              "PLOT"
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency anagram and word-build patterns worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "4-letter sets",
+            "examples": "stop/pots/spot; east/eats/seat"
+          },
+          {
+            "name": "5-letter sets",
+            "examples": "spare/spear/pares; stain/saint"
+          },
+          {
+            "name": "common endings",
+            "examples": "ed, ing, er, est, tion, ly"
+          },
+          {
+            "name": "common prefixes",
+            "examples": "re, un, dis, mis, pre"
+          },
+          {
+            "name": "one-letter change",
+            "examples": "cold->gold; late->rate; pin->pan"
+          },
+          {
+            "name": "add a letter",
+            "examples": "tone->stone; plan->plane"
+          },
+          {
+            "name": "remove a letter",
+            "examples": "plate->late; stone->tone"
+          },
+          {
+            "name": "double letters",
+            "examples": "need, pool, letter patterns like ll, ss, oo"
+          }
+        ]
+      }
+    },
+    {
+      "id": "hidden-words",
+      "title": "Hidden Words",
+      "rule": "A hidden word is formed by consecutive letters inside a longer string or across a word break. It may run forwards or backwards.",
+      "examples": [
+        "close train -> set (consecutive letters)",
+        "check backwards too"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Find the hidden word: stoNE ARMy",
+          "options": [
+            "NEAR",
+            "STONE",
+            "ARMY",
+            "ONEA"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Find the hidden word: thE CAT Is",
+          "options": [
+            "CAT",
+            "THE",
+            "HECA",
+            "ATIS"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Find the hidden word: piLOT ONly",
+          "options": [
+            "LOTON",
+            "PILOT",
+            "TONLY",
+            "LOON"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Find the hidden word: suGAR DEN",
+          "options": [
+            "GARDEN",
+            "SUGAR",
+            "ARDEN",
+            "UGAR"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Find a hidden word across two words: close train",
+          "options": [
+            "SET",
+            "CLOSE",
+            "TRAIN",
+            "OSET"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Find the backwards hidden word in: emit",
+          "options": [
+            "TIME",
+            "EMIT",
+            "MITE",
+            "ITEM"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Scan with your finger in chunks of 3 to 6 letters. Check forwards then backwards.",
+      "traps": [
+        {
+          "heading": "Trap 1: skipping letters",
+          "explanation": "taking letters from different places",
+          "practiceQuestion": {
+            "stem": "Hidden word in: close train.",
+            "options": [
+              "SET",
+              "CLOSE",
+              "TRAIN",
+              "LOSE"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: not consecutive",
+          "explanation": "hidden words must be consecutive",
+          "practiceQuestion": {
+            "stem": "Hidden word in: stone army.",
+            "options": [
+              "NEAR",
+              "STONE",
+              "ARMY",
+              "EARN"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: forget backwards",
+          "explanation": "backwards option missed",
+          "practiceQuestion": {
+            "stem": "Hidden word in: pilot only.",
+            "options": [
+              "LOTON",
+              "PILOT",
+              "ONLY",
+              "TONE"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: stop too soon",
+          "explanation": "you see a 2-letter word and stop",
+          "practiceQuestion": {
+            "stem": "Backwards word in: emit.",
+            "options": [
+              "TIME",
+              "EMIT",
+              "MITE",
+              "ITEM"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: wrong length",
+          "explanation": "question asks 4 letters but you found 3",
+          "practiceQuestion": {
+            "stem": "Find a 3-letter hidden word in: station.",
+            "options": [
+              "TAT",
+              "ION",
+              "STA",
+              "TIO"
+            ],
+            "correct": 1
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency hidden-word patterns worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "3-letter hides",
+            "examples": "cat, dog, sun, map, pen"
+          },
+          {
+            "name": "4-letter hides",
+            "examples": "lion, bear, home, rain"
+          },
+          {
+            "name": "5-letter hides",
+            "examples": "apple, stone, train, river"
+          },
+          {
+            "name": "across two words",
+            "examples": "close train -> set; note about -> tea"
+          },
+          {
+            "name": "backwards hides",
+            "examples": "emit -> time; pots -> stop"
+          },
+          {
+            "name": "within one word",
+            "examples": "station has at and ion"
+          },
+          {
+            "name": "common chunks",
+            "examples": "tion, ing, ed, ly"
+          },
+          {
+            "name": "scan routine",
+            "examples": "move 1 letter along each time and re-check"
+          }
+        ]
+      }
+    },
+    {
+      "id": "odd-one-out",
+      "title": "Odd One Out (Words)",
+      "rule": "Three words share one clear, provable property. One word does not share it.",
+      "examples": [
+        "apple, banana, grape, hammer",
+        "run, jump, swim, blue"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Odd one out: chair, table, sofa, carrot",
+          "options": [
+            "carrot",
+            "chair",
+            "table",
+            "sofa"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Odd one out: whisper, shout, scream, spoon",
+          "options": [
+            "spoon",
+            "whisper",
+            "shout",
+            "scream"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Odd one out: London, Paris, Rome, Tuesday",
+          "options": [
+            "Tuesday",
+            "London",
+            "Paris",
+            "Rome"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Odd one out: generous, kind, helpful, selfish",
+          "options": [
+            "selfish",
+            "generous",
+            "kind",
+            "helpful"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Odd one out: triangle, square, circle, running",
+          "options": [
+            "running",
+            "triangle",
+            "square",
+            "circle"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Odd one out: early, late, before, sandwich",
+          "options": [
+            "sandwich",
+            "early",
+            "late",
+            "before"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "State the shared category for the three, then check all three fit before choosing.",
+      "traps": [
+        {
+          "heading": "Trap 1: choose unknown word",
+          "explanation": "pick the word you do not know",
+          "practiceQuestion": {
+            "stem": "Odd one out: apple, banana, grape, hammer.",
+            "options": [
+              "hammer",
+              "apple",
+              "banana",
+              "grape"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: use two rules",
+          "explanation": "meaning plus spelling at the same time",
+          "practiceQuestion": {
+            "stem": "Odd one out: run, jump, swim, blue.",
+            "options": [
+              "blue",
+              "run",
+              "jump",
+              "swim"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: opinion based",
+          "explanation": "I do not like it, so it is odd",
+          "practiceQuestion": {
+            "stem": "Odd one out: London, Paris, Rome, Tuesday.",
+            "options": [
+              "Tuesday",
+              "London",
+              "Paris",
+              "Rome"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: miss word class",
+          "explanation": "one is a verb, others are nouns",
+          "practiceQuestion": {
+            "stem": "Odd one out: generous, kind, helpful, selfish.",
+            "options": [
+              "selfish",
+              "generous",
+              "kind",
+              "helpful"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: do not prove",
+          "explanation": "no clear property stated",
+          "practiceQuestion": {
+            "stem": "What is the rule for odd one out: cat, dog, fish, apple?",
+            "options": [
+              "apple is not an animal",
+              "cat is a pet",
+              "dog barks",
+              "fish swims"
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency odd-one-out categories worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "food vs not",
+            "examples": "apple, banana, bread, pencil"
+          },
+          {
+            "name": "animals",
+            "examples": "lion, tiger, bear, chair"
+          },
+          {
+            "name": "verbs vs nouns",
+            "examples": "run, jump, swim, bottle"
+          },
+          {
+            "name": "places",
+            "examples": "London, Paris, Rome, carrot"
+          },
+          {
+            "name": "feelings",
+            "examples": "happy, sad, angry, table"
+          },
+          {
+            "name": "tools",
+            "examples": "hammer, saw, drill, grape"
+          },
+          {
+            "name": "time words",
+            "examples": "yesterday, today, soon, banana"
+          },
+          {
+            "name": "word class mix",
+            "examples": "quiet (adj), quietly (adv), slowly (adv), table (noun)"
+          }
+        ]
+      }
+    },
+    {
+      "id": "cloze",
+      "title": "Cloze (Best Word in a Sentence)",
+      "rule": "Choose the word that best completes the sentence. Use meaning, grammar, and connectives to decide.",
+      "examples": [
+        "Despite the rain, we still played",
+        "He ran quickly",
+        "Although it was late, we stayed calm"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "Choose: I was tired, ___ I finished the work.",
+          "options": [
+            "but",
+            "if",
+            "because",
+            "although"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose: The dog barked ___.",
+          "options": [
+            "loudly",
+            "loud",
+            "louder",
+            "loudness"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose: She was ___ to help.",
+          "options": [
+            "eager",
+            "eagerly",
+            "eagerness",
+            "eagered"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose: ___ it was late, we stayed.",
+          "options": [
+            "Although",
+            "Because",
+            "If",
+            "When"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Choose: He spoke ___ during the test.",
+          "options": [
+            "quietly",
+            "quiet",
+            "quieter",
+            "quietness"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Choose: The plan was ___ perfect.",
+          "options": [
+            "nearly",
+            "near",
+            "nearer",
+            "nearness"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Cover options and predict the missing word first. Then choose the option that matches word type and meaning.",
+      "traps": [
+        {
+          "heading": "Trap 1: grammar wrong",
+          "explanation": "quiet chosen when quietly is needed",
+          "practiceQuestion": {
+            "stem": "Choose: She spoke (quiet/quietly).",
+            "options": [
+              "quietly",
+              "quiet",
+              "quieter",
+              "quietness"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: connector clue missed",
+          "explanation": "although vs because signals different meaning",
+          "practiceQuestion": {
+            "stem": "Choose: ___ it was raining, we went.",
+            "options": [
+              "Although",
+              "Because",
+              "When",
+              "If"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: tense mismatch",
+          "explanation": "yesterday needs past tense",
+          "practiceQuestion": {
+            "stem": "Choose: He ran (quick/quickly).",
+            "options": [
+              "quickly",
+              "quick",
+              "quicker",
+              "quickness"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: fancy word trap",
+          "explanation": "pick the longest word",
+          "practiceQuestion": {
+            "stem": "Choose: The bag was (heavy/heavily).",
+            "options": [
+              "heavy",
+              "heavily",
+              "heavier",
+              "heaviness"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: no reread",
+          "explanation": "not reading sentence with your choice",
+          "practiceQuestion": {
+            "stem": "Which sentence uses 'although' correctly?",
+            "options": [
+              "Although it rained, we went out.",
+              "Although is a fruit.",
+              "The although ran fast.",
+              "She althoughed quickly."
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency cloze patterns worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "connectives",
+            "examples": "because, although, however, therefore, despite, unless"
+          },
+          {
+            "name": "word forms",
+            "examples": "quiet/quietly; careful/carefully; happy/happily"
+          },
+          {
+            "name": "tense clues",
+            "examples": "yesterday, last week, tomorrow, soon"
+          },
+          {
+            "name": "comparatives",
+            "examples": "bigger, smaller, more, most, less, least"
+          },
+          {
+            "name": "prepositions",
+            "examples": "under, over, between, through, across"
+          },
+          {
+            "name": "pronouns",
+            "examples": "he, she, they, him, her, them"
+          },
+          {
+            "name": "degree words",
+            "examples": "nearly, almost, exactly, about, roughly"
+          },
+          {
+            "name": "time words",
+            "examples": "before, after, while, during, finally"
+          }
+        ]
+      }
+    },
+    {
+      "id": "word-class",
+      "title": "Word Class Basics (Noun, Verb, Adjective, Adverb)",
+      "rule": "Nouns name, verbs do, adjectives describe nouns, adverbs describe verbs or adjectives.",
+      "examples": [
+        "noun=teacher",
+        "verb=sprint",
+        "adjective=enormous",
+        "adverb=carefully"
+      ],
+      "practiceQuestions": [
+        {
+          "stem": "What word class is 'fox' in 'The quick fox ran'?",
+          "options": [
+            "noun",
+            "verb",
+            "adjective",
+            "adverb"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "What word class is 'softly' in 'She whispered softly'?",
+          "options": [
+            "adverb",
+            "verb",
+            "noun",
+            "adjective"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "What word class is 'planned' in 'They planned a trip'?",
+          "options": [
+            "verb",
+            "noun",
+            "adjective",
+            "adverb"
+          ],
+          "correct": 0,
+          "difficulty": "practice"
+        },
+        {
+          "stem": "Choose the correct form: He spoke ___.",
+          "options": [
+            "quietly",
+            "quiet",
+            "quieter",
+            "quietness"
+          ],
+          "correct": 0,
+          "difficulty": "extension1"
+        },
+        {
+          "stem": "Choose the correct form: It was a ___ decision.",
+          "options": [
+            "careful",
+            "care",
+            "carefully",
+            "cares"
+          ],
+          "correct": 0,
+          "difficulty": "extension2"
+        },
+        {
+          "stem": "Choose the correct form: She smiled ___.",
+          "options": [
+            "happily",
+            "happy",
+            "happiness",
+            "happier"
+          ],
+          "correct": 0,
+          "difficulty": "extension3"
+        }
+      ],
+      "examTechnique": "Use the sentence frame. If a blank needs a verb, do not choose a noun.",
+      "traps": [
+        {
+          "heading": "Trap 1: ly confusion",
+          "explanation": "friendly looks like an adverb but is an adjective",
+          "practiceQuestion": {
+            "stem": "What word class is 'quickly'?",
+            "options": [
+              "adverb",
+              "adjective",
+              "noun",
+              "verb"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 2: adjective vs adverb",
+          "explanation": "quiet vs quietly",
+          "practiceQuestion": {
+            "stem": "Which is the adjective: The ancient castle stood.",
+            "options": [
+              "ancient",
+              "castle",
+              "stood",
+              "the"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 3: noun vs verb form",
+          "explanation": "plan vs planned",
+          "practiceQuestion": {
+            "stem": "Which is the verb: They sprinted home.",
+            "options": [
+              "sprinted",
+              "they",
+              "home",
+              "the"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 4: agreement",
+          "explanation": "they were vs he was",
+          "practiceQuestion": {
+            "stem": "Choose: She sings (beautiful/beautifully).",
+            "options": [
+              "beautifully",
+              "beautiful",
+              "beauty",
+              "beauties"
+            ],
+            "correct": 0
+          }
+        },
+        {
+          "heading": "Trap 5: meaning changes",
+          "explanation": "word fits grammar but changes meaning",
+          "practiceQuestion": {
+            "stem": "Which sentence uses an adverb of time?",
+            "options": [
+              "We will leave soon.",
+              "The dog is brown.",
+              "She ran quickly.",
+              "The cat sat there."
+            ],
+            "correct": 0
+          }
+        }
+      ],
+      "highFrequencyWords": {
+        "title": "High-frequency word class items worth drilling for Bexley",
+        "classes": [
+          {
+            "name": "nouns",
+            "examples": "teacher, city, idea, team, problem, answer"
+          },
+          {
+            "name": "verbs",
+            "examples": "run, build, decide, explain, improve, solve"
+          },
+          {
+            "name": "adjectives",
+            "examples": "brave, calm, anxious, huge, tiny, ancient"
+          },
+          {
+            "name": "adverbs",
+            "examples": "quickly, carefully, quietly, slowly, neatly, honestly"
+          },
+          {
+            "name": "pronouns",
+            "examples": "he, she, they, we, them, us"
+          },
+          {
+            "name": "connectives",
+            "examples": "because, although, while, if, when, since"
+          },
+          {
+            "name": "prepositions",
+            "examples": "under, over, between, through, across, within"
+          },
+          {
+            "name": "determiners",
+            "examples": "a, an, the, this, that, these, those"
+          }
+        ]
+      }
+    }
+  ]
+}

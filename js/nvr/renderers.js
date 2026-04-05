@@ -1,5 +1,5 @@
 // ── NVR QUESTION & OPTION RENDERERS ───────────────────────────────────────
-import { shapeEl, cellSVG } from './shapes.js';
+import { shapeEl, cellSVG } from './svg-renderers.js';
 
 // ── QUESTION AREA RENDERERS ───────────────────────────────────────────────
 export function renderQArea(typeId, q){

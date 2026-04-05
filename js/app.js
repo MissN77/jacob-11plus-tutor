@@ -1,5 +1,5 @@
 import { Store } from './store.js';
-import { renderHome, renderComingSoon, SECTIONS, getCurrentWeekPlan } from './ui.js';
+import { renderHome, renderComingSoon, SECTIONS, loadBexleyPlan, getCurrentBexleyWeek, renderSettings, setStartDate, DEFAULT_START_DATE } from './ui.js';
 
 const app = document.getElementById('app');
 
@@ -31,7 +31,13 @@ async function render() {
   // Home screen
   if (!route) {
     const state = Store.get();
-    app.innerHTML = renderHome(state);
+    app.innerHTML = await renderHome(state);
+    return;
+  }
+
+  // Settings page
+  if (route === 'settings') {
+    app.innerHTML = renderSettings();
     return;
   }
 
@@ -82,6 +88,29 @@ app.addEventListener('click', (e) => {
     // Re-render current route
     render();
   }
+
+  if (action === 'save-start-date') {
+    const input = document.getElementById('settings-start-date');
+    if (input && input.value) {
+      setStartDate(input.value);
+      if (window.__showXPToast) window.__showXPToast('Start date saved');
+    }
+  }
+
+  if (action === 'reset-start-date') {
+    setStartDate(DEFAULT_START_DATE);
+    const input = document.getElementById('settings-start-date');
+    if (input) input.value = DEFAULT_START_DATE;
+    if (window.__showXPToast) window.__showXPToast('Reset to default');
+  }
+
+  if (action === 'reset-progress') {
+    if (confirm('Reset all progress? This clears XP, streaks and activity. Settings are kept.')) {
+      Store.reset();
+      if (window.__showXPToast) window.__showXPToast('Progress cleared');
+      setTimeout(() => { location.hash = '#/'; }, 500);
+    }
+  }
 });
 
 // Listen for route changes
@@ -129,7 +158,7 @@ function requestNotificationPermission() {
 }
 
 /** Check if we should show a reminder notification (Mondays at 4pm). */
-function checkWeeklyReminder() {
+async function checkWeeklyReminder() {
   if (!('Notification' in window) || Notification.permission !== 'granted') return;
 
   const now = new Date();
@@ -147,16 +176,19 @@ function checkWeeklyReminder() {
   const practicedToday = activityLog.some((e) => e.date === today);
   if (practicedToday) return;
 
-  // Get this week's focus sections
-  const plan = getCurrentWeekPlan();
-  const focusNames = plan.sections.map((id) => {
-    const sec = SECTIONS.find((s) => s.id === id);
-    return sec ? sec.name : id;
-  }).join(', ');
+  // Look up this week's Bexley focuses
+  const weekNum = getCurrentBexleyWeek();
+  if (weekNum === 0 || weekNum > 20) return;
+
+  const plan = await loadBexleyPlan();
+  const week = (plan.weeks || []).find((w) => w.week === weekNum);
+  if (!week) return;
+
+  const focusBody = `English: ${week.english}`;
 
   // Show the notification
   new Notification("Hey Jacob! Time for your 11+ practice.", {
-    body: `This week: ${focusNames}`,
+    body: focusBody,
     icon: 'icons/icon-192.png',
     tag: 'weekly-reminder'
   });
