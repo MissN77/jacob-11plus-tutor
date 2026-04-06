@@ -265,10 +265,28 @@ export async function renderHome(state) {
 
   const planData = await loadBexleyPlan();
 
+  // Weekly Robux progress
+  const weeklyXP = state.weekStartXP !== undefined ? state.xp - state.weekStartXP : 0;
+  const robuxEarned = Math.max(0, Math.min(weeklyXP, 400));
+  const robuxPct = Math.min(robuxEarned / 400, 1);
+  const robuxBar = `
+    <div style="background:#fff;border-radius:12px;padding:16px;margin-bottom:16px;box-shadow:0 2px 8px rgba(0,0,0,0.06);">
+      <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+        <span style="font-weight:700;font-size:0.9rem;">💰 Weekly Robux</span>
+        <span style="font-weight:900;font-size:1.1rem;color:${robuxPct>=1?'#10b981':'#1B2A4A'};">${robuxEarned} / 400</span>
+      </div>
+      <div style="height:10px;border-radius:5px;background:#f0ebe3;overflow:hidden;">
+        <div style="height:100%;border-radius:5px;width:${robuxPct*100}%;background:${robuxPct>=1?'linear-gradient(90deg,#10b981,#06b6d4)':'linear-gradient(90deg,#1A8A7D,#2d8659)'};transition:width 0.5s;"></div>
+      </div>
+      ${robuxPct >= 1 ? '<div style="text-align:center;margin-top:8px;color:#10b981;font-weight:700;font-size:0.85rem;">🎉 Target reached! Show mum!</div>' : ''}
+      <div style="text-align:center;margin-top:6px;font-size:0.75rem;color:#888;">Score 90%+ on quizzes to earn XP towards Robux</div>
+    </div>`;
+
   return `
     ${renderHeader(state)}
     <h1 class="app-title">Jacob's 11 Plus Tutor</h1>
     <p class="app-subtitle">Choose a subject to practise</p>
+    ${robuxBar}
     ${renderCountdown()}
     ${renderBexleyPlan(planData)}
     <div class="section-grid">${cards}</div>`;

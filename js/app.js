@@ -211,6 +211,9 @@ function init() {
   // screen and stop. Once the correct password is entered, re-run init().
   if (!requireAuth(() => init())) return;
 
+  // Check weekly Robux reset
+  Store.checkWeekReset();
+
   // Update daily streak
   const streakXP = Store.updateStreak();
   if (streakXP > 0) {
