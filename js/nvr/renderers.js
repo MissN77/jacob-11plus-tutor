@@ -163,53 +163,75 @@ function renderHID(q){
 }
 
 // ── OPTION RENDERERS ────────────────────────────────────────────────────────
+/** Shuffle an array of 4 items and return {shuffled, map} where map[newIdx] = originalIdx.
+ *  Also sets q._shuffledAnswer to the new position of the correct answer. */
+function shuffleOpts(arr, correctIdx, q) {
+  const indices = [0,1,2,3];
+  // Fisher-Yates shuffle
+  for (let i = indices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+  const shuffled = indices.map(i => arr[i]);
+  const newCorrectIdx = indices.indexOf(correctIdx);
+  q._shuffledAnswer = indices.findIndex(orig => orig === correctIdx);
+  return { shuffled, map: indices };
+}
+
 export function renderOpts(typeId, q){
   const labels=['A','B','C','D'];
   switch(typeId){
     case 'ooo':{
+      const {shuffled}=shuffleOpts(q.s,q.a,q);
       return labels.map((l,i)=>`<button class="opt" data-action="answer" data-value="${i}">
         <div class="lbl">${l}</div>
-        ${cellSVG(q.s[i],90,75)}
+        ${cellSVG(shuffled[i],90,75)}
       </button>`).join('');
     }
     case 'sim':{
+      const {shuffled}=shuffleOpts(q.opts,q.a,q);
       return labels.map((l,i)=>`<button class="opt" data-action="answer" data-value="${i}">
         <div class="lbl">${l}</div>
-        ${cellSVG(q.opts[i],90,75)}
+        ${cellSVG(shuffled[i],90,75)}
       </button>`).join('');
     }
     case 'seq':{
+      const {shuffled}=shuffleOpts(q.opts,q.a,q);
       return labels.map((l,i)=>`<button class="opt" data-action="answer" data-value="${i}">
         <div class="lbl">${l}</div>
-        ${cellSVG(q.opts[i],90,75)}
+        ${cellSVG(shuffled[i],90,75)}
       </button>`).join('');
     }
     case 'ana':{
+      const {shuffled}=shuffleOpts(q.opts,q.a,q);
       return labels.map((l,i)=>`<button class="opt" data-action="answer" data-value="${i}">
         <div class="lbl">${l}</div>
-        ${cellSVG(q.opts[i],90,75)}
+        ${cellSVG(shuffled[i],90,75)}
       </button>`).join('');
     }
     case 'mat':{
+      const {shuffled}=shuffleOpts(q.opts,q.a,q);
       return labels.map((l,i)=>`<button class="opt" data-action="answer" data-value="${i}">
         <div class="lbl">${l}</div>
-        ${cellSVG(q.opts[i],90,75)}
+        ${cellSVG(shuffled[i],90,75)}
       </button>`).join('');
     }
     case 'cod':{
+      const {shuffled}=shuffleOpts(q.opts,q.a,q);
       return labels.map((l,i)=>`<button class="opt" data-action="answer" data-value="${i}">
         <div class="lbl">${l}</div>
-        <div style="font-size:22px;font-weight:800;padding:8px;">${q.opts[i]}</div>
+        <div style="font-size:22px;font-weight:800;padding:8px;">${shuffled[i]}</div>
       </button>`).join('');
     }
     case 'ref':{
+      const {shuffled}=shuffleOpts(q.opts,q.a,q);
       return labels.map((l,i)=>`<button class="opt" data-action="answer" data-value="${i}">
         <div class="lbl">${l}</div>
-        ${cellSVG(q.opts[i],90,75)}
+        ${cellSVG(shuffled[i],90,75)}
       </button>`).join('');
     }
     case 'fol':{
-      // Each option in q.opts is an array of [xFrac, yFrac] hole positions on the full unfolded paper
+      const {shuffled}=shuffleOpts(q.opts,q.a,q);
       const PW=76,PH=76;
       function unfolded(holes){
         const hSVG=holes.map(h=>`<circle cx="${(h[0]*PW).toFixed(1)}" cy="${(h[1]*PH).toFixed(1)}" r="7" fill="#1B2A4A"/>`).join('');
@@ -220,14 +242,15 @@ export function renderOpts(typeId, q){
       }
       return labels.map((l,i)=>`<button class="opt" data-action="answer" data-value="${i}">
         <div class="lbl">${l}</div>
-        ${unfolded(q.opts[i])}
+        ${unfolded(shuffled[i])}
       </button>`).join('');
     }
     case 'net':
     case 'hid':{
+      const {shuffled}=shuffleOpts(q.opts,q.a,q);
       return labels.map((l,i)=>{
-        const spec=typeId==='hid'?[q.opts[i],'e']:null;
-        const content=spec?cellSVG(spec,90,75):`<div style="font-size:13px;font-weight:600;padding:10px;text-align:center;">${q.opts[i]}</div>`;
+        const spec=typeId==='hid'?[shuffled[i],'e']:null;
+        const content=spec?cellSVG(spec,90,75):`<div style="font-size:13px;font-weight:600;padding:10px;text-align:center;">${shuffled[i]}</div>`;
         return `<button class="opt" data-action="answer" data-value="${i}">
           <div class="lbl">${l}</div>
           ${content}

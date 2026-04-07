@@ -223,7 +223,9 @@ function handleAnswer(container, idx) {
   answered = true;
 
   const q = quizQueue[currentIndex];
-  const isCorrect = idx === q.a;
+  // Use shuffled answer position if available, otherwise fall back to original
+  const correctIdx = (q._shuffledAnswer !== undefined) ? q._shuffledAnswer : q.a;
+  const isCorrect = idx === correctIdx;
   results.push(isCorrect);
 
   // Highlight correct/wrong on the option buttons
@@ -237,7 +239,7 @@ function handleAnswer(container, idx) {
   } else {
     consecutiveCorrect = 0;
     buttons[idx].classList.add('wrong');
-    buttons[q.a].classList.add('correct');
+    buttons[correctIdx].classList.add('correct');
     if (state.settings.soundOn) playSound(false);
   }
 

@@ -19,6 +19,8 @@ const SECTION_MODULES = {
   'twinkl-nvr':          () => import('./sections/twinkl-nvr.js'),
   'writing':             () => import('./sections/writing.js'),
   'collocations':        () => import('./sections/collocations.js'),
+  'y4-assessments':      () => import('./sections/y4-assessments.js'),
+  'piano':               () => import('./sections/piano.js'),
 };
 
 /** Resolve the current route from the hash. */

@@ -7,7 +7,7 @@ import { renderQuizProgress, renderScore } from '../ui.js';
 
 const QUIZ_LENGTH = 10;
 const DATA_URL = 'data/spelling.json';
-const LOOK_TIME = 12000; // ms to show the word before hiding (12s for ASD-friendly reading time)
+const LOOK_TIME = 20000; // ms to show the word before hiding (20s - Jacob needs more time, plus "I'm ready" button to skip when done)
 
 let allWords = [];
 let quizQueue = [];
@@ -89,7 +89,7 @@ function renderLook(container, isRetry) {
 
   const q = quizQueue[currentIndex];
   const label = isRetry ? 'Look again carefully!' : 'Study this word';
-  const time = isRetry ? 15 : 12;
+  const time = isRetry ? 25 : 20;
   let remaining = time;
 
   container.innerHTML = `

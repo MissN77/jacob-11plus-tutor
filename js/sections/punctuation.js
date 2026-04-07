@@ -142,8 +142,16 @@ export function renderPractice(app) {
   const q = questions[currentIndex];
   answered = false;
 
-  const optionBtns = q.options.map((opt, i) =>
-    `<button class="option-btn" data-action="answer" data-index="${i}">${opt}</button>`
+  // Shuffle options so the correct answer isn't always in the same position
+  const indices = [0,1,2,3].filter(i => i < q.options.length);
+  for (let i = indices.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [indices[i], indices[j]] = [indices[j], indices[i]];
+  }
+  q._shuffledAnswer = indices.indexOf(q.answer);
+
+  const optionBtns = indices.map((origIdx, newIdx) =>
+    `<button class="option-btn" data-action="answer" data-index="${newIdx}">${q.options[origIdx]}</button>`
   ).join('');
 
   app.innerHTML = `
@@ -186,7 +194,8 @@ function handleAnswer(index) {
   answered = true;
 
   const q = questions[currentIndex];
-  const isCorrect = index === q.answer;
+  const correctIdx = (q._shuffledAnswer !== undefined) ? q._shuffledAnswer : q.answer;
+  const isCorrect = index === correctIdx;
   results.push(isCorrect);
 
   if (isCorrect) {
@@ -204,7 +213,7 @@ function handleAnswer(index) {
   const buttons = document.querySelectorAll('.option-btn');
   buttons.forEach((btn, i) => {
     btn.disabled = true;
-    if (i === q.answer) btn.classList.add('correct');
+    if (i === correctIdx) btn.classList.add('correct');
     if (i === index && !isCorrect) btn.classList.add('wrong');
   });
 

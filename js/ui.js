@@ -14,7 +14,9 @@ const SECTIONS = [
   { id: 'nvr',                 name: 'NVR Foundations',      icon: '\u{1F532}' },
   { id: 'twinkl-nvr',          name: 'Exam Practice (Twinkl)', icon: '\u{1F48E}' },
   { id: 'writing',             name: 'Writing',              icon: '\u{270D}\uFE0F' },
-  { id: 'collocations',        name: 'Collocations',         icon: '\u{1F517}' }
+  { id: 'collocations',        name: 'Collocations',         icon: '\u{1F517}' },
+  { id: 'y4-assessments',      name: 'Year 4 Assessments',   icon: '\u{1F4CB}' },
+  { id: 'piano',               name: 'Piano Practice',       icon: '\u{1F3B9}' }
 ];
 
 export { SECTIONS };
