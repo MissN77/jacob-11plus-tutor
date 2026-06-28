@@ -5,7 +5,7 @@ import { calculateQuizXP } from '../xp.js';
 import { renderQuizProgress, renderScore } from '../ui.js';
 
 const QUIZ_LENGTH = 10;
-const DATA_URL = 'data/inference.json';
+const DATA_URL = 'data/comprehension.json';
 
 let allQuestions = [];
 let quizQueue = [];
@@ -15,11 +15,31 @@ let consecutiveCorrect = 0;
 let answered = false;
 let selectedBook = '';
 
-/** Fetch the inference data (cached after first load). */
+/** Build inference questions from the vetted comprehension passages.
+ *  The old standalone inference.json was unusable (50 of 55 items had no
+ *  passage to infer from, several answer keys were wrong, and many had blank
+ *  explanations). Instead we draw the genuine inference-type questions from the
+ *  20 comprehension passages, each carrying its full passage, correct answer
+ *  and explanation. */
 async function loadData() {
   if (allQuestions.length) return allQuestions;
   const res = await fetch(DATA_URL);
-  allQuestions = await res.json();
+  const data = await res.json();
+  allQuestions = [];
+  for (const activity of (data.activities || [])) {
+    const passage = (activity.passage?.paragraphs || []).join('\n\n');
+    for (const q of activity.questions) {
+      if (q.type !== 'inference') continue;
+      allQuestions.push({
+        book: activity.title,
+        passage,
+        question: q.prompt,
+        options: q.options,
+        answer: q.correctIndex,
+        explanation: q.explanation || ''
+      });
+    }
+  }
   return allQuestions;
 }
 
@@ -111,7 +131,7 @@ function renderQuestion(container) {
     </div>
     ${renderQuizProgress(currentIndex, QUIZ_LENGTH, results)}
     <div class="question-area">
-      ${q.passage ? `<blockquote class="passage-box">${q.passage}</blockquote>` : ''}
+      ${q.passage ? `<blockquote class="passage-box">${q.passage.split('\n\n').map(p => `<p>${p}</p>`).join('')}</blockquote>` : ''}
       <p class="question-text">${q.question}</p>
     </div>
     <div class="options-grid options-grid--stacked">${optionBtns}</div>`;

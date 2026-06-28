@@ -17,6 +17,13 @@ let attempt = 0;       // 0 = first, 1 = second (after seeing it again)
 let phase = 'look';    // look | cover | check | retry-look | retry-cover
 let selectedBook = '';
 let countdownTimer = null;
+let advanceTimer = null;   // pending auto-advance setTimeout
+
+/** Stop every pending timer so nothing renders into #app after we leave. */
+function clearTimers() {
+  if (countdownTimer) { clearInterval(countdownTimer); countdownTimer = null; }
+  if (advanceTimer) { clearTimeout(advanceTimer); advanceTimer = null; }
+}
 
 async function loadData() {
   if (allWords.length) return allWords;
@@ -194,7 +201,7 @@ function checkSpelling(container) {
     feedback.innerHTML = `<p class="feedback-correct">\u2705 Correct! Well done.</p>`;
     if (state.settings.soundOn) playSound(true);
 
-    setTimeout(() => advance(container), 3500);
+    advanceTimer = setTimeout(() => advance(container), 3500);
 
   } else if (attempt === 0) {
     // Wrong on first attempt - show the word again
@@ -218,7 +225,7 @@ function checkSpelling(container) {
       <p class="spelling-show-word spelling-show-word--correction">${q.word}</p>
       <p class="feedback-try-again">Keep practising this one!</p>`;
 
-    setTimeout(() => advance(container), 6000);
+    advanceTimer = setTimeout(() => advance(container), 6000);
   }
 }
 
@@ -262,7 +269,7 @@ export async function init(container) {
   results = [];
   attempt = 0;
   phase = 'look';
-  if (countdownTimer) clearInterval(countdownTimer);
+  clearTimers();
 
   renderHome(container);
 
@@ -301,7 +308,7 @@ export async function init(container) {
 
     if (action === 'back-to-section') {
       e.preventDefault();
-      if (countdownTimer) clearInterval(countdownTimer);
+      clearTimers();
       renderHome(container);
     }
   };
@@ -309,6 +316,24 @@ export async function init(container) {
   container.removeEventListener('click', container._spellingHandler);
   container._spellingHandler = handler;
   container.addEventListener('click', handler);
+
+  // CRITICAL: when the user navigates away (e.g. to another section), kill any
+  // pending countdown / auto-advance timers so spelling can't render itself
+  // over whatever section they have moved to. This was the "spelling keeps
+  // popping up" bug.
+  const hashHandler = () => {
+    const hash = location.hash.replace('#/', '').replace('#', '');
+    if (!hash.startsWith('spelling')) {
+      clearTimers();
+      container.removeEventListener('click', container._spellingHandler);
+      container.removeEventListener('keydown', container._spellingKeyHandler);
+      container.removeEventListener('change', container._spellingChangeHandler);
+      window.removeEventListener('hashchange', hashHandler);
+    }
+  };
+  window.removeEventListener('hashchange', container._spellingHashHandler);
+  container._spellingHashHandler = hashHandler;
+  window.addEventListener('hashchange', hashHandler);
 
   container.removeEventListener('keydown', container._spellingKeyHandler);
   const keyHandler = (e) => {

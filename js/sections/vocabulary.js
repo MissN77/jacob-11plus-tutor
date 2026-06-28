@@ -14,6 +14,7 @@ let results = [];
 let consecutiveCorrect = 0;
 let answered = false;
 let selectedBook = '';
+let advanceTimer = null;   // pending auto-advance setTimeout
 
 /** Fetch the vocabulary data (cached after first load). */
 async function loadData() {
@@ -40,11 +41,20 @@ function pickRandom(arr, n) {
   return out;
 }
 
-/** Build a quiz queue of {stem, options, answer} objects. */
+/** Build a quiz queue of {stem, options, answer} objects.
+ *  We only use 'meaning' and 'synonym' questions. The auto-generated 'context'
+ *  cloze questions were poor quality (nonsense sentences like "the makeshift
+ *  atmosphere") and, worse, listed the headword itself as an option while the
+ *  word was shown on screen, giving the answer away. */
 function buildQuiz(words) {
   return words.map((w) => {
-    const qt = w.questionTypes[Math.floor(Math.random() * w.questionTypes.length)];
-    return { word: w.word, stem: qt.stem, options: qt.options, answer: qt.answer };
+    const usable = w.questionTypes.filter((qt) => qt.type !== 'context');
+    const pool = usable.length ? usable : w.questionTypes;
+    const qt = pool[Math.floor(Math.random() * pool.length)];
+    // 'context' questions ask you to pick the word, so hide the headword there;
+    // 'meaning'/'synonym' legitimately show the word being asked about.
+    const showWord = qt.type !== 'context';
+    return { word: showWord ? w.word : '', stem: qt.stem, options: qt.options, answer: qt.answer };
   });
 }
 
@@ -119,7 +129,7 @@ function renderQuestion(container) {
     </div>
     ${renderQuizProgress(currentIndex, QUIZ_LENGTH, results)}
     <div class="question-area">
-      <p class="question-word">${q.word}</p>
+      ${q.word ? `<p class="question-word">${q.word}</p>` : ''}
       <p class="question-text">${q.stem}</p>
     </div>
     <div class="options-grid">${optionBtns}</div>`;
@@ -172,7 +182,7 @@ function handleAnswer(container, idx) {
 
   // Pause then advance
   const delay = isCorrect ? 2500 : 5000;
-  setTimeout(() => {
+  advanceTimer = setTimeout(() => {
     currentIndex++;
     answered = false;
     if (currentIndex >= QUIZ_LENGTH) {
@@ -193,6 +203,7 @@ export async function init(container) {
   results = [];
   consecutiveCorrect = 0;
   answered = false;
+  if (advanceTimer) { clearTimeout(advanceTimer); advanceTimer = null; }
 
   // Show the section home page
   renderHome(container);
@@ -245,6 +256,18 @@ export async function init(container) {
   container.removeEventListener('click', container._vocabHandler);
   container._vocabHandler = handler;
   container.addEventListener('click', handler);
+
+  // Cancel a pending auto-advance if the user leaves the section.
+  const hashHandler = () => {
+    const hash = location.hash.replace('#/', '').replace('#', '');
+    if (!hash.startsWith('vocabulary')) {
+      if (advanceTimer) { clearTimeout(advanceTimer); advanceTimer = null; }
+      window.removeEventListener('hashchange', hashHandler);
+    }
+  };
+  window.removeEventListener('hashchange', container._vocabHashHandler);
+  container._vocabHashHandler = hashHandler;
+  window.addEventListener('hashchange', hashHandler);
 
   // Also listen for select change
   container.removeEventListener('change', container._vocabChangeHandler);

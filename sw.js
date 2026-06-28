@@ -1,4 +1,4 @@
-const CACHE_NAME = 'j11-tutor-v11';
+const CACHE_NAME = 'j11-tutor-v12';
 const ASSETS = [
   '/',
   '/index.html',

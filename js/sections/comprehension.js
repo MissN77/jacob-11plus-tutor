@@ -299,8 +299,18 @@ function renderReview(container, activity, res) {
       <div class="comp-submit-bar">
         <a class="btn btn-secondary" href="#/comprehension" data-action="comp-back-menu">More passages</a>
         <a class="btn btn-secondary" href="#/">Home</a>
+        <button class="btn btn-secondary comp-reset-btn" data-action="comp-reset" data-id="${activity.id}">Reset this passage</button>
       </div>
     </div>`;
+}
+
+/** Clear a completed activity so it can be attempted again (parent reset). */
+function resetActivity(id) {
+  const state = Store.get();
+  if (state.sections[SECTION_ID]) {
+    delete state.sections[SECTION_ID][id];
+    Store.save(state);
+  }
 }
 
 function openActivity(container, id) {
@@ -361,6 +371,13 @@ export async function init(container) {
 
     if (action === 'comp-submit') {
       handleSubmit(container);
+    }
+
+    if (action === 'comp-reset') {
+      const id = el.dataset.id;
+      resetActivity(id);
+      location.hash = `#/comprehension/${id}`;
+      openActivity(container, id);   // reopens in live (un-done) mode
     }
   };
 
