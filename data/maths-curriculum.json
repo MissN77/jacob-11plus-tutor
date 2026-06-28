@@ -2625,35 +2625,73 @@
    "icon": "📊",
    "level": "Year 4",
    "available": true,
-   "description": "Read and compare data from bar charts, pictograms and tables described fully in words.",
+   "description": "Read and compare data from real bar charts, pictograms and tables.",
    "subtopics": [
     {
      "id": "reading-bar-charts",
      "name": "Reading Bar Charts",
      "teach": {
       "title": "Bars Show Amounts",
-      "plain": "A bar chart uses bars to show how many of each thing there are. The taller the bar, the bigger the amount.",
+      "plain": "A bar chart uses bars to show how many of each thing there are. The taller the bar, the bigger the amount. You read up from the top of a bar to the number on the side.",
       "rules": [
        "Each bar stands for one group, like cats or dogs.",
-       "The height of a bar tells you the total for that group.",
-       "To compare two bars, find the difference by subtracting the smaller number from the bigger one."
+       "Read up from the top of the bar across to the number scale on the left to find its value.",
+       "To compare two bars, find the difference by taking the smaller number away from the bigger one."
       ],
-      "example": "A bar chart shows 8 cats, 5 dogs and 3 rabbits, so there are 3 more cats than dogs because 8 minus 5 is 3.",
-      "tryThis": "A bar chart shows 6 apples and 4 pears. How many pieces of fruit are there altogether?",
-      "tryAnswer": "10, because 6 apples plus 4 pears makes 10."
+      "example": "If the cats bar reaches 8 and the dogs bar reaches 5, there are 3 more cats than dogs because 8 minus 5 is 3.",
+      "tryThis": "If a bar reaches halfway between 4 and 6, what number is it?",
+      "tryAnswer": "5, because 5 is halfway between 4 and 6."
      },
      "workedExample": {
-      "question": "A bar chart shows 7 red cars, 4 blue cars and 9 white cars. How many more white cars are there than blue cars?",
+      "question": "Look at the bar chart. How many more white cars are there than blue cars?",
+      "chart": {
+       "type": "bar",
+       "title": "Cars in the car park",
+       "max": 10,
+       "categories": [
+        {
+         "label": "Red",
+         "value": 7
+        },
+        {
+         "label": "Blue",
+         "value": 4
+        },
+        {
+         "label": "White",
+         "value": 9
+        }
+       ]
+      },
       "steps": [
-       "Find the white car total, which is 9.",
-       "Find the blue car total, which is 4.",
+       "Find the White bar and read up to the top: it reaches 9.",
+       "Find the Blue bar: it reaches 4.",
        "Subtract to find the difference: 9 minus 4 is 5."
       ],
       "answer": "5 more white cars."
      },
      "practice": [
       {
-       "question": "A bar chart shows 8 cats, 5 dogs and 3 rabbits. How many cats are there?",
+       "question": "Look at the bar chart. How many cats are there?",
+       "chart": {
+        "type": "bar",
+        "title": "Pets in our class",
+        "max": 10,
+        "categories": [
+         {
+          "label": "Cats",
+          "value": 8
+         },
+         {
+          "label": "Dogs",
+          "value": 5
+         },
+         {
+          "label": "Rabbits",
+          "value": 3
+         }
+        ]
+       },
        "options": [
         "3",
         "5",
@@ -2661,10 +2699,29 @@
         "16"
        ],
        "correct": 2,
-       "workingOut": "The chart says there are 8 cats."
+       "workingOut": "Read up from the top of the Cats bar to 8."
       },
       {
-       "question": "A bar chart shows 8 cats, 5 dogs and 3 rabbits. How many more cats than rabbits?",
+       "question": "Look at the bar chart. How many more cats are there than rabbits?",
+       "chart": {
+        "type": "bar",
+        "title": "Pets in our class",
+        "max": 10,
+        "categories": [
+         {
+          "label": "Cats",
+          "value": 8
+         },
+         {
+          "label": "Dogs",
+          "value": 5
+         },
+         {
+          "label": "Rabbits",
+          "value": 3
+         }
+        ]
+       },
        "options": [
         "3",
         "5",
@@ -2672,21 +2729,59 @@
         "11"
        ],
        "correct": 1,
-       "workingOut": "8 cats minus 3 rabbits is 5."
+       "workingOut": "The Cats bar is 8 and the Rabbits bar is 3, and 8 minus 3 is 5."
       },
       {
-       "question": "A bar chart shows 6 footballs, 9 tennis balls and 4 cricket balls. Which has the tallest bar?",
+       "question": "Look at the bar chart. Which sport has the tallest bar?",
+       "chart": {
+        "type": "bar",
+        "title": "Balls in the cupboard",
+        "max": 10,
+        "categories": [
+         {
+          "label": "Football",
+          "value": 6
+         },
+         {
+          "label": "Tennis",
+          "value": 9
+         },
+         {
+          "label": "Cricket",
+          "value": 4
+         }
+        ]
+       },
        "options": [
-        "Footballs",
-        "Tennis balls",
-        "Cricket balls",
+        "Football",
+        "Tennis",
+        "Cricket",
         "All equal"
        ],
        "correct": 1,
-       "workingOut": "Tennis balls has 9, the biggest number, so it has the tallest bar."
+       "workingOut": "The Tennis bar reaches 9, the highest of the three."
       },
       {
-       "question": "A bar chart shows 6 footballs, 9 tennis balls and 4 cricket balls. How many balls altogether?",
+       "question": "Look at the bar chart. How many balls are there altogether?",
+       "chart": {
+        "type": "bar",
+        "title": "Balls in the cupboard",
+        "max": 10,
+        "categories": [
+         {
+          "label": "Football",
+          "value": 6
+         },
+         {
+          "label": "Tennis",
+          "value": 9
+         },
+         {
+          "label": "Cricket",
+          "value": 4
+         }
+        ]
+       },
        "options": [
         "15",
         "17",
@@ -2694,10 +2789,29 @@
         "21"
        ],
        "correct": 2,
-       "workingOut": "6 plus 9 plus 4 is 19."
+       "workingOut": "Add the bars: 6 plus 9 plus 4 is 19."
       },
       {
-       "question": "A bar chart shows 10 sunny days, 7 cloudy days and 5 rainy days. How many fewer rainy days than sunny days?",
+       "question": "Look at the bar chart. How many fewer rainy days were there than sunny days?",
+       "chart": {
+        "type": "bar",
+        "title": "Weather this month",
+        "max": 10,
+        "categories": [
+         {
+          "label": "Sunny",
+          "value": 10
+         },
+         {
+          "label": "Cloudy",
+          "value": 7
+         },
+         {
+          "label": "Rainy",
+          "value": 5
+         }
+        ]
+       },
        "options": [
         "3",
         "5",
@@ -2705,10 +2819,29 @@
         "15"
        ],
        "correct": 1,
-       "workingOut": "10 sunny minus 5 rainy is 5."
+       "workingOut": "Sunny is 10 and Rainy is 5, and 10 minus 5 is 5."
       },
       {
-       "question": "A bar chart shows 4 buses, 4 trains and 2 trams. Which two bars are the same height?",
+       "question": "Look at the bar chart. Which two bars are the same height?",
+       "chart": {
+        "type": "bar",
+        "title": "Vehicles we saw",
+        "max": 6,
+        "categories": [
+         {
+          "label": "Buses",
+          "value": 4
+         },
+         {
+          "label": "Trains",
+          "value": 4
+         },
+         {
+          "label": "Trams",
+          "value": 2
+         }
+        ]
+       },
        "options": [
         "Buses and trams",
         "Trains and trams",
@@ -2716,7 +2849,7 @@
         "None"
        ],
        "correct": 2,
-       "workingOut": "Buses and trains are both 4, so their bars are the same height."
+       "workingOut": "Both the Buses and Trains bars reach 4, so they are the same height."
       }
      ]
     },
@@ -2725,39 +2858,62 @@
      "name": "Pictograms",
      "teach": {
       "title": "One Symbol Stands for Many",
-      "plain": "A pictogram uses a picture to stand for a number of things. You count the symbols and times them by what one symbol is worth.",
+      "plain": "A pictogram uses a picture to stand for a number of things. You count the symbols in a row and times them by what one symbol is worth.",
       "rules": [
        "Check the key first to see how many one symbol stands for.",
-       "Multiply the number of symbols by the value of one symbol.",
-       "Half a symbol stands for half of that value."
+       "Count the symbols in the row, then multiply by the value of one symbol.",
+       "More symbols means a bigger amount."
       ],
-      "example": "If one star stands for 2 books and a row has 3 stars, that means 6 books, because 3 times 2 is 6.",
-      "tryThis": "One apple symbol stands for 5 apples. A row shows 4 apple symbols. How many apples is that?",
+      "example": "If one star stands for 2 books and a row has 3 stars, that is 6 books, because 3 times 2 is 6.",
+      "tryThis": "One apple stands for 5 apples. A row has 4 apples. How many is that?",
       "tryAnswer": "20 apples, because 4 times 5 is 20."
      },
      "workedExample": {
-      "question": "In a pictogram one circle stands for 10 children. A row has 5 circles. How many children is that?",
+      "question": "Look at the pictogram. How many children are in Class A?",
+      "chart": {
+       "type": "pictogram",
+       "title": "Children in each class",
+       "symbol": "😊",
+       "value": 10,
+       "noun": "children",
+       "rows": [
+        {
+         "label": "Class A",
+         "symbols": 5
+        },
+        {
+         "label": "Class B",
+         "symbols": 3
+        }
+       ]
+      },
       "steps": [
-       "Read the key: one circle stands for 10 children.",
-       "Count the circles in the row, which is 5.",
-       "Multiply: 5 circles times 10 is 50."
+       "Read the key: one face stands for 10 children.",
+       "Count the faces in Class A's row: there are 5.",
+       "Multiply: 5 faces times 10 is 50."
       ],
       "answer": "50 children."
      },
      "practice": [
       {
-       "question": "One star stands for 2 books. A row has 4 stars. How many books?",
-       "options": [
-        "6",
-        "8",
-        "10",
-        "2"
-       ],
-       "correct": 1,
-       "workingOut": "4 stars times 2 books each is 8."
-      },
-      {
-       "question": "One circle stands for 5 sweets. A row has 3 circles. How many sweets?",
+       "question": "Look at the pictogram. How many sweets does Amir have?",
+       "chart": {
+        "type": "pictogram",
+        "title": "Sweets collected",
+        "symbol": "⭐",
+        "value": 5,
+        "noun": "sweets",
+        "rows": [
+         {
+          "label": "Amir",
+          "symbols": 3
+         },
+         {
+          "label": "Beth",
+          "symbols": 2
+         }
+        ]
+       },
        "options": [
         "8",
         "10",
@@ -2765,10 +2921,27 @@
         "20"
        ],
        "correct": 2,
-       "workingOut": "3 circles times 5 sweets each is 15."
+       "workingOut": "Amir has 3 stars and each star is 5 sweets, so 3 times 5 is 15."
       },
       {
-       "question": "One picture stands for 10 cars. A row has 2 pictures. How many cars?",
+       "question": "Look at the pictogram. How many red cars are there?",
+       "chart": {
+        "type": "pictogram",
+        "title": "Cars in the car park",
+        "symbol": "🚗",
+        "value": 10,
+        "noun": "cars",
+        "rows": [
+         {
+          "label": "Red",
+          "symbols": 2
+         },
+         {
+          "label": "Blue",
+          "symbols": 4
+         }
+        ]
+       },
        "options": [
         "12",
         "20",
@@ -2776,10 +2949,27 @@
         "100"
        ],
        "correct": 1,
-       "workingOut": "2 pictures times 10 cars each is 20."
+       "workingOut": "Red has 2 cars and each stands for 10, so 2 times 10 is 20."
       },
       {
-       "question": "One symbol stands for 4 coins. A row has 5 symbols. How many coins?",
+       "question": "Look at the pictogram. How many coins are in Jar A?",
+       "chart": {
+        "type": "pictogram",
+        "title": "Coins in each jar",
+        "symbol": "🪙",
+        "value": 4,
+        "noun": "coins",
+        "rows": [
+         {
+          "label": "Jar A",
+          "symbols": 5
+         },
+         {
+          "label": "Jar B",
+          "symbols": 3
+         }
+        ]
+       },
        "options": [
         "9",
         "16",
@@ -2787,21 +2977,27 @@
         "24"
        ],
        "correct": 2,
-       "workingOut": "5 symbols times 4 coins each is 20."
+       "workingOut": "Jar A has 5 coins and each is worth 4, so 5 times 4 is 20."
       },
       {
-       "question": "One smiley stands for 2 votes. One row has 6 smileys and another has 4. How many more votes does the first row have?",
-       "options": [
-        "2",
-        "4",
-        "6",
-        "10"
-       ],
-       "correct": 1,
-       "workingOut": "6 smileys is 12 votes and 4 smileys is 8 votes, and 12 minus 8 is 4."
-      },
-      {
-       "question": "One leaf stands for 10 trees. A row has 3 leaves. How many trees?",
+       "question": "Look at the pictogram. How many trees are in the Park?",
+       "chart": {
+        "type": "pictogram",
+        "title": "Trees planted",
+        "symbol": "🌳",
+        "value": 10,
+        "noun": "trees",
+        "rows": [
+         {
+          "label": "Park",
+          "symbols": 3
+         },
+         {
+          "label": "Wood",
+          "symbols": 5
+         }
+        ]
+       },
        "options": [
         "13",
         "20",
@@ -2809,7 +3005,63 @@
         "40"
        ],
        "correct": 2,
-       "workingOut": "3 leaves times 10 trees each is 30."
+       "workingOut": "The Park has 3 trees and each stands for 10, so 3 times 10 is 30."
+      },
+      {
+       "question": "Look at the pictogram. How many more votes did Cats get than Dogs?",
+       "chart": {
+        "type": "pictogram",
+        "title": "Favourite pet votes",
+        "symbol": "😊",
+        "value": 2,
+        "noun": "votes",
+        "rows": [
+         {
+          "label": "Cats",
+          "symbols": 6
+         },
+         {
+          "label": "Dogs",
+          "symbols": 4
+         }
+        ]
+       },
+       "options": [
+        "2",
+        "4",
+        "6",
+        "10"
+       ],
+       "correct": 1,
+       "workingOut": "Cats is 6 times 2 is 12 votes, Dogs is 4 times 2 is 8 votes, and 12 minus 8 is 4."
+      },
+      {
+       "question": "Look at the pictogram. How many books were read on Tuesday?",
+       "chart": {
+        "type": "pictogram",
+        "title": "Books read",
+        "symbol": "📕",
+        "value": 2,
+        "noun": "books",
+        "rows": [
+         {
+          "label": "Monday",
+          "symbols": 4
+         },
+         {
+          "label": "Tuesday",
+          "symbols": 5
+         }
+        ]
+       },
+       "options": [
+        "7",
+        "8",
+        "10",
+        "12"
+       ],
+       "correct": 2,
+       "workingOut": "Tuesday has 5 books and each is worth 2, so 5 times 2 is 10."
       }
      ]
     },
@@ -2818,18 +3070,40 @@
      "name": "Tables & Comparing Data",
      "teach": {
       "title": "Reading Tables",
-      "plain": "A table organises numbers in rows so you can find totals, differences and the most or least.",
+      "plain": "A table organises numbers in rows so you can find totals, differences and the most or least. You find the right row and read across to the number.",
       "rules": [
-       "Find the right row to read the number you need.",
+       "Find the row you need and read across to the number.",
        "Add numbers together to find a total.",
        "The biggest number is the most and the smallest number is the least."
       ],
-      "example": "A table shows Monday 12 visitors, Tuesday 8 visitors and Wednesday 15 visitors, so Wednesday had the most because 15 is the biggest number.",
-      "tryThis": "A table shows 5 red, 9 blue and 2 green counters. Which colour has the least?",
+      "example": "If a table shows Monday 12, Tuesday 8 and Wednesday 15 visitors, Wednesday had the most because 15 is the biggest.",
+      "tryThis": "A table shows 5 red, 9 blue and 2 green. Which has the least?",
       "tryAnswer": "Green, because 2 is the smallest number."
      },
      "workedExample": {
-      "question": "A table shows Monday 12 visitors, Tuesday 8 visitors and Wednesday 15 visitors. How many visitors over the three days altogether?",
+      "question": "Look at the table. How many visitors came over the three days altogether?",
+      "chart": {
+       "type": "table",
+       "title": "Visitors this week",
+       "headers": [
+        "Day",
+        "Visitors"
+       ],
+       "rows": [
+        [
+         "Monday",
+         "12"
+        ],
+        [
+         "Tuesday",
+         "8"
+        ],
+        [
+         "Wednesday",
+         "15"
+        ]
+       ]
+      },
       "steps": [
        "Read each day's number: 12, 8 and 15.",
        "Add the first two: 12 plus 8 is 20.",
@@ -2839,7 +3113,29 @@
      },
      "practice": [
       {
-       "question": "A table shows 5 red, 9 blue and 2 green counters. Which colour has the most?",
+       "question": "Look at the table. Which colour has the most counters?",
+       "chart": {
+        "type": "table",
+        "title": "Counters in the bag",
+        "headers": [
+         "Colour",
+         "Counters"
+        ],
+        "rows": [
+         [
+          "Red",
+          "5"
+         ],
+         [
+          "Blue",
+          "9"
+         ],
+         [
+          "Green",
+          "2"
+         ]
+        ]
+       },
        "options": [
         "Red",
         "Blue",
@@ -2847,10 +3143,32 @@
         "All equal"
        ],
        "correct": 1,
-       "workingOut": "Blue has 9, which is the biggest number, so it has the most."
+       "workingOut": "Blue has 9, the biggest number, so it has the most."
       },
       {
-       "question": "A table shows 5 red, 9 blue and 2 green counters. How many counters altogether?",
+       "question": "Look at the table. How many counters are there altogether?",
+       "chart": {
+        "type": "table",
+        "title": "Counters in the bag",
+        "headers": [
+         "Colour",
+         "Counters"
+        ],
+        "rows": [
+         [
+          "Red",
+          "5"
+         ],
+         [
+          "Blue",
+          "9"
+         ],
+         [
+          "Green",
+          "2"
+         ]
+        ]
+       },
        "options": [
         "14",
         "16",
@@ -2858,10 +3176,32 @@
         "18"
        ],
        "correct": 1,
-       "workingOut": "5 plus 9 plus 2 is 16."
+       "workingOut": "Add the rows: 5 plus 9 plus 2 is 16."
       },
       {
-       "question": "A table shows Monday 12, Tuesday 8 and Wednesday 15 visitors. How many more visitors on Wednesday than Tuesday?",
+       "question": "Look at the table. How many more visitors came on Wednesday than Tuesday?",
+       "chart": {
+        "type": "table",
+        "title": "Visitors this week",
+        "headers": [
+         "Day",
+         "Visitors"
+        ],
+        "rows": [
+         [
+          "Monday",
+          "12"
+         ],
+         [
+          "Tuesday",
+          "8"
+         ],
+         [
+          "Wednesday",
+          "15"
+         ]
+        ]
+       },
        "options": [
         "3",
         "5",
@@ -2869,10 +3209,28 @@
         "23"
        ],
        "correct": 2,
-       "workingOut": "15 minus 8 is 7."
+       "workingOut": "Wednesday is 15 and Tuesday is 8, and 15 minus 8 is 7."
       },
       {
-       "question": "A table shows 6 cakes sold on Friday and 11 on Saturday. How many cakes over the two days?",
+       "question": "Look at the table. How many cakes were sold over the two days?",
+       "chart": {
+        "type": "table",
+        "title": "Cakes sold",
+        "headers": [
+         "Day",
+         "Cakes"
+        ],
+        "rows": [
+         [
+          "Friday",
+          "6"
+         ],
+         [
+          "Saturday",
+          "11"
+         ]
+        ]
+       },
        "options": [
         "5",
         "16",
@@ -2880,10 +3238,32 @@
         "18"
        ],
        "correct": 2,
-       "workingOut": "6 plus 11 is 17."
+       "workingOut": "Add the rows: 6 plus 11 is 17."
       },
       {
-       "question": "A table shows Class A 24 pupils, Class B 30 pupils and Class C 27 pupils. Which class has the fewest pupils?",
+       "question": "Look at the table. Which class has the fewest pupils?",
+       "chart": {
+        "type": "table",
+        "title": "Pupils in each class",
+        "headers": [
+         "Class",
+         "Pupils"
+        ],
+        "rows": [
+         [
+          "Class A",
+          "24"
+         ],
+         [
+          "Class B",
+          "30"
+         ],
+         [
+          "Class C",
+          "27"
+         ]
+        ]
+       },
        "options": [
         "Class A",
         "Class B",
@@ -2891,10 +3271,28 @@
         "All the same"
        ],
        "correct": 0,
-       "workingOut": "Class A has 24, the smallest number, so it has the fewest pupils."
+       "workingOut": "Class A has 24, the smallest number, so it has the fewest."
       },
       {
-       "question": "A table shows 10 stickers in box 1 and 4 in box 2. What is the difference?",
+       "question": "Look at the table. What is the difference between the two boxes?",
+       "chart": {
+        "type": "table",
+        "title": "Stickers in each box",
+        "headers": [
+         "Box",
+         "Stickers"
+        ],
+        "rows": [
+         [
+          "Box 1",
+          "10"
+         ],
+         [
+          "Box 2",
+          "4"
+         ]
+        ]
+       },
        "options": [
         "4",
         "6",
@@ -2902,7 +3300,7 @@
         "14"
        ],
        "correct": 1,
-       "workingOut": "10 minus 4 is 6."
+       "workingOut": "Box 1 is 10 and Box 2 is 4, and 10 minus 4 is 6."
       }
      ]
     }

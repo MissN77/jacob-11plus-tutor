@@ -208,6 +208,7 @@ function renderWorked(app, strandId, subtopicId) {
     <div class="maths-teach-card">
       <div class="maths-teach-step">Step 2 of 3 · Watch it done</div>
       <h2 class="maths-teach-title">\u{1F50D} Worked example</h2>
+      ${w.chart ? renderChart(w.chart) : ''}
       <div class="maths-worked-question">${w.question}</div>
       <ol class="maths-worked-steps">${steps}</ol>
       <div class="maths-example-box maths-answer-box">
@@ -227,6 +228,55 @@ function startPractice(app, strandId, subtopicId) {
   currentState.results = [];
   currentState.answered = false;
   renderPracticeQuestion(app);
+}
+
+// ── Statistics chart renderers (inline SVG / HTML, no image files) ─────────
+function renderBarChart(c) {
+  const cats = c.categories || [];
+  const max = c.max || Math.max(1, ...cats.map(x => x.value));
+  const plotH = 130, top = 8, padL = 26, padB = 24;
+  const colW = 52;
+  const plotW = colW * cats.length;
+  const svgW = padL + plotW + 8, svgH = top + plotH + padB;
+  const y0 = top + plotH;
+  let ticks = '';
+  for (let v = 0; v <= max; v++) {
+    const y = y0 - (v / max) * plotH;
+    ticks += `<line x1="${padL}" y1="${y}" x2="${padL + plotW}" y2="${y}" stroke="#ece5db"/>`
+           + `<text x="${padL - 5}" y="${y + 3}" text-anchor="end" font-size="9" fill="#999">${v}</text>`;
+  }
+  const bw = 28;
+  const bars = cats.map((cat, i) => {
+    const cx = padL + (i + 0.5) * colW;
+    const h = (cat.value / max) * plotH;
+    return `<rect x="${cx - bw / 2}" y="${y0 - h}" width="${bw}" height="${h}" rx="3" fill="#1A8A7D"/>`
+         + `<text x="${cx}" y="${y0 + 14}" text-anchor="middle" font-size="9.5" fill="#1B2A4A">${cat.label}</text>`;
+  }).join('');
+  return `<figure class="maths-chart">${c.title ? `<figcaption class="maths-chart-title">${c.title}</figcaption>` : ''}`
+       + `<svg viewBox="0 0 ${svgW} ${svgH}" width="100%" style="max-width:340px" role="img">`
+       + `<line x1="${padL}" y1="${top}" x2="${padL}" y2="${y0}" stroke="#aaa"/>`
+       + `<line x1="${padL}" y1="${y0}" x2="${padL + plotW}" y2="${y0}" stroke="#aaa"/>${ticks}${bars}</svg></figure>`;
+}
+function renderPictogram(c) {
+  const rows = (c.rows || []).map(r =>
+    `<div class="picto-row"><span class="picto-label">${r.label}</span>`
+    + `<span class="picto-symbols">${(c.symbol || '⭐').repeat(r.symbols)}</span></div>`
+  ).join('');
+  return `<figure class="maths-chart maths-picto">${c.title ? `<figcaption class="maths-chart-title">${c.title}</figcaption>` : ''}`
+       + `${rows}<div class="picto-key">Key: ${c.symbol || '⭐'} = ${c.value} ${c.noun}</div></figure>`;
+}
+function renderDataTable(c) {
+  const head = `<tr>${(c.headers || []).map(h => `<th>${h}</th>`).join('')}</tr>`;
+  const body = (c.rows || []).map(r => `<tr>${r.map(cell => `<td>${cell}</td>`).join('')}</tr>`).join('');
+  return `<figure class="maths-chart">${c.title ? `<figcaption class="maths-chart-title">${c.title}</figcaption>` : ''}`
+       + `<table class="maths-data-table">${head}${body}</table></figure>`;
+}
+function renderChart(chart) {
+  if (!chart) return '';
+  if (chart.type === 'bar') return renderBarChart(chart);
+  if (chart.type === 'pictogram') return renderPictogram(chart);
+  if (chart.type === 'table') return renderDataTable(chart);
+  return '';
 }
 
 function renderPracticeQuestion(app) {
@@ -276,6 +326,7 @@ function renderPracticeQuestion(app) {
     <div class="quiz-progress-bar">${dots}</div>
     <div class="maths-practice-step">Step 3 of 3 · Practice</div>
     <div class="question-area">
+      ${q.chart ? renderChart(q.chart) : ''}
       <p class="question-text">${q.question}</p>
     </div>
     ${inputHtml}`;
@@ -305,7 +356,7 @@ function showFeedback(app, isCorrect, q) {
          <div class="maths-working-out"><strong>Working out:</strong> ${q.workingOut || ''}</div>
        </div>`
     : `<div class="maths-feedback maths-feedback--wrong">
-         <div class="maths-feedback-title">Not quite — here's the working out.</div>
+         <div class="maths-feedback-title">Not quite - here's the working out.</div>
          <div class="maths-working-out">${q.workingOut || ''}</div>
          ${q.options
            ? `<div class="maths-correct-answer">The answer was: <strong>${q.options[q.correct]}</strong></div>`
@@ -396,7 +447,7 @@ function renderComplete(app) {
   if (pct === 100) { emoji = '\u{1F31F}'; title = 'Perfect! Every single one right.'; }
   else if (pct >= 80) { emoji = '\u{1F389}'; title = 'Brilliant work!'; }
   else if (pct >= 60) { emoji = '\u{1F4AA}'; title = 'Nice going!'; }
-  else { emoji = '\u{1F4AD}'; title = 'Good try — lets look again.'; }
+  else { emoji = '\u{1F4AD}'; title = 'Good try - lets look again.'; }
 
   const unlockedLine = progress.unlockedChallenge && pct >= 80
     ? '<div class="maths-unlock">\u{1F513} Challenge mode unlocked! Come back and try harder questions.</div>'
