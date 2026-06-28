@@ -1,9 +1,17 @@
 // ── SUPABASE CLIENT ───────────────────────────────────────────────────────
 // Lightweight REST client - no SDK needed, just fetch calls
 
-const SUPABASE_URL = 'https://bdlrmtcrjenoyullctsw.supabase.co';
-const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJkbHJtdGNyamVub3l1bGxjdHN3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ4MDM1NDAsImV4cCI6MjA5MDM3OTU0MH0.Wb1aEGF7U44LzJEiej1qJjRN_1r0S_fwCYJroViYfoc';
+// Backend lives in the always-on "genome-guide" Supabase project (tables prefixed j11_).
+// The original dedicated project auto-paused on the free tier, which silently killed
+// all progress sync. This project stays warm, so tracking no longer disappears.
+const SUPABASE_URL = 'https://pimhwskthibxkpfjlkfu.supabase.co';
+const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpbWh3c2t0aGlieGtwZmpsa2Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2NDEzNjksImV4cCI6MjA5NzIxNzM2OX0.urlGrk-K0o7H3Us3sOizvZ4-S8SAB2uULHAGGYro4RY';
 const PLAYER_ID = 'ff567baf-d27e-43b7-94f2-90dbe19fd031'; // Jacob
+
+// Table names (prefixed so they don't clash with anything else in the project)
+const T_STATS = 'j11_player_stats';
+const T_QUIZ = 'j11_quiz_results';
+const T_DAILY = 'j11_daily_activity';
 
 const headers = {
   'apikey': SUPABASE_KEY,
@@ -37,28 +45,31 @@ async function query(table, method, body, params) {
   }
 }
 
-/** Record a completed quiz */
-export async function recordQuiz(section, correct, total, xpEarned, subSection) {
+/** Record a completed quiz.
+ *  `details` (optional) is an array of the questions Jacob got wrong, so the
+ *  parent dashboard can show exactly what to help him with. */
+export async function recordQuiz(section, correct, total, xpEarned, subSection, details) {
   // Insert quiz result
-  await query('quiz_results', 'POST', {
+  await query(T_QUIZ, 'POST', {
     player_id: PLAYER_ID,
     section,
     sub_section: subSection || null,
     correct,
     total,
-    xp_earned: xpEarned
+    xp_earned: xpEarned,
+    details: details && details.length ? details : null
   });
 
   // Upsert daily activity
   const today = new Date().toISOString().slice(0, 10);
-  const existing = await query('daily_activity', 'GET', null, {
+  const existing = await query(T_DAILY, 'GET', null, {
     'player_id': `eq.${PLAYER_ID}`,
     'date': `eq.${today}`,
     'select': '*'
   });
 
   if (existing && existing.length > 0) {
-    await query('daily_activity', 'PATCH', {
+    await query(T_DAILY, 'PATCH', {
       total_xp: existing[0].total_xp + xpEarned,
       quizzes_done: existing[0].quizzes_done + 1
     }, {
@@ -66,7 +77,7 @@ export async function recordQuiz(section, correct, total, xpEarned, subSection) 
       'date': `eq.${today}`
     });
   } else {
-    await query('daily_activity', 'POST', {
+    await query(T_DAILY, 'POST', {
       player_id: PLAYER_ID,
       date: today,
       total_xp: xpEarned,
@@ -78,7 +89,7 @@ export async function recordQuiz(section, correct, total, xpEarned, subSection) 
 /** Sync overall stats from localStorage state */
 export async function syncStats(state) {
   const today = new Date().toISOString().slice(0, 10);
-  await query('player_stats', 'PATCH', {
+  await query(T_STATS, 'PATCH', {
     total_xp: state.xp || 0,
     level: state.level || 1,
     current_streak: state.streak?.current || 0,
@@ -94,7 +105,7 @@ export async function syncStats(state) {
 
 /** Get player stats */
 export async function getPlayerStats() {
-  const data = await query('player_stats', 'GET', null, {
+  const data = await query(T_STATS, 'GET', null, {
     'player_id': `eq.${PLAYER_ID}`,
     'select': '*'
   });
@@ -103,7 +114,7 @@ export async function getPlayerStats() {
 
 /** Get quiz results, most recent first */
 export async function getQuizResults(limit) {
-  return await query('quiz_results', 'GET', null, {
+  return await query(T_QUIZ, 'GET', null, {
     'player_id': `eq.${PLAYER_ID}`,
     'select': '*',
     'order': 'completed_at.desc',
@@ -115,7 +126,7 @@ export async function getQuizResults(limit) {
 export async function getDailyActivity(days) {
   const since = new Date();
   since.setDate(since.getDate() - (days || 30));
-  return await query('daily_activity', 'GET', null, {
+  return await query(T_DAILY, 'GET', null, {
     'player_id': `eq.${PLAYER_ID}`,
     'date': `gte.${since.toISOString().slice(0, 10)}`,
     'select': '*',
@@ -125,7 +136,7 @@ export async function getDailyActivity(days) {
 
 /** Get per-section summary */
 export async function getSectionSummary() {
-  return await query('quiz_results', 'GET', null, {
+  return await query(T_QUIZ, 'GET', null, {
     'player_id': `eq.${PLAYER_ID}`,
     'select': 'section,correct,total,xp_earned,completed_at',
     'order': 'completed_at.desc'

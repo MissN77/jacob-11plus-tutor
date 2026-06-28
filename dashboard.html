@@ -211,6 +211,33 @@
     @media (max-width: 500px) {
       .weekly-focus-row { grid-template-columns: 1fr; }
     }
+    .status-banner {
+      border-radius: var(--radius);
+      padding: 16px 20px;
+      margin-bottom: 16px;
+      font-weight: 700;
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .status-banner.done { background: #e6f4ec; color: var(--forest); border: 2px solid var(--forest); }
+    .status-banner.idle { background: #fdecea; color: #b5402f; border: 2px solid var(--coral); }
+    .status-banner .sub { font-weight: 500; font-size: 0.82rem; color: #666; display: block; margin-top: 2px; }
+    .help-card { border: 2px solid var(--coral); }
+    .help-card h2 { color: var(--coral); }
+    .help-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid var(--cream2);
+    }
+    .help-row:last-child { border-bottom: none; }
+    .help-name { font-weight: 700; font-size: 0.92rem; }
+    .help-sub { font-size: 0.78rem; color: #888; margin-top: 2px; }
+    .help-acc { font-weight: 800; color: var(--coral); font-size: 1.05rem; }
+    .help-none { color: var(--forest); font-weight: 600; padding: 8px 0; }
     .loading { text-align: center; padding: 40px; color: #888; }
     .refresh-btn {
       background: var(--teal);
@@ -235,8 +262,8 @@
   <div id="dashboard"><p class="loading">Loading...</p></div>
 
   <script type="module">
-    const URL = 'https://bdlrmtcrjenoyullctsw.supabase.co';
-    const KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImJkbHJtdGNyamVub3l1bGxjdHN3Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ4MDM1NDAsImV4cCI6MjA5MDM3OTU0MH0.Wb1aEGF7U44LzJEiej1qJjRN_1r0S_fwCYJroViYfoc';
+    const URL = 'https://pimhwskthibxkpfjlkfu.supabase.co';
+    const KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpbWh3c2t0aGlieGtwZmpsa2Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2NDEzNjksImV4cCI6MjA5NzIxNzM2OX0.urlGrk-K0o7H3Us3sOizvZ4-S8SAB2uULHAGGYro4RY';
     const PID = 'ff567baf-d27e-43b7-94f2-90dbe19fd031';
     const hdrs = { 'apikey': KEY, 'Authorization': `Bearer ${KEY}` };
 
@@ -333,9 +360,9 @@
       el.innerHTML = '<p class="loading">Loading...</p>';
 
       const [stats, quizzes, activity] = await Promise.all([
-        get('player_stats', { player_id: `eq.${PID}`, select: '*' }),
-        get('quiz_results', { player_id: `eq.${PID}`, select: '*', order: 'completed_at.desc', limit: '100' }),
-        get('daily_activity', { player_id: `eq.${PID}`, select: '*', order: 'date.desc', limit: '14' })
+        get('j11_player_stats', { player_id: `eq.${PID}`, select: '*' }),
+        get('j11_quiz_results', { player_id: `eq.${PID}`, select: '*', order: 'completed_at.desc', limit: '100' }),
+        get('j11_daily_activity', { player_id: `eq.${PID}`, select: '*', order: 'date.desc', limit: '14' })
       ]);
 
       const s = stats[0] || { total_xp: 0, level: 1, current_streak: 0, best_streak: 0 };
@@ -349,12 +376,30 @@
         sections[q.section].count += 1;
       }
 
+      // ── Did Jacob actually practise? (the "check" answer, up top) ──
+      const todayStr = new Date().toISOString().slice(0, 10);
+      const lastQuizTime = quizzes.length ? quizzes[0].completed_at : (s.last_active || null);
+      const todayCount = quizzes.filter(q => (q.completed_at || '').slice(0, 10) === todayStr).length;
+      let bannerHtml = '';
+      if (todayCount > 0) {
+        bannerHtml = `<div class="status-banner done">✅ Practised today &mdash; ${todayCount} quiz${todayCount === 1 ? '' : 'zes'} done
+          <span class="sub">Last activity ${lastQuizTime ? fmtTime(lastQuizTime) : ''}</span></div>`;
+      } else if (lastQuizTime) {
+        const daysAgo = Math.floor((new Date(todayStr) - new Date(lastQuizTime.slice(0, 10))) / 86400000);
+        const ago = daysAgo <= 0 ? 'earlier today' : daysAgo === 1 ? 'yesterday' : `${daysAgo} days ago`;
+        bannerHtml = `<div class="status-banner idle">⚠️ Nothing logged today
+          <span class="sub">Last practised ${ago} (${fmtTime(lastQuizTime)})</span></div>`;
+      } else {
+        bannerHtml = `<div class="status-banner idle">⚠️ No practice recorded yet
+          <span class="sub">Once Jacob completes a quiz it will appear here within seconds</span></div>`;
+      }
+
       // GL Countdown
       const glDays = daysUntilGL();
       const glMsg = glMessage(glDays);
       const glLabel = glDays <= 0 ? 'GL Assessment day!' : `day${glDays === 1 ? '' : 's'} until GL Assessment`;
 
-      let html = `
+      let html = bannerHtml + `
         <div class="countdown-card">
           <div class="days">${Math.max(glDays, 0)}</div>
           <div class="days-label">${glLabel}</div>
@@ -424,6 +469,50 @@
           <div class="stat-box"><div class="value">${s.current_streak}</div><div class="label">Day Streak</div></div>
           <div class="stat-box"><div class="value">${quizzes.length}</div><div class="label">Quizzes Done</div></div>
         </div>`;
+
+      // ── Areas to help Jacob with (the "support" answer) ──
+      // Weakest sections by accuracy, only counting those with a meaningful sample.
+      const weak = Object.entries(sections)
+        .map(([id, sec]) => ({ id, name: SECTION_NAMES[id] || id, p: pct(sec.correct, sec.total), correct: sec.correct, total: sec.total, count: sec.count }))
+        .filter(x => x.total >= 5 && x.p < 70)
+        .sort((a, b) => a.p - b.p);
+
+      // Sub-section weak spots (only some sections record these)
+      const subs = {};
+      for (const q of quizzes) {
+        if (!q.sub_section) continue;
+        const k = `${q.section}||${q.sub_section}`;
+        if (!subs[k]) subs[k] = { section: q.section, sub: q.sub_section, correct: 0, total: 0 };
+        subs[k].correct += q.correct; subs[k].total += q.total;
+      }
+      const weakSubs = Object.values(subs)
+        .map(x => ({ ...x, p: pct(x.correct, x.total), name: SECTION_NAMES[x.section] || x.section }))
+        .filter(x => x.total >= 5 && x.p < 70)
+        .sort((a, b) => a.p - b.p)
+        .slice(0, 6);
+
+      html += `<div class="card help-card"><h2>Areas to help Jacob with</h2>`;
+      if (weak.length === 0 && weakSubs.length === 0) {
+        if (quizzes.length === 0) {
+          html += `<p class="help-sub">No practice recorded yet, so nothing to flag.</p>`;
+        } else {
+          html += `<p class="help-none">👍 Nothing below 70% right now &mdash; he's on top of everything he's practised.</p>`;
+        }
+      } else {
+        for (const w of weak) {
+          html += `<div class="help-row">
+            <div><div class="help-name">${w.name}</div><div class="help-sub">${w.correct}/${w.total} correct across ${w.count} quiz${w.count === 1 ? '' : 'zes'}</div></div>
+            <div class="help-acc">${w.p}%</div>
+          </div>`;
+        }
+        for (const w of weakSubs) {
+          html += `<div class="help-row">
+            <div><div class="help-name">${w.name}: ${w.sub}</div><div class="help-sub">${w.correct}/${w.total} correct</div></div>
+            <div class="help-acc">${w.p}%</div>
+          </div>`;
+        }
+      }
+      html += `</div>`;
 
       // Per-section breakdown
       html += `<div class="card"><h2>Performance by Section</h2><div class="section-grid">`;

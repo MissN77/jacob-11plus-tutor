@@ -1,4 +1,4 @@
-const CACHE_NAME = 'j11-tutor-v8';
+const CACHE_NAME = 'j11-tutor-v9';
 const ASSETS = [
   '/',
   '/index.html',
@@ -6,6 +6,7 @@ const ASSETS = [
   '/js/app.js',
   '/js/auth.js',
   '/js/store.js',
+  '/js/supabase.js',
   '/js/xp.js',
   '/js/ui.js',
   '/js/sections/learn-first.js',
