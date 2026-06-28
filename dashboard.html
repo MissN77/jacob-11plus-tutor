@@ -256,6 +256,19 @@
     .report-advice:last-child { border-bottom: none; }
     .report-advice-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
     .report-tip { font-size: 0.88rem; color: #555; line-height: 1.45; }
+    .review-card { border-top: 4px solid var(--coral); }
+    .rev-activity { padding: 12px 0; border-bottom: 1px solid var(--cream2); }
+    .rev-activity:last-child { border-bottom: none; }
+    .rev-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 8px; margin-bottom: 8px; }
+    .rev-title { font-weight: 800; font-size: 0.95rem; text-transform: capitalize; }
+    .rev-score { font-weight: 800; font-size: 0.9rem; }
+    .rev-score.high { color: var(--forest); } .rev-score.mid { color: #b8860b; } .rev-score.low { color: var(--coral); }
+    .rev-time { color: #999; font-size: 0.78rem; margin-left: auto; }
+    .rev-q { background: var(--cream); border-radius: 8px; padding: 10px 12px; margin-bottom: 8px; }
+    .rev-prompt { font-weight: 600; font-size: 0.88rem; margin-bottom: 6px; }
+    .rev-ans { display: flex; flex-direction: column; gap: 2px; font-size: 0.84rem; }
+    .rev-given { color: var(--coral); }
+    .rev-correct { color: var(--forest); font-weight: 600; }
     .loading { text-align: center; padding: 40px; color: #888; }
     .refresh-btn {
       background: var(--teal);
@@ -574,6 +587,34 @@
         html += `</div>`;
       }
       html += `</div>`;
+
+      // ── Latest activities: exactly what he got right and wrong ──
+      const recentWithDetail = quizzes
+        .filter(q => Array.isArray(q.details) && q.details.length)
+        .slice(0, 6);
+      if (recentWithDetail.length) {
+        html += `<div class="card review-card"><h2>What Jacob got wrong (most recent)</h2>
+          <p class="report-summary">Tap through these with him. The answer he picked is in red, the right answer in green.</p>`;
+        for (const q of recentWithDetail) {
+          const p = pct(q.correct, q.total);
+          const nm = SECTION_NAMES[q.section] || q.section;
+          const sub = q.sub_section ? ' &middot; ' + q.sub_section.replace(/-/g, ' ') : '';
+          html += `<div class="rev-activity">
+            <div class="rev-head"><span class="rev-title">${nm}${sub}</span>
+              <span class="rev-score ${accClass(p)}">${q.correct}/${q.total} (${p}%)</span>
+              <span class="rev-time">${fmtTime(q.completed_at)}</span></div>`;
+          for (const d of q.details) {
+            html += `<div class="rev-q">
+              <div class="rev-prompt">${d.q || ''}</div>
+              <div class="rev-ans"><span class="rev-given">Picked: ${d.given || '(none)'}</span>
+                <span class="rev-correct">Answer: ${d.correct || ''}</span></div>
+            </div>`;
+          }
+          html += `<p class="report-tip">How to help: ${SECTION_ADVICE[q.section] || 'Go over these together and try the activity again later.'}</p>`;
+          html += `</div>`;
+        }
+        html += `</div>`;
+      }
 
       // Per-section breakdown
       html += `<div class="card"><h2>Performance by Section</h2><div class="section-grid">`;
