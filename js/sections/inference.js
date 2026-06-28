@@ -88,7 +88,18 @@ function renderHome(container) {
 function renderQuestion(container) {
   const q = quizQueue[currentIndex];
 
-  const optionBtns = q.options.map((opt, i) =>
+  if (!q._shuffled) {
+    const idx = q.options.map((_, i) => i);
+    for (let i = idx.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [idx[i], idx[j]] = [idx[j], idx[i]];
+    }
+    q._shuffledOptions = idx.map(i => q.options[i]);
+    q._shuffledAnswer = idx.indexOf(q.answer);
+    q._shuffled = true;
+  }
+
+  const optionBtns = q._shuffledOptions.map((opt, i) =>
     `<button class="option-btn" data-action="answer" data-index="${i}">${opt}</button>`
   ).join('');
 
@@ -110,11 +121,12 @@ function renderQuestion(container) {
 function showExplanation(container, q, isCorrect, chosenIdx) {
   const buttons = container.querySelectorAll('.option-btn');
 
+  const correctIdx = (q._shuffledAnswer !== undefined) ? q._shuffledAnswer : q.answer;
   if (isCorrect) {
     buttons[chosenIdx].classList.add('correct');
   } else {
     buttons[chosenIdx].classList.add('wrong');
-    buttons[q.answer].classList.add('correct');
+    buttons[correctIdx].classList.add('correct');
   }
 
   // Show explanation if available
@@ -142,7 +154,8 @@ function handleAnswer(container, idx) {
   answered = true;
 
   const q = quizQueue[currentIndex];
-  const isCorrect = idx === q.answer;
+  const correctIdx = (q._shuffledAnswer !== undefined) ? q._shuffledAnswer : q.answer;
+  const isCorrect = idx === correctIdx;
   results.push(isCorrect);
 
   const state = Store.get();

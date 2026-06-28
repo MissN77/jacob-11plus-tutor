@@ -245,7 +245,17 @@ function renderPracticeQuestion(app) {
 
   let inputHtml = '';
   if (q.options) {
-    inputHtml = '<div class="options-grid">' + q.options.map((opt, i) =>
+    if (!q._shuffled) {
+      const idx = q.options.map((_, i) => i);
+      for (let i = idx.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [idx[i], idx[j]] = [idx[j], idx[i]];
+      }
+      q._shuffledOptions = idx.map(i => q.options[i]);
+      q._shuffledCorrect = idx.indexOf(q.correct);
+      q._shuffled = true;
+    }
+    inputHtml = '<div class="options-grid">' + q._shuffledOptions.map((opt, i) =>
       `<button class="option-btn" data-action="answer" data-index="${i}">${opt}</button>`
     ).join('') + '</div>';
   } else {
@@ -321,12 +331,13 @@ function handleMCAnswer(app, index) {
   currentState.answered = true;
 
   const q = currentState.questions[currentState.questionIndex];
-  const isCorrect = index === q.correct;
+  const correctIdx = (q._shuffledCorrect !== undefined) ? q._shuffledCorrect : q.correct;
+  const isCorrect = index === correctIdx;
   currentState.results.push(isCorrect);
 
   document.querySelectorAll('.option-btn').forEach((btn, i) => {
     btn.disabled = true;
-    if (i === q.correct) btn.classList.add('correct');
+    if (i === correctIdx) btn.classList.add('correct');
     if (i === index && !isCorrect) btn.classList.add('wrong');
   });
 

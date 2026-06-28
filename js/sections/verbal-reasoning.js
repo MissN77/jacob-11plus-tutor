@@ -168,7 +168,18 @@ function renderQuestion(app) {
   const q = item.q;
   answered = false;
 
-  const optionBtns = (q.options || []).map((opt, i) =>
+  if (!q._shuffled && q.options) {
+    const idx = q.options.map((_, i) => i);
+    for (let i = idx.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [idx[i], idx[j]] = [idx[j], idx[i]];
+    }
+    q._shuffledOptions = idx.map(i => q.options[i]);
+    q._shuffledAnswer = idx.indexOf(q.answer);
+    q._shuffled = true;
+  }
+
+  const optionBtns = (q._shuffledOptions || []).map((opt, i) =>
     `<button class="option-btn" data-action="answer" data-index="${i}">${opt}</button>`
   ).join('');
 
@@ -268,7 +279,8 @@ function handleAnswer(app, index) {
 
   const item = questions[currentIndex];
   const q = item.q;
-  const isCorrect = index === q.answer;
+  const correctIdx = (q._shuffledAnswer !== undefined) ? q._shuffledAnswer : q.answer;
+  const isCorrect = index === correctIdx;
   results.push(isCorrect);
 
   const state = Store.get();
@@ -279,7 +291,7 @@ function handleAnswer(app, index) {
   const buttons = app.querySelectorAll('.option-btn');
   buttons.forEach((btn, i) => {
     btn.disabled = true;
-    if (i === q.answer) btn.classList.add('correct');
+    if (i === correctIdx) btn.classList.add('correct');
     if (i === index && !isCorrect) btn.classList.add('wrong');
   });
 

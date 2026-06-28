@@ -152,7 +152,18 @@ function renderCheck(container) {
   const q = lesson.quickCheck[checkIndex];
   const total = lesson.quickCheck.length;
 
-  const optionBtns = q.options.map((opt, i) =>
+  if (!q._shuffled) {
+    const idx = q.options.map((_, i) => i);
+    for (let i = idx.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [idx[i], idx[j]] = [idx[j], idx[i]];
+    }
+    q._shuffledOptions = idx.map(i => q.options[i]);
+    q._shuffledCorrect = idx.indexOf(q.correct);
+    q._shuffled = true;
+  }
+
+  const optionBtns = q._shuffledOptions.map((opt, i) =>
     `<button class="option-btn" data-action="check-answer" data-index="${i}">${opt}</button>`
   ).join('');
 
@@ -283,7 +294,8 @@ function handleCheckAnswer(container, idx) {
   checkAnswered = true;
 
   const q = currentLesson.quickCheck[checkIndex];
-  const isCorrect = idx === q.correct;
+  const correctIdx = (q._shuffledCorrect !== undefined) ? q._shuffledCorrect : q.correct;
+  const isCorrect = idx === correctIdx;
   checkResults.push(isCorrect);
 
   const buttons = container.querySelectorAll('.option-btn');
@@ -294,7 +306,7 @@ function handleCheckAnswer(container, idx) {
     if (state.settings.soundOn) playSound(true);
   } else {
     buttons[idx].classList.add('wrong');
-    buttons[q.correct].classList.add('correct');
+    buttons[correctIdx].classList.add('correct');
     if (state.settings.soundOn) playSound(false);
   }
 
