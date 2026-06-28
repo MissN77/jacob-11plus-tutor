@@ -11,6 +11,7 @@ const SECTIONS = [
   { id: 'punctuation',         name: 'Punctuation',          icon: '.,!?' },
   { id: 'sentence-completion', name: 'Sentence Completion',  icon: '\u{1F4DD}' },
   { id: 'verbal-reasoning',    name: 'Verbal Reasoning',     icon: '\u{1F524}' },
+  { id: 'word-skills',         name: 'Word Skills',          icon: '\u{1F9E0}' },
   { id: 'maths',               name: 'Maths',                icon: '\u{1F522}' },
   { id: 'nvr',                 name: 'NVR Foundations',      icon: '\u{1F532}' },
   { id: 'twinkl-nvr',          name: 'Exam Practice (Twinkl)', icon: '\u{1F48E}' },

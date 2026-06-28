@@ -14,6 +14,7 @@ const SECTION_MODULES = {
   'punctuation':         () => import('./sections/punctuation.js'),
   'sentence-completion': () => import('./sections/sentence-completion.js'),
   'verbal-reasoning':    () => import('./sections/verbal-reasoning.js'),
+  'word-skills':         () => import('./sections/word-skills.js'),
   'comprehension':       () => import('./sections/comprehension.js'),
   'maths':               () => import('./sections/maths.js'),
   'nvr':                 () => import('./sections/nvr.js'),

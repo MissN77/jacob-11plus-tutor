@@ -1,4 +1,4 @@
-const CACHE_NAME = 'j11-tutor-v13';
+const CACHE_NAME = 'j11-tutor-v14';
 const ASSETS = [
   '/',
   '/index.html',
@@ -18,6 +18,8 @@ const ASSETS = [
   '/js/sections/verbal-reasoning.js',
   '/js/sections/comprehension.js',
   '/data/comprehension.json',
+  '/js/sections/word-skills.js',
+  '/data/word-skills.json',
   '/js/nvr/questions.js',
   '/js/nvr/renderers.js',
   '/js/nvr/shapes.js',

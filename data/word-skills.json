@@ -1,0 +1,5960 @@
+{
+ "synonyms": [
+  {
+   "stem": "Which word means the same as 'CONCEAL'?",
+   "options": [
+    "reveal",
+    "hide",
+    "shout",
+    "gather"
+   ],
+   "answer": 1,
+   "explanation": "'Conceal' and 'hide' both mean to keep out of sight."
+  },
+  {
+   "stem": "Which word means the same as 'ABUNDANT'?",
+   "options": [
+    "plentiful",
+    "scarce",
+    "tidy",
+    "gentle"
+   ],
+   "answer": 0,
+   "explanation": "'Abundant' and 'plentiful' both mean existing in large amounts."
+  },
+  {
+   "stem": "Which word means the same as 'RELUCTANT'?",
+   "options": [
+    "eager",
+    "cheerful",
+    "unwilling",
+    "honest"
+   ],
+   "answer": 2,
+   "explanation": "'Reluctant' and 'unwilling' both mean not keen to do something."
+  },
+  {
+   "stem": "Which word means the same as 'FEEBLE'?",
+   "options": [
+    "sturdy",
+    "loud",
+    "wealthy",
+    "weak"
+   ],
+   "answer": 3,
+   "explanation": "'Feeble' and 'weak' both mean lacking strength."
+  },
+  {
+   "stem": "Which word means the same as 'COURTEOUS'?",
+   "options": [
+    "polite",
+    "clumsy",
+    "fierce",
+    "lazy"
+   ],
+   "answer": 0,
+   "explanation": "'Courteous' and 'polite' both mean showing good manners."
+  },
+  {
+   "stem": "Which word means the same as 'VITAL'?",
+   "options": [
+    "dull",
+    "essential",
+    "spare",
+    "narrow"
+   ],
+   "answer": 1,
+   "explanation": "'Vital' and 'essential' both mean absolutely necessary."
+  },
+  {
+   "stem": "Which word means the same as 'WEARY'?",
+   "options": [
+    "alert",
+    "happy",
+    "tired",
+    "brave"
+   ],
+   "answer": 2,
+   "explanation": "'Weary' and 'tired' both mean worn out and lacking energy."
+  },
+  {
+   "stem": "Which word means the same as 'HOSTILE'?",
+   "options": [
+    "friendly",
+    "calm",
+    "tidy",
+    "unfriendly"
+   ],
+   "answer": 3,
+   "explanation": "'Hostile' and 'unfriendly' both mean showing dislike or opposition."
+  },
+  {
+   "stem": "Which word means the same as 'FERTILE'?",
+   "options": [
+    "productive",
+    "barren",
+    "frozen",
+    "crowded"
+   ],
+   "answer": 0,
+   "explanation": "'Fertile' and 'productive' both mean able to produce a lot."
+  },
+  {
+   "stem": "Which word means the same as 'BRISK'?",
+   "options": [
+    "sleepy",
+    "quick",
+    "kind",
+    "heavy"
+   ],
+   "answer": 1,
+   "explanation": "'Brisk' and 'quick' both mean lively and fast."
+  },
+  {
+   "stem": "Which word means the same as 'ANCIENT'?",
+   "options": [
+    "modern",
+    "shiny",
+    "old",
+    "narrow"
+   ],
+   "answer": 2,
+   "explanation": "'Ancient' and 'old' both mean from a very long time ago."
+  },
+  {
+   "stem": "Which word means the same as 'TIMID'?",
+   "options": [
+    "bold",
+    "rude",
+    "loud",
+    "shy"
+   ],
+   "answer": 3,
+   "explanation": "'Timid' and 'shy' both mean lacking confidence or courage."
+  },
+  {
+   "stem": "Which word means the same as 'GENEROUS'?",
+   "options": [
+    "giving",
+    "selfish",
+    "tidy",
+    "fast"
+   ],
+   "answer": 0,
+   "explanation": "'Generous' and 'giving' both mean willing to share freely."
+  },
+  {
+   "stem": "Which word means the same as 'FRAGILE'?",
+   "options": [
+    "sturdy",
+    "delicate",
+    "heavy",
+    "warm"
+   ],
+   "answer": 1,
+   "explanation": "'Fragile' and 'delicate' both mean easily broken."
+  },
+  {
+   "stem": "Which word means the same as 'COMMENCE'?",
+   "options": [
+    "finish",
+    "delay",
+    "begin",
+    "pause"
+   ],
+   "answer": 2,
+   "explanation": "'Commence' and 'begin' both mean to start."
+  },
+  {
+   "stem": "Which word means the same as 'VACANT'?",
+   "options": [
+    "crowded",
+    "busy",
+    "locked",
+    "empty"
+   ],
+   "answer": 3,
+   "explanation": "'Vacant' and 'empty' both mean having nothing inside."
+  },
+  {
+   "stem": "Which word means the same as 'PECULIAR'?",
+   "options": [
+    "strange",
+    "ordinary",
+    "tidy",
+    "loud"
+   ],
+   "answer": 0,
+   "explanation": "'Peculiar' and 'strange' both mean unusual or odd."
+  },
+  {
+   "stem": "Which word means the same as 'GLOOMY'?",
+   "options": [
+    "bright",
+    "dismal",
+    "warm",
+    "tidy"
+   ],
+   "answer": 1,
+   "explanation": "'Gloomy' and 'dismal' both mean dark and dreary."
+  },
+  {
+   "stem": "Which word means the same as 'SUFFICIENT'?",
+   "options": [
+    "lacking",
+    "wasteful",
+    "enough",
+    "narrow"
+   ],
+   "answer": 2,
+   "explanation": "'Sufficient' and 'enough' both mean as much as is needed."
+  },
+  {
+   "stem": "Which word means the same as 'RAPID'?",
+   "options": [
+    "slow",
+    "gentle",
+    "heavy",
+    "swift"
+   ],
+   "answer": 3,
+   "explanation": "'Rapid' and 'swift' both mean moving very fast."
+  },
+  {
+   "stem": "Which word means the same as 'COURAGEOUS'?",
+   "options": [
+    "brave",
+    "fearful",
+    "weak",
+    "lazy"
+   ],
+   "answer": 0,
+   "explanation": "'Courageous' and 'brave' both mean showing no fear of danger."
+  },
+  {
+   "stem": "Which word means the same as 'AMPLE'?",
+   "options": [
+    "tiny",
+    "plenty",
+    "narrow",
+    "broken"
+   ],
+   "answer": 1,
+   "explanation": "'Ample' and 'plenty' both mean more than enough."
+  },
+  {
+   "stem": "Which word means the same as 'FORBID'?",
+   "options": [
+    "allow",
+    "permit",
+    "prohibit",
+    "ignore"
+   ],
+   "answer": 2,
+   "explanation": "'Forbid' and 'prohibit' both mean to refuse to allow."
+  },
+  {
+   "stem": "Which word means the same as 'GRUBBY'?",
+   "options": [
+    "spotless",
+    "neat",
+    "shiny",
+    "dirty"
+   ],
+   "answer": 3,
+   "explanation": "'Grubby' and 'dirty' both mean covered in dirt."
+  },
+  {
+   "stem": "Which word means the same as 'MIMIC'?",
+   "options": [
+    "imitate",
+    "create",
+    "ignore",
+    "destroy"
+   ],
+   "answer": 0,
+   "explanation": "'Mimic' and 'imitate' both mean to copy someone."
+  },
+  {
+   "stem": "Which word means the same as 'WEALTHY'?",
+   "options": [
+    "poor",
+    "rich",
+    "kind",
+    "tired"
+   ],
+   "answer": 1,
+   "explanation": "'Wealthy' and 'rich' both mean having a lot of money."
+  },
+  {
+   "stem": "Which word means the same as 'SCARCE'?",
+   "options": [
+    "common",
+    "plentiful",
+    "rare",
+    "heavy"
+   ],
+   "answer": 2,
+   "explanation": "'Scarce' and 'rare' both mean hard to find."
+  },
+  {
+   "stem": "Which word means the same as 'PERMIT'?",
+   "options": [
+    "forbid",
+    "refuse",
+    "block",
+    "allow"
+   ],
+   "answer": 3,
+   "explanation": "'Permit' and 'allow' both mean to let something happen."
+  },
+  {
+   "stem": "Which word means the same as 'JOLLY'?",
+   "options": [
+    "merry",
+    "miserable",
+    "tired",
+    "rude"
+   ],
+   "answer": 0,
+   "explanation": "'Jolly' and 'merry' both mean cheerful and happy."
+  },
+  {
+   "stem": "Which word means the same as 'STERN'?",
+   "options": [
+    "gentle",
+    "strict",
+    "funny",
+    "small"
+   ],
+   "answer": 1,
+   "explanation": "'Stern' and 'strict' both mean firm and serious."
+  },
+  {
+   "stem": "Which word means the same as 'VANISH'?",
+   "options": [
+    "appear",
+    "remain",
+    "disappear",
+    "shine"
+   ],
+   "answer": 2,
+   "explanation": "'Vanish' and 'disappear' both mean to stop being seen."
+  },
+  {
+   "stem": "Which word means the same as 'CUNNING'?",
+   "options": [
+    "honest",
+    "clumsy",
+    "kind",
+    "crafty"
+   ],
+   "answer": 3,
+   "explanation": "'Cunning' and 'crafty' both mean clever in a sneaky way."
+  },
+  {
+   "stem": "Which word means the same as 'ENORMOUS'?",
+   "options": [
+    "huge",
+    "tiny",
+    "narrow",
+    "quiet"
+   ],
+   "answer": 0,
+   "explanation": "'Enormous' and 'huge' both mean extremely large."
+  },
+  {
+   "stem": "Which word means the same as 'GRIEF'?",
+   "options": [
+    "joy",
+    "sorrow",
+    "anger",
+    "hunger"
+   ],
+   "answer": 1,
+   "explanation": "'Grief' and 'sorrow' both mean deep sadness."
+  },
+  {
+   "stem": "Which word means the same as 'OBSTINATE'?",
+   "options": [
+    "flexible",
+    "cheerful",
+    "stubborn",
+    "gentle"
+   ],
+   "answer": 2,
+   "explanation": "'Obstinate' and 'stubborn' both mean refusing to change your mind."
+  },
+  {
+   "stem": "Which word means the same as 'SLENDER'?",
+   "options": [
+    "broad",
+    "heavy",
+    "round",
+    "thin"
+   ],
+   "answer": 3,
+   "explanation": "'Slender' and 'thin' both mean narrow and not wide."
+  },
+  {
+   "stem": "Which word means the same as 'WRETCHED'?",
+   "options": [
+    "miserable",
+    "joyful",
+    "wealthy",
+    "noisy"
+   ],
+   "answer": 0,
+   "explanation": "'Wretched' and 'miserable' both mean very unhappy."
+  },
+  {
+   "stem": "Which word means the same as 'PURCHASE'?",
+   "options": [
+    "sell",
+    "buy",
+    "lend",
+    "lose"
+   ],
+   "answer": 1,
+   "explanation": "'Purchase' and 'buy' both mean to get something by paying."
+  },
+  {
+   "stem": "Which word means the same as 'FATIGUE'?",
+   "options": [
+    "energy",
+    "courage",
+    "tiredness",
+    "anger"
+   ],
+   "answer": 2,
+   "explanation": "'Fatigue' and 'tiredness' both mean a feeling of being worn out."
+  },
+  {
+   "stem": "Which word means the same as 'QUARREL'?",
+   "options": [
+    "agree",
+    "praise",
+    "help",
+    "argue"
+   ],
+   "answer": 3,
+   "explanation": "'Quarrel' and 'argue' both mean to have a heated disagreement."
+  },
+  {
+   "stem": "Which word means the same as 'RADIANT'?",
+   "options": [
+    "glowing",
+    "dull",
+    "damp",
+    "heavy"
+   ],
+   "answer": 0,
+   "explanation": "'Radiant' and 'glowing' both mean shining brightly."
+  },
+  {
+   "stem": "Which word means the same as 'NIMBLE'?",
+   "options": [
+    "clumsy",
+    "agile",
+    "lazy",
+    "stiff"
+   ],
+   "answer": 1,
+   "explanation": "'Nimble' and 'agile' both mean quick and light in movement."
+  },
+  {
+   "stem": "Which word means the same as 'DESPISE'?",
+   "options": [
+    "admire",
+    "cherish",
+    "hate",
+    "trust"
+   ],
+   "answer": 2,
+   "explanation": "'Despise' and 'hate' both mean to dislike strongly."
+  },
+  {
+   "stem": "Which word means the same as 'FAMISHED'?",
+   "options": [
+    "full",
+    "thirsty",
+    "sleepy",
+    "starving"
+   ],
+   "answer": 3,
+   "explanation": "'Famished' and 'starving' both mean extremely hungry."
+  },
+  {
+   "stem": "Which word means the same as 'TRANQUIL'?",
+   "options": [
+    "peaceful",
+    "noisy",
+    "busy",
+    "angry"
+   ],
+   "answer": 0,
+   "explanation": "'Tranquil' and 'peaceful' both mean calm and quiet."
+  },
+  {
+   "stem": "Which word means the same as 'DREAD'?",
+   "options": [
+    "delight",
+    "fear",
+    "hope",
+    "calm"
+   ],
+   "answer": 1,
+   "explanation": "'Dread' and 'fear' both mean to feel great worry about something."
+  },
+  {
+   "stem": "Which word means the same as 'VIVID'?",
+   "options": [
+    "faint",
+    "dull",
+    "bright",
+    "plain"
+   ],
+   "answer": 2,
+   "explanation": "'Vivid' and 'bright' both mean strong and clear in colour."
+  },
+  {
+   "stem": "Which word means the same as 'BLUNDER'?",
+   "options": [
+    "success",
+    "plan",
+    "victory",
+    "mistake"
+   ],
+   "answer": 3,
+   "explanation": "'Blunder' and 'mistake' both mean a careless error."
+  },
+  {
+   "stem": "Which word means the same as 'WITHER'?",
+   "options": [
+    "shrivel",
+    "bloom",
+    "grow",
+    "swell"
+   ],
+   "answer": 0,
+   "explanation": "'Wither' and 'shrivel' both mean to dry up and shrink."
+  },
+  {
+   "stem": "Which word means the same as 'LOATHE'?",
+   "options": [
+    "adore",
+    "detest",
+    "respect",
+    "forgive"
+   ],
+   "answer": 1,
+   "explanation": "'Loathe' and 'detest' both mean to feel intense dislike."
+  },
+  {
+   "stem": "Which word means the same as 'STURDY'?",
+   "options": [
+    "fragile",
+    "soft",
+    "robust",
+    "tiny"
+   ],
+   "answer": 2,
+   "explanation": "'Sturdy' and 'robust' both mean strong and solid."
+  },
+  {
+   "stem": "Which word means the same as 'MOIST'?",
+   "options": [
+    "dry",
+    "frozen",
+    "dusty",
+    "damp"
+   ],
+   "answer": 3,
+   "explanation": "'Moist' and 'damp' both mean slightly wet."
+  },
+  {
+   "stem": "Which word means the same as 'BELLOW'?",
+   "options": [
+    "roar",
+    "whisper",
+    "mutter",
+    "sigh"
+   ],
+   "answer": 0,
+   "explanation": "'Bellow' and 'roar' both mean to shout very loudly."
+  },
+  {
+   "stem": "Which word means the same as 'FRANTIC'?",
+   "options": [
+    "calm",
+    "panicky",
+    "sleepy",
+    "bored"
+   ],
+   "answer": 1,
+   "explanation": "'Frantic' and 'panicky' both mean wildly anxious and hurried."
+  },
+  {
+   "stem": "Which word means the same as 'ABOLISH'?",
+   "options": [
+    "create",
+    "keep",
+    "remove",
+    "build"
+   ],
+   "answer": 2,
+   "explanation": "'Abolish' and 'remove' both mean to put an end to something."
+  },
+  {
+   "stem": "Which word means the same as 'PLEDGE'?",
+   "options": [
+    "doubt",
+    "refuse",
+    "delay",
+    "promise"
+   ],
+   "answer": 3,
+   "explanation": "'Pledge' and 'promise' both mean a serious commitment to do something."
+  },
+  {
+   "stem": "Which word means the same as 'DREARY'?",
+   "options": [
+    "dismal",
+    "bright",
+    "lively",
+    "warm"
+   ],
+   "answer": 0,
+   "explanation": "'Dreary' and 'dismal' both mean dull and gloomy."
+  },
+  {
+   "stem": "Which word means the same as 'INFERIOR'?",
+   "options": [
+    "superior",
+    "lesser",
+    "equal",
+    "huge"
+   ],
+   "answer": 1,
+   "explanation": "'Inferior' and 'lesser' both mean of lower quality or rank."
+  },
+  {
+   "stem": "Which word means the same as 'CONVENE'?",
+   "options": [
+    "scatter",
+    "depart",
+    "gather",
+    "rest"
+   ],
+   "answer": 2,
+   "explanation": "'Convene' and 'gather' both mean to come together as a group."
+  },
+  {
+   "stem": "Which word means the same as 'MEAGRE'?",
+   "options": [
+    "generous",
+    "plentiful",
+    "rich",
+    "scanty"
+   ],
+   "answer": 3,
+   "explanation": "'Meagre' and 'scanty' both mean lacking in quantity."
+  }
+ ],
+ "antonyms": [
+  {
+   "stem": "Which word is the OPPOSITE of 'ANCIENT'?",
+   "options": [
+    "modern",
+    "old",
+    "rusty",
+    "narrow"
+   ],
+   "answer": 0,
+   "explanation": "'Ancient' means very old, so its opposite is 'modern'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'GENEROUS'?",
+   "options": [
+    "giving",
+    "silent",
+    "mean",
+    "golden"
+   ],
+   "answer": 2,
+   "explanation": "'Generous' means free in giving, so its opposite is 'mean'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'EXPAND'?",
+   "options": [
+    "yellow",
+    "contract",
+    "enlarge",
+    "gentle"
+   ],
+   "answer": 1,
+   "explanation": "'Expand' means to grow larger, so its opposite is 'contract'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ASCEND'?",
+   "options": [
+    "rise",
+    "paint",
+    "hollow",
+    "descend"
+   ],
+   "answer": 3,
+   "explanation": "'Ascend' means to go up, so its opposite is 'descend'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'PERMANENT'?",
+   "options": [
+    "temporary",
+    "lasting",
+    "cheerful",
+    "rusty"
+   ],
+   "answer": 0,
+   "explanation": "'Permanent' means lasting forever, so its opposite is 'temporary'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'VICTORY'?",
+   "options": [
+    "ladder",
+    "triumph",
+    "defeat",
+    "silent"
+   ],
+   "answer": 2,
+   "explanation": "'Victory' means a win, so its opposite is 'defeat'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ARTIFICIAL'?",
+   "options": [
+    "fake",
+    "natural",
+    "brave",
+    "sticky"
+   ],
+   "answer": 1,
+   "explanation": "'Artificial' means man-made, so its opposite is 'natural'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'SCARCE'?",
+   "options": [
+    "rare",
+    "smooth",
+    "plentiful",
+    "loud"
+   ],
+   "answer": 2,
+   "explanation": "'Scarce' means hard to find, so its opposite is 'plentiful'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ARRIVE'?",
+   "options": [
+    "depart",
+    "reach",
+    "scrape",
+    "golden"
+   ],
+   "answer": 0,
+   "explanation": "'Arrive' means to come to a place, so its opposite is 'depart'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ACCEPT'?",
+   "options": [
+    "receive",
+    "narrow",
+    "reject",
+    "glisten"
+   ],
+   "answer": 2,
+   "explanation": "'Accept' means to take willingly, so its opposite is 'reject'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'INCREASE'?",
+   "options": [
+    "boost",
+    "decrease",
+    "polite",
+    "damp"
+   ],
+   "answer": 1,
+   "explanation": "'Increase' means to make bigger, so its opposite is 'decrease'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ATTACK'?",
+   "options": [
+    "orange",
+    "assault",
+    "sleepy",
+    "defend"
+   ],
+   "answer": 3,
+   "explanation": "'Attack' means to strike at, so its opposite is 'defend'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'CONCEAL'?",
+   "options": [
+    "reveal",
+    "hide",
+    "bounce",
+    "narrow"
+   ],
+   "answer": 0,
+   "explanation": "'Conceal' means to hide, so its opposite is 'reveal'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'FRAGILE'?",
+   "options": [
+    "delicate",
+    "spicy",
+    "sturdy",
+    "distant"
+   ],
+   "answer": 2,
+   "explanation": "'Fragile' means easily broken, so its opposite is 'sturdy'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'TIMID'?",
+   "options": [
+    "bold",
+    "shy",
+    "shallow",
+    "hourly"
+   ],
+   "answer": 0,
+   "explanation": "'Timid' means easily frightened, so its opposite is 'bold'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'WEALTHY'?",
+   "options": [
+    "rich",
+    "curved",
+    "distant",
+    "poor"
+   ],
+   "answer": 3,
+   "explanation": "'Wealthy' means having much money, so its opposite is 'poor'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'EXPENSIVE'?",
+   "options": [
+    "costly",
+    "cheap",
+    "gentle",
+    "frozen"
+   ],
+   "answer": 1,
+   "explanation": "'Expensive' means high in price, so its opposite is 'cheap'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'RAPID'?",
+   "options": [
+    "swift",
+    "hollow",
+    "slow",
+    "crimson"
+   ],
+   "answer": 2,
+   "explanation": "'Rapid' means very fast, so its opposite is 'slow'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'SUMMIT'?",
+   "options": [
+    "base",
+    "peak",
+    "gentle",
+    "hollow"
+   ],
+   "answer": 0,
+   "explanation": "'Summit' means the very top, so its opposite is 'base'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'INNOCENT'?",
+   "options": [
+    "sturdy",
+    "blameless",
+    "guilty",
+    "breezy"
+   ],
+   "answer": 2,
+   "explanation": "'Innocent' means not at fault, so its opposite is 'guilty'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ENORMOUS'?",
+   "options": [
+    "huge",
+    "tiny",
+    "polite",
+    "damp"
+   ],
+   "answer": 1,
+   "explanation": "'Enormous' means very large, so its opposite is 'tiny'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'CRUEL'?",
+   "options": [
+    "square",
+    "harsh",
+    "distant",
+    "kind"
+   ],
+   "answer": 3,
+   "explanation": "'Cruel' means causing pain, so its opposite is 'kind'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'PRAISE'?",
+   "options": [
+    "criticise",
+    "compliment",
+    "gallop",
+    "frozen"
+   ],
+   "answer": 0,
+   "explanation": "'Praise' means to speak well of, so its opposite is 'criticise'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ADVANCE'?",
+   "options": [
+    "proceed",
+    "gleam",
+    "retreat",
+    "hollow"
+   ],
+   "answer": 2,
+   "explanation": "'Advance' means to move forward, so its opposite is 'retreat'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ENTRANCE'?",
+   "options": [
+    "exit",
+    "doorway",
+    "meadow",
+    "crisp"
+   ],
+   "answer": 0,
+   "explanation": "'Entrance' means a way in, so its opposite is 'exit'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'DEMOLISH'?",
+   "options": [
+    "destroy",
+    "amber",
+    "build",
+    "narrow"
+   ],
+   "answer": 2,
+   "explanation": "'Demolish' means to knock down, so its opposite is 'build'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'GLOOMY'?",
+   "options": [
+    "dismal",
+    "cheerful",
+    "rapid",
+    "hollow"
+   ],
+   "answer": 1,
+   "explanation": "'Gloomy' means dark and sad, so its opposite is 'cheerful'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ABSENT'?",
+   "options": [
+    "gentle",
+    "missing",
+    "sturdy",
+    "present"
+   ],
+   "answer": 3,
+   "explanation": "'Absent' means not there, so its opposite is 'present'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'AMATEUR'?",
+   "options": [
+    "professional",
+    "novice",
+    "glossy",
+    "distant"
+   ],
+   "answer": 0,
+   "explanation": "'Amateur' means not expert, so its opposite is 'professional'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'SHALLOW'?",
+   "options": [
+    "superficial",
+    "jagged",
+    "deep",
+    "polite"
+   ],
+   "answer": 2,
+   "explanation": "'Shallow' means not deep, so its opposite is 'deep'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'CAPTURE'?",
+   "options": [
+    "seize",
+    "release",
+    "amber",
+    "polite"
+   ],
+   "answer": 1,
+   "explanation": "'Capture' means to take hold of, so its opposite is 'release'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'WHISPER'?",
+   "options": [
+    "murmur",
+    "frozen",
+    "square",
+    "shout"
+   ],
+   "answer": 3,
+   "explanation": "'Whisper' means to speak very quietly, so its opposite is 'shout'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'SMOOTH'?",
+   "options": [
+    "rough",
+    "sleek",
+    "cheerful",
+    "hourly"
+   ],
+   "answer": 0,
+   "explanation": "'Smooth' means even and flat, so its opposite is 'rough'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'HUMBLE'?",
+   "options": [
+    "modest",
+    "arrogant",
+    "rapid",
+    "frozen"
+   ],
+   "answer": 1,
+   "explanation": "'Humble' means not proud, so its opposite is 'arrogant'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'LENGTHEN'?",
+   "options": [
+    "extend",
+    "sparkle",
+    "shorten",
+    "distant"
+   ],
+   "answer": 2,
+   "explanation": "'Lengthen' means to make longer, so its opposite is 'shorten'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'TRANSPARENT'?",
+   "options": [
+    "opaque",
+    "clear",
+    "brave",
+    "sticky"
+   ],
+   "answer": 0,
+   "explanation": "'Transparent' means you can see through it, so its opposite is 'opaque'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'OPTIMISTIC'?",
+   "options": [
+    "hopeful",
+    "jagged",
+    "pessimistic",
+    "hollow"
+   ],
+   "answer": 2,
+   "explanation": "'Optimistic' means expecting good things, so its opposite is 'pessimistic'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'FERTILE'?",
+   "options": [
+    "barren",
+    "productive",
+    "gentle",
+    "crimson"
+   ],
+   "answer": 0,
+   "explanation": "'Fertile' means able to grow much, so its opposite is 'barren'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ATTRACT'?",
+   "options": [
+    "lure",
+    "amber",
+    "repel",
+    "polite"
+   ],
+   "answer": 2,
+   "explanation": "'Attract' means to draw towards, so its opposite is 'repel'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'VACANT'?",
+   "options": [
+    "occupied",
+    "empty",
+    "cheerful",
+    "swift"
+   ],
+   "answer": 0,
+   "explanation": "'Vacant' means empty, so its opposite is 'occupied'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'MAJORITY'?",
+   "options": [
+    "most",
+    "ladder",
+    "minority",
+    "frozen"
+   ],
+   "answer": 2,
+   "explanation": "'Majority' means the greater number, so its opposite is 'minority'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'RIGID'?",
+   "options": [
+    "flexible",
+    "stiff",
+    "cheerful",
+    "distant"
+   ],
+   "answer": 0,
+   "explanation": "'Rigid' means stiff and unbending, so its opposite is 'flexible'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ENCOURAGE'?",
+   "options": [
+    "inspire",
+    "amber",
+    "discourage",
+    "hollow"
+   ],
+   "answer": 2,
+   "explanation": "'Encourage' means to give hope to, so its opposite is 'discourage'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'ABOLISH'?",
+   "options": [
+    "establish",
+    "cancel",
+    "glossy",
+    "distant"
+   ],
+   "answer": 0,
+   "explanation": "'Abolish' means to do away with, so its opposite is 'establish'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'WEARY'?",
+   "options": [
+    "tired",
+    "square",
+    "energetic",
+    "crimson"
+   ],
+   "answer": 2,
+   "explanation": "'Weary' means very tired, so its opposite is 'energetic'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'SINK'?",
+   "options": [
+    "float",
+    "submerge",
+    "amber",
+    "polite"
+   ],
+   "answer": 0,
+   "explanation": "'Sink' means to go under water, so its opposite is 'float'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'EXPORT'?",
+   "options": [
+    "send",
+    "gentle",
+    "import",
+    "frozen"
+   ],
+   "answer": 2,
+   "explanation": "'Export' means to send goods abroad, so its opposite is 'import'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'GENUINE'?",
+   "options": [
+    "fake",
+    "authentic",
+    "rapid",
+    "hollow"
+   ],
+   "answer": 0,
+   "explanation": "'Genuine' means real and true, so its opposite is 'fake'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'CALM'?",
+   "options": [
+    "peaceful",
+    "golden",
+    "frantic",
+    "sturdy"
+   ],
+   "answer": 2,
+   "explanation": "'Calm' means quiet and still, so its opposite is 'frantic'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'SEPARATE'?",
+   "options": [
+    "combine",
+    "divide",
+    "cheerful",
+    "amber"
+   ],
+   "answer": 0,
+   "explanation": "'Separate' means to keep apart, so its opposite is 'combine'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'FORBID'?",
+   "options": [
+    "ban",
+    "frozen",
+    "allow",
+    "glossy"
+   ],
+   "answer": 2,
+   "explanation": "'Forbid' means to refuse to permit, so its opposite is 'allow'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'BRIGHT'?",
+   "options": [
+    "dim",
+    "radiant",
+    "sturdy",
+    "hourly"
+   ],
+   "answer": 0,
+   "explanation": "'Bright' means full of light, so its opposite is 'dim'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'PROFIT'?",
+   "options": [
+    "gain",
+    "meadow",
+    "loss",
+    "distant"
+   ],
+   "answer": 2,
+   "explanation": "'Profit' means money gained, so its opposite is 'loss'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'SHRINK'?",
+   "options": [
+    "grow",
+    "dwindle",
+    "amber",
+    "polite"
+   ],
+   "answer": 0,
+   "explanation": "'Shrink' means to get smaller, so its opposite is 'grow'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'FAMILIAR'?",
+   "options": [
+    "known",
+    "strange",
+    "crisp",
+    "hollow"
+   ],
+   "answer": 1,
+   "explanation": "'Familiar' means well known, so its opposite is 'strange'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'WILD'?",
+   "options": [
+    "savage",
+    "tame",
+    "cheerful",
+    "distant"
+   ],
+   "answer": 1,
+   "explanation": "'Wild' means untamed, so its opposite is 'tame'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'PUNISH'?",
+   "options": [
+    "penalise",
+    "reward",
+    "amber",
+    "hollow"
+   ],
+   "answer": 1,
+   "explanation": "'Punish' means to make someone suffer for wrong, so its opposite is 'reward'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'HOSTILE'?",
+   "options": [
+    "aggressive",
+    "friendly",
+    "rapid",
+    "frozen"
+   ],
+   "answer": 1,
+   "explanation": "'Hostile' means unfriendly, so its opposite is 'friendly'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'MELT'?",
+   "options": [
+    "thaw",
+    "freeze",
+    "cheerful",
+    "distant"
+   ],
+   "answer": 1,
+   "explanation": "'Melt' means to turn to liquid with heat, so its opposite is 'freeze'."
+  },
+  {
+   "stem": "Which word is the OPPOSITE of 'DAWN'?",
+   "options": [
+    "sunrise",
+    "ladder",
+    "dusk",
+    "polite"
+   ],
+   "answer": 2,
+   "explanation": "'Dawn' means daybreak, so its opposite is 'dusk'."
+  }
+ ],
+ "odd-one-out": [
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "spinach",
+    "apple",
+    "pear",
+    "plum"
+   ],
+   "answer": 0,
+   "explanation": "Apple, pear and plum are fruits; spinach is a vegetable."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "lion",
+    "sofa",
+    "tiger",
+    "leopard"
+   ],
+   "answer": 1,
+   "explanation": "Lion, tiger and leopard are big cats; sofa is furniture."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "car",
+    "bus",
+    "river",
+    "lorry"
+   ],
+   "answer": 2,
+   "explanation": "Car, bus and lorry are vehicles; river is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "red",
+    "blue",
+    "green",
+    "loud"
+   ],
+   "answer": 3,
+   "explanation": "Red, blue and green are colours; loud describes sound."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "swim",
+    "table",
+    "chair",
+    "bed"
+   ],
+   "answer": 0,
+   "explanation": "Table, chair and bed are furniture; swim is an action."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "trumpet",
+    "apple",
+    "flute",
+    "violin"
+   ],
+   "answer": 1,
+   "explanation": "Trumpet, flute and violin are instruments; apple is a fruit."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "rain",
+    "snow",
+    "grass",
+    "hail"
+   ],
+   "answer": 2,
+   "explanation": "Rain, snow and hail are types of weather; grass is a plant."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "arm",
+    "leg",
+    "elbow",
+    "spoon"
+   ],
+   "answer": 3,
+   "explanation": "Arm, leg and elbow are body parts; spoon is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "sandwich",
+    "pilot",
+    "nurse",
+    "baker"
+   ],
+   "answer": 0,
+   "explanation": "Pilot, nurse and baker are jobs; sandwich is a food."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "tennis",
+    "piano",
+    "rugby",
+    "cricket"
+   ],
+   "answer": 1,
+   "explanation": "Tennis, rugby and cricket are sports; piano is an instrument."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "shark",
+    "cod",
+    "oak",
+    "tuna"
+   ],
+   "answer": 2,
+   "explanation": "Shark, cod and tuna are fish; oak is a tree."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "cotton",
+    "wool",
+    "silk",
+    "glass"
+   ],
+   "answer": 3,
+   "explanation": "Cotton, wool and silk are fabrics; glass is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "banana",
+    "square",
+    "circle",
+    "triangle"
+   ],
+   "answer": 0,
+   "explanation": "Square, circle and triangle are shapes; banana is a fruit."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "bee",
+    "dog",
+    "ant",
+    "wasp"
+   ],
+   "answer": 1,
+   "explanation": "Bee, ant and wasp are insects; dog is a mammal."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "happy",
+    "cheerful",
+    "sock",
+    "joyful"
+   ],
+   "answer": 2,
+   "explanation": "Happy, cheerful and joyful describe feeling glad; sock is clothing."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "boat",
+    "ship",
+    "canoe",
+    "bicycle"
+   ],
+   "answer": 3,
+   "explanation": "Boat, ship and canoe travel on water; bicycle does not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "carrot",
+    "eagle",
+    "owl",
+    "robin"
+   ],
+   "answer": 0,
+   "explanation": "Eagle, owl and robin are birds; carrot is a vegetable."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "gold",
+    "cloud",
+    "tin",
+    "lead"
+   ],
+   "answer": 1,
+   "explanation": "Gold, tin and lead are metals; cloud is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "thumb",
+    "finger",
+    "ladder",
+    "wrist"
+   ],
+   "answer": 2,
+   "explanation": "Thumb, finger and wrist are body parts; ladder is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "run",
+    "jump",
+    "skip",
+    "tall"
+   ],
+   "answer": 3,
+   "explanation": "Run, jump and skip are actions; tall is a describing word."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "kettle",
+    "cat",
+    "horse",
+    "sheep"
+   ],
+   "answer": 0,
+   "explanation": "Cat, horse and sheep are animals; kettle is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "lettuce",
+    "cherry",
+    "cabbage",
+    "onion"
+   ],
+   "answer": 1,
+   "explanation": "Lettuce, cabbage and onion are vegetables; cherry is a fruit."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "windy",
+    "sunny",
+    "brick",
+    "stormy"
+   ],
+   "answer": 2,
+   "explanation": "Windy, sunny and stormy describe weather; brick is a material."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "drum",
+    "guitar",
+    "harp",
+    "kite"
+   ],
+   "answer": 3,
+   "explanation": "Drum, guitar and harp are instruments; kite is a toy."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "doctor",
+    "river",
+    "teacher",
+    "farmer"
+   ],
+   "answer": 0,
+   "explanation": "Doctor, teacher and farmer are jobs; river is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "plane",
+    "desk",
+    "helicopter",
+    "jet"
+   ],
+   "answer": 1,
+   "explanation": "Plane, helicopter and jet are aircraft; desk is furniture."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "football",
+    "hockey",
+    "violin",
+    "netball"
+   ],
+   "answer": 2,
+   "explanation": "Football, hockey and netball are sports; violin is an instrument."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "maple",
+    "birch",
+    "pine",
+    "tulip"
+   ],
+   "answer": 3,
+   "explanation": "Maple, birch and pine are trees; tulip is a flower."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "pencil",
+    "wolf",
+    "fox",
+    "bear"
+   ],
+   "answer": 0,
+   "explanation": "Wolf, fox and bear are wild animals; pencil is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "blue",
+    "whisper",
+    "yellow",
+    "purple"
+   ],
+   "answer": 1,
+   "explanation": "Blue, yellow and purple are colours; whisper is a sound."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "spoon",
+    "fork",
+    "apple",
+    "knife"
+   ],
+   "answer": 2,
+   "explanation": "Spoon, fork and knife are cutlery; apple is a fruit."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "shirt",
+    "coat",
+    "jumper",
+    "table"
+   ],
+   "answer": 3,
+   "explanation": "Shirt, coat and jumper are clothes; table is furniture."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "ocean",
+    "square",
+    "rectangle",
+    "oval"
+   ],
+   "answer": 0,
+   "explanation": "Square, rectangle and oval are shapes; ocean is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "mango",
+    "carrot",
+    "peach",
+    "melon"
+   ],
+   "answer": 1,
+   "explanation": "Mango, peach and melon are fruits; carrot is a vegetable."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "hammer",
+    "saw",
+    "banana",
+    "drill"
+   ],
+   "answer": 2,
+   "explanation": "Hammer, saw and drill are tools; banana is a fruit."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "sad",
+    "gloomy",
+    "miserable",
+    "fast"
+   ],
+   "answer": 3,
+   "explanation": "Sad, gloomy and miserable mean unhappy; fast means quick."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "train",
+    "duck",
+    "goose",
+    "hen"
+   ],
+   "answer": 0,
+   "explanation": "Duck, goose and hen are birds; train is a vehicle."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "river",
+    "mountain",
+    "stream",
+    "lake"
+   ],
+   "answer": 1,
+   "explanation": "River, stream and lake are bodies of water; mountain is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "copper",
+    "bronze",
+    "cotton",
+    "steel"
+   ],
+   "answer": 2,
+   "explanation": "Copper, bronze and steel are metals; cotton is a fabric."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "sprint",
+    "dash",
+    "race",
+    "sleep"
+   ],
+   "answer": 3,
+   "explanation": "Sprint, dash and race mean to move quickly; sleep does not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "chair",
+    "rose",
+    "lily",
+    "daisy"
+   ],
+   "answer": 0,
+   "explanation": "Rose, lily and daisy are flowers; chair is furniture."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "shoulder",
+    "window",
+    "knee",
+    "ankle"
+   ],
+   "answer": 1,
+   "explanation": "Shoulder, knee and ankle are body parts; window is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "cricket",
+    "golf",
+    "cello",
+    "tennis"
+   ],
+   "answer": 2,
+   "explanation": "Cricket, golf and tennis are sports; cello is an instrument."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "kitten",
+    "puppy",
+    "calf",
+    "oak"
+   ],
+   "answer": 3,
+   "explanation": "Kitten, puppy and calf are baby animals; oak is a tree."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "soup",
+    "tiger",
+    "lion",
+    "wolf"
+   ],
+   "answer": 0,
+   "explanation": "Tiger, lion and wolf are animals; soup is a food."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "square",
+    "loud",
+    "circle",
+    "hexagon"
+   ],
+   "answer": 1,
+   "explanation": "Square, circle and hexagon are shapes; loud describes sound."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "lemon",
+    "lime",
+    "potato",
+    "orange"
+   ],
+   "answer": 2,
+   "explanation": "Lemon, lime and orange are citrus fruits; potato is a vegetable."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "bright",
+    "shiny",
+    "gleaming",
+    "quiet"
+   ],
+   "answer": 3,
+   "explanation": "Bright, shiny and gleaming describe light; quiet describes sound."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "clock",
+    "cow",
+    "goat",
+    "pig"
+   ],
+   "answer": 0,
+   "explanation": "Cow, goat and pig are farm animals; clock is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "violin",
+    "brick",
+    "cello",
+    "viola"
+   ],
+   "answer": 1,
+   "explanation": "Violin, cello and viola are string instruments; brick is a material."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "sailor",
+    "baker",
+    "pencil",
+    "butcher"
+   ],
+   "answer": 2,
+   "explanation": "Sailor, baker and butcher are jobs; pencil is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "foggy",
+    "misty",
+    "cloudy",
+    "sandy"
+   ],
+   "answer": 3,
+   "explanation": "Foggy, misty and cloudy describe weather; sandy describes ground."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "glass",
+    "beech",
+    "willow",
+    "elm"
+   ],
+   "answer": 0,
+   "explanation": "Beech, willow and elm are trees; glass is a material."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "whale",
+    "spider",
+    "dolphin",
+    "seal"
+   ],
+   "answer": 1,
+   "explanation": "Whale, dolphin and seal are sea mammals; spider is a land creature."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "jacket",
+    "scarf",
+    "mango",
+    "gloves"
+   ],
+   "answer": 2,
+   "explanation": "Jacket, scarf and gloves are clothes; mango is a fruit."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "spade",
+    "rake",
+    "hoe",
+    "plum"
+   ],
+   "answer": 3,
+   "explanation": "Spade, rake and hoe are garden tools; plum is a fruit."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "pillow",
+    "copper",
+    "silver",
+    "gold"
+   ],
+   "answer": 0,
+   "explanation": "Copper, silver and gold are metals; pillow is not."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "angry",
+    "table",
+    "furious",
+    "cross"
+   ],
+   "answer": 1,
+   "explanation": "Angry, furious and cross describe being annoyed; table is furniture."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "frog",
+    "newt",
+    "sparrow",
+    "toad"
+   ],
+   "answer": 2,
+   "explanation": "Frog, newt and toad are amphibians; sparrow is a bird."
+  },
+  {
+   "stem": "Which word is the odd one out?",
+   "options": [
+    "bracelet",
+    "necklace",
+    "ring",
+    "carrot"
+   ],
+   "answer": 3,
+   "explanation": "Bracelet, necklace and ring are jewellery; carrot is a vegetable."
+  }
+ ],
+ "analogies": [
+  {
+   "stem": "Cat is to kitten as dog is to ___",
+   "options": [
+    "puppy",
+    "bone",
+    "bark",
+    "collar"
+   ],
+   "answer": 0,
+   "explanation": "A kitten is a young cat, so a puppy is a young dog."
+  },
+  {
+   "stem": "Cow is to calf as horse is to ___",
+   "options": [
+    "stable",
+    "foal",
+    "gallop",
+    "mane"
+   ],
+   "answer": 1,
+   "explanation": "A calf is a young cow, so a foal is a young horse."
+  },
+  {
+   "stem": "Sheep is to lamb as goat is to ___",
+   "options": [
+    "kid",
+    "wool",
+    "field",
+    "horn"
+   ],
+   "answer": 0,
+   "explanation": "A lamb is a young sheep, so a kid is a young goat."
+  },
+  {
+   "stem": "Hen is to chick as frog is to ___",
+   "options": [
+    "pond",
+    "jump",
+    "tadpole",
+    "green"
+   ],
+   "answer": 2,
+   "explanation": "A chick is a young hen, so a tadpole is a young frog."
+  },
+  {
+   "stem": "Knife is to cut as pen is to ___",
+   "options": [
+    "paper",
+    "write",
+    "ink",
+    "desk"
+   ],
+   "answer": 1,
+   "explanation": "A knife is used to cut, so a pen is used to write."
+  },
+  {
+   "stem": "Broom is to sweep as spade is to ___",
+   "options": [
+    "garden",
+    "handle",
+    "dig",
+    "metal"
+   ],
+   "answer": 2,
+   "explanation": "A broom is used to sweep, so a spade is used to dig."
+  },
+  {
+   "stem": "Scissors is to cut as needle is to ___",
+   "options": [
+    "sharp",
+    "sew",
+    "thread",
+    "cloth"
+   ],
+   "answer": 1,
+   "explanation": "Scissors are used to cut, so a needle is used to sew."
+  },
+  {
+   "stem": "Kettle is to boil as fridge is to ___",
+   "options": [
+    "cool",
+    "kitchen",
+    "door",
+    "milk"
+   ],
+   "answer": 0,
+   "explanation": "A kettle is used to boil, so a fridge is used to cool."
+  },
+  {
+   "stem": "Finger is to hand as toe is to ___",
+   "options": [
+    "foot",
+    "shoe",
+    "nail",
+    "leg"
+   ],
+   "answer": 0,
+   "explanation": "A finger is part of a hand, so a toe is part of a foot."
+  },
+  {
+   "stem": "Petal is to flower as leaf is to ___",
+   "options": [
+    "green",
+    "tree",
+    "branch",
+    "autumn"
+   ],
+   "answer": 1,
+   "explanation": "A petal is part of a flower, so a leaf is part of a tree."
+  },
+  {
+   "stem": "Wheel is to car as wing is to ___",
+   "options": [
+    "feather",
+    "fly",
+    "aeroplane",
+    "sky"
+   ],
+   "answer": 2,
+   "explanation": "A wheel is part of a car, so a wing is part of an aeroplane."
+  },
+  {
+   "stem": "Page is to book as brick is to ___",
+   "options": [
+    "wall",
+    "clay",
+    "heavy",
+    "red"
+   ],
+   "answer": 0,
+   "explanation": "A page is part of a book, so a brick is part of a wall."
+  },
+  {
+   "stem": "Root is to plant as foundation is to ___",
+   "options": [
+    "soil",
+    "building",
+    "concrete",
+    "deep"
+   ],
+   "answer": 1,
+   "explanation": "A root is part of a plant, so a foundation is part of a building."
+  },
+  {
+   "stem": "Teacher is to school as doctor is to ___",
+   "options": [
+    "patient",
+    "medicine",
+    "hospital",
+    "nurse"
+   ],
+   "answer": 2,
+   "explanation": "A teacher works in a school, so a doctor works in a hospital."
+  },
+  {
+   "stem": "Chef is to kitchen as actor is to ___",
+   "options": [
+    "stage",
+    "script",
+    "costume",
+    "film"
+   ],
+   "answer": 0,
+   "explanation": "A chef works in a kitchen, so an actor works on a stage."
+  },
+  {
+   "stem": "Pilot is to cockpit as judge is to ___",
+   "options": [
+    "law",
+    "courtroom",
+    "wig",
+    "prison"
+   ],
+   "answer": 1,
+   "explanation": "A pilot works in a cockpit, so a judge works in a courtroom."
+  },
+  {
+   "stem": "Farmer is to field as sailor is to ___",
+   "options": [
+    "rope",
+    "ship",
+    "sea",
+    "anchor"
+   ],
+   "answer": 1,
+   "explanation": "A farmer works in a field, so a sailor works on a ship."
+  },
+  {
+   "stem": "Librarian is to library as banker is to ___",
+   "options": [
+    "money",
+    "bank",
+    "loan",
+    "safe"
+   ],
+   "answer": 1,
+   "explanation": "A librarian works in a library, so a banker works in a bank."
+  },
+  {
+   "stem": "Rain is to flood as sun is to ___",
+   "options": [
+    "sky",
+    "cloud",
+    "drought",
+    "warm"
+   ],
+   "answer": 2,
+   "explanation": "Too much rain causes a flood, so too much sun causes a drought."
+  },
+  {
+   "stem": "Spark is to fire as seed is to ___",
+   "options": [
+    "soil",
+    "plant",
+    "water",
+    "brown"
+   ],
+   "answer": 1,
+   "explanation": "A spark causes a fire, so a seed causes a plant to grow."
+  },
+  {
+   "stem": "Germ is to illness as exercise is to ___",
+   "options": [
+    "fitness",
+    "gym",
+    "sweat",
+    "tired"
+   ],
+   "answer": 0,
+   "explanation": "A germ causes illness, so exercise causes fitness."
+  },
+  {
+   "stem": "Joke is to laughter as tragedy is to ___",
+   "options": [
+    "play",
+    "tears",
+    "stage",
+    "sad"
+   ],
+   "answer": 1,
+   "explanation": "A joke causes laughter, so a tragedy causes tears."
+  },
+  {
+   "stem": "Big is to large as small is to ___",
+   "options": [
+    "tiny",
+    "huge",
+    "wide",
+    "short"
+   ],
+   "answer": 0,
+   "explanation": "Big and large are synonyms, so small means the same as tiny."
+  },
+  {
+   "stem": "Happy is to glad as sad is to ___",
+   "options": [
+    "angry",
+    "cheerful",
+    "unhappy",
+    "tired"
+   ],
+   "answer": 2,
+   "explanation": "Happy and glad are synonyms, so sad means the same as unhappy."
+  },
+  {
+   "stem": "Begin is to start as finish is to ___",
+   "options": [
+    "end",
+    "middle",
+    "race",
+    "begin"
+   ],
+   "answer": 0,
+   "explanation": "Begin and start are synonyms, so finish means the same as end."
+  },
+  {
+   "stem": "Brave is to courageous as clever is to ___",
+   "options": [
+    "foolish",
+    "intelligent",
+    "lazy",
+    "quiet"
+   ],
+   "answer": 1,
+   "explanation": "Brave and courageous are synonyms, so clever means the same as intelligent."
+  },
+  {
+   "stem": "Quick is to rapid as quiet is to ___",
+   "options": [
+    "loud",
+    "silent",
+    "busy",
+    "fast"
+   ],
+   "answer": 1,
+   "explanation": "Quick and rapid are synonyms, so quiet means the same as silent."
+  },
+  {
+   "stem": "Hot is to cold as up is to ___",
+   "options": [
+    "down",
+    "high",
+    "top",
+    "over"
+   ],
+   "answer": 0,
+   "explanation": "Hot is the opposite of cold, so up is the opposite of down."
+  },
+  {
+   "stem": "Day is to night as light is to ___",
+   "options": [
+    "bright",
+    "lamp",
+    "dark",
+    "sun"
+   ],
+   "answer": 2,
+   "explanation": "Day is the opposite of night, so light is the opposite of dark."
+  },
+  {
+   "stem": "Open is to closed as full is to ___",
+   "options": [
+    "empty",
+    "heavy",
+    "wide",
+    "large"
+   ],
+   "answer": 0,
+   "explanation": "Open is the opposite of closed, so full is the opposite of empty."
+  },
+  {
+   "stem": "Wet is to dry as rough is to ___",
+   "options": [
+    "bumpy",
+    "smooth",
+    "hard",
+    "coarse"
+   ],
+   "answer": 1,
+   "explanation": "Wet is the opposite of dry, so rough is the opposite of smooth."
+  },
+  {
+   "stem": "Ancient is to modern as friend is to ___",
+   "options": [
+    "enemy",
+    "mate",
+    "helper",
+    "neighbour"
+   ],
+   "answer": 0,
+   "explanation": "Ancient is the opposite of modern, so friend is the opposite of enemy."
+  },
+  {
+   "stem": "Win is to lose as buy is to ___",
+   "options": [
+    "shop",
+    "pay",
+    "sell",
+    "spend"
+   ],
+   "answer": 2,
+   "explanation": "Win is the opposite of lose, so buy is the opposite of sell."
+  },
+  {
+   "stem": "Rose is to flower as oak is to ___",
+   "options": [
+    "leaf",
+    "tree",
+    "wood",
+    "acorn"
+   ],
+   "answer": 1,
+   "explanation": "A rose is a type of flower, so an oak is a type of tree."
+  },
+  {
+   "stem": "Salmon is to fish as sparrow is to ___",
+   "options": [
+    "nest",
+    "feather",
+    "bird",
+    "fly"
+   ],
+   "answer": 2,
+   "explanation": "A salmon is a type of fish, so a sparrow is a type of bird."
+  },
+  {
+   "stem": "Violin is to instrument as hammer is to ___",
+   "options": [
+    "nail",
+    "tool",
+    "wood",
+    "metal"
+   ],
+   "answer": 1,
+   "explanation": "A violin is a type of instrument, so a hammer is a type of tool."
+  },
+  {
+   "stem": "Carrot is to vegetable as apple is to ___",
+   "options": [
+    "tree",
+    "red",
+    "fruit",
+    "juice"
+   ],
+   "answer": 2,
+   "explanation": "A carrot is a type of vegetable, so an apple is a type of fruit."
+  },
+  {
+   "stem": "Copper is to metal as oxygen is to ___",
+   "options": [
+    "gas",
+    "air",
+    "breathe",
+    "water"
+   ],
+   "answer": 0,
+   "explanation": "Copper is a type of metal, so oxygen is a type of gas."
+  },
+  {
+   "stem": "Read is to learn as eat is to ___",
+   "options": [
+    "food",
+    "hungry",
+    "nourish",
+    "plate"
+   ],
+   "answer": 2,
+   "explanation": "Reading results in learning, so eating results in being nourished."
+  },
+  {
+   "stem": "Plant is to grow as throw is to ___",
+   "options": [
+    "catch",
+    "ball",
+    "fly",
+    "hand"
+   ],
+   "answer": 2,
+   "explanation": "When you plant something it grows, so when you throw something it flies."
+  },
+  {
+   "stem": "Stretch is to lengthen as squeeze is to ___",
+   "options": [
+    "press",
+    "shorten",
+    "hold",
+    "hand"
+   ],
+   "answer": 1,
+   "explanation": "Stretching makes something lengthen, so squeezing makes it shorten."
+  },
+  {
+   "stem": "Warm is to hot as cool is to ___",
+   "options": [
+    "cold",
+    "mild",
+    "wet",
+    "chilly"
+   ],
+   "answer": 0,
+   "explanation": "Warm becomes hot at a greater degree, so cool becomes cold."
+  },
+  {
+   "stem": "Damp is to soaked as warm is to ___",
+   "options": [
+    "dry",
+    "boiling",
+    "cosy",
+    "mild"
+   ],
+   "answer": 1,
+   "explanation": "Damp is a milder degree of soaked, so warm is a milder degree of boiling."
+  },
+  {
+   "stem": "Tap is to slam as whisper is to ___",
+   "options": [
+    "talk",
+    "mutter",
+    "shout",
+    "listen"
+   ],
+   "answer": 2,
+   "explanation": "A tap is a gentler version of a slam, so a whisper is a gentler version of a shout."
+  },
+  {
+   "stem": "Smile is to laugh as frown is to ___",
+   "options": [
+    "cry",
+    "grin",
+    "happy",
+    "face"
+   ],
+   "answer": 0,
+   "explanation": "A smile is a milder degree than a laugh, so a frown is a milder degree than a cry."
+  },
+  {
+   "stem": "Pebble is to boulder as pond is to ___",
+   "options": [
+    "puddle",
+    "stream",
+    "ocean",
+    "fish"
+   ],
+   "answer": 2,
+   "explanation": "A pebble is far smaller than a boulder, so a pond is far smaller than an ocean."
+  },
+  {
+   "stem": "Bee is to hive as bird is to ___",
+   "options": [
+    "nest",
+    "worm",
+    "wing",
+    "sky"
+   ],
+   "answer": 0,
+   "explanation": "A bee lives in a hive, so a bird lives in a nest."
+  },
+  {
+   "stem": "Spider is to web as rabbit is to ___",
+   "options": [
+    "carrot",
+    "hop",
+    "burrow",
+    "tail"
+   ],
+   "answer": 2,
+   "explanation": "A spider lives in a web, so a rabbit lives in a burrow."
+  },
+  {
+   "stem": "Glove is to hand as sock is to ___",
+   "options": [
+    "foot",
+    "shoe",
+    "wool",
+    "toe"
+   ],
+   "answer": 0,
+   "explanation": "A glove is worn on a hand, so a sock is worn on a foot."
+  },
+  {
+   "stem": "Hat is to head as ring is to ___",
+   "options": [
+    "gold",
+    "finger",
+    "jewel",
+    "wrist"
+   ],
+   "answer": 1,
+   "explanation": "A hat is worn on the head, so a ring is worn on a finger."
+  },
+  {
+   "stem": "Clock is to time as thermometer is to ___",
+   "options": [
+    "weather",
+    "temperature",
+    "glass",
+    "mercury"
+   ],
+   "answer": 1,
+   "explanation": "A clock measures time, so a thermometer measures temperature."
+  },
+  {
+   "stem": "Ruler is to length as scale is to ___",
+   "options": [
+    "weight",
+    "number",
+    "balance",
+    "metal"
+   ],
+   "answer": 0,
+   "explanation": "A ruler measures length, so a scale measures weight."
+  },
+  {
+   "stem": "Author is to book as composer is to ___",
+   "options": [
+    "piano",
+    "music",
+    "singer",
+    "stage"
+   ],
+   "answer": 1,
+   "explanation": "An author creates a book, so a composer creates music."
+  },
+  {
+   "stem": "Baker is to bread as potter is to ___",
+   "options": [
+    "clay",
+    "pot",
+    "wheel",
+    "kiln"
+   ],
+   "answer": 1,
+   "explanation": "A baker makes bread, so a potter makes pots."
+  },
+  {
+   "stem": "Herd is to cattle as flock is to ___",
+   "options": [
+    "wool",
+    "sheep",
+    "field",
+    "shepherd"
+   ],
+   "answer": 1,
+   "explanation": "A herd is a group of cattle, so a flock is a group of sheep."
+  },
+  {
+   "stem": "Bunch is to grapes as bouquet is to ___",
+   "options": [
+    "vase",
+    "flowers",
+    "ribbon",
+    "gift"
+   ],
+   "answer": 1,
+   "explanation": "A bunch is a group of grapes, so a bouquet is a group of flowers."
+  },
+  {
+   "stem": "Hungry is to eat as tired is to ___",
+   "options": [
+    "yawn",
+    "sleep",
+    "work",
+    "bed"
+   ],
+   "answer": 1,
+   "explanation": "When hungry you eat, so when tired you sleep."
+  },
+  {
+   "stem": "Soap is to wash as towel is to ___",
+   "options": [
+    "dry",
+    "bath",
+    "soft",
+    "water"
+   ],
+   "answer": 0,
+   "explanation": "Soap is used to wash, so a towel is used to dry."
+  },
+  {
+   "stem": "Key is to lock as switch is to ___",
+   "options": [
+    "wall",
+    "wire",
+    "light",
+    "push"
+   ],
+   "answer": 2,
+   "explanation": "A key operates a lock, so a switch operates a light."
+  },
+  {
+   "stem": "Caterpillar is to butterfly as cygnet is to ___",
+   "options": [
+    "lake",
+    "feather",
+    "swan",
+    "duck"
+   ],
+   "answer": 2,
+   "explanation": "A caterpillar grows into a butterfly, so a cygnet grows into a swan."
+  }
+ ],
+ "homophones": [
+  {
+   "stem": "The children left ___ coats in the cloakroom.",
+   "options": [
+    "their",
+    "there",
+    "they're",
+    "thair"
+   ],
+   "answer": 0,
+   "explanation": "'Their' shows possession; 'there' is a place and 'they're' means 'they are'."
+  },
+  {
+   "stem": "I think ___ going to win the match today.",
+   "options": [
+    "their",
+    "they're",
+    "there",
+    "theyre"
+   ],
+   "answer": 1,
+   "explanation": "'They're' means 'they are'; 'their' shows possession and 'there' is a place."
+  },
+  {
+   "stem": "It was far ___ cold to play outside.",
+   "options": [
+    "to",
+    "two",
+    "too",
+    "tooe"
+   ],
+   "answer": 2,
+   "explanation": "'Too' means 'also' or 'excessively'; 'to' shows direction and 'two' is the number 2."
+  },
+  {
+   "stem": "She had ___ apples left in her bag.",
+   "options": [
+    "too",
+    "to",
+    "tu",
+    "two"
+   ],
+   "answer": 3,
+   "explanation": "'Two' is the number 2; 'to' shows direction and 'too' means 'also'."
+  },
+  {
+   "stem": "Make sure ___ wearing a helmet on your bike.",
+   "options": [
+    "you're",
+    "your",
+    "yore",
+    "youre"
+   ],
+   "answer": 0,
+   "explanation": "'You're' means 'you are'; 'your' shows possession."
+  },
+  {
+   "stem": "Please put on ___ shoes before we leave.",
+   "options": [
+    "you're",
+    "your",
+    "yore",
+    "yor"
+   ],
+   "answer": 1,
+   "explanation": "'Your' shows possession; 'you're' means 'you are'."
+  },
+  {
+   "stem": "The cat licked ___ paws after dinner.",
+   "options": [
+    "it's",
+    "its'",
+    "its",
+    "itts"
+   ],
+   "answer": 2,
+   "explanation": "'Its' shows possession; 'it's' means 'it is'."
+  },
+  {
+   "stem": "I think ___ going to rain later.",
+   "options": [
+    "its",
+    "its'",
+    "itz",
+    "it's"
+   ],
+   "answer": 3,
+   "explanation": "'It's' means 'it is'; 'its' shows possession."
+  },
+  {
+   "stem": "Can you tell me ___ the library is?",
+   "options": [
+    "where",
+    "wear",
+    "were",
+    "whir"
+   ],
+   "answer": 0,
+   "explanation": "'Where' asks about place; 'wear' relates to clothing and 'were' is a past-tense verb."
+  },
+  {
+   "stem": "I will ___ my new jumper to the party.",
+   "options": [
+    "where",
+    "wear",
+    "were",
+    "ware"
+   ],
+   "answer": 1,
+   "explanation": "'Wear' means to put on clothing; 'where' asks about place and 'were' is a past-tense verb."
+  },
+  {
+   "stem": "Did you ___ that strange noise outside?",
+   "options": [
+    "here",
+    "heir",
+    "hear",
+    "heer"
+   ],
+   "answer": 2,
+   "explanation": "'Hear' means to listen; 'here' refers to a place."
+  },
+  {
+   "stem": "Please come and sit over ___ next to me.",
+   "options": [
+    "hear",
+    "heir",
+    "heyr",
+    "here"
+   ],
+   "answer": 3,
+   "explanation": "'Here' refers to a place; 'hear' means to listen."
+  },
+  {
+   "stem": "I ___ the answer to that question.",
+   "options": [
+    "know",
+    "no",
+    "knew",
+    "noe"
+   ],
+   "answer": 0,
+   "explanation": "'Know' means to understand; 'no' is the opposite of yes."
+  },
+  {
+   "stem": "There were ___ biscuits left in the tin.",
+   "options": [
+    "know",
+    "no",
+    "knough",
+    "noe"
+   ],
+   "answer": 1,
+   "explanation": "'No' means none or the opposite of yes; 'know' means to understand."
+  },
+  {
+   "stem": "Remember to ___ your name at the top of the page.",
+   "options": [
+    "right",
+    "rite",
+    "write",
+    "wright"
+   ],
+   "answer": 2,
+   "explanation": "'Write' means to form letters; 'right' means correct or a direction."
+  },
+  {
+   "stem": "You gave exactly the ___ answer.",
+   "options": [
+    "write",
+    "rite",
+    "wright",
+    "right"
+   ],
+   "answer": 3,
+   "explanation": "'Right' means correct; 'write' means to form letters."
+  },
+  {
+   "stem": "I need to ___ a present for my friend.",
+   "options": [
+    "buy",
+    "by",
+    "bye",
+    "bi"
+   ],
+   "answer": 0,
+   "explanation": "'Buy' means to purchase; 'by' means near or beside and 'bye' is a farewell."
+  },
+  {
+   "stem": "The shop is right ___ the station.",
+   "options": [
+    "buy",
+    "by",
+    "bye",
+    "bi"
+   ],
+   "answer": 1,
+   "explanation": "'By' means near or beside; 'buy' means to purchase and 'bye' is a farewell."
+  },
+  {
+   "stem": "We have one more ___ until the holidays.",
+   "options": [
+    "weak",
+    "weec",
+    "week",
+    "weik"
+   ],
+   "answer": 2,
+   "explanation": "'Week' is seven days; 'weak' means not strong."
+  },
+  {
+   "stem": "After being ill, he felt very ___.",
+   "options": [
+    "weak",
+    "weac",
+    "weeck",
+    "week"
+   ],
+   "answer": 0,
+   "explanation": "'Weak' means not strong; 'week' is seven days."
+  },
+  {
+   "stem": "Could I have a ___ of cake, please?",
+   "options": [
+    "piece",
+    "peace",
+    "peece",
+    "peice"
+   ],
+   "answer": 0,
+   "explanation": "'Piece' means a portion; 'peace' means calm or no war."
+  },
+  {
+   "stem": "The whole class worked in ___ and quiet.",
+   "options": [
+    "piece",
+    "peace",
+    "peece",
+    "peese"
+   ],
+   "answer": 1,
+   "explanation": "'Peace' means calm; 'piece' means a portion."
+  },
+  {
+   "stem": "Press the ___ to stop the car quickly.",
+   "options": [
+    "break",
+    "braik",
+    "brake",
+    "brak"
+   ],
+   "answer": 2,
+   "explanation": "'Brake' stops a vehicle; 'break' means to snap or a rest."
+  },
+  {
+   "stem": "We will have a short ___ before the next lesson.",
+   "options": [
+    "brake",
+    "braik",
+    "breck",
+    "break"
+   ],
+   "answer": 3,
+   "explanation": "'Break' means a rest or to snap; 'brake' stops a vehicle."
+  },
+  {
+   "stem": "You need plain ___ to bake the bread.",
+   "options": [
+    "flour",
+    "flower",
+    "flowar",
+    "flur"
+   ],
+   "answer": 0,
+   "explanation": "'Flour' is used in baking; 'flower' grows in a garden."
+  },
+  {
+   "stem": "She picked a beautiful ___ from the garden.",
+   "options": [
+    "flour",
+    "flower",
+    "flowr",
+    "flouer"
+   ],
+   "answer": 1,
+   "explanation": "'Flower' grows in a garden; 'flour' is used in baking."
+  },
+  {
+   "stem": "We waited for an ___ before the bus arrived.",
+   "options": [
+    "our",
+    "ower",
+    "hour",
+    "houre"
+   ],
+   "answer": 2,
+   "explanation": "'Hour' is sixty minutes; 'our' shows possession."
+  },
+  {
+   "stem": "This is ___ classroom for the rest of the year.",
+   "options": [
+    "hour",
+    "ower",
+    "are",
+    "our"
+   ],
+   "answer": 3,
+   "explanation": "'Our' shows possession; 'hour' is sixty minutes."
+  },
+  {
+   "stem": "He ___ the ball over the high fence.",
+   "options": [
+    "threw",
+    "through",
+    "thru",
+    "throo"
+   ],
+   "answer": 0,
+   "explanation": "'Threw' is the past tense of throw; 'through' means in one side and out the other."
+  },
+  {
+   "stem": "The train went ___ a long, dark tunnel.",
+   "options": [
+    "threw",
+    "through",
+    "thru",
+    "throu"
+   ],
+   "answer": 1,
+   "explanation": "'Through' means in one side and out the other; 'threw' is the past tense of throw."
+  },
+  {
+   "stem": "The runner ___ the finish line first.",
+   "options": [
+    "past",
+    "parsed",
+    "passed",
+    "paste"
+   ],
+   "answer": 2,
+   "explanation": "'Passed' is the past tense of pass; 'past' refers to time gone by or position."
+  },
+  {
+   "stem": "We walked ___ the old church on our way home.",
+   "options": [
+    "passed",
+    "parst",
+    "paste",
+    "past"
+   ],
+   "answer": 3,
+   "explanation": "'Past' shows position or time gone by; 'passed' is the past tense of pass."
+  },
+  {
+   "stem": "We were not ___ to leave the playground early.",
+   "options": [
+    "allowed",
+    "aloud",
+    "alowed",
+    "alloud"
+   ],
+   "answer": 0,
+   "explanation": "'Allowed' means permitted; 'aloud' means out loud."
+  },
+  {
+   "stem": "The teacher asked him to read the poem ___.",
+   "options": [
+    "allowed",
+    "aloud",
+    "alowd",
+    "alloud"
+   ],
+   "answer": 1,
+   "explanation": "'Aloud' means out loud; 'allowed' means permitted."
+  },
+  {
+   "stem": "The brave ___ rode his horse into battle.",
+   "options": [
+    "night",
+    "nite",
+    "knight",
+    "knite"
+   ],
+   "answer": 2,
+   "explanation": "'Knight' is a medieval soldier; 'night' is the time after dark."
+  },
+  {
+   "stem": "The stars came out as the ___ grew darker.",
+   "options": [
+    "knight",
+    "nite",
+    "knite",
+    "night"
+   ],
+   "answer": 3,
+   "explanation": "'Night' is the time after dark; 'knight' is a medieval soldier."
+  },
+  {
+   "stem": "We swam in the ___ on our summer holiday.",
+   "options": [
+    "sea",
+    "see",
+    "cee",
+    "seah"
+   ],
+   "answer": 0,
+   "explanation": "'Sea' is a large body of water; 'see' means to look."
+  },
+  {
+   "stem": "I can ___ the mountains from my window.",
+   "options": [
+    "sea",
+    "see",
+    "cee",
+    "seee"
+   ],
+   "answer": 1,
+   "explanation": "'See' means to look; 'sea' is a large body of water."
+  },
+  {
+   "stem": "The ___ landed safely on the runway.",
+   "options": [
+    "plain",
+    "playn",
+    "plane",
+    "plaine"
+   ],
+   "answer": 2,
+   "explanation": "'Plane' is an aircraft; 'plain' means simple or a flat area of land."
+  },
+  {
+   "stem": "She wore a ___ white dress with no pattern.",
+   "options": [
+    "plane",
+    "playn",
+    "plaine",
+    "plain"
+   ],
+   "answer": 3,
+   "explanation": "'Plain' means simple; 'plane' is an aircraft."
+  },
+  {
+   "stem": "The ___ rose brightly in the morning sky.",
+   "options": [
+    "sun",
+    "son",
+    "sunn",
+    "soun"
+   ],
+   "answer": 0,
+   "explanation": "'Sun' is the star in the sky; 'son' is a male child."
+  },
+  {
+   "stem": "Their oldest ___ is starting secondary school.",
+   "options": [
+    "sun",
+    "son",
+    "sunn",
+    "sonn"
+   ],
+   "answer": 1,
+   "explanation": "'Son' is a male child; 'sun' is the star in the sky."
+  },
+  {
+   "stem": "The postman delivered the ___ this morning.",
+   "options": [
+    "male",
+    "maile",
+    "mail",
+    "mayl"
+   ],
+   "answer": 2,
+   "explanation": "'Mail' means letters and parcels; 'male' means a boy or man."
+  },
+  {
+   "stem": "A peacock is a ___ bird with bright feathers.",
+   "options": [
+    "mail",
+    "maile",
+    "mayle",
+    "male"
+   ],
+   "answer": 3,
+   "explanation": "'Male' means a boy or man; 'mail' means letters and parcels."
+  },
+  {
+   "stem": "The ___ forecast says it will be sunny.",
+   "options": [
+    "weather",
+    "whether",
+    "wether",
+    "weathr"
+   ],
+   "answer": 0,
+   "explanation": "'Weather' refers to sun, rain or wind; 'whether' introduces a choice."
+  },
+  {
+   "stem": "I cannot decide ___ to walk or take the bus.",
+   "options": [
+    "weather",
+    "whether",
+    "wether",
+    "whethr"
+   ],
+   "answer": 1,
+   "explanation": "'Whether' introduces a choice; 'weather' refers to sun, rain or wind."
+  },
+  {
+   "stem": "The ___ welcomed parents into the school hall.",
+   "options": [
+    "principle",
+    "principel",
+    "principal",
+    "prinsiple"
+   ],
+   "answer": 2,
+   "explanation": "'Principal' is the head of a school; 'principle' is a rule or belief."
+  },
+  {
+   "stem": "Honesty is an important ___ to live by.",
+   "options": [
+    "principal",
+    "principel",
+    "prinsiple",
+    "principle"
+   ],
+   "answer": 3,
+   "explanation": "'Principle' is a rule or belief; 'principal' is the head of a school."
+  },
+  {
+   "stem": "We bought new ___ such as pens and paper.",
+   "options": [
+    "stationery",
+    "stationary",
+    "stationairy",
+    "stationerry"
+   ],
+   "answer": 0,
+   "explanation": "'Stationery' means writing materials; 'stationary' means not moving."
+  },
+  {
+   "stem": "The bus stayed ___ at the traffic lights.",
+   "options": [
+    "stationery",
+    "stationary",
+    "stationarry",
+    "stationiry"
+   ],
+   "answer": 1,
+   "explanation": "'Stationary' means not moving; 'stationery' means writing materials."
+  },
+  {
+   "stem": "Everyone came to the party ___ Tom, who was ill.",
+   "options": [
+    "accept",
+    "exsept",
+    "except",
+    "exept"
+   ],
+   "answer": 2,
+   "explanation": "'Except' means not including; 'accept' means to receive or agree."
+  },
+  {
+   "stem": "Did she ___ the invitation to the wedding?",
+   "options": [
+    "except",
+    "acept",
+    "exept",
+    "accept"
+   ],
+   "answer": 3,
+   "explanation": "'Accept' means to receive or agree; 'except' means not including."
+  },
+  {
+   "stem": "Too much sugar can ___ your health.",
+   "options": [
+    "affect",
+    "effect",
+    "afect",
+    "effekt"
+   ],
+   "answer": 0,
+   "explanation": "'Affect' is usually a verb meaning to change something; 'effect' is usually a noun meaning a result."
+  },
+  {
+   "stem": "The medicine had a calming ___ on the patient.",
+   "options": [
+    "affect",
+    "effect",
+    "afect",
+    "effekt"
+   ],
+   "answer": 1,
+   "explanation": "'Effect' is usually a noun meaning a result; 'affect' is usually a verb meaning to change something."
+  },
+  {
+   "stem": "The cupboard was completely ___ after the sale.",
+   "options": [
+    "bear",
+    "bair",
+    "bare",
+    "baer"
+   ],
+   "answer": 2,
+   "explanation": "'Bare' means empty or uncovered; 'bear' is an animal or means to carry."
+  },
+  {
+   "stem": "A brown ___ was fishing in the river.",
+   "options": [
+    "bare",
+    "bair",
+    "baer",
+    "bear"
+   ],
+   "answer": 3,
+   "explanation": "'Bear' is an animal or means to carry; 'bare' means empty or uncovered."
+  },
+  {
+   "stem": "The children felt ___ on the long car journey.",
+   "options": [
+    "bored",
+    "board",
+    "bord",
+    "boared"
+   ],
+   "answer": 0,
+   "explanation": "'Bored' means uninterested; 'board' is a plank or to get on a vehicle."
+  },
+  {
+   "stem": "We had to ___ the train before it left.",
+   "options": [
+    "bored",
+    "board",
+    "bord",
+    "boared"
+   ],
+   "answer": 1,
+   "explanation": "'Board' means to get on a vehicle or a plank; 'bored' means uninterested."
+  },
+  {
+   "stem": "I always have ___ with milk for breakfast.",
+   "options": [
+    "serial",
+    "cereel",
+    "cereal",
+    "ceriel"
+   ],
+   "answer": 2,
+   "explanation": "'Cereal' is a breakfast food; 'serial' means in a series."
+  },
+  {
+   "stem": "The recipe asked me to ___ the cheese finely.",
+   "options": [
+    "great",
+    "graet",
+    "greate",
+    "grate"
+   ],
+   "answer": 3,
+   "explanation": "'Grate' means to shred; 'great' means very good or large."
+  }
+ ],
+ "multiple-meaning": [
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. We sat on the river ___.\n2. I keep my money in the ___.",
+   "options": [
+    "bank",
+    "shore",
+    "edge",
+    "vault"
+   ],
+   "answer": 0,
+   "explanation": "'Bank' means the side of a river AND a place that holds money."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The dog began to ___ at the postman.\n2. The rough ___ of the oak tree peeled away.",
+   "options": [
+    "growl",
+    "bark",
+    "trunk",
+    "branch"
+   ],
+   "answer": 1,
+   "explanation": "'Bark' is the noise a dog makes AND the outer covering of a tree."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The cricketer swung his ___ at the ball.\n2. A ___ flew out of the dark cave.",
+   "options": [
+    "club",
+    "glove",
+    "bat",
+    "owl"
+   ],
+   "answer": 2,
+   "explanation": "'Bat' is used to hit a ball AND is a flying animal."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. I cannot ___ the smell of rotten eggs.\n2. A brown ___ wandered through the forest.",
+   "options": [
+    "stand",
+    "tolerate",
+    "wolf",
+    "bear"
+   ],
+   "answer": 3,
+   "explanation": "'Bear' means to put up with something AND is a large wild animal."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. I read an exciting ___ last night.\n2. We need to ___ a table at the restaurant.",
+   "options": [
+    "book",
+    "novel",
+    "reserve",
+    "read"
+   ],
+   "answer": 0,
+   "explanation": "'Book' is something you read AND means to reserve a place."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. He ate a ___ of hot soup.\n2. She will ___ the next over in cricket.",
+   "options": [
+    "dish",
+    "bowl",
+    "throw",
+    "plate"
+   ],
+   "answer": 1,
+   "explanation": "'Bowl' is a round dish AND means to deliver the ball in cricket."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. ___ you swim across the pool?\n2. She opened a ___ of beans.",
+   "options": [
+    "could",
+    "may",
+    "can",
+    "tin"
+   ],
+   "answer": 2,
+   "explanation": "'Can' means to be able to AND is a metal container."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. He joined the chess ___ after school.\n2. The golfer chose the right ___ for the shot.",
+   "options": [
+    "group",
+    "society",
+    "stick",
+    "club"
+   ],
+   "answer": 3,
+   "explanation": "'Club' is a group you join AND a stick used in golf."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. What is the ___ of your birthday?\n2. She ate a sweet, sticky ___.",
+   "options": [
+    "date",
+    "day",
+    "fruit",
+    "fig"
+   ],
+   "answer": 0,
+   "explanation": "'Date' is a day on the calendar AND a sweet fruit."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The referee made a ___ decision.\n2. We rode the rides at the summer ___.",
+   "options": [
+    "just",
+    "fair",
+    "carnival",
+    "honest"
+   ],
+   "answer": 1,
+   "explanation": "'Fair' means just AND is a place with rides and stalls."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Please put the papers in this ___.\n2. Use a ___ to smooth the rough metal.",
+   "options": [
+    "folder",
+    "record",
+    "file",
+    "tool"
+   ],
+   "answer": 2,
+   "explanation": "'File' holds papers AND is a tool for smoothing metal."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. A buzzing ___ landed on the cake.\n2. Birds ___ south for the winter.",
+   "options": [
+    "insect",
+    "bug",
+    "soar",
+    "fly"
+   ],
+   "answer": 3,
+   "explanation": "'Fly' is a small insect AND means to move through the air."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. She is a very ___ and caring person.\n2. What ___ of music do you like?",
+   "options": [
+    "kind",
+    "nice",
+    "type",
+    "gentle"
+   ],
+   "answer": 0,
+   "explanation": "'Kind' means caring AND means a type or sort of thing."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The autumn ___ fell from the trees.\n2. She ___ for school at eight o'clock.",
+   "options": [
+    "branches",
+    "leaves",
+    "goes",
+    "departs"
+   ],
+   "answer": 1,
+   "explanation": "'Leaves' are parts of a tree AND means goes away."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Please turn on the ___.\n2. This bag is very ___ to carry.",
+   "options": [
+    "lamp",
+    "glow",
+    "light",
+    "easy"
+   ],
+   "answer": 2,
+   "explanation": "'Light' gives brightness AND means not heavy."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. We watched an exciting football ___.\n2. Strike the ___ to light the candle.",
+   "options": [
+    "game",
+    "flame",
+    "contest",
+    "match"
+   ],
+   "answer": 3,
+   "explanation": "'Match' is a sporting contest AND a small stick that makes fire."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Hammer the ___ into the wood.\n2. She painted each ___ on her hand.",
+   "options": [
+    "nail",
+    "screw",
+    "finger",
+    "peg"
+   ],
+   "answer": 0,
+   "explanation": "'Nail' is hammered into wood AND grows at the end of a finger."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The children played in the ___.\n2. Please ___ the car near the gate.",
+   "options": [
+    "garden",
+    "park",
+    "stop",
+    "drive"
+   ],
+   "answer": 1,
+   "explanation": "'Park' is a green public space AND means to leave a car somewhere."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The players ran onto the football ___.\n2. The singer hit a high ___.",
+   "options": [
+    "field",
+    "ground",
+    "pitch",
+    "note"
+   ],
+   "answer": 2,
+   "explanation": "'Pitch' is a sports field AND how high or low a sound is."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. We will ___ seeds in the garden.\n2. A green ___ grew on the windowsill.",
+   "options": [
+    "sow",
+    "dig",
+    "flower",
+    "plant"
+   ],
+   "answer": 3,
+   "explanation": "'Plant' means to put seeds in soil AND is a growing living thing."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The children ___ in the garden.\n2. We watched a ___ at the theatre.",
+   "options": [
+    "play",
+    "romp",
+    "show",
+    "drama"
+   ],
+   "answer": 0,
+   "explanation": "'Play' means to have fun AND is a story performed on stage."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The pencil has a very sharp ___.\n2. They scored one ___ in the match.",
+   "options": [
+    "tip",
+    "point",
+    "goal",
+    "mark"
+   ],
+   "answer": 1,
+   "explanation": "'Point' is the sharp end AND a score in a game."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The bread costs one ___.\n2. I could feel my heart ___ in my chest.",
+   "options": [
+    "coin",
+    "penny",
+    "pound",
+    "beat"
+   ],
+   "answer": 2,
+   "explanation": "'Pound' is an amount of money AND means to beat heavily."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. She wore a gold ___ on her finger.\n2. I heard the telephone ___.",
+   "options": [
+    "band",
+    "jewel",
+    "chime",
+    "ring"
+   ],
+   "answer": 3,
+   "explanation": "'Ring' is jewellery worn on a finger AND the sound a phone makes."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. A huge ___ blocked the path.\n2. Gently ___ the baby to sleep.",
+   "options": [
+    "rock",
+    "stone",
+    "sway",
+    "boulder"
+   ],
+   "answer": 0,
+   "explanation": "'Rock' is a large stone AND means to sway gently."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Draw a straight line with your ___.\n2. The king was a wise ___ of the land.",
+   "options": [
+    "pencil",
+    "ruler",
+    "leader",
+    "king"
+   ],
+   "answer": 1,
+   "explanation": "'Ruler' measures straight lines AND is a person who rules a country."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The musician played a ___ on the piano.\n2. Check the weight on the bathroom ___.",
+   "options": [
+    "tune",
+    "melody",
+    "scale",
+    "note"
+   ],
+   "answer": 2,
+   "explanation": "'Scale' is a run of musical notes AND a device for weighing."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The children walk to ___ each morning.\n2. A large ___ of fish swam past.",
+   "options": [
+    "college",
+    "class",
+    "lesson",
+    "school"
+   ],
+   "answer": 3,
+   "explanation": "'School' is a place of learning AND a large group of fish."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Wait just a ___, I'm nearly ready.\n2. She came ___ in the running race.",
+   "options": [
+    "second",
+    "moment",
+    "third",
+    "minute"
+   ],
+   "answer": 0,
+   "explanation": "'Second' is a short moment of time AND the position after first."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Wash the dishes in the ___.\n2. The heavy stone began to ___ in the pond.",
+   "options": [
+    "basin",
+    "sink",
+    "drop",
+    "float"
+   ],
+   "answer": 1,
+   "explanation": "'Sink' is a basin for washing AND means to go under water."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Flowers bloom in the ___.\n2. The cat will ___ onto the table.",
+   "options": [
+    "summer",
+    "season",
+    "spring",
+    "leap"
+   ],
+   "answer": 2,
+   "explanation": "'Spring' is a season of the year AND means to jump suddenly."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. A bright ___ shone in the night sky.\n2. She is the ___ of the school play.",
+   "options": [
+    "planet",
+    "moon",
+    "sun",
+    "star"
+   ],
+   "answer": 3,
+   "explanation": "'Star' shines in the sky AND is the main performer in a show."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The ___ of the iceberg showed above the water.\n2. Leave a ___ for the helpful waiter.",
+   "options": [
+    "tip",
+    "top",
+    "reward",
+    "point"
+   ],
+   "answer": 0,
+   "explanation": "'Tip' is the very top AND extra money given for good service."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. We went on a school ___ to the museum.\n2. Be careful not to ___ over the step.",
+   "options": [
+    "journey",
+    "trip",
+    "stumble",
+    "fall"
+   ],
+   "answer": 1,
+   "explanation": "'Trip' is a short journey AND means to stumble and nearly fall."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The elephant lifted hay with its ___.\n2. The ___ of the tree was thick and tall.",
+   "options": [
+    "nose",
+    "branch",
+    "trunk",
+    "root"
+   ],
+   "answer": 2,
+   "explanation": "'Trunk' is an elephant's long nose AND the main stem of a tree."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Please ___ the children while I cook.\n2. He checked the time on his ___.",
+   "options": [
+    "mind",
+    "guard",
+    "observe",
+    "watch"
+   ],
+   "answer": 3,
+   "explanation": "'Watch' means to look after AND is a device that tells the time."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. A huge ___ crashed onto the beach.\n2. She began to ___ goodbye to her friend.",
+   "options": [
+    "wave",
+    "tide",
+    "gesture",
+    "signal"
+   ],
+   "answer": 0,
+   "explanation": "'Wave' is a rolling line of water AND a movement of the hand."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The villagers drew water from the ___.\n2. She sang very ___ in the concert.",
+   "options": [
+    "spring",
+    "well",
+    "nicely",
+    "loudly"
+   ],
+   "answer": 1,
+   "explanation": "'Well' is a deep hole for water AND means in a good way."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. I need some ___ to pay the bus fare.\n2. Things always ___ as time goes by.",
+   "options": [
+    "coins",
+    "money",
+    "change",
+    "alter"
+   ],
+   "answer": 2,
+   "explanation": "'Change' is loose coins AND means to become different."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. She unwrapped a birthday ___.\n2. Every pupil was ___ in class today.",
+   "options": [
+    "present",
+    "gift",
+    "absent",
+    "parcel"
+   ],
+   "answer": 0,
+   "explanation": "'Present' is a gift AND means here, not absent."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The ___ pulled into the station.\n2. Athletes ___ hard before a race.",
+   "options": [
+    "carriage",
+    "train",
+    "practise",
+    "exercise"
+   ],
+   "answer": 1,
+   "explanation": "'Train' is a vehicle on rails AND means to practise a skill."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. I spread ___ on my toast.\n2. The cars were stuck in a traffic ___.",
+   "options": [
+    "honey",
+    "butter",
+    "jam",
+    "queue"
+   ],
+   "answer": 2,
+   "explanation": "'Jam' is a sweet fruit spread AND a blockage of traffic."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The teacher wrote on the ___.\n2. Passengers will ___ the plane soon.",
+   "options": [
+    "wall",
+    "screen",
+    "enter",
+    "board"
+   ],
+   "answer": 3,
+   "explanation": "'Board' is a flat surface to write on AND means to get on a plane."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. She turned the ___ to open the door.\n2. Press each ___ on the piano.",
+   "options": [
+    "key",
+    "lock",
+    "note",
+    "button"
+   ],
+   "answer": 0,
+   "explanation": "'Key' opens a lock AND is one of the parts you press on a piano."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Write your name with a ___.\n2. The sheep were kept in a ___.",
+   "options": [
+    "pencil",
+    "pen",
+    "field",
+    "fold"
+   ],
+   "answer": 1,
+   "explanation": "'Pen' is used for writing AND is an enclosure for animals."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The dog chased the bouncing ___.\n2. The prince danced at the royal ___.",
+   "options": [
+    "toy",
+    "sphere",
+    "ball",
+    "dance"
+   ],
+   "answer": 2,
+   "explanation": "'Ball' is a round object AND a grand formal dance."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The river's ___ swept the boat along.\n2. Read about ___ news and events.",
+   "options": [
+    "flow",
+    "stream",
+    "recent",
+    "current"
+   ],
+   "answer": 3,
+   "explanation": "'Current' is the flow of water AND means happening now."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. A single ___ of rain fell.\n2. Don't ___ the glass on the floor.",
+   "options": [
+    "drop",
+    "bead",
+    "spill",
+    "fall"
+   ],
+   "answer": 0,
+   "explanation": "'Drop' is a tiny amount of liquid AND means to let something fall."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The ___ swam in the cold sea.\n2. Please ___ the envelope tightly.",
+   "options": [
+    "walrus",
+    "seal",
+    "close",
+    "shut"
+   ],
+   "answer": 1,
+   "explanation": "'Seal' is a sea animal AND means to close something tightly."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. He hurt his ___ playing football.\n2. We rested at the ___ of the hill.",
+   "options": [
+    "leg",
+    "toe",
+    "foot",
+    "bottom"
+   ],
+   "answer": 2,
+   "explanation": "'Foot' is part of the body AND the bottom of a hill."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. She held the coin in the ___ of her hand.\n2. A tall ___ tree grew on the beach.",
+   "options": [
+    "hand",
+    "fist",
+    "finger",
+    "palm"
+   ],
+   "answer": 3,
+   "explanation": "'Palm' is the inside of your hand AND a type of tree."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The diamonds came from a deep ___.\n2. That blue coat is ___, not yours.",
+   "options": [
+    "mine",
+    "pit",
+    "ours",
+    "yours"
+   ],
+   "answer": 0,
+   "explanation": "'Mine' is where gems are dug up AND means belonging to me."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The tennis players walked onto the ___.\n2. The judge entered the ___ room.",
+   "options": [
+    "pitch",
+    "court",
+    "trial",
+    "legal"
+   ],
+   "answer": 1,
+   "explanation": "'Court' is where tennis is played AND where a judge hears a case."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Stick a ___ on the letter.\n2. He will ___ his feet in anger.",
+   "options": [
+    "sticker",
+    "label",
+    "stamp",
+    "stomp"
+   ],
+   "answer": 2,
+   "explanation": "'Stamp' is stuck on post AND means to bang your feet down."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. We ate dinner at the kitchen ___.\n2. Look at the ___ of numbers in the book.",
+   "options": [
+    "desk",
+    "counter",
+    "bench",
+    "table"
+   ],
+   "answer": 3,
+   "explanation": "'Table' is furniture to eat at AND a grid of numbers or facts."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. The ___ cooled the hot room.\n2. She is a big ___ of the singer.",
+   "options": [
+    "fan",
+    "breeze",
+    "supporter",
+    "admirer"
+   ],
+   "answer": 0,
+   "explanation": "'Fan' blows cool air AND is someone who admires a star."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. She played a high ___ on the flute.\n2. He left a short ___ on the table.",
+   "options": [
+    "chord",
+    "note",
+    "message",
+    "letter"
+   ],
+   "answer": 1,
+   "explanation": "'Note' is a musical sound AND a short written message."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Plant the seeds in a neat ___.\n2. My sister and I had a silly ___ over the television.",
+   "options": [
+    "line",
+    "queue",
+    "row",
+    "argument"
+   ],
+   "answer": 2,
+   "explanation": "'Row' is a straight line AND a noisy quarrel."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. He wore a smart ___ with his shirt.\n2. The two teams finished the game in a ___.",
+   "options": [
+    "scarf",
+    "collar",
+    "draw",
+    "tie"
+   ],
+   "answer": 3,
+   "explanation": "'Tie' is worn around the neck AND means an equal score."
+  },
+  {
+   "stem": "Choose the word that fits BOTH sentences:\n1. Use a ___ to cut the plank of wood.\n2. I ___ a fox in the garden yesterday.",
+   "options": [
+    "saw",
+    "blade",
+    "spotted",
+    "noticed"
+   ],
+   "answer": 0,
+   "explanation": "'Saw' is a tool for cutting AND the past tense of see."
+  }
+ ],
+ "affixes": [
+  {
+   "stem": "Which prefix added to 'happy' makes a word meaning 'not happy'?",
+   "options": [
+    "un",
+    "dis",
+    "in",
+    "im"
+   ],
+   "answer": 0,
+   "explanation": "'Un-' means 'not', so 'unhappy' means 'not happy'."
+  },
+  {
+   "stem": "Which prefix added to 'agree' makes a word meaning 'to not agree'?",
+   "options": [
+    "re",
+    "un",
+    "dis",
+    "mis"
+   ],
+   "answer": 2,
+   "explanation": "'Dis-' means 'not' or 'opposite', so 'disagree' means 'not agree'."
+  },
+  {
+   "stem": "Which prefix added to 'possible' makes a word meaning 'not possible'?",
+   "options": [
+    "un",
+    "in",
+    "im",
+    "ir"
+   ],
+   "answer": 2,
+   "explanation": "'Im-' is used before 'p', so 'impossible' means 'not possible'."
+  },
+  {
+   "stem": "Which prefix added to 'regular' makes a word meaning 'not regular'?",
+   "options": [
+    "il",
+    "im",
+    "in",
+    "ir"
+   ],
+   "answer": 3,
+   "explanation": "'Ir-' is used before 'r', so 'irregular' means 'not regular'."
+  },
+  {
+   "stem": "Which prefix added to 'legal' makes a word meaning 'not legal'?",
+   "options": [
+    "il",
+    "ir",
+    "im",
+    "un"
+   ],
+   "answer": 0,
+   "explanation": "'Il-' is used before 'l', so 'illegal' means 'not legal'."
+  },
+  {
+   "stem": "Which prefix added to 'visible' makes a word meaning 'not able to be seen'?",
+   "options": [
+    "un",
+    "in",
+    "im",
+    "dis"
+   ],
+   "answer": 1,
+   "explanation": "'In-' means 'not', so 'invisible' means 'not visible'."
+  },
+  {
+   "stem": "Which prefix added to 'write' makes a word meaning 'to write again'?",
+   "options": [
+    "pre",
+    "re",
+    "un",
+    "mis"
+   ],
+   "answer": 1,
+   "explanation": "'Re-' means 'again', so 'rewrite' means 'write again'."
+  },
+  {
+   "stem": "Which prefix added to 'view' makes a word meaning 'to view beforehand'?",
+   "options": [
+    "re",
+    "pre",
+    "sub",
+    "inter"
+   ],
+   "answer": 1,
+   "explanation": "'Pre-' means 'before', so 'preview' means 'view before'."
+  },
+  {
+   "stem": "Which prefix added to 'understand' makes a word meaning 'to understand wrongly'?",
+   "options": [
+    "dis",
+    "re",
+    "mis",
+    "un"
+   ],
+   "answer": 2,
+   "explanation": "'Mis-' means 'wrongly', so 'misunderstand' means 'understand wrongly'."
+  },
+  {
+   "stem": "Which prefix added to 'marine' makes a word meaning 'under the sea'?",
+   "options": [
+    "super",
+    "sub",
+    "trans",
+    "inter"
+   ],
+   "answer": 1,
+   "explanation": "'Sub-' means 'under', so 'submarine' means 'under the sea'."
+  },
+  {
+   "stem": "Which prefix added to 'pilot' makes a word meaning 'self-steering'?",
+   "options": [
+    "auto",
+    "mono",
+    "semi",
+    "bi"
+   ],
+   "answer": 0,
+   "explanation": "'Auto-' means 'self', so 'autopilot' steers itself."
+  },
+  {
+   "stem": "Which prefix added to 'human' makes a word meaning 'beyond an ordinary human'?",
+   "options": [
+    "sub",
+    "super",
+    "trans",
+    "anti"
+   ],
+   "answer": 1,
+   "explanation": "'Super-' means 'beyond' or 'above', so 'superhuman' means beyond human."
+  },
+  {
+   "stem": "Which prefix added to 'plant' makes a word meaning 'to move across to a new place'?",
+   "options": [
+    "inter",
+    "trans",
+    "sub",
+    "super"
+   ],
+   "answer": 1,
+   "explanation": "'Trans-' means 'across', so 'transplant' means move across."
+  },
+  {
+   "stem": "Which prefix added to 'national' makes a word meaning 'between nations'?",
+   "options": [
+    "trans",
+    "inter",
+    "super",
+    "anti"
+   ],
+   "answer": 1,
+   "explanation": "'Inter-' means 'between', so 'international' means between nations."
+  },
+  {
+   "stem": "Which prefix added to 'circle' makes a word meaning 'half a circle'?",
+   "options": [
+    "mono",
+    "bi",
+    "semi",
+    "tri"
+   ],
+   "answer": 2,
+   "explanation": "'Semi-' means 'half', so 'semicircle' means half a circle."
+  },
+  {
+   "stem": "What does the prefix 'sub-' usually mean?",
+   "options": [
+    "under",
+    "over",
+    "again",
+    "before"
+   ],
+   "answer": 0,
+   "explanation": "'Sub-' usually means 'under', as in 'submarine'."
+  },
+  {
+   "stem": "What does the prefix 'pre-' usually mean?",
+   "options": [
+    "after",
+    "before",
+    "under",
+    "again"
+   ],
+   "answer": 1,
+   "explanation": "'Pre-' usually means 'before', as in 'preview'."
+  },
+  {
+   "stem": "What does the prefix 're-' usually mean?",
+   "options": [
+    "not",
+    "again",
+    "before",
+    "under"
+   ],
+   "answer": 1,
+   "explanation": "'Re-' usually means 'again', as in 'rewrite'."
+  },
+  {
+   "stem": "What does the prefix 'anti-' usually mean?",
+   "options": [
+    "for",
+    "beside",
+    "against",
+    "again"
+   ],
+   "answer": 2,
+   "explanation": "'Anti-' usually means 'against', as in 'antifreeze'."
+  },
+  {
+   "stem": "What does the prefix 'auto-' usually mean?",
+   "options": [
+    "many",
+    "self",
+    "half",
+    "under"
+   ],
+   "answer": 1,
+   "explanation": "'Auto-' usually means 'self', as in 'automatic'."
+  },
+  {
+   "stem": "What does the prefix 'trans-' usually mean?",
+   "options": [
+    "across",
+    "under",
+    "before",
+    "against"
+   ],
+   "answer": 0,
+   "explanation": "'Trans-' usually means 'across', as in 'transport'."
+  },
+  {
+   "stem": "What does the prefix 'inter-' usually mean?",
+   "options": [
+    "within",
+    "beyond",
+    "between",
+    "before"
+   ],
+   "answer": 2,
+   "explanation": "'Inter-' usually means 'between', as in 'interval'."
+  },
+  {
+   "stem": "What does the prefix 'mono-' usually mean?",
+   "options": [
+    "one",
+    "two",
+    "three",
+    "many"
+   ],
+   "answer": 0,
+   "explanation": "'Mono-' usually means 'one', as in 'monorail'."
+  },
+  {
+   "stem": "What does the prefix 'bi-' usually mean?",
+   "options": [
+    "one",
+    "three",
+    "two",
+    "half"
+   ],
+   "answer": 2,
+   "explanation": "'Bi-' usually means 'two', as in 'bicycle'."
+  },
+  {
+   "stem": "What does the prefix 'tri-' usually mean?",
+   "options": [
+    "two",
+    "ten",
+    "four",
+    "three"
+   ],
+   "answer": 3,
+   "explanation": "'Tri-' usually means 'three', as in 'triangle'."
+  },
+  {
+   "stem": "What does the prefix 'super-' usually mean?",
+   "options": [
+    "under",
+    "above or beyond",
+    "against",
+    "before"
+   ],
+   "answer": 1,
+   "explanation": "'Super-' usually means 'above' or 'beyond', as in 'superhuman'."
+  },
+  {
+   "stem": "What does the prefix 'mis-' usually mean?",
+   "options": [
+    "wrongly",
+    "again",
+    "before",
+    "fully"
+   ],
+   "answer": 0,
+   "explanation": "'Mis-' usually means 'wrongly', as in 'misbehave'."
+  },
+  {
+   "stem": "What does the suffix '-less' usually mean?",
+   "options": [
+    "full of",
+    "able to",
+    "without",
+    "more"
+   ],
+   "answer": 2,
+   "explanation": "'-Less' usually means 'without', as in 'careless'."
+  },
+  {
+   "stem": "What does the suffix '-ful' usually mean?",
+   "options": [
+    "without",
+    "full of",
+    "one who",
+    "again"
+   ],
+   "answer": 1,
+   "explanation": "'-Ful' usually means 'full of', as in 'hopeful'."
+  },
+  {
+   "stem": "What does the suffix '-able' usually mean?",
+   "options": [
+    "able to be",
+    "without",
+    "full of",
+    "state of"
+   ],
+   "answer": 0,
+   "explanation": "'-Able' usually means 'able to be', as in 'enjoyable'."
+  },
+  {
+   "stem": "Which word means 'able to be seen'?",
+   "options": [
+    "visible",
+    "vision",
+    "visit",
+    "visual"
+   ],
+   "answer": 0,
+   "explanation": "'Visible' uses '-ible' to mean 'able to be seen'."
+  },
+  {
+   "stem": "Which word means 'without hope'?",
+   "options": [
+    "hopeful",
+    "hoping",
+    "hopeless",
+    "hopely"
+   ],
+   "answer": 2,
+   "explanation": "'Hopeless' uses '-less' to mean 'without hope'."
+  },
+  {
+   "stem": "Which word means 'full of care'?",
+   "options": [
+    "careless",
+    "careful",
+    "caring",
+    "carely"
+   ],
+   "answer": 1,
+   "explanation": "'Careful' uses '-ful' to mean 'full of care'."
+  },
+  {
+   "stem": "Which word means 'able to be enjoyed'?",
+   "options": [
+    "enjoyment",
+    "enjoying",
+    "enjoyable",
+    "enjoyful"
+   ],
+   "answer": 2,
+   "explanation": "'Enjoyable' uses '-able' to mean 'able to be enjoyed'."
+  },
+  {
+   "stem": "Which word means 'in a quick way'?",
+   "options": [
+    "quickness",
+    "quicker",
+    "quickly",
+    "quickish"
+   ],
+   "answer": 2,
+   "explanation": "'Quickly' uses '-ly' to mean 'in a quick way'."
+  },
+  {
+   "stem": "Which word means 'the state of being kind'?",
+   "options": [
+    "kindly",
+    "kindness",
+    "kindful",
+    "kinding"
+   ],
+   "answer": 1,
+   "explanation": "'Kindness' uses '-ness' to mean 'the state of being kind'."
+  },
+  {
+   "stem": "Which word means 'able to be broken'?",
+   "options": [
+    "breakage",
+    "breaking",
+    "breakable",
+    "breakful"
+   ],
+   "answer": 2,
+   "explanation": "'Breakable' uses '-able' to mean 'able to be broken'."
+  },
+  {
+   "stem": "Which word means 'without fear'?",
+   "options": [
+    "fearful",
+    "fearless",
+    "fearing",
+    "fearness"
+   ],
+   "answer": 1,
+   "explanation": "'Fearless' uses '-less' to mean 'without fear'."
+  },
+  {
+   "stem": "Which word means 'full of power'?",
+   "options": [
+    "powerless",
+    "powerful",
+    "powering",
+    "powerness"
+   ],
+   "answer": 1,
+   "explanation": "'Powerful' uses '-ful' to mean 'full of power'."
+  },
+  {
+   "stem": "Which word means 'in the direction of home'?",
+   "options": [
+    "homeward",
+    "homeless",
+    "homely",
+    "homeful"
+   ],
+   "answer": 0,
+   "explanation": "'Homeward' uses '-ward' to mean 'toward home'."
+  },
+  {
+   "stem": "Which word means 'able to be believed'?",
+   "options": [
+    "belief",
+    "believable",
+    "believing",
+    "believeful"
+   ],
+   "answer": 1,
+   "explanation": "'Believable' uses '-able' to mean 'able to be believed'."
+  },
+  {
+   "stem": "Which word means 'the act of deciding'?",
+   "options": [
+    "decision",
+    "deciding",
+    "decisive",
+    "decider"
+   ],
+   "answer": 0,
+   "explanation": "'Decision' uses '-sion' to name the act of deciding."
+  },
+  {
+   "stem": "Which word means 'full of danger'?",
+   "options": [
+    "dangerless",
+    "dangerous",
+    "dangering",
+    "dangerful"
+   ],
+   "answer": 1,
+   "explanation": "'Dangerous' uses '-ous' to mean 'full of danger'."
+  },
+  {
+   "stem": "Which word means 'rather childlike or silly'?",
+   "options": [
+    "childhood",
+    "childless",
+    "childish",
+    "childful"
+   ],
+   "answer": 2,
+   "explanation": "'Childish' uses '-ish' to mean 'like a child'."
+  },
+  {
+   "stem": "Which word means 'without an end'?",
+   "options": [
+    "endful",
+    "ending",
+    "endless",
+    "endness"
+   ],
+   "answer": 2,
+   "explanation": "'Endless' uses '-less' to mean 'without end'."
+  },
+  {
+   "stem": "Which suffix added to 'care' makes a word meaning 'without care'?",
+   "options": [
+    "less",
+    "ful",
+    "ness",
+    "ment"
+   ],
+   "answer": 0,
+   "explanation": "'-Less' means 'without', so 'careless' means 'without care'."
+  },
+  {
+   "stem": "Which suffix added to 'help' makes a word meaning 'full of help'?",
+   "options": [
+    "less",
+    "ful",
+    "ness",
+    "ment"
+   ],
+   "answer": 1,
+   "explanation": "'-Ful' means 'full of', so 'helpful' means 'full of help'."
+  },
+  {
+   "stem": "Which suffix added to 'dark' makes a word meaning 'the state of being dark'?",
+   "options": [
+    "less",
+    "ful",
+    "ness",
+    "ly"
+   ],
+   "answer": 2,
+   "explanation": "'-Ness' makes a noun, so 'darkness' means 'the state of being dark'."
+  },
+  {
+   "stem": "Which suffix added to 'enjoy' makes a word meaning 'the pleasure of enjoying'?",
+   "options": [
+    "ment",
+    "ness",
+    "tion",
+    "ous"
+   ],
+   "answer": 0,
+   "explanation": "'-Ment' makes a noun, so 'enjoyment' names the act of enjoying."
+  },
+  {
+   "stem": "Which suffix added to 'comfort' makes a word meaning 'giving comfort or cosy'?",
+   "options": [
+    "ible",
+    "able",
+    "ment",
+    "ous"
+   ],
+   "answer": 1,
+   "explanation": "'Comfortable' uses '-able' to describe something giving comfort."
+  },
+  {
+   "stem": "Which suffix added to 'sense' makes a word meaning 'showing good sense'?",
+   "options": [
+    "able",
+    "ible",
+    "ment",
+    "ous"
+   ],
+   "answer": 1,
+   "explanation": "'Sensible' uses '-ible' to mean 'showing good sense'."
+  },
+  {
+   "stem": "Which suffix added to 'fool' makes a word meaning 'rather silly'?",
+   "options": [
+    "ous",
+    "ish",
+    "ment",
+    "ward"
+   ],
+   "answer": 1,
+   "explanation": "'-Ish' means 'rather like', so 'foolish' means 'rather like a fool'."
+  },
+  {
+   "stem": "Which suffix added to 'back' makes a word meaning 'toward the back'?",
+   "options": [
+    "ward",
+    "less",
+    "ous",
+    "tion"
+   ],
+   "answer": 0,
+   "explanation": "'-Ward' means 'in the direction of', so 'backward' means 'toward the back'."
+  },
+  {
+   "stem": "Which suffix added to 'inform' makes a word meaning 'facts that are given'?",
+   "options": [
+    "ation",
+    "ment",
+    "ness",
+    "ish"
+   ],
+   "answer": 0,
+   "explanation": "'-Ation' makes a noun, so 'information' names what is informed."
+  },
+  {
+   "stem": "Which suffix added to 'agree' makes a word meaning 'an arrangement people agree on'?",
+   "options": [
+    "tion",
+    "ment",
+    "ness",
+    "ous"
+   ],
+   "answer": 1,
+   "explanation": "'-Ment' makes a noun, so 'agreement' names the act of agreeing."
+  },
+  {
+   "stem": "Which suffix added to 'happy' makes a word meaning 'the state of being happy'?",
+   "options": [
+    "ly",
+    "ment",
+    "tion",
+    "ness"
+   ],
+   "answer": 3,
+   "explanation": "'-Ness' makes a noun, so 'happiness' means 'the state of being happy'."
+  },
+  {
+   "stem": "Which suffix added to 'love' makes a word meaning 'able to be loved'?",
+   "options": [
+    "ible",
+    "ous",
+    "able",
+    "ment"
+   ],
+   "answer": 2,
+   "explanation": "'Lovable' uses '-able' to mean 'able to be loved'."
+  },
+  {
+   "stem": "Which suffix added to 'poison' makes a word meaning 'full of poison'?",
+   "options": [
+    "less",
+    "ous",
+    "ful",
+    "ment"
+   ],
+   "answer": 1,
+   "explanation": "'Poisonous' uses '-ous' to mean 'full of poison'."
+  },
+  {
+   "stem": "Which suffix added to 'celebrate' makes a word meaning 'a happy event marking something'?",
+   "options": [
+    "ment",
+    "ness",
+    "tion",
+    "ous"
+   ],
+   "answer": 2,
+   "explanation": "'Celebration' uses '-tion' to name the act of celebrating."
+  },
+  {
+   "stem": "Which suffix added to 'sad' makes a word meaning 'in a sad way'?",
+   "options": [
+    "ness",
+    "ful",
+    "ly",
+    "ment"
+   ],
+   "answer": 2,
+   "explanation": "'-Ly' makes an adverb, so 'sadly' means 'in a sad way'."
+  }
+ ],
+ "word-classes": [
+  {
+   "stem": "What type of word is 'quickly' in: She ran quickly to school.",
+   "options": [
+    "adverb",
+    "adjective",
+    "verb",
+    "noun"
+   ],
+   "answer": 0,
+   "explanation": "An adverb describes how, when or where something happens; 'quickly' tells how she ran."
+  },
+  {
+   "stem": "Which word is the ADVERB? 'The bright sun shone gently overhead.'",
+   "options": [
+    "bright",
+    "sun",
+    "shone",
+    "gently"
+   ],
+   "answer": 3,
+   "explanation": "An adverb tells how, when or where an action happens; 'gently' tells how it shone."
+  },
+  {
+   "stem": "Which of these is an adverb?",
+   "options": [
+    "happily",
+    "happy",
+    "happiness",
+    "happen"
+   ],
+   "answer": 0,
+   "explanation": "An adverb usually describes how an action is done; 'happily' tells how something is done."
+  },
+  {
+   "stem": "What type of word is 'slowly' in: The tortoise moved slowly along the path.",
+   "options": [
+    "verb",
+    "adverb",
+    "adjective",
+    "noun"
+   ],
+   "answer": 1,
+   "explanation": "An adverb tells how an action happens; 'slowly' tells how the tortoise moved."
+  },
+  {
+   "stem": "Which word is the ADVERB? 'She carefully opened the old box.'",
+   "options": [
+    "carefully",
+    "opened",
+    "old",
+    "box"
+   ],
+   "answer": 0,
+   "explanation": "An adverb describes how an action is done; 'carefully' tells how she opened it."
+  },
+  {
+   "stem": "Which of these is an adverb?",
+   "options": [
+    "loud",
+    "loudly",
+    "louder",
+    "loudness"
+   ],
+   "answer": 1,
+   "explanation": "An adverb tells how something is done; 'loudly' describes the manner of an action."
+  },
+  {
+   "stem": "What type of word is 'soon' in: We will leave soon.",
+   "options": [
+    "noun",
+    "adjective",
+    "adverb",
+    "verb"
+   ],
+   "answer": 2,
+   "explanation": "An adverb can tell when something happens; 'soon' tells when we will leave."
+  },
+  {
+   "stem": "What type of word is 'here' in: Please sit here.",
+   "options": [
+    "adverb",
+    "noun",
+    "pronoun",
+    "verb"
+   ],
+   "answer": 0,
+   "explanation": "An adverb can tell where something happens; 'here' tells where to sit."
+  },
+  {
+   "stem": "Which word is the ADVERB? 'The children played happily in the garden.'",
+   "options": [
+    "children",
+    "played",
+    "happily",
+    "garden"
+   ],
+   "answer": 2,
+   "explanation": "An adverb tells how an action is done; 'happily' tells how they played."
+  },
+  {
+   "stem": "What type of word is 'quick' in: She is a quick runner.",
+   "options": [
+    "adverb",
+    "adjective",
+    "noun",
+    "verb"
+   ],
+   "answer": 1,
+   "explanation": "An adjective describes a noun; 'quick' describes the runner, while 'quickly' would describe an action."
+  },
+  {
+   "stem": "What type of word is 'quietly' in: He spoke quietly to his friend.",
+   "options": [
+    "adjective",
+    "adverb",
+    "verb",
+    "preposition"
+   ],
+   "answer": 1,
+   "explanation": "An adverb tells how an action is done; 'quietly' tells how he spoke."
+  },
+  {
+   "stem": "Which of these is an adverb?",
+   "options": [
+    "bright",
+    "brightly",
+    "brightness",
+    "brighten"
+   ],
+   "answer": 1,
+   "explanation": "An adverb tells how something is done; 'brightly' describes the manner of an action."
+  },
+  {
+   "stem": "What type of word is 'yesterday' in: They arrived yesterday.",
+   "options": [
+    "verb",
+    "adverb",
+    "adjective",
+    "noun"
+   ],
+   "answer": 1,
+   "explanation": "An adverb can tell when something happens; 'yesterday' tells when they arrived."
+  },
+  {
+   "stem": "Which word is the ADVERB? 'The dog barked loudly at the postman.'",
+   "options": [
+    "dog",
+    "barked",
+    "loudly",
+    "postman"
+   ],
+   "answer": 2,
+   "explanation": "An adverb tells how an action is done; 'loudly' tells how the dog barked."
+  },
+  {
+   "stem": "What type of word is 'well' in: She sings well.",
+   "options": [
+    "adjective",
+    "noun",
+    "adverb",
+    "verb"
+   ],
+   "answer": 2,
+   "explanation": "An adverb tells how an action is done; 'well' tells how she sings."
+  },
+  {
+   "stem": "What type of word is 'always' in: He always eats breakfast.",
+   "options": [
+    "adverb",
+    "adjective",
+    "conjunction",
+    "noun"
+   ],
+   "answer": 0,
+   "explanation": "An adverb can tell how often something happens; 'always' tells how often he eats breakfast."
+  },
+  {
+   "stem": "Which of these is an adverb?",
+   "options": [
+    "careful",
+    "carefully",
+    "care",
+    "caring"
+   ],
+   "answer": 1,
+   "explanation": "An adverb tells how an action is done; 'carefully' describes the manner of an action."
+  },
+  {
+   "stem": "What type of word is 'outside' in: The cat is sleeping outside.",
+   "options": [
+    "adverb",
+    "adjective",
+    "verb",
+    "pronoun"
+   ],
+   "answer": 0,
+   "explanation": "An adverb can tell where something happens; here 'outside' tells where the cat sleeps."
+  },
+  {
+   "stem": "What type of word is 'slow' in: That is a slow train.",
+   "options": [
+    "adverb",
+    "adjective",
+    "noun",
+    "verb"
+   ],
+   "answer": 1,
+   "explanation": "An adjective describes a noun; 'slow' describes the train, while 'slowly' would describe an action."
+  },
+  {
+   "stem": "Which word is the ADVERB? 'She neatly folded the clean towels.'",
+   "options": [
+    "neatly",
+    "folded",
+    "clean",
+    "towels"
+   ],
+   "answer": 0,
+   "explanation": "An adverb tells how an action is done; 'neatly' tells how she folded them."
+  },
+  {
+   "stem": "What type of word is 'often' in: We often visit our grandparents.",
+   "options": [
+    "noun",
+    "verb",
+    "adverb",
+    "adjective"
+   ],
+   "answer": 2,
+   "explanation": "An adverb can tell how often something happens; 'often' tells how frequently we visit."
+  },
+  {
+   "stem": "What type of word is 'now' in: Come here now.",
+   "options": [
+    "adverb",
+    "noun",
+    "verb",
+    "conjunction"
+   ],
+   "answer": 0,
+   "explanation": "An adverb can tell when something happens; 'now' tells when to come."
+  },
+  {
+   "stem": "Which of these is an adverb?",
+   "options": [
+    "sudden",
+    "suddenly",
+    "suddenness",
+    "jump"
+   ],
+   "answer": 1,
+   "explanation": "An adverb tells how something happens; 'suddenly' describes the manner of an action."
+  },
+  {
+   "stem": "Which word is the ADVERB? 'The wind blew fiercely all night.'",
+   "options": [
+    "wind",
+    "blew",
+    "fiercely",
+    "night"
+   ],
+   "answer": 2,
+   "explanation": "An adverb tells how an action is done; 'fiercely' tells how the wind blew."
+  },
+  {
+   "stem": "What type of word is 'everywhere' in: She looked everywhere for her keys.",
+   "options": [
+    "pronoun",
+    "adverb",
+    "noun",
+    "adjective"
+   ],
+   "answer": 1,
+   "explanation": "An adverb can tell where something happens; 'everywhere' tells where she looked."
+  },
+  {
+   "stem": "What type of word is 'mountain' in: They climbed the steep mountain.",
+   "options": [
+    "noun",
+    "adjective",
+    "verb",
+    "adverb"
+   ],
+   "answer": 0,
+   "explanation": "A noun is a person, place or thing; 'mountain' is a thing."
+  },
+  {
+   "stem": "Which word is the NOUN? 'The clever fox escaped easily.'",
+   "options": [
+    "clever",
+    "fox",
+    "escaped",
+    "easily"
+   ],
+   "answer": 1,
+   "explanation": "A noun names a person, animal, place or thing; 'fox' is an animal."
+  },
+  {
+   "stem": "Which of these is a noun?",
+   "options": [
+    "run",
+    "happiness",
+    "quickly",
+    "blue"
+   ],
+   "answer": 1,
+   "explanation": "A noun names a thing, including ideas and feelings; 'happiness' is a feeling."
+  },
+  {
+   "stem": "What type of word is 'teacher' in: The teacher marked the books.",
+   "options": [
+    "verb",
+    "noun",
+    "adjective",
+    "adverb"
+   ],
+   "answer": 1,
+   "explanation": "A noun names a person, place or thing; 'teacher' is a person."
+  },
+  {
+   "stem": "Which word is the NOUN? 'A loud bell rang suddenly.'",
+   "options": [
+    "loud",
+    "bell",
+    "rang",
+    "suddenly"
+   ],
+   "answer": 1,
+   "explanation": "A noun names a person, place or thing; 'bell' is a thing."
+  },
+  {
+   "stem": "What type of word is 'jumped' in: The frog jumped into the pond.",
+   "options": [
+    "noun",
+    "adjective",
+    "verb",
+    "adverb"
+   ],
+   "answer": 2,
+   "explanation": "A verb is an action or doing word; 'jumped' is the action the frog did."
+  },
+  {
+   "stem": "Which word is the VERB? 'The hungry lion roared loudly.'",
+   "options": [
+    "hungry",
+    "lion",
+    "roared",
+    "loudly"
+   ],
+   "answer": 2,
+   "explanation": "A verb is an action word; 'roared' is the action the lion did."
+  },
+  {
+   "stem": "Which of these is a verb?",
+   "options": [
+    "table",
+    "swim",
+    "gentle",
+    "under"
+   ],
+   "answer": 1,
+   "explanation": "A verb is an action or doing word; 'swim' is an action."
+  },
+  {
+   "stem": "What type of word is 'wrote' in: She wrote a letter.",
+   "options": [
+    "verb",
+    "noun",
+    "adverb",
+    "pronoun"
+   ],
+   "answer": 0,
+   "explanation": "A verb is an action word; 'wrote' is the action she did."
+  },
+  {
+   "stem": "Which word is the VERB? 'Tall trees swayed in the breeze.'",
+   "options": [
+    "Tall",
+    "trees",
+    "swayed",
+    "breeze"
+   ],
+   "answer": 2,
+   "explanation": "A verb is an action word; 'swayed' is the action the trees did."
+  },
+  {
+   "stem": "What type of word is 'enormous' in: An enormous elephant stood nearby.",
+   "options": [
+    "noun",
+    "adjective",
+    "adverb",
+    "verb"
+   ],
+   "answer": 1,
+   "explanation": "An adjective describes a noun; 'enormous' describes the elephant."
+  },
+  {
+   "stem": "Which word is the ADJECTIVE? 'The shiny car sped past.'",
+   "options": [
+    "shiny",
+    "car",
+    "sped",
+    "past"
+   ],
+   "answer": 0,
+   "explanation": "An adjective describes a noun; 'shiny' describes the car."
+  },
+  {
+   "stem": "Which of these is an adjective?",
+   "options": [
+    "cheerful",
+    "cheer",
+    "cheerfully",
+    "run"
+   ],
+   "answer": 0,
+   "explanation": "An adjective describes a noun; 'cheerful' describes what someone or something is like."
+  },
+  {
+   "stem": "What type of word is 'ancient' in: They explored an ancient castle.",
+   "options": [
+    "adjective",
+    "noun",
+    "verb",
+    "adverb"
+   ],
+   "answer": 0,
+   "explanation": "An adjective describes a noun; 'ancient' describes the castle."
+  },
+  {
+   "stem": "Which word is the ADJECTIVE? 'A brave knight rescued the princess.'",
+   "options": [
+    "brave",
+    "knight",
+    "rescued",
+    "princess"
+   ],
+   "answer": 0,
+   "explanation": "An adjective describes a noun; 'brave' describes the knight."
+  },
+  {
+   "stem": "What type of word is 'she' in: She closed the door.",
+   "options": [
+    "noun",
+    "pronoun",
+    "verb",
+    "adjective"
+   ],
+   "answer": 1,
+   "explanation": "A pronoun takes the place of a noun; 'she' stands in for a person's name."
+  },
+  {
+   "stem": "Which word is the PRONOUN? 'They watched the film together.'",
+   "options": [
+    "They",
+    "watched",
+    "film",
+    "together"
+   ],
+   "answer": 0,
+   "explanation": "A pronoun replaces a noun; 'they' stands in for the people's names."
+  },
+  {
+   "stem": "Which of these is a pronoun?",
+   "options": [
+    "dog",
+    "they",
+    "quickly",
+    "green"
+   ],
+   "answer": 1,
+   "explanation": "A pronoun replaces a noun; 'they' stands in for people or things."
+  },
+  {
+   "stem": "What type of word is 'them' in: The teacher helped them.",
+   "options": [
+    "pronoun",
+    "noun",
+    "verb",
+    "adverb"
+   ],
+   "answer": 0,
+   "explanation": "A pronoun replaces a noun; 'them' stands in for the people being helped."
+  },
+  {
+   "stem": "Which word is the PRONOUN? 'We enjoyed the long journey.'",
+   "options": [
+    "We",
+    "enjoyed",
+    "long",
+    "journey"
+   ],
+   "answer": 0,
+   "explanation": "A pronoun replaces a noun; 'we' stands in for the people's names."
+  },
+  {
+   "stem": "Which of these is a preposition?",
+   "options": [
+    "under",
+    "quickly",
+    "jump",
+    "happy"
+   ],
+   "answer": 0,
+   "explanation": "A preposition shows position or direction; 'under' tells where something is."
+  },
+  {
+   "stem": "What type of word is 'beneath' in: The cat hid beneath the table.",
+   "options": [
+    "adverb",
+    "preposition",
+    "verb",
+    "noun"
+   ],
+   "answer": 1,
+   "explanation": "A preposition shows position; 'beneath' tells where the cat hid in relation to the table."
+  },
+  {
+   "stem": "Which word is the PREPOSITION? 'The ball rolled under the chair.'",
+   "options": [
+    "ball",
+    "rolled",
+    "under",
+    "chair"
+   ],
+   "answer": 2,
+   "explanation": "A preposition shows position; 'under' tells where the ball rolled."
+  },
+  {
+   "stem": "Which of these is a preposition?",
+   "options": [
+    "between",
+    "silently",
+    "green",
+    "run"
+   ],
+   "answer": 0,
+   "explanation": "A preposition shows position; 'between' tells where something is placed."
+  },
+  {
+   "stem": "What type of word is 'above' in: A bird flew above the rooftops.",
+   "options": [
+    "preposition",
+    "adjective",
+    "verb",
+    "pronoun"
+   ],
+   "answer": 0,
+   "explanation": "A preposition shows position; 'above' tells where the bird flew in relation to the rooftops."
+  },
+  {
+   "stem": "Which word is the PREPOSITION? 'She placed the vase on the shelf.'",
+   "options": [
+    "placed",
+    "vase",
+    "on",
+    "shelf"
+   ],
+   "answer": 2,
+   "explanation": "A preposition shows position; 'on' tells where the vase was placed."
+  },
+  {
+   "stem": "Which of these is a conjunction?",
+   "options": [
+    "because",
+    "slowly",
+    "river",
+    "bright"
+   ],
+   "answer": 0,
+   "explanation": "A conjunction joins words or ideas together; 'because' links two parts of a sentence."
+  },
+  {
+   "stem": "What type of word is 'and' in: I bought apples and pears.",
+   "options": [
+    "preposition",
+    "conjunction",
+    "adverb",
+    "noun"
+   ],
+   "answer": 1,
+   "explanation": "A conjunction joins words or ideas; 'and' joins apples and pears."
+  },
+  {
+   "stem": "Which word is the CONJUNCTION? 'He was tired but he kept running.'",
+   "options": [
+    "tired",
+    "but",
+    "kept",
+    "running"
+   ],
+   "answer": 1,
+   "explanation": "A conjunction joins ideas together; 'but' links the two parts of the sentence."
+  },
+  {
+   "stem": "Which of these is a conjunction?",
+   "options": [
+    "although",
+    "under",
+    "happily",
+    "desk"
+   ],
+   "answer": 0,
+   "explanation": "A conjunction joins ideas together; 'although' links two parts of a sentence."
+  },
+  {
+   "stem": "What type of word is 'because' in: She smiled because she won.",
+   "options": [
+    "adverb",
+    "preposition",
+    "conjunction",
+    "verb"
+   ],
+   "answer": 2,
+   "explanation": "A conjunction joins ideas together; 'because' links the smile to the reason."
+  },
+  {
+   "stem": "Which word is the ADVERB? 'The runner finished the race easily.'",
+   "options": [
+    "runner",
+    "finished",
+    "race",
+    "easily"
+   ],
+   "answer": 3,
+   "explanation": "An adverb tells how an action is done; 'easily' tells how the runner finished."
+  },
+  {
+   "stem": "What type of word is 'rarely' in: He rarely forgets his homework.",
+   "options": [
+    "adjective",
+    "adverb",
+    "noun",
+    "verb"
+   ],
+   "answer": 1,
+   "explanation": "An adverb can tell how often something happens; 'rarely' tells how seldom he forgets."
+  },
+  {
+   "stem": "Which of these is a preposition?",
+   "options": [
+    "across",
+    "brightly",
+    "laugh",
+    "tall"
+   ],
+   "answer": 0,
+   "explanation": "A preposition shows position or direction; 'across' tells where or which way."
+  },
+  {
+   "stem": "Which word is the CONJUNCTION? 'You can have tea or coffee.'",
+   "options": [
+    "You",
+    "have",
+    "tea",
+    "or"
+   ],
+   "answer": 3,
+   "explanation": "A conjunction joins words or ideas; 'or' links tea and coffee."
+  }
+ ],
+ "connectives": [
+  {
+   "stem": "It was raining heavily, ___ we decided to stay indoors.",
+   "options": [
+    "so",
+    "but",
+    "although",
+    "or"
+   ],
+   "answer": 0,
+   "explanation": "The rain caused the decision, so 'so' shows result."
+  },
+  {
+   "stem": "Sara wanted to play outside, ___ her mother said it was too cold.",
+   "options": [
+    "so",
+    "but",
+    "because",
+    "and"
+   ],
+   "answer": 1,
+   "explanation": "The second part contrasts with her wish, so 'but' fits."
+  },
+  {
+   "stem": "We could not light the campfire ___ the wood was completely soaked.",
+   "options": [
+    "although",
+    "but",
+    "because",
+    "unless"
+   ],
+   "answer": 2,
+   "explanation": "The wet wood is the reason, so 'because' shows cause."
+  },
+  {
+   "stem": "___ the team trained very hard, they still lost the final.",
+   "options": [
+    "Because",
+    "So",
+    "Unless",
+    "Although"
+   ],
+   "answer": 3,
+   "explanation": "The result contrasts with their effort, so 'although' fits."
+  },
+  {
+   "stem": "Remember to lock the door ___ you leave the house.",
+   "options": [
+    "before",
+    "after",
+    "because",
+    "unless"
+   ],
+   "answer": 0,
+   "explanation": "Locking happens earlier in time, so 'before' fits."
+  },
+  {
+   "stem": "The road was icy; ___, the driver slowed right down.",
+   "options": [
+    "however",
+    "therefore",
+    "whereas",
+    "meanwhile"
+   ],
+   "answer": 1,
+   "explanation": "Slowing down is the result of the ice, so 'therefore' fits."
+  },
+  {
+   "stem": "James enjoys cricket, ___ his brother prefers rugby.",
+   "options": [
+    "because",
+    "so",
+    "whereas",
+    "until"
+   ],
+   "answer": 2,
+   "explanation": "It compares two different tastes, so 'whereas' fits."
+  },
+  {
+   "stem": "You will not pass the test ___ you revise carefully.",
+   "options": [
+    "because",
+    "although",
+    "after",
+    "unless"
+   ],
+   "answer": 3,
+   "explanation": "Passing depends on a condition, so 'unless' fits."
+  },
+  {
+   "stem": "The sun came out, ___ the children went to the park.",
+   "options": [
+    "so",
+    "but",
+    "although",
+    "unless"
+   ],
+   "answer": 0,
+   "explanation": "The sunshine caused the trip, so 'so' shows result."
+  },
+  {
+   "stem": "I will read my book ___ I wait for the bus.",
+   "options": [
+    "because",
+    "while",
+    "unless",
+    "so"
+   ],
+   "answer": 1,
+   "explanation": "Both actions happen at the same time, so 'while' fits."
+  },
+  {
+   "stem": "We can walk to school ___ we can take the bus.",
+   "options": [
+    "and",
+    "but",
+    "or",
+    "so"
+   ],
+   "answer": 2,
+   "explanation": "It offers two choices, so 'or' fits."
+  },
+  {
+   "stem": "The cake looked delicious; ___, it tasted rather dry.",
+   "options": [
+    "therefore",
+    "because",
+    "meanwhile",
+    "however"
+   ],
+   "answer": 3,
+   "explanation": "The taste contrasts with the look, so 'however' fits."
+  },
+  {
+   "stem": "Mia packed a coat ___ the weather forecast warned of rain.",
+   "options": [
+    "because",
+    "but",
+    "whereas",
+    "until"
+   ],
+   "answer": 0,
+   "explanation": "The forecast is the reason she packed it, so 'because' fits."
+  },
+  {
+   "stem": "He kept knocking on the door ___ someone finally answered.",
+   "options": [
+    "before",
+    "until",
+    "so",
+    "although"
+   ],
+   "answer": 1,
+   "explanation": "The knocking continued up to that moment, so 'until' fits."
+  },
+  {
+   "stem": "The shop was closed, ___ we had to come back the next day.",
+   "options": [
+    "but",
+    "because",
+    "so",
+    "or"
+   ],
+   "answer": 2,
+   "explanation": "Coming back is the result, so 'so' fits."
+  },
+  {
+   "stem": "Tom forgot his umbrella, ___ he still managed to stay dry.",
+   "options": [
+    "so",
+    "because",
+    "when",
+    "yet"
+   ],
+   "answer": 3,
+   "explanation": "Staying dry is surprising after forgetting it, so 'yet' shows contrast."
+  },
+  {
+   "stem": "Please wash your hands ___ you start cooking.",
+   "options": [
+    "before",
+    "until",
+    "because",
+    "so"
+   ],
+   "answer": 0,
+   "explanation": "Washing comes first in time, so 'before' fits."
+  },
+  {
+   "stem": "The film was very long; ___, nobody felt bored.",
+   "options": [
+    "therefore",
+    "nevertheless",
+    "because",
+    "meanwhile"
+   ],
+   "answer": 1,
+   "explanation": "Not being bored is unexpected, so 'nevertheless' shows contrast."
+  },
+  {
+   "stem": "Anya speaks French fluently ___ she lived in Paris for years.",
+   "options": [
+    "although",
+    "but",
+    "because",
+    "unless"
+   ],
+   "answer": 2,
+   "explanation": "Living in Paris explains her fluency, so 'because' fits."
+  },
+  {
+   "stem": "We had finished our homework, ___ we were allowed to watch television.",
+   "options": [
+    "but",
+    "although",
+    "whereas",
+    "so"
+   ],
+   "answer": 3,
+   "explanation": "Finishing led to the reward, so 'so' shows result."
+  },
+  {
+   "stem": "The cat hid under the bed ___ the fireworks were banging outside.",
+   "options": [
+    "while",
+    "because",
+    "unless",
+    "so"
+   ],
+   "answer": 0,
+   "explanation": "Both happened at the same time, so 'while' fits."
+  },
+  {
+   "stem": "I would love to come to the party, ___ I have to babysit my sister.",
+   "options": [
+    "so",
+    "but",
+    "because",
+    "and"
+   ],
+   "answer": 1,
+   "explanation": "Babysitting contrasts with wanting to come, so 'but' fits."
+  },
+  {
+   "stem": "The garden was full of weeds; ___, we spent all morning pulling them up.",
+   "options": [
+    "however",
+    "whereas",
+    "consequently",
+    "although"
+   ],
+   "answer": 2,
+   "explanation": "Weeding is the result of the weeds, so 'consequently' fits."
+  },
+  {
+   "stem": "Older pupils sat at the front, ___ the younger ones stayed at the back.",
+   "options": [
+    "because",
+    "so",
+    "until",
+    "whereas"
+   ],
+   "answer": 3,
+   "explanation": "It contrasts two groups, so 'whereas' fits."
+  },
+  {
+   "stem": "Take a torch with you ___ the path is very dark at night.",
+   "options": [
+    "because",
+    "but",
+    "although",
+    "or"
+   ],
+   "answer": 0,
+   "explanation": "The darkness is the reason, so 'because' fits."
+  },
+  {
+   "stem": "We waited at the station ___ the train finally arrived.",
+   "options": [
+    "before",
+    "until",
+    "so",
+    "whereas"
+   ],
+   "answer": 1,
+   "explanation": "The waiting lasted up to its arrival, so 'until' fits."
+  },
+  {
+   "stem": "The library was quiet, ___ I could concentrate on my work.",
+   "options": [
+    "but",
+    "although",
+    "so",
+    "unless"
+   ],
+   "answer": 2,
+   "explanation": "The quiet allowed concentration, so 'so' shows result."
+  },
+  {
+   "stem": "You may have a biscuit ___ you finish your dinner first.",
+   "options": [
+    "but",
+    "although",
+    "whereas",
+    "if"
+   ],
+   "answer": 3,
+   "explanation": "The biscuit depends on a condition, so 'if' fits."
+  },
+  {
+   "stem": "Grandpa loves classical music; ___, my brother only listens to pop.",
+   "options": [
+    "however",
+    "therefore",
+    "because",
+    "so"
+   ],
+   "answer": 0,
+   "explanation": "Their tastes contrast, so 'however' fits."
+  },
+  {
+   "stem": "She switched off the lights ___ she went to bed.",
+   "options": [
+    "because",
+    "before",
+    "unless",
+    "so"
+   ],
+   "answer": 1,
+   "explanation": "Switching off came first in time, so 'before' fits."
+  },
+  {
+   "stem": "The bridge was unsafe; ___, it was closed to traffic.",
+   "options": [
+    "however",
+    "whereas",
+    "therefore",
+    "meanwhile"
+   ],
+   "answer": 2,
+   "explanation": "Closing it is the result, so 'therefore' fits."
+  },
+  {
+   "stem": "We can have pizza ___ we can order a curry tonight.",
+   "options": [
+    "and",
+    "but",
+    "because",
+    "or"
+   ],
+   "answer": 3,
+   "explanation": "It presents two choices, so 'or' fits."
+  },
+  {
+   "stem": "He apologised to his friend, ___ he knew he had been rude.",
+   "options": [
+    "because",
+    "but",
+    "although",
+    "unless"
+   ],
+   "answer": 0,
+   "explanation": "Knowing he was rude is the reason, so 'because' fits."
+  },
+  {
+   "stem": "The puppy was tiny, ___ it had a very loud bark.",
+   "options": [
+    "so",
+    "yet",
+    "because",
+    "when"
+   ],
+   "answer": 1,
+   "explanation": "The loud bark contrasts with its size, so 'yet' fits."
+  },
+  {
+   "stem": "___ you press this button, the machine will start automatically.",
+   "options": [
+    "Although",
+    "Whereas",
+    "If",
+    "Until"
+   ],
+   "answer": 2,
+   "explanation": "Starting depends on a condition, so 'if' fits."
+  },
+  {
+   "stem": "The runners stretched carefully ___ the race began.",
+   "options": [
+    "because",
+    "unless",
+    "so",
+    "before"
+   ],
+   "answer": 3,
+   "explanation": "Stretching happened earlier in time, so 'before' fits."
+  },
+  {
+   "stem": "The ice cream melted quickly ___ the day was so hot.",
+   "options": [
+    "because",
+    "but",
+    "although",
+    "or"
+   ],
+   "answer": 0,
+   "explanation": "The heat is the reason it melted, so 'because' fits."
+  },
+  {
+   "stem": "Dad cooked the dinner; ___, Mum laid the table.",
+   "options": [
+    "therefore",
+    "meanwhile",
+    "because",
+    "unless"
+   ],
+   "answer": 1,
+   "explanation": "Both happened at the same time, so 'meanwhile' fits."
+  },
+  {
+   "stem": "We brought sandwiches ___ there was nowhere to buy food on the trip.",
+   "options": [
+    "although",
+    "whereas",
+    "in case",
+    "so"
+   ],
+   "answer": 2,
+   "explanation": "It guards against a possibility, so 'in case' fits."
+  },
+  {
+   "stem": "The instructions were clear, ___ I still made a mistake.",
+   "options": [
+    "so",
+    "because",
+    "and",
+    "but"
+   ],
+   "answer": 3,
+   "explanation": "The mistake contrasts with the clear instructions, so 'but' fits."
+  },
+  {
+   "stem": "Wear a helmet ___ you ride your bike on the road.",
+   "options": [
+    "whenever",
+    "because",
+    "unless",
+    "so"
+   ],
+   "answer": 0,
+   "explanation": "It points to every such time, so 'whenever' fits."
+  },
+  {
+   "stem": "The team practised every day; ___, they won the championship.",
+   "options": [
+    "however",
+    "consequently",
+    "whereas",
+    "although"
+   ],
+   "answer": 1,
+   "explanation": "Winning is the result of practice, so 'consequently' fits."
+  },
+  {
+   "stem": "My sister is very tidy, ___ I tend to be quite messy.",
+   "options": [
+    "because",
+    "so",
+    "whereas",
+    "until"
+   ],
+   "answer": 2,
+   "explanation": "It contrasts the two of them, so 'whereas' fits."
+  },
+  {
+   "stem": "Lucy added more flour ___ the dough was too sticky.",
+   "options": [
+    "but",
+    "although",
+    "or",
+    "because"
+   ],
+   "answer": 3,
+   "explanation": "The sticky dough is the reason, so 'because' fits."
+  },
+  {
+   "stem": "Keep stirring the sauce ___ it begins to thicken.",
+   "options": [
+    "until",
+    "before",
+    "so",
+    "whereas"
+   ],
+   "answer": 0,
+   "explanation": "Stirring continues up to that point, so 'until' fits."
+  },
+  {
+   "stem": "The alarm rang loudly, ___ everyone left the building calmly.",
+   "options": [
+    "but",
+    "so",
+    "although",
+    "or"
+   ],
+   "answer": 1,
+   "explanation": "Leaving is the response to the alarm, so 'so' shows result."
+  },
+  {
+   "stem": "She felt very nervous; ___, she gave a brilliant speech.",
+   "options": [
+    "because",
+    "so",
+    "nevertheless",
+    "until"
+   ],
+   "answer": 2,
+   "explanation": "The speech was good in spite of nerves, so 'nevertheless' fits."
+  },
+  {
+   "stem": "We turned off the heating ___ the room had become warm enough.",
+   "options": [
+    "but",
+    "although",
+    "or",
+    "because"
+   ],
+   "answer": 3,
+   "explanation": "The warmth is the reason, so 'because' fits."
+  },
+  {
+   "stem": "You can paint the fence ___ you can mow the lawn, whichever you prefer.",
+   "options": [
+    "or",
+    "and",
+    "but",
+    "so"
+   ],
+   "answer": 0,
+   "explanation": "It offers a choice, so 'or' fits."
+  },
+  {
+   "stem": "The museum was crowded; ___, we managed to see every exhibit.",
+   "options": [
+    "therefore",
+    "nevertheless",
+    "because",
+    "meanwhile"
+   ],
+   "answer": 1,
+   "explanation": "Seeing everything is surprising given the crowd, so 'nevertheless' fits."
+  },
+  {
+   "stem": "She loves swimming, ___ she goes to the pool three times a week.",
+   "options": [
+    "but",
+    "although",
+    "so",
+    "unless"
+   ],
+   "answer": 2,
+   "explanation": "Going often is the result of loving it, so 'so' fits."
+  },
+  {
+   "stem": "Hand in your form ___ Friday, or you will miss the trip.",
+   "options": [
+    "because",
+    "although",
+    "whereas",
+    "by"
+   ],
+   "answer": 3,
+   "explanation": "It sets a time limit, so 'by' fits."
+  },
+  {
+   "stem": "The volcano had been quiet for years; ___, it suddenly erupted.",
+   "options": [
+    "however",
+    "therefore",
+    "because",
+    "so"
+   ],
+   "answer": 0,
+   "explanation": "The eruption contrasts with the quiet, so 'however' fits."
+  },
+  {
+   "stem": "Ben revised all weekend; ___, he felt confident in the exam.",
+   "options": [
+    "however",
+    "therefore",
+    "whereas",
+    "although"
+   ],
+   "answer": 1,
+   "explanation": "His confidence is the result of revising, so 'therefore' fits."
+  },
+  {
+   "stem": "I enjoy reading novels ___ my best friend prefers comics.",
+   "options": [
+    "because",
+    "so",
+    "whereas",
+    "until"
+   ],
+   "answer": 2,
+   "explanation": "It contrasts two preferences, so 'whereas' fits."
+  },
+  {
+   "stem": "Cover the plants ___ the frost damages them overnight.",
+   "options": [
+    "because",
+    "unless",
+    "so",
+    "before"
+   ],
+   "answer": 3,
+   "explanation": "Covering happens earlier in time, so 'before' fits."
+  },
+  {
+   "stem": "The path was muddy ___ it had rained all week.",
+   "options": [
+    "because",
+    "but",
+    "although",
+    "or"
+   ],
+   "answer": 0,
+   "explanation": "The rain is the reason it was muddy, so 'because' fits."
+  },
+  {
+   "stem": "Mum prepared the picnic ___ Dad loaded the car.",
+   "options": [
+    "because",
+    "while",
+    "unless",
+    "so"
+   ],
+   "answer": 1,
+   "explanation": "Both jobs happened at the same time, so 'while' fits."
+  },
+  {
+   "stem": "The puzzle looked easy, ___ it took us hours to solve.",
+   "options": [
+    "so",
+    "because",
+    "but",
+    "and"
+   ],
+   "answer": 2,
+   "explanation": "The difficulty contrasts with how it looked, so 'but' fits."
+  },
+  {
+   "stem": "We should leave now ___ we will be late for the show.",
+   "options": [
+    "because",
+    "although",
+    "while",
+    "otherwise"
+   ],
+   "answer": 3,
+   "explanation": "Being late is the alternative if we don't, so 'otherwise' fits."
+  }
+ ]
+}
