@@ -377,16 +377,19 @@ export function renderScore(results, sectionName, xpEarned) {
 
   let emoji = '\u{1F44D}';
   let title = 'Good effort!';
-  if (pct === 100) { emoji = '\u{1F31F}'; title = 'Perfect score!'; }
-  else if (pct >= 80) { emoji = '\u{1F389}'; title = 'Brilliant work!'; }
-  else if (pct >= 60) { emoji = '\u{1F4AA}'; title = 'Nice going!'; }
-  else if (pct < 40) { emoji = '\u{1F4AD}'; title = 'Keep practising!'; }
+  let coach = '';
+  if (pct === 100) { emoji = '\u{1F31F}'; title = 'Perfect score!'; coach = 'You really know this. Try a tougher one next!'; }
+  else if (pct >= 80) { emoji = '\u{1F389}'; title = 'Brilliant work!'; coach = "You're strong at this. Keep it up!"; }
+  else if (pct >= 60) { emoji = '\u{1F4AA}'; title = 'Nice going!'; coach = "Almost there. A little more practice and you'll nail it."; }
+  else if (pct >= 40) { coach = 'Good try. Have another go at this one soon to lock it in.'; }
+  else { emoji = '\u{1F4AD}'; title = 'Keep practising!'; coach = "This one's tricky. Read each question slowly and try again soon."; }
 
   return `
     <div class="score-screen">
       <div class="score-emoji">${emoji}</div>
       <h2 class="score-title">${title}</h2>
       <p class="score-subtitle">${sectionName}</p>
+      ${coach ? `<p class="score-coach">${coach}</p>` : ''}
       <div class="score-stats">
         <div class="stat-card">
           <div class="stat-value">${correct}/${total}</div>

@@ -2011,3 +2011,14 @@ body {
 .comp-vocab ul { list-style: none; padding: 0; }
 .comp-vocab li { padding: 6px 0; border-bottom: 1px solid var(--cream2); font-size: 0.9rem; line-height: 1.4; }
 .comp-vocab li:last-child { border-bottom: none; }
+
+.score-coach {
+  font-size: 0.95rem;
+  color: var(--teal);
+  font-weight: 600;
+  margin-top: 6px;
+  max-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.4;
+}

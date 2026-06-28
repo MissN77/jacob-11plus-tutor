@@ -238,6 +238,24 @@
     .help-sub { font-size: 0.78rem; color: #888; margin-top: 2px; }
     .help-acc { font-weight: 800; color: var(--coral); font-size: 1.05rem; }
     .help-none { color: var(--forest); font-weight: 600; padding: 8px 0; }
+    .report-card { border-top: 4px solid var(--teal); }
+    .report-summary { font-size: 1rem; line-height: 1.5; color: var(--navy); margin-bottom: 16px; }
+    .report-block { margin-top: 14px; }
+    .report-h { font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.03em; margin-bottom: 8px; }
+    .report-h.good { color: var(--forest); }
+    .report-h.mid { color: #b8860b; }
+    .report-h.bad { color: var(--coral); }
+    .report-row { display: flex; justify-content: space-between; align-items: center; padding: 7px 0; border-bottom: 1px solid var(--cream2); }
+    .report-row:last-child { border-bottom: none; }
+    .report-name { font-weight: 600; font-size: 0.92rem; }
+    .report-acc { font-weight: 800; font-size: 0.95rem; }
+    .report-acc.good { color: var(--forest); }
+    .report-acc.mid { color: #b8860b; }
+    .report-acc.bad { color: var(--coral); }
+    .report-advice { padding: 10px 0; border-bottom: 1px solid var(--cream2); }
+    .report-advice:last-child { border-bottom: none; }
+    .report-advice-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 4px; }
+    .report-tip { font-size: 0.88rem; color: #555; line-height: 1.45; }
     .loading { text-align: center; padding: 40px; color: #888; }
     .refresh-btn {
       background: var(--teal);
@@ -291,6 +309,7 @@
     }
 
     const SECTION_NAMES = {
+      'learn-first': 'Learn New Words',
       vocabulary: 'Vocabulary',
       inference: 'Inference',
       comprehension: 'Comprehension',
@@ -302,6 +321,21 @@
       nvr: 'NVR',
       writing: 'Writing',
       collocations: 'Collocations'
+    };
+
+    // Concrete "what to do next" advice shown when a section is weak.
+    const SECTION_ADVICE = {
+      vocabulary: 'Learn 5 new words a day from his reading book. Ask him to use each in his own sentence, not just recall the meaning.',
+      inference: 'Read the passage with him twice before he answers. Ask "which words in the text tell you that?" so he points to evidence rather than guessing.',
+      comprehension: 'Slow him down: read the question first, then hunt the passage for the answer. Underline the line that proves it.',
+      spelling: 'Use Look-Cover-Write-Check on the words he misses. Practise the same 5 words across the week until they stick.',
+      punctuation: 'Focus on one rule at a time (capital letters, full stops, then commas). Have him fix deliberately wrong sentences.',
+      'sentence-completion': 'Get him to read the whole sentence and try each option aloud. The right word should sound and make sense.',
+      'verbal-reasoning': 'These are puzzles with rules. Practise little and often, 10 minutes daily beats one long session.',
+      maths: 'Pin down which topic is slipping (times tables, fractions, word problems) and drill just that. Speed comes after accuracy.',
+      nvr: 'Talk through what changes between the shapes (rotation, shading, number). Spotting the pattern is the whole skill.',
+      writing: 'Plan before writing: who, where, problem, ending. Praise good word choices and one thing to improve, not everything.',
+      collocations: 'Notice which words "go together" when reading aloud. Collect good pairs in a notebook.'
     };
 
     // GL Assessment countdown
@@ -471,14 +505,16 @@
           <div class="stat-box"><div class="value">${quizzes.length}</div><div class="label">Quizzes Done</div></div>
         </div>`;
 
-      // ── Areas to help Jacob with (the "support" answer) ──
-      // Weakest sections by accuracy, only counting those with a meaningful sample.
-      const weak = Object.entries(sections)
+      // ── Jacob's Report: strengths, weaknesses, what to do next ──
+      // Classify every practised section by accuracy (needs a meaningful sample).
+      const graded = Object.entries(sections)
         .map(([id, sec]) => ({ id, name: SECTION_NAMES[id] || id, p: pct(sec.correct, sec.total), correct: sec.correct, total: sec.total, count: sec.count }))
-        .filter(x => x.total >= 5 && x.p < 70)
-        .sort((a, b) => a.p - b.p);
+        .filter(x => x.total >= 5);
+      const strengths = graded.filter(x => x.p >= 80).sort((a, b) => b.p - a.p);
+      const steady = graded.filter(x => x.p >= 60 && x.p < 80).sort((a, b) => a.p - b.p);
+      const needsWork = graded.filter(x => x.p < 60).sort((a, b) => a.p - b.p);
 
-      // Sub-section weak spots (only some sections record these)
+      // Per-passage / per-type weak spots (sub_section detail)
       const subs = {};
       for (const q of quizzes) {
         if (!q.sub_section) continue;
@@ -488,30 +524,52 @@
       }
       const weakSubs = Object.values(subs)
         .map(x => ({ ...x, p: pct(x.correct, x.total), name: SECTION_NAMES[x.section] || x.section }))
-        .filter(x => x.total >= 5 && x.p < 70)
-        .sort((a, b) => a.p - b.p)
-        .slice(0, 6);
+        .filter(x => x.total >= 5 && x.p < 60)
+        .sort((a, b) => a.p - b.p).slice(0, 6);
 
-      html += `<div class="card help-card"><h2>Areas to help Jacob with</h2>`;
-      if (weak.length === 0 && weakSubs.length === 0) {
-        if (quizzes.length === 0) {
-          html += `<p class="help-sub">No practice recorded yet, so nothing to flag.</p>`;
-        } else {
-          html += `<p class="help-none">👍 Nothing below 70% right now &mdash; he's on top of everything he's practised.</p>`;
-        }
+      // Plain-English summary line
+      let summary;
+      if (quizzes.length === 0) {
+        summary = 'No practice recorded yet. Once Jacob completes a few tests, a full breakdown of his strengths and weak spots will appear here.';
+      } else if (graded.length === 0) {
+        summary = 'He has made a start. A little more practice in each area and this report will show where he is strong and where to focus.';
       } else {
-        for (const w of weak) {
-          html += `<div class="help-row">
-            <div><div class="help-name">${w.name}</div><div class="help-sub">${w.correct}/${w.total} correct across ${w.count} quiz${w.count === 1 ? '' : 'zes'}</div></div>
-            <div class="help-acc">${w.p}%</div>
+        const sName = strengths.slice(0, 2).map(x => x.name).join(' and ');
+        const wName = needsWork.length ? needsWork[0].name : (steady.length ? steady[0].name : '');
+        summary = (strengths.length ? `Jacob is doing well at ${sName}. ` : '') +
+                  (wName ? `The area to focus on next is <strong>${wName}</strong>.` : 'He is solid across everything he has practised so far.');
+      }
+
+      html += `<div class="card report-card"><h2>Jacob's Report</h2>
+        <p class="report-summary">${summary}</p>`;
+
+      if (strengths.length) {
+        html += `<div class="report-block"><h3 class="report-h good">✅ Doing well</h3>`;
+        for (const x of strengths) html += `<div class="report-row"><span class="report-name">${x.name}</span><span class="report-acc good">${x.p}%</span></div>`;
+        html += `</div>`;
+      }
+      if (steady.length) {
+        html += `<div class="report-block"><h3 class="report-h mid">🟡 Getting there</h3>`;
+        for (const x of steady) html += `<div class="report-row"><span class="report-name">${x.name}</span><span class="report-acc mid">${x.p}%</span></div>`;
+        html += `</div>`;
+      }
+      if (needsWork.length) {
+        html += `<div class="report-block"><h3 class="report-h bad">🔴 Needs work &mdash; what to do next</h3>`;
+        for (const x of needsWork) {
+          html += `<div class="report-advice">
+            <div class="report-advice-head"><span class="report-name">${x.name}</span><span class="report-acc bad">${x.p}% (${x.correct}/${x.total})</span></div>
+            <p class="report-tip">${SECTION_ADVICE[x.id] || 'Practise this area little and often.'}</p>
           </div>`;
         }
-        for (const w of weakSubs) {
-          html += `<div class="help-row">
-            <div><div class="help-name">${w.name}: ${w.sub}</div><div class="help-sub">${w.correct}/${w.total} correct</div></div>
-            <div class="help-acc">${w.p}%</div>
-          </div>`;
-        }
+        html += `</div>`;
+      } else if (quizzes.length > 0 && graded.length > 0) {
+        html += `<p class="help-none">👍 Nothing below 60% right now &mdash; keep the practice ticking over.</p>`;
+      }
+
+      if (weakSubs.length) {
+        html += `<div class="report-block"><h3 class="report-h bad">Specific trouble spots</h3>`;
+        for (const w of weakSubs) html += `<div class="report-row"><span class="report-name">${w.name}: ${w.sub}</span><span class="report-acc bad">${w.p}%</span></div>`;
+        html += `</div>`;
       }
       html += `</div>`;
 
