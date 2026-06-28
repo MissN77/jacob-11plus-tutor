@@ -353,6 +353,38 @@
       collocations: 'Notice which words "go together" when reading aloud. Collect good pairs in a notebook.'
     };
 
+    // Work out WHY a question was missed from its wording, so advice can be specific.
+    function classifyWrong(d) {
+      const t = (d.q || '').toLowerCase();
+      if (/closest in meaning|what does .*mean|opposite of|word is closest/.test(t)) return 'vocab';
+      if (/phrase|figure of speech|metaphor|simile/.test(t)) return 'phrase';
+      if (/\btrue\b|\bfalse\b|which of these statements/.test(t)) return 'truefalse';
+      if (/type of word|word class|\badverb\b|\badjective\b|\bpreposition\b|\bconjunction\b/.test(t)) return 'wordclass';
+      if (/infer|suggest|imply|why do you think|what can we tell|tell us about|how does the (writer|author)/.test(t)) return 'inference';
+      return 'retrieval';
+    }
+    function quotedBit(s) {
+      const m = (s || '').match(/[“"']([^“”"']{2,})[”"']/);
+      return m ? m[1] : null;
+    }
+    // Build 1-2 SPECIFIC, varied tips from the actual wrong answers in one activity.
+    function helpTips(details) {
+      if (!Array.isArray(details) || !details.length) return [];
+      const byType = {};
+      for (const d of details) { const t = classifyWrong(d); (byType[t] = byType[t] || []).push(d); }
+      const order = ['vocab', 'phrase', 'inference', 'truefalse', 'wordclass', 'retrieval'];
+      const builders = {
+        vocab: (ex, n) => { const w = quotedBit(ex.q) || 'a word'; return `Vocabulary in context${n>1?` (${n} of these)`:''}: for <strong>${w}</strong> he chose "${ex.given}" but it means "${ex.correct}". Cover the options and ask him to reread the sentence and put the word's meaning in his own words first. Then a few minutes on Word Skills &rsaquo; Synonyms.`; },
+        phrase: (ex) => { const w = quotedBit(ex.q) || 'the phrase'; return `Figurative language: <strong>${w}</strong> is not literal. He answered "${ex.given}"; it really means "${ex.correct}". Ask him "what picture is the writer painting here?" and collect a few sayings to chat through at tea.`; },
+        inference: (ex) => `Inference (the answer is not stated outright): he went with "${ex.given}". Ask him "which exact words in the text make that true?" so he points to evidence instead of guessing.`,
+        truefalse: (ex) => `True or false traps: he picked "${ex.given}", which the passage actually contradicts. Get him to find the one line that proves or disproves EACH option before he chooses.`,
+        wordclass: (ex) => `Word types: the answer was <strong>${ex.correct}</strong>, not "${ex.given}". Quick daily game: point at words in any sentence and name noun, verb, adjective or adverb. Back it with Word Skills &rsaquo; Word Classes.`,
+        retrieval: (ex) => `Finding facts: this answer was right there in the text. Get him to scan for the key word from the question, then read the whole sentence around it before answering.`
+      };
+      const present = order.filter(t => byType[t]);
+      return present.slice(0, 2).map(t => builders[t](byType[t][0], byType[t].length));
+    }
+
     // GL Assessment countdown
     const GL_DATE = new Date('2027-09-18T00:00:00');
     function daysUntilGL() {
@@ -610,7 +642,12 @@
                 <span class="rev-correct">Answer: ${d.correct || ''}</span></div>
             </div>`;
           }
-          html += `<p class="report-tip">How to help: ${SECTION_ADVICE[q.section] || 'Go over these together and try the activity again later.'}</p>`;
+          const tips = helpTips(q.details);
+          if (tips.length) {
+            for (const tip of tips) html += `<p class="report-tip">💡 ${tip}</p>`;
+          } else {
+            html += `<p class="report-tip">💡 How to help: ${SECTION_ADVICE[q.section] || 'Go over these together and try the activity again later.'}</p>`;
+          }
           html += `</div>`;
         }
         html += `</div>`;
