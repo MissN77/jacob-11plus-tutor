@@ -37,6 +37,33 @@ function savedResult(id) {
   return sec[id] || null;
 }
 
+// ── Option shuffling ─────────────────────────────────────────────────────
+// The source data sometimes places the correct answer in the same slot for a
+// whole passage (e.g. every answer at A), so options MUST be shuffled before
+// display. The shuffle is deterministic, seeded by passage id + question
+// number, so (a) the order is stable and (b) the locked review shows the exact
+// same order the pupil answered against, while never matching the source slot.
+function seededOrder(activityId, qi, n) {
+  // FNV-1a hash of the seed string
+  let h = 2166136261;
+  const seed = `${activityId}:${qi}`;
+  for (let i = 0; i < seed.length; i++) { h ^= seed.charCodeAt(i); h = Math.imul(h, 16777619); }
+  // mulberry32 PRNG
+  let a = h >>> 0;
+  const rnd = () => {
+    a = (a + 0x6D2B79F5) | 0;
+    let t = Math.imul(a ^ (a >>> 15), 1 | a);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+  const idx = [...Array(n).keys()];
+  for (let i = idx.length - 1; i > 0; i--) {             // seeded Fisher-Yates
+    const j = Math.floor(rnd() * (i + 1));
+    [idx[i], idx[j]] = [idx[j], idx[i]];
+  }
+  return idx;
+}
+
 // ── In-progress attempt state ────────────────────────────────────────────
 // order[qi]      = shuffled array of original option indices for question qi
 // correctPos[qi] = display position of the correct option after shuffling
@@ -45,12 +72,8 @@ let attempt = null;
 
 function buildAttempt(activity) {
   const order = [], correctPos = [], selected = [];
-  activity.questions.forEach((q) => {
-    const idx = q.options.map((_, i) => i);
-    for (let i = idx.length - 1; i > 0; i--) {           // Fisher-Yates
-      const j = Math.floor(Math.random() * (i + 1));
-      [idx[i], idx[j]] = [idx[j], idx[i]];
-    }
+  activity.questions.forEach((q, qi) => {
+    const idx = seededOrder(activity.id, qi, q.options.length);
     order.push(idx);
     correctPos.push(idx.indexOf(q.correctIndex));
     selected.push(null);
@@ -253,8 +276,9 @@ function handleSubmit(container) {
 
 function renderReview(container, activity, res) {
   const questionsHtml = activity.questions.map((q, qi) => {
-    const opts = q.options.map((opt, i) =>
-      `<button class="option-btn comp-opt ${i === q.correctIndex ? 'correct' : ''}" disabled>${opt}</button>`
+    const order = seededOrder(activity.id, qi, q.options.length);   // same order as the attempt
+    const opts = order.map((origIdx) =>
+      `<button class="option-btn comp-opt ${origIdx === q.correctIndex ? 'correct' : ''}" disabled>${q.options[origIdx]}</button>`
     ).join('');
     const lineRef = q.lineRef ? `<span class="comp-lineref">${q.lineRef}</span>` : '';
     return `
