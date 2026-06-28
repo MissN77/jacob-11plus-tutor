@@ -59,7 +59,7 @@ export const Store = {
 
   /** Record a completed quiz and sync to Supabase (fire and forget).
    *  Applies 90% quality gate - below threshold, XP is zeroed. */
-  recordQuiz(section, correct, total, xpEarned, subSection) {
+  recordQuiz(section, correct, total, xpEarned, subSection, details) {
     const pct = total > 0 ? correct / total : 0;
     const actualXP = pct >= MIN_PASS_PCT ? xpEarned : 0;
     if (actualXP !== xpEarned) {
@@ -69,7 +69,7 @@ export const Store = {
       state.level = Math.floor(state.xp / XP_PER_LEVEL) + 1;
       this.save(state);
     }
-    recordQuiz(section, correct, total, actualXP, subSection).catch(() => {});
+    recordQuiz(section, correct, total, actualXP, subSection, details).catch(() => {});
     syncStats(this.get()).catch(() => {});
   },
 
