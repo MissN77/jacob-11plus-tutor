@@ -1,0 +1,120 @@
+{
+  "activities": [
+    {
+      "id": "lost-puppy",
+      "title": "The Lost Puppy",
+      "level": "gentle",
+      "events": [
+        { "text": "Sam found a shivering puppy alone in the rain.", "stage": "beginning" },
+        { "text": "The puppy had no collar and looked very hungry.", "stage": "beginning" },
+        { "text": "Sam took the puppy home and gave it food and a warm blanket.", "stage": "middle" },
+        { "text": "He made posters and asked everyone in the street about the owner.", "stage": "middle" },
+        { "text": "A girl recognised the puppy and hugged her lost pet tightly.", "stage": "end" },
+        { "text": "Sam felt proud that he had brought them back together.", "stage": "end" },
+        { "text": "The bakery sold out of doughnuts by lunchtime.", "stage": "none" }
+      ]
+    },
+    {
+      "id": "sandcastle",
+      "title": "The Giant Sandcastle",
+      "level": "gentle",
+      "events": [
+        { "text": "Mia and Tom decided to build the biggest sandcastle on the beach.", "stage": "beginning" },
+        { "text": "They collected buckets, spades and a flag to put on top.", "stage": "beginning" },
+        { "text": "They dug a deep moat and packed the towers tall and firm.", "stage": "middle" },
+        { "text": "A big wave splashed close and they raced to build a wall.", "stage": "middle" },
+        { "text": "By sunset the castle stood proudly with its flag flapping.", "stage": "end" },
+        { "text": "Everyone passing stopped to admire what they had made.", "stage": "end" },
+        { "text": "Dad watched the football scores on his phone.", "stage": "none" }
+      ]
+    },
+    {
+      "id": "school-play",
+      "title": "The School Play",
+      "level": "gentle",
+      "events": [
+        { "text": "Priya was chosen to play the lead in the school play.", "stage": "beginning" },
+        { "text": "She felt nervous because she had so many lines to learn.", "stage": "beginning" },
+        { "text": "Every evening she practised her lines with her mum.", "stage": "middle" },
+        { "text": "On the day, she forgot one line but quickly carried on.", "stage": "middle" },
+        { "text": "The audience clapped loudly when the play ended.", "stage": "end" },
+        { "text": "Priya beamed, glad she had been so brave.", "stage": "end" },
+        { "text": "The cat next door was asleep on the wall.", "stage": "none" }
+      ]
+    },
+    {
+      "id": "snow-day",
+      "title": "The Snow Day",
+      "level": "gentle",
+      "events": [
+        { "text": "Ben woke up to find the whole garden covered in thick snow.", "stage": "beginning" },
+        { "text": "School was closed, so he pulled on his boots and coat.", "stage": "beginning" },
+        { "text": "He and his sister built a snowman with a carrot nose.", "stage": "middle" },
+        { "text": "They had a friendly snowball fight until their gloves were soaked.", "stage": "middle" },
+        { "text": "Warm and cosy indoors, they drank hot chocolate by the window.", "stage": "end" },
+        { "text": "They agreed it had been the best day of the winter.", "stage": "end" },
+        { "text": "The postman delivered a parcel to number twelve.", "stage": "none" }
+      ]
+    },
+    {
+      "id": "robot-fair",
+      "title": "The Robot at the Science Fair",
+      "level": "standard",
+      "events": [
+        { "text": "Leo had spent weeks building a small robot for the science fair.", "stage": "beginning" },
+        { "text": "On the morning of the fair, the robot suddenly refused to switch on.", "stage": "beginning" },
+        { "text": "Hiding his panic, Leo opened the casing and checked every wire.", "stage": "middle" },
+        { "text": "He discovered a loose battery connection and carefully reattached it.", "stage": "middle" },
+        { "text": "When the judges arrived, the robot whirred to life and rolled forward.", "stage": "end" },
+        { "text": "Leo won second prize, relieved that his hard work had paid off.", "stage": "end" },
+        { "text": "The canteen was serving pizza that lunchtime.", "stage": "none" },
+        { "text": "His neighbour was repainting their front fence.", "stage": "none" }
+      ]
+    },
+    {
+      "id": "river-rescue",
+      "title": "The River Rescue",
+      "level": "standard",
+      "events": [
+        { "text": "While walking the dog, Amelia heard a frightened cry from the riverbank.", "stage": "beginning" },
+        { "text": "A small child's football had drifted out and he was reaching for it.", "stage": "beginning" },
+        { "text": "Thinking quickly, Amelia told him to stay back from the slippery edge.", "stage": "middle" },
+        { "text": "She found a long branch and stretched it out across the water.", "stage": "middle" },
+        { "text": "The boy gripped the branch and Amelia pulled him safely to dry ground.", "stage": "end" },
+        { "text": "His grateful mother thanked her again and again for her quick thinking.", "stage": "end" },
+        { "text": "The ice cream van played its tune in the car park.", "stage": "none" },
+        { "text": "A jogger checked the time on her watch.", "stage": "none" }
+      ]
+    },
+    {
+      "id": "lighthouse",
+      "title": "The Lighthouse Keeper",
+      "level": "standard",
+      "events": [
+        { "text": "Old Mr Finch had kept the lighthouse burning every night for forty years.", "stage": "beginning" },
+        { "text": "One stormy evening, the great lamp flickered and went dark.", "stage": "beginning" },
+        { "text": "Knowing ships were near, he climbed the winding stairs against the wind.", "stage": "middle" },
+        { "text": "He worked by torchlight to replace the broken part with trembling hands.", "stage": "middle" },
+        { "text": "At last the beam blazed out again, sweeping across the wild sea.", "stage": "end" },
+        { "text": "By dawn, every ship had passed the rocks safely.", "stage": "end" },
+        { "text": "The village shop had a sale on woollen hats.", "stage": "none" },
+        { "text": "A seagull landed on the harbour railing.", "stage": "none" }
+      ]
+    },
+    {
+      "id": "time-capsule",
+      "title": "The Buried Time Capsule",
+      "level": "standard",
+      "events": [
+        { "text": "Digging in the garden, Noah's spade struck something hard and metal.", "stage": "beginning" },
+        { "text": "He uncovered a rusty tin box with a date scratched into the lid.", "stage": "beginning" },
+        { "text": "Carefully, he prised it open to find letters and photographs inside.", "stage": "middle" },
+        { "text": "The letters had been written by a boy his age fifty years before.", "stage": "middle" },
+        { "text": "Noah decided to make his own capsule for someone to find one day.", "stage": "end" },
+        { "text": "He buried it deep, imagining the future child who would open it.", "stage": "end" },
+        { "text": "His sister was practising the piano indoors.", "stage": "none" },
+        { "text": "The bins were collected early that Tuesday.", "stage": "none" }
+      ]
+    }
+  ]
+}

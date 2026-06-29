@@ -2104,3 +2104,29 @@ body {
 .story-fb-list li { font-size: 0.9rem; line-height: 1.5; margin-bottom: 6px; padding-left: 2px; }
 .story-fb-note { font-size: 0.8rem; color: var(--text-muted); margin: 14px 0 0; font-style: italic; }
 .story-fb-more { font-size: 0.85rem; color: #7a5d00; background: #fff8e6; border-radius: 8px; padding: 8px 10px; margin: 10px 0 0; }
+
+/* ── Story Order (sequencing game) ──────────────────────────────────────── */
+.seq-level-tag { display:inline-block; margin-top:6px; font-size:0.7rem; font-weight:700; padding:2px 8px; border-radius:999px; }
+.seq-level-gentle { background:#E2F0EC; color:#1A8A7D; }
+.seq-level-standard { background:#ECE6F5; color:#6b4fa0; }
+.seq-wrap { padding-bottom:32px; }
+.seq-pool { background:var(--cream); border-radius:var(--radius); padding:12px; margin-bottom:16px; }
+.seq-pool-head, .seq-zone-head { font-weight:800; color:var(--navy); margin-bottom:8px; font-size:0.95rem; }
+.seq-pool-body, .seq-zone-body { display:flex; flex-direction:column; gap:8px; min-height:20px; }
+.seq-card {
+  display:block; width:100%; text-align:left; padding:12px 14px; font-size:0.95rem; line-height:1.4;
+  font-family:inherit; background:var(--white); border:2px solid var(--cream2); border-radius:12px;
+  color:var(--navy); cursor:pointer; transition:transform .1s, border-color .1s;
+}
+.seq-card:hover { border-color:var(--teal); }
+.seq-card-selected { border-color:var(--teal); box-shadow:0 0 0 3px rgba(26,138,125,0.25); transform:scale(1.01); }
+.seq-card-placed { background:var(--cream); }
+.seq-card-right { border-color:#10b981; background:#eafaf954; }
+.seq-card-wrong { border-color:#ef4444; background:#fdecec54; }
+.seq-zones { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px; }
+.seq-zone { background:var(--white); border:2px dashed var(--cream2); border-radius:var(--radius); padding:12px; }
+.seq-zone-empty { font-size:0.8rem; color:var(--text-muted); font-style:italic; }
+.seq-actions { display:flex; gap:10px; justify-content:center; margin-top:8px; }
+.seq-result { text-align:center; margin-top:8px; }
+.seq-score { font-size:1.1rem; font-weight:800; color:var(--navy); margin-bottom:12px; }
+@media (max-width:520px){ .seq-zones { grid-template-columns:1fr; } }
