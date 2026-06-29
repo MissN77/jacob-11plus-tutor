@@ -2130,3 +2130,14 @@ body {
 .seq-result { text-align:center; margin-top:8px; }
 .seq-score { font-size:1.1rem; font-weight:800; color:var(--navy); margin-bottom:12px; }
 @media (max-width:520px){ .seq-zones { grid-template-columns:1fr; } }
+
+/* ── Video Lessons hub ──────────────────────────────────────────────────── */
+.vid-group { margin-bottom: 22px; }
+.vid-group-title { font-size: 1.05rem; font-weight: 800; color: var(--navy); margin: 0 0 2px; }
+.vid-group-note { font-size: 0.85rem; color: var(--text-muted); margin: 0 0 10px; }
+.vid-links { display: flex; flex-direction: column; gap: 8px; }
+.vid-link { display: grid; grid-template-columns: 1fr auto; grid-template-areas: "name go" "desc go"; align-items: center; gap: 0 12px; padding: 12px 14px; background: var(--white); border: 2px solid var(--cream2); border-radius: 12px; text-decoration: none; }
+.vid-link:hover { border-color: var(--teal); }
+.vid-link-name { grid-area: name; font-weight: 700; color: var(--navy); }
+.vid-link-desc { grid-area: desc; font-size: 0.8rem; color: var(--text-muted); }
+.vid-link-go { grid-area: go; font-size: 0.85rem; font-weight: 700; color: var(--teal); }

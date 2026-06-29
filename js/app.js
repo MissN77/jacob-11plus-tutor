@@ -22,6 +22,7 @@ const SECTION_MODULES = {
   'twinkl-nvr':          () => import('./sections/twinkl-nvr.js'),
   'writing':             () => import('./sections/writing.js'),
   'story-sequence':      () => import('./sections/story-sequence.js'),
+  'videos':              () => import('./sections/videos.js'),
   'collocations':        () => import('./sections/collocations.js'),
   'y4-assessments':      () => import('./sections/y4-assessments.js'),
   'piano':               () => import('./sections/piano.js'),

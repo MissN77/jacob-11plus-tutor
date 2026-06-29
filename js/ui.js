@@ -36,6 +36,7 @@ const SECTIONS = [
   { id: 'twinkl-nvr',          name: 'Exam Practice (Twinkl)', icon: '\u{1F48E}' },
   { id: 'writing',             name: 'Writing',              icon: '\u{270D}\uFE0F' },
   { id: 'story-sequence',      name: 'Story Order',          icon: '\u{1F9E9}' },
+  { id: 'videos',              name: 'Video Lessons',        icon: '\u{1F4FA}' },
   { id: 'collocations',        name: 'Collocations',         icon: '\u{1F517}' },
   { id: 'y4-assessments',      name: 'Year 4 Assessments',   icon: '\u{1F4CB}' },
   { id: 'piano',               name: 'Piano Practice',       icon: '\u{1F3B9}' }
