@@ -6,7 +6,9 @@
 // all progress sync. This project stays warm, so tracking no longer disappears.
 const SUPABASE_URL = 'https://pimhwskthibxkpfjlkfu.supabase.co';
 const SUPABASE_KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpbWh3c2t0aGlieGtwZmpsa2Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2NDEzNjksImV4cCI6MjA5NzIxNzM2OX0.urlGrk-K0o7H3Us3sOizvZ4-S8SAB2uULHAGGYro4RY';
-const PLAYER_ID = 'ff567baf-d27e-43b7-94f2-90dbe19fd031'; // Jacob
+
+// player_id is resolved per active profile (Jacob or Ava) at call time.
+import { getActiveUuid } from './profile.js';
 
 // Table names (prefixed so they don't clash with anything else in the project)
 const T_STATS = 'j11_player_stats';
@@ -49,6 +51,7 @@ async function query(table, method, body, params) {
  *  `details` (optional) is an array of the questions Jacob got wrong, so the
  *  parent dashboard can show exactly what to help him with. */
 export async function recordQuiz(section, correct, total, xpEarned, subSection, details) {
+  const PLAYER_ID = getActiveUuid();
   // Insert quiz result
   await query(T_QUIZ, 'POST', {
     player_id: PLAYER_ID,
@@ -88,6 +91,7 @@ export async function recordQuiz(section, correct, total, xpEarned, subSection, 
 
 /** Sync overall stats from localStorage state */
 export async function syncStats(state) {
+  const PLAYER_ID = getActiveUuid();
   const today = new Date().toISOString().slice(0, 10);
   await query(T_STATS, 'PATCH', {
     total_xp: state.xp || 0,
@@ -105,6 +109,7 @@ export async function syncStats(state) {
 
 /** Get player stats */
 export async function getPlayerStats() {
+  const PLAYER_ID = getActiveUuid();
   const data = await query(T_STATS, 'GET', null, {
     'player_id': `eq.${PLAYER_ID}`,
     'select': '*'
@@ -114,6 +119,7 @@ export async function getPlayerStats() {
 
 /** Get quiz results, most recent first */
 export async function getQuizResults(limit) {
+  const PLAYER_ID = getActiveUuid();
   return await query(T_QUIZ, 'GET', null, {
     'player_id': `eq.${PLAYER_ID}`,
     'select': '*',
@@ -124,6 +130,7 @@ export async function getQuizResults(limit) {
 
 /** Get daily activity for last N days */
 export async function getDailyActivity(days) {
+  const PLAYER_ID = getActiveUuid();
   const since = new Date();
   since.setDate(since.getDate() - (days || 30));
   return await query(T_DAILY, 'GET', null, {
@@ -136,6 +143,7 @@ export async function getDailyActivity(days) {
 
 /** Get per-section summary */
 export async function getSectionSummary() {
+  const PLAYER_ID = getActiveUuid();
   return await query(T_QUIZ, 'GET', null, {
     'player_id': `eq.${PLAYER_ID}`,
     'select': 'section,correct,total,xp_earned,completed_at',

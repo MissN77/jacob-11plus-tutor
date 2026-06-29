@@ -1,4 +1,23 @@
 import { xpPercent, xpInCurrentLevel } from './xp.js';
+import { PROFILES, getActiveProfile } from './profile.js';
+
+/** "Who's learning?" screen, shown when no profile is chosen yet. */
+export function renderProfilePicker() {
+  const cards = PROFILES.map((p) => `
+    <button class="profile-pick" data-action="pick-profile" data-profile="${p.key}"
+            style="--pick-colour:${p.colour}">
+      <span class="profile-pick-emoji">${p.emoji}</span>
+      <span class="profile-pick-name">${p.name}</span>
+    </button>
+  `).join('');
+  return `
+    <div class="profile-picker">
+      <h1 class="profile-picker-title">Who's learning?</h1>
+      <p class="profile-picker-sub">Pick your name. Everyone keeps their own scores.</p>
+      <div class="profile-pick-grid">${cards}</div>
+    </div>
+  `;
+}
 
 const XP_PER_LEVEL = 200;
 
@@ -246,8 +265,19 @@ export function renderHeader(state) {
         <span class="streak-icon">\u{1F525}</span>
         <span>${streak}</span>
       </div>
+      ${renderProfileBadge()}
       <a class="settings-icon" href="#/settings" title="Settings" aria-label="Settings">\u2699\uFE0F</a>
     </div>`;
+}
+
+/** Small badge showing who is logged in; tap to switch child. */
+function renderProfileBadge() {
+  const p = getActiveProfile();
+  if (!p) return '';
+  return `<button class="profile-badge" data-action="switch-profile"
+            title="Switch user" style="--pick-colour:${p.colour}">
+            <span>${p.emoji}</span><span class="profile-badge-name">${p.name}</span>
+          </button>`;
 }
 
 /** Render the 9-section home grid. Async so it can load the Bexley plan. */
@@ -288,7 +318,7 @@ export async function renderHome(state) {
 
   return `
     ${renderHeader(state)}
-    <h1 class="app-title">Jacob's 11 Plus Tutor</h1>
+    <h1 class="app-title">${(getActiveProfile() || {}).name || 'Jacob'}'s 11 Plus Tutor</h1>
     <p class="app-subtitle">Choose a subject to practise</p>
     ${robuxBar}
     ${renderCountdown()}

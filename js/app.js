@@ -1,6 +1,7 @@
 import { Store } from './store.js';
-import { renderHome, renderComingSoon, SECTIONS, loadBexleyPlan, getCurrentBexleyWeek, renderSettings, setStartDate, DEFAULT_START_DATE } from './ui.js';
+import { renderHome, renderComingSoon, renderProfilePicker, SECTIONS, loadBexleyPlan, getCurrentBexleyWeek, renderSettings, setStartDate, DEFAULT_START_DATE } from './ui.js';
 import { requireAuth, logout } from './auth.js';
+import { getActiveProfile, setActiveProfile, migrateLegacyState } from './profile.js';
 
 const app = document.getElementById('app');
 
@@ -84,6 +85,20 @@ app.addEventListener('click', (e) => {
   if (!actionEl) return;
 
   const action = actionEl.dataset.action;
+
+  if (action === 'pick-profile') {
+    setActiveProfile(actionEl.dataset.profile);
+    location.hash = '#/';
+    init();
+    return;
+  }
+
+  if (action === 'switch-profile') {
+    localStorage.removeItem('j11_active_profile');
+    location.hash = '#/';
+    init();
+    return;
+  }
 
   if (action === 'answer') {
     // Dispatch a custom event that section modules can listen for
@@ -214,6 +229,16 @@ function init() {
   // Gate behind the password. If not authenticated, render the auth
   // screen and stop. Once the correct password is entered, re-run init().
   if (!requireAuth(() => init())) return;
+
+  // Preserve the original single-profile history under Jacob's key.
+  migrateLegacyState();
+
+  // No child chosen yet - show the "Who's learning?" picker and stop.
+  // Picking one calls init() again, this time with a profile set.
+  if (!getActiveProfile()) {
+    app.innerHTML = renderProfilePicker();
+    return;
+  }
 
   // Check weekly Robux reset
   Store.checkWeekReset();

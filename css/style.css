@@ -2069,3 +2069,26 @@ body {
 .maths-data-table { width: 100%; border-collapse: collapse; font-size: 0.92rem; }
 .maths-data-table th, .maths-data-table td { border: 1px solid var(--cream2); padding: 8px 10px; text-align: center; }
 .maths-data-table th { background: var(--cream); font-weight: 700; color: var(--navy); }
+
+/* ── Profile picker & badge ─────────────────────────────────────────────── */
+.profile-picker { max-width: 520px; margin: 0 auto; padding: 48px 20px; text-align: center; }
+.profile-picker-title { font-size: 2rem; font-weight: 900; color: var(--navy); margin: 0 0 6px; }
+.profile-picker-sub { color: #666; margin: 0 0 28px; font-size: 1rem; }
+.profile-pick-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+.profile-pick {
+  display: flex; flex-direction: column; align-items: center; gap: 10px;
+  padding: 28px 16px; border: 3px solid var(--pick-colour, #2563eb);
+  border-radius: 20px; background: #fff; cursor: pointer;
+  box-shadow: 0 4px 14px rgba(0,0,0,0.08); transition: transform .12s, box-shadow .12s;
+}
+.profile-pick:hover { transform: translateY(-3px); box-shadow: 0 8px 22px rgba(0,0,0,0.14); }
+.profile-pick-emoji { font-size: 3.4rem; line-height: 1; }
+.profile-pick-name { font-size: 1.25rem; font-weight: 800; color: var(--navy); }
+.profile-badge {
+  display: inline-flex; align-items: center; gap: 5px; padding: 4px 10px;
+  border: 2px solid var(--pick-colour, #2563eb); border-radius: 999px;
+  background: #fff; cursor: pointer; font-size: 0.82rem; font-weight: 700;
+  color: var(--navy); margin-right: 6px;
+}
+.profile-badge-name { line-height: 1; }
+@media (max-width: 380px) { .profile-badge-name { display: none; } }

@@ -1,6 +1,11 @@
 import { recordQuiz, syncStats } from './supabase.js';
+import { getActiveProfile } from './profile.js';
 
-const STORAGE_KEY = 'j11_state';
+/** Per-profile storage key so Jacob and Ava never share progress. */
+function storageKey() {
+  const p = getActiveProfile();
+  return `j11_state_${p ? p.key : 'jacob'}`;
+}
 const XP_PER_LEVEL = 200;
 const ROBUX_TARGET = 400;
 const ROBUX_PER_XP = 1; // 1 XP = 1 Robux
@@ -22,7 +27,7 @@ export const Store = {
   /** Return the full state object, creating defaults if needed. */
   get() {
     try {
-      const raw = localStorage.getItem(STORAGE_KEY);
+      const raw = localStorage.getItem(storageKey());
       if (raw) return JSON.parse(raw);
     } catch {
       // corrupted data - fall through to default
@@ -34,7 +39,7 @@ export const Store = {
 
   /** Persist state to localStorage. */
   save(state) {
-    localStorage.setItem(STORAGE_KEY, JSON.stringify(state));
+    localStorage.setItem(storageKey(), JSON.stringify(state));
   },
 
   /** Add XP and recalculate level. Returns the updated state. */
