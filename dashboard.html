@@ -361,12 +361,12 @@
 
     // Concrete "what to do next" advice shown when a section is weak.
     const SECTION_ADVICE = {
-      vocabulary: 'Learn 5 new words a day from his reading book. Ask him to use each in his own sentence, not just recall the meaning.',
-      inference: 'Read the passage with him twice before he answers. Ask "which words in the text tell you that?" so he points to evidence rather than guessing.',
-      comprehension: 'Slow him down: read the question first, then hunt the passage for the answer. Underline the line that proves it.',
-      spelling: 'Use Look-Cover-Write-Check on the words he misses. Practise the same 5 words across the week until they stick.',
-      punctuation: 'Focus on one rule at a time (capital letters, full stops, then commas). Have him fix deliberately wrong sentences.',
-      'sentence-completion': 'Get him to read the whole sentence and try each option aloud. The right word should sound and make sense.',
+      vocabulary: 'Learn 5 new words a day from their reading book. Ask them to use each in their own sentence, not just recall the meaning.',
+      inference: 'Read the passage with them twice before they answer. Ask "which words in the text tell you that?" so they point to evidence rather than guessing.',
+      comprehension: 'Slow them down: read the question first, then hunt the passage for the answer. Underline the line that proves it.',
+      spelling: 'Use Look-Cover-Write-Check on the words they miss. Practise the same 5 words across the week until they stick.',
+      punctuation: 'Focus on one rule at a time (capital letters, full stops, then commas). Have them fix deliberately wrong sentences.',
+      'sentence-completion': 'Get them to read the whole sentence and try each option aloud. The right word should sound and make sense.',
       'verbal-reasoning': 'These are puzzles with rules. Practise little and often, 10 minutes daily beats one long session.',
       'word-skills': 'Build word power: 10 minutes of synonyms, antonyms or word classes a day. Talk about new words and use them at home.',
       maths: 'Pin down which topic is slipping (times tables, fractions, word problems) and drill just that. Speed comes after accuracy.',
@@ -396,12 +396,12 @@
       for (const d of details) { const t = classifyWrong(d); (byType[t] = byType[t] || []).push(d); }
       const order = ['vocab', 'phrase', 'inference', 'truefalse', 'wordclass', 'retrieval'];
       const builders = {
-        vocab: (ex, n) => { const w = quotedBit(ex.q) || 'a word'; return `Vocabulary in context${n>1?` (${n} of these)`:''}: for <strong>${w}</strong> he chose "${ex.given}" but it means "${ex.correct}". Cover the options and ask him to reread the sentence and put the word's meaning in his own words first. Then a few minutes on Word Skills &rsaquo; Synonyms.`; },
-        phrase: (ex) => { const w = quotedBit(ex.q) || 'the phrase'; return `Figurative language: <strong>${w}</strong> is not literal. He answered "${ex.given}"; it really means "${ex.correct}". Ask him "what picture is the writer painting here?" and collect a few sayings to chat through at tea.`; },
-        inference: (ex) => `Inference (the answer is not stated outright): he went with "${ex.given}". Ask him "which exact words in the text make that true?" so he points to evidence instead of guessing.`,
-        truefalse: (ex) => `True or false traps: he picked "${ex.given}", which the passage actually contradicts. Get him to find the one line that proves or disproves EACH option before he chooses.`,
+        vocab: (ex, n) => { const w = quotedBit(ex.q) || 'a word'; return `Vocabulary in context${n>1?` (${n} of these)`:''}: for <strong>${w}</strong> they chose "${ex.given}" but it means "${ex.correct}". Cover the options and ask them to reread the sentence and put the word's meaning in their own words first. Then a few minutes on Word Skills &rsaquo; Synonyms.`; },
+        phrase: (ex) => { const w = quotedBit(ex.q) || 'the phrase'; return `Figurative language: <strong>${w}</strong> is not literal. They answered "${ex.given}"; it really means "${ex.correct}". Ask them "what picture is the writer painting here?" and collect a few sayings to chat through at tea.`; },
+        inference: (ex) => `Inference (the answer is not stated outright): they went with "${ex.given}". Ask them "which exact words in the text make that true?" so they point to evidence instead of guessing.`,
+        truefalse: (ex) => `True or false traps: they picked "${ex.given}", which the passage actually contradicts. Get them to find the one line that proves or disproves EACH option before they choose.`,
         wordclass: (ex) => `Word types: the answer was <strong>${ex.correct}</strong>, not "${ex.given}". Quick daily game: point at words in any sentence and name noun, verb, adjective or adverb. Back it with Word Skills &rsaquo; Word Classes.`,
-        retrieval: (ex) => `Finding facts: this answer was right there in the text. Get him to scan for the key word from the question, then read the whole sentence around it before answering.`
+        retrieval: (ex) => `Finding facts: this answer was right there in the text. Get them to scan for the key word from the question, then read the whole sentence around it before answering.`
       };
       const present = order.filter(t => byType[t]);
       return present.slice(0, 2).map(t => builders[t](byType[t][0], byType[t].length));
@@ -416,7 +416,7 @@
     }
     function glMessage(days) {
       if (days <= 0) return 'Good luck Jacob!';
-      if (days < 50) return "Nearly there \u2014 he's got this!";
+      if (days < 50) return "Nearly there, they have got this!";
       if (days < 100) return 'Getting closer \u2014 stay focused!';
       if (days < 150) return "He's doing great \u2014 keep going!";
       return 'Plenty of time \u2014 keep building!';
@@ -599,14 +599,14 @@
       // Plain-English summary line
       let summary;
       if (quizzes.length === 0) {
-        summary = 'No practice recorded yet. Once Jacob completes a few tests, a full breakdown of his strengths and weak spots will appear here.';
+        summary = `No practice recorded yet. Once ${NAME} completes a few tests, a full breakdown of their strengths and weak spots will appear here.`;
       } else if (graded.length === 0) {
-        summary = 'He has made a start. A little more practice in each area and this report will show where he is strong and where to focus.';
+        summary = `${NAME} has made a start. A little more practice in each area and this report will show where they are strong and where to focus.`;
       } else {
         const sName = strengths.slice(0, 2).map(x => x.name).join(' and ');
         const wName = needsWork.length ? needsWork[0].name : (steady.length ? steady[0].name : '');
-        summary = (strengths.length ? `Jacob is doing well at ${sName}. ` : '') +
-                  (wName ? `The area to focus on next is <strong>${wName}</strong>.` : 'He is solid across everything he has practised so far.');
+        summary = (strengths.length ? `${NAME} is doing well at ${sName}. ` : '') +
+                  (wName ? `The area to focus on next is <strong>${wName}</strong>.` : `They are solid across everything they have practised so far.`);
       }
 
       html += `<div class="card report-card"><h2>Jacob's Report</h2>
@@ -648,7 +648,7 @@
         .slice(0, 6);
       if (recentWithDetail.length) {
         html += `<div class="card review-card"><h2>What Jacob got wrong (most recent)</h2>
-          <p class="report-summary">Tap through these with him. The answer he picked is in red, the right answer in green.</p>`;
+          <p class="report-summary">Tap through these together. The answer they picked is in red, the right answer in green.</p>`;
         for (const q of recentWithDetail) {
           const p = pct(q.correct, q.total);
           const nm = SECTION_NAMES[q.section] || q.section;
