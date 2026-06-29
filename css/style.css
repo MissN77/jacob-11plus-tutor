@@ -2092,3 +2092,15 @@ body {
 }
 .profile-badge-name { line-height: 1; }
 @media (max-width: 380px) { .profile-badge-name { display: none; } }
+
+/* ── Story feedback panel ───────────────────────────────────────────────── */
+.story-fb { background: var(--white); border: 2px solid var(--cream2); border-radius: var(--radius); padding: 18px; margin-top: 6px; }
+.story-fb-short { background: #fff8e6; border: 2px solid #E8D48A; border-radius: var(--radius); padding: 16px; color: #7a5d00; font-size: 0.95rem; }
+.story-fb-stars { font-size: 1.5rem; letter-spacing: 2px; margin-bottom: 4px; }
+.story-fb-stats { font-size: 0.82rem; color: var(--text-muted); margin-bottom: 8px; }
+.story-fb-clarity { font-weight: 700; color: var(--navy); margin: 0 0 12px; }
+.story-fb-h { font-size: 0.95rem; font-weight: 800; color: var(--navy); margin: 12px 0 6px; }
+.story-fb-list { list-style: none; margin: 0; padding: 0; }
+.story-fb-list li { font-size: 0.9rem; line-height: 1.5; margin-bottom: 6px; padding-left: 2px; }
+.story-fb-note { font-size: 0.8rem; color: var(--text-muted); margin: 14px 0 0; font-style: italic; }
+.story-fb-more { font-size: 0.85rem; color: #7a5d00; background: #fff8e6; border-radius: 8px; padding: 8px 10px; margin: 10px 0 0; }

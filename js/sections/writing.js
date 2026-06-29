@@ -3,9 +3,16 @@
 // Auto-saves to localStorage every 5 seconds.
 
 import { Store } from '../store.js';
+import { analyseStory } from '../writing-feedback.js';
+import { getActiveProfile } from '../profile.js';
+import { saveStory } from '../supabase.js';
 
 const SECTION_ID = 'writing';
-const STORAGE_KEY = 'j11_writing';
+/** Per-profile key so Jacob and Ava keep separate writing. */
+function STORAGE_KEY_FN() {
+  const p = getActiveProfile();
+  return `j11_writing_${p ? p.key : 'jacob'}`;
+}
 const AUTOSAVE_INTERVAL = 5000;
 const MIN_WORDS = 30;
 
@@ -469,13 +476,13 @@ const BOOKS = [
 
 function getWritingData() {
   try {
-    const raw = localStorage.getItem(STORAGE_KEY);
+    const raw = localStorage.getItem(STORAGE_KEY_FN());
     return raw ? JSON.parse(raw) : {};
   } catch { return {}; }
 }
 
 function saveWritingData(data) {
-  localStorage.setItem(STORAGE_KEY, JSON.stringify(data));
+  localStorage.setItem(STORAGE_KEY_FN(), JSON.stringify(data));
 }
 
 function getText(bookId, letter) {
@@ -590,13 +597,35 @@ function renderBook(app, bookId) {
       </div>`;
   }).join('');
 
+  const story = getText(bookId, 'STORY');
+  const storyWc = wordCount(story);
+
   app.innerHTML = `
     <div class="quiz-header">
       <a class="quiz-back" data-action="back-to-books" style="cursor:pointer;">\u2190</a>
       <span class="quiz-title">${book.title}</span>
     </div>
     <div style="padding-bottom:32px;">
+      <p class="section-desc" style="margin-bottom:16px;">First plan your story in the boxes below. Then scroll down and write the whole story.</p>
       ${sections}
+
+      <div class="story-write" style="margin-top:8px;">
+        <h3 style="font-size:1.05rem; font-weight:800; color:var(--navy); margin-bottom:6px;">\u270d\ufe0f Now write your story</h3>
+        <p style="font-size:0.85rem; color:var(--text-muted); margin-bottom:8px;">Use your plan above. When you are done, press <strong>Check my writing</strong> for instant feedback.</p>
+        <textarea
+          class="story-textarea wibfen-textarea"
+          data-book="${bookId}"
+          data-letter="STORY"
+          rows="14"
+          placeholder="Once upon a time..."
+          style="width:100%; padding:14px; font-size:1rem; line-height:1.6; font-family:inherit; border:2px solid var(--cream2); border-radius:var(--radius); resize:vertical; background:var(--white); color:var(--navy);"
+        >${story}</textarea>
+        <div style="display:flex; justify-content:space-between; align-items:center; margin:8px 0 14px;">
+          <span class="wc-display" data-wc-book="${bookId}" data-wc-letter="STORY" style="font-size:0.85rem; color:var(--text-muted);">${storyWc} word${storyWc !== 1 ? 's' : ''}</span>
+          <button class="btn btn-primary" data-action="check-writing" data-book="${bookId}" style="padding:10px 18px;">Check my writing</button>
+        </div>
+        <div id="story-feedback"></div>
+      </div>
     </div>`;
 
   // Start autosave
@@ -608,6 +637,28 @@ function renderBook(app, bookId) {
       setText(bk, lt, ta.value);
     });
   }, AUTOSAVE_INTERVAL);
+}
+
+/** Build the instant-feedback panel HTML from an analysis result. */
+function renderFeedback(result) {
+  if (result.tooShort) {
+    return `<div class="story-fb story-fb-short">${result.message}</div>`;
+  }
+  const stars = '⭐'.repeat(result.score) + '☆'.repeat(5 - result.score);
+  const pos = result.positives.map((p) => `<li>✅ ${p}</li>`).join('');
+  const imp = result.improvements.map((p) => `<li>\u{1F4A1} ${p}</li>`).join('');
+  return `
+    <div class="story-fb">
+      <div class="story-fb-stars">${stars}</div>
+      <div class="story-fb-stats">
+        ${result.wordCount} words &middot; ${result.sentenceCount} sentences &middot; about ${result.avgLen} words per sentence
+      </div>
+      <p class="story-fb-clarity">${result.clarityNote}</p>
+      ${pos ? `<h4 class="story-fb-h">What you did well</h4><ul class="story-fb-list">${pos}</ul>` : ''}
+      ${imp ? `<h4 class="story-fb-h">To make it even better</h4><ul class="story-fb-list">${imp}</ul>` : ''}
+      ${result.moreCount > 0 ? `<p class="story-fb-more">Fix these first, then press <strong>Check my writing</strong> again for your next tips.</p>` : ''}
+      <p class="story-fb-note">Your story has been saved. Mum or Dad will see it tonight with extra feedback.</p>
+    </div>`;
 }
 
 // Not a quiz, so renderPractice and renderScore are stubs
@@ -642,6 +693,24 @@ export default function(app) {
         setText(ta.dataset.book, ta.dataset.letter, ta.value);
       });
       renderHome(app);
+    }
+
+    if (action === 'check-writing') {
+      const bookId = actionEl.dataset.book;
+      const ta = app.querySelector('.story-textarea');
+      const text = ta ? ta.value : '';
+      // Save locally and (fire-and-forget) to the cloud for tonight's report
+      setText(bookId, 'STORY', text);
+      const book = BOOKS.find((b) => b.id === bookId);
+      const result = analyseStory(text);
+      if (!result.tooShort) {
+        saveStory(bookId, book ? book.title : bookId, text, result).catch(() => {});
+      }
+      const panel = app.querySelector('#story-feedback');
+      if (panel) {
+        panel.innerHTML = renderFeedback(result);
+        panel.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
     }
 
     if (action === 'clear-section') {

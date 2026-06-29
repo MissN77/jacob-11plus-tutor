@@ -14,6 +14,7 @@ import { getActiveUuid } from './profile.js';
 const T_STATS = 'j11_player_stats';
 const T_QUIZ = 'j11_quiz_results';
 const T_DAILY = 'j11_daily_activity';
+const T_WRITING = 'j11_writing';
 
 const headers = {
   'apikey': SUPABASE_KEY,
@@ -102,6 +103,31 @@ export async function syncStats(state) {
     updated_at: new Date().toISOString()
   }, {
     'player_id': `eq.${PLAYER_ID}`
+  });
+}
+
+/** Save a written story so the evening cloud routine can give Claude feedback.
+ *  `stats` is the on-device analysis (word count, etc) for quick parent context. */
+export async function saveStory(bookId, title, text, stats) {
+  const PLAYER_ID = getActiveUuid();
+  await query(T_WRITING, 'POST', {
+    player_id: PLAYER_ID,
+    book_id: bookId,
+    title: title || null,
+    story: text,
+    word_count: stats?.wordCount || null,
+    stats: stats || null
+  });
+}
+
+/** Get stories, most recent first (parent dashboard + evening routine). */
+export async function getStories(limit) {
+  const PLAYER_ID = getActiveUuid();
+  return await query(T_WRITING, 'GET', null, {
+    'player_id': `eq.${PLAYER_ID}`,
+    'select': '*',
+    'order': 'created_at.desc',
+    'limit': String(limit || 20)
   });
 }
 
