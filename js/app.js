@@ -1,9 +1,28 @@
 import { Store } from './store.js';
-import { renderHome, renderComingSoon, renderProfilePicker, SECTIONS, loadBexleyPlan, getCurrentBexleyWeek, renderSettings, setStartDate, DEFAULT_START_DATE } from './ui.js';
+import { renderHome, renderComingSoon, renderProfilePicker, SECTIONS, loadBexleyPlan, getCurrentBexleyWeek, renderSettings, setStartDate, DEFAULT_START_DATE, isSectionLocked, getTodaysTasks } from './ui.js';
 import { requireAuth, logout } from './auth.js';
 import { getActiveProfile, setActiveProfile, migrateLegacyState } from './profile.js';
 
 const app = document.getElementById('app');
+
+// Section modules attach delegated click/input handlers to the persistent `app`
+// element and store the reference so they can be removed. Each section only
+// removed its OWN handler, so a stale section's handler kept firing on the next
+// section's clicks and could corrupt scoring. Clear ALL of them before every
+// render so exactly one section is ever wired up at a time.
+const SECTION_HANDLER_KEYS = [
+  '_mathsHandler', '_seqHandler', '_vrHandler', '_sentCompHandler',
+  '_punctuationHandler', '_writingHandler'
+];
+function clearSectionHandlers() {
+  for (const key of SECTION_HANDLER_KEYS) {
+    if (app[key]) { app.removeEventListener('click', app[key]); app[key] = null; }
+  }
+  if (app._writingInputHandler) {
+    app.removeEventListener('input', app._writingInputHandler);
+    app._writingInputHandler = null;
+  }
+}
 
 // Section module map - sections that have been built get an entry here.
 // Dynamic imports keep the initial bundle small.
@@ -38,6 +57,10 @@ function getRoute() {
 async function render() {
   const route = getRoute();
 
+  // Tear down any section handler left attached from the previous view so it
+  // can never fire on this view's clicks (prevents cross-section scoring bugs).
+  clearSectionHandlers();
+
   // Home screen
   if (!route) {
     const state = Store.get();
@@ -58,6 +81,15 @@ async function render() {
   const section = SECTIONS.find((s) => s.id === sectionId);
   if (!section) {
     // Unknown route - go home
+    location.hash = '#/';
+    return;
+  }
+
+  // Guided mode: keep locked sections closed until today's three tasks are done.
+  // Enforced here so it holds no matter how the child got to the route.
+  if (isSectionLocked(sectionId)) {
+    const names = getTodaysTasks().map((t) => t.name).join(', ');
+    if (window.__showXPToast) window.__showXPToast(`Finish today's tasks first: ${names}`);
     location.hash = '#/';
     return;
   }
@@ -83,6 +115,14 @@ async function render() {
 
 /** Delegated click handler for data-action elements. */
 app.addEventListener('click', (e) => {
+  // Tapped a locked section tile in guided mode.
+  const lockedEl = e.target.closest('[data-locked]');
+  if (lockedEl) {
+    const names = getTodaysTasks().map((t) => t.name).join(', ');
+    if (window.__showXPToast) window.__showXPToast(`Do today's tasks first: ${names}`);
+    return;
+  }
+
   const actionEl = e.target.closest('[data-action]');
   if (!actionEl) return;
 

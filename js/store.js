@@ -63,8 +63,14 @@ export const Store = {
   },
 
   /** Record a completed quiz and sync to Supabase (fire and forget).
-   *  Applies 90% quality gate - below threshold, XP is zeroed. */
+   *  Applies 90% quality gate - below threshold, XP is zeroed.
+   *  Everything is clamped so a score can never exceed the total (no 12/10). */
   recordQuiz(section, correct, total, xpEarned, subSection, details) {
+    // ── Hard clamps: a quiz can never score more than its total ──
+    total = Math.max(0, Math.floor(Number(total) || 0));
+    correct = Math.max(0, Math.min(Math.floor(Number(correct) || 0), total));
+    xpEarned = Math.max(0, Math.floor(Number(xpEarned) || 0));
+
     const pct = total > 0 ? correct / total : 0;
     const actualXP = pct >= MIN_PASS_PCT ? xpEarned : 0;
     if (actualXP !== xpEarned) {
@@ -74,8 +80,33 @@ export const Store = {
       state.level = Math.floor(state.xp / XP_PER_LEVEL) + 1;
       this.save(state);
     }
+
+    // ── Stamp today's completion so the home "Today" plan can tick off tasks.
+    // Every section funnels through here on completion, so this is the one
+    // central place that knows a real activity finished today. ──
+    if (total > 0) {
+      const state = this.get();
+      const today = todayStr();
+      if (!state.dailyDone || state.dailyDone.date !== today) {
+        state.dailyDone = { date: today, sections: {} };
+      }
+      state.dailyDone.sections[section] = (state.dailyDone.sections[section] || 0) + 1;
+      this.save(state);
+    }
+
     recordQuiz(section, correct, total, actualXP, subSection, details).catch(() => {});
     syncStats(this.get()).catch(() => {});
+  },
+
+  /** Return today's completion counts per section: { maths: 2, comprehension: 1 }.
+   *  Empty object if nothing done today (or a new day has rolled over). */
+  dailyDone() {
+    const state = this.get();
+    const today = todayStr();
+    if (state.dailyDone && state.dailyDone.date === today) {
+      return state.dailyDone.sections || {};
+    }
+    return {};
   },
 
   /** Get weekly Robux progress (XP earned this week mapped to Robux). */

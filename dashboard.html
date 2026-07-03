@@ -297,6 +297,7 @@
     <button id="tab-ava" class="child-tab" onclick="setChild('ava')">🦄 Ava</button>
   </div>
   <button class="refresh-btn" onclick="loadDashboard()">Refresh</button>
+  <button class="refresh-btn" style="background:var(--navy);margin-left:8px;" onclick="shareByEmail()">📧 Share by email</button>
   <div id="dashboard"><p class="loading">Loading...</p></div>
 
   <script type="module">
@@ -328,7 +329,18 @@
     }
 
     function pct(correct, total) {
-      return total > 0 ? Math.round((correct / total) * 100) : 0;
+      if (!(total > 0)) return 0;
+      const c = Math.max(0, Math.min(correct, total)); // never above 100%
+      return Math.round((c / total) * 100);
+    }
+    // "2d-shapes-properties" -> "2d shapes properties"
+    function prettySub(s) {
+      if (!s) return '';
+      return String(s).replace(/[-_]/g, ' ').replace(/\b\w/g, (m) => m.toUpperCase());
+    }
+    function safeScore(correct, total) {
+      const c = Math.max(0, Math.min(correct, total));
+      return `${c}/${total}`;
     }
 
     function accClass(p) {
@@ -417,9 +429,9 @@
     function glMessage(days) {
       if (days <= 0) return 'Good luck Jacob!';
       if (days < 50) return "Nearly there, they have got this!";
-      if (days < 100) return 'Getting closer \u2014 stay focused!';
-      if (days < 150) return "He's doing great \u2014 keep going!";
-      return 'Plenty of time \u2014 keep building!';
+      if (days < 100) return 'Getting closer, stay focused!';
+      if (days < 150) return "He's doing great, keep going!";
+      return 'Plenty of time, keep building!';
     }
 
     // Weekly plan (mirrors ui.js)
@@ -463,13 +475,17 @@
       const el = document.getElementById('dashboard');
       el.innerHTML = '<p class="loading">Loading...</p>';
 
-      const [stats, quizzes, activity] = await Promise.all([
+      const [stats, quizzes, activity, stories] = await Promise.all([
         get('j11_player_stats', { player_id: `eq.${PID}`, select: '*' }),
         get('j11_quiz_results', { player_id: `eq.${PID}`, select: '*', order: 'completed_at.desc', limit: '100' }),
-        get('j11_daily_activity', { player_id: `eq.${PID}`, select: '*', order: 'date.desc', limit: '14' })
+        get('j11_daily_activity', { player_id: `eq.${PID}`, select: '*', order: 'date.desc', limit: '14' }),
+        get('j11_writing', { player_id: `eq.${PID}`, select: 'title,word_count,created_at', order: 'created_at.desc', limit: '20' })
       ]);
 
       const s = stats[0] || { total_xp: 0, level: 1, current_streak: 0, best_streak: 0 };
+
+      // Keep the latest data so the "Share by email" button can summarise it.
+      window.__dashData = { name: NAME, quizzes, stories: stories || [], stats: s };
 
       // Aggregate per section
       const sections = {};
@@ -486,7 +502,7 @@
       const todayCount = quizzes.filter(q => (q.completed_at || '').slice(0, 10) === todayStr).length;
       let bannerHtml = '';
       if (todayCount > 0) {
-        bannerHtml = `<div class="status-banner done">✅ Practised today &mdash; ${todayCount} quiz${todayCount === 1 ? '' : 'zes'} done
+        bannerHtml = `<div class="status-banner done">✅ Practised today, ${todayCount} quiz${todayCount === 1 ? '' : 'zes'} done
           <span class="sub">Last activity ${lastQuizTime ? fmtTime(lastQuizTime) : ''}</span></div>`;
       } else if (lastQuizTime) {
         const daysAgo = Math.floor((new Date(todayStr) - new Date(lastQuizTime.slice(0, 10))) / 86400000);
@@ -509,6 +525,48 @@
           <div class="days-label">${glLabel}</div>
           <div class="days-msg">${glMsg}</div>
         </div>`;
+
+      // ── What they did today: the exact activities, named, with scores ──
+      const todayQ = quizzes.filter(q => (q.completed_at || '').slice(0, 10) === todayStr);
+      const todayStories = (stories || []).filter(w => (w.created_at || '').slice(0, 10) === todayStr);
+      html += `<div class="card"><h2>What ${NAME} did today</h2>`;
+      if (!todayQ.length && !todayStories.length) {
+        html += `<p class="help-none" style="color:#888;">Nothing logged yet today.</p>`;
+      } else {
+        for (const q of todayQ) {
+          const nm = SECTION_NAMES[q.section] || q.section;
+          const sub = q.sub_section ? ' &middot; ' + prettySub(q.sub_section) : '';
+          const p = pct(q.correct, q.total);
+          html += `<div class="recent-quiz">
+            <span class="quiz-section">${nm}<span style="font-weight:400;color:#888;text-transform:none;">${sub}</span></span>
+            <span class="quiz-score ${accClass(p)}">${safeScore(q.correct, q.total)} (${p}%)</span>
+            <span class="quiz-time">${fmtTime(q.completed_at)}</span>
+          </div>`;
+          // What they could not do: the exact questions missed, inline.
+          const det = Array.isArray(q.details) ? q.details : [];
+          if (det.length) {
+            html += `<div style="padding:2px 0 12px 4px;">`;
+            for (const d of det) {
+              html += `<div style="font-size:0.8rem;color:#555;padding:4px 0;border-bottom:1px dashed var(--cream2);">
+                <span style="color:var(--coral);font-weight:800;">✗</span> ${(d.q || '').replace(/</g,'&lt;')}
+                <div style="color:#888;margin-top:2px;">they put "${(d.given||'').replace(/</g,'&lt;')}", answer was "${(d.correct||'').replace(/</g,'&lt;')}"</div>
+              </div>`;
+            }
+            html += `</div>`;
+          } else if (p === 100) {
+            html += `<div style="font-size:0.78rem;color:var(--forest);padding:0 0 10px 4px;">✓ All correct, nothing missed.</div>`;
+          }
+        }
+        for (const w of todayStories) {
+          html += `<div class="recent-quiz">
+            <span class="quiz-section">✍️ Writing<span style="font-weight:400;color:#888;text-transform:none;"> &middot; ${w.title ? String(w.title).replace(/</g,'&lt;') : 'Story'}</span></span>
+            <span class="quiz-score high">${w.word_count || 0} words</span>
+            <span class="quiz-time">${fmtTime(w.created_at)}</span>
+          </div>`;
+        }
+        html += `<p class="report-tip" style="margin-top:10px;">Above shows exactly what they got wrong today. Story feedback and how-to-help tips come in the 7pm digest.</p>`;
+      }
+      html += `</div>`;
 
       // Weekly Study Plan
       const weekIdx = getCurrentWeekIndex();
@@ -623,7 +681,7 @@
         html += `</div>`;
       }
       if (needsWork.length) {
-        html += `<div class="report-block"><h3 class="report-h bad">🔴 Needs work &mdash; what to do next</h3>`;
+        html += `<div class="report-block"><h3 class="report-h bad">🔴 Needs work, what to do next</h3>`;
         for (const x of needsWork) {
           html += `<div class="report-advice">
             <div class="report-advice-head"><span class="report-name">${x.name}</span><span class="report-acc bad">${x.p}% (${x.correct}/${x.total})</span></div>
@@ -632,7 +690,7 @@
         }
         html += `</div>`;
       } else if (quizzes.length > 0 && graded.length > 0) {
-        html += `<p class="help-none">👍 Nothing below 60% right now &mdash; keep the practice ticking over.</p>`;
+        html += `<p class="help-none">👍 Nothing below 60% right now, keep the practice ticking over.</p>`;
       }
 
       if (weakSubs.length) {
@@ -655,7 +713,7 @@
           const sub = q.sub_section ? ' &middot; ' + q.sub_section.replace(/-/g, ' ') : '';
           html += `<div class="rev-activity">
             <div class="rev-head"><span class="rev-title">${nm}${sub}</span>
-              <span class="rev-score ${accClass(p)}">${q.correct}/${q.total} (${p}%)</span>
+              <span class="rev-score ${accClass(p)}">${safeScore(q.correct, q.total)} (${p}%)</span>
               <span class="rev-time">${fmtTime(q.completed_at)}</span></div>`;
           for (const d of q.details) {
             html += `<div class="rev-q">
@@ -718,7 +776,7 @@
           const sub = q.sub_section ? ` (${q.sub_section})` : '';
           html += `<div class="recent-quiz">
             <span class="quiz-section">${SECTION_NAMES[q.section] || q.section}${sub}</span>
-            <span class="quiz-score ${accClass(p)}">${q.correct}/${q.total} (${p}%)</span>
+            <span class="quiz-score ${accClass(p)}">${safeScore(q.correct, q.total)} (${p}%)</span>
             <span class="quiz-time">${fmtTime(q.completed_at)}</span>
           </div>`;
         }
@@ -735,6 +793,50 @@
 
       el.innerHTML = html;
     }
+
+    // Build a plain-text summary of what the selected child has done, for sharing.
+    function buildShareText() {
+      const d = window.__dashData;
+      if (!d) return '';
+      const name = d.name;
+      const today = new Date().toISOString().slice(0, 10);
+      let rows = d.quizzes.filter(q => (q.completed_at || '').slice(0, 10) === today);
+      let stories = (d.stories || []).filter(w => (w.created_at || '').slice(0, 10) === today);
+      let scope = 'today';
+      // If nothing today, fall back to the most recent day with activity.
+      if (!rows.length && !stories.length && d.quizzes.length) {
+        const day = (d.quizzes[0].completed_at || '').slice(0, 10);
+        rows = d.quizzes.filter(q => (q.completed_at || '').slice(0, 10) === day);
+        stories = (d.stories || []).filter(w => (w.created_at || '').slice(0, 10) === day);
+        scope = 'on ' + fmtDate(day);
+      }
+      const lines = [`${name}'s 11+ practice ${scope}:`, ''];
+      if (!rows.length && !stories.length) {
+        lines.push('No practice recorded yet.');
+      }
+      for (const q of rows) {
+        const nm = SECTION_NAMES[q.section] || q.section;
+        const sub = q.sub_section ? ' - ' + prettySub(q.sub_section) : '';
+        lines.push(`${nm}${sub}: ${safeScore(q.correct, q.total)} (${pct(q.correct, q.total)}%)`);
+        for (const dt of (Array.isArray(q.details) ? q.details : [])) {
+          lines.push(`   got wrong: ${dt.q || ''} (put "${dt.given || ''}", answer "${dt.correct || ''}")`);
+        }
+      }
+      for (const w of stories) {
+        lines.push(`Writing: "${w.title || 'Story'}" (${w.word_count || 0} words)`);
+      }
+      lines.push('', 'Full detail: https://missn77.github.io/jacob-11plus-tutor/dashboard.html');
+      return lines.join('\n');
+    }
+
+    // Open a prefilled email DRAFT in the parent's mail app (nothing is sent).
+    window.shareByEmail = function () {
+      const d = window.__dashData;
+      if (!d) { console.warn('Dashboard still loading; try Share again in a moment.'); return; }
+      const subject = `${d.name}'s 11+ progress`;
+      const body = buildShareText();
+      window.location.href = `mailto:?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
 
     window.loadDashboard = loadDashboard;
     loadDashboard();

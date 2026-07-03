@@ -1,5 +1,6 @@
 import { xpPercent, xpInCurrentLevel } from './xp.js';
 import { PROFILES, getActiveProfile } from './profile.js';
+import { Store } from './store.js';
 
 /** "Who's learning?" screen, shown when no profile is chosen yet. */
 export function renderProfilePicker() {
@@ -44,6 +45,86 @@ const SECTIONS = [
 
 export { SECTIONS };
 
+// ── Today's tasks (guided daily plan) ─────────────────────────────────────
+// Each child gets three set tasks a day: one Maths, one English, one Reasoning.
+// The English and Reasoning slots rotate by the day of the year so it stays
+// varied but is the same all day. Only sections that record a quiz are used,
+// so a task ticks off automatically when the child finishes it.
+const TODAY_ENGLISH = ['comprehension', 'vocabulary', 'spelling', 'inference', 'sentence-completion', 'word-skills'];
+const TODAY_REASONING = ['verbal-reasoning', 'nvr'];
+// Always reachable even before the day's tasks are done: help + settings.
+const ALWAYS_UNLOCKED = ['videos', 'settings'];
+
+function dayOfYear() {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0);
+  return Math.floor((now - start) / 86400000);
+}
+
+/** The three set tasks for today, as {id, name, icon}. */
+export function getTodaysTasks() {
+  const d = dayOfYear();
+  const ids = [
+    'maths',
+    TODAY_ENGLISH[d % TODAY_ENGLISH.length],
+    TODAY_REASONING[d % TODAY_REASONING.length]
+  ];
+  return ids.map((id) => {
+    const s = SECTIONS.find((x) => x.id === id) || { id, name: id, icon: '\u{1F4D8}' };
+    return { id: s.id, name: s.name, icon: s.icon };
+  });
+}
+
+function todaysTaskIds() {
+  return getTodaysTasks().map((t) => t.id);
+}
+
+/** True once all three of today's tasks have at least one completion. */
+export function areTodaysTasksDone() {
+  const done = Store.dailyDone();
+  return todaysTaskIds().every((id) => (done[id] || 0) > 0);
+}
+
+/** Whether a section should be locked right now (stricter guided mode).
+ *  Today's three tasks and the always-unlocked helpers are never locked;
+ *  everything else stays locked until the three tasks are done. */
+export function isSectionLocked(sectionId) {
+  if (!sectionId) return false;
+  if (ALWAYS_UNLOCKED.includes(sectionId)) return false;
+  if (todaysTaskIds().includes(sectionId)) return false;
+  return !areTodaysTasksDone();
+}
+
+/** The "Today's tasks" card for the home screen. */
+export function renderTodayPanel() {
+  const tasks = getTodaysTasks();
+  const done = Store.dailyDone();
+  const doneCount = tasks.filter((t) => (done[t.id] || 0) > 0).length;
+  const allDone = doneCount === tasks.length;
+
+  const items = tasks.map((t) => {
+    const isDone = (done[t.id] || 0) > 0;
+    return `
+      <a class="today-task ${isDone ? 'today-task--done' : ''}" href="#/${t.id}">
+        <span class="today-task-icon">${t.icon}</span>
+        <span class="today-task-name">${t.name}</span>
+        <span class="today-task-status">${isDone ? '✓ Done' : 'To do'}</span>
+      </a>`;
+  }).join('');
+
+  return `
+    <div class="today-panel ${allDone ? 'today-panel--done' : ''}">
+      <div class="today-head">
+        <span class="today-title">\u{1F4CC} Today's tasks</span>
+        <span class="today-progress">${doneCount} / ${tasks.length}</span>
+      </div>
+      <p class="today-sub">${allDone
+        ? 'All done! Everything below is unlocked, free choice now. \u{1F389}'
+        : 'Do these three first. The rest unlocks when they are finished.'}</p>
+      <div class="today-list">${items}</div>
+    </div>`;
+}
+
 // ── GL Assessment Countdown ───────────────────────────────────────────────
 
 const GL_DATE = new Date('2027-09-18T00:00:00');
@@ -59,10 +140,10 @@ export function daysUntilGL() {
 /** Get a motivational message based on days remaining. */
 function glMessage(days) {
   if (days <= 0) return 'Good luck Jacob!';
-  if (days < 50) return "Nearly there \u2014 you've got this!";
-  if (days < 100) return 'Getting closer \u2014 stay focused!';
-  if (days < 150) return "You're doing great \u2014 keep going!";
-  return 'Plenty of time \u2014 keep building!';
+  if (days < 50) return "Nearly there, you've got this!";
+  if (days < 100) return 'Getting closer, stay focused!';
+  if (days < 150) return "You're doing great, keep going!";
+  return 'Plenty of time, keep building!';
 }
 
 /** Render the GL countdown banner. */
@@ -145,7 +226,8 @@ export { DEFAULT_START_DATE };
 /** Check if a section was practised this week (by checking localStorage activity). */
 function wasPracticedThisWeek(sectionId) {
   try {
-    const raw = localStorage.getItem('j11_state');
+    const key = `j11_state_${(getActiveProfile() || {}).key || 'jacob'}`;
+    const raw = localStorage.getItem(key);
     if (!raw) return false;
     const state = JSON.parse(raw);
     const activityLog = state.activityLog || [];
@@ -195,7 +277,7 @@ export function renderBexleyPlan(planData) {
   if (weekNum > 20) {
     return `
       <div class="weekly-plan">
-        <h2 class="weekly-title">Exam week \u2014 good luck Jacob!</h2>
+        <h2 class="weekly-title">Exam week, good luck Jacob!</h2>
         <p class="weekly-subtitle">You've done the work. Trust your practice.</p>
       </div>`;
   }
@@ -231,7 +313,7 @@ export function renderBexleyPlan(planData) {
   }).join('');
 
   const checkpointBanner = isCheckpoint
-    ? `<div class="weekly-checkpoint">\u{1F3AF} Checkpoint week \u2014 full mock!</div>`
+    ? `<div class="weekly-checkpoint">\u{1F3AF} Checkpoint week, full mock!</div>`
     : '';
 
   const homework = week.homework
@@ -241,7 +323,7 @@ export function renderBexleyPlan(planData) {
   return `
     <div class="weekly-plan ${isCheckpoint ? 'weekly-plan--checkpoint' : ''}">
       <h2 class="weekly-title">This Week</h2>
-      <p class="weekly-subtitle">Week ${weekNum} of 20 \u2014 Bexley plan</p>
+      <p class="weekly-subtitle">Week ${weekNum} of 20, Bexley plan</p>
       ${checkpointBanner}
       <div class="weekly-focus-grid">${focusCards}</div>
       ${homework}
@@ -284,9 +366,24 @@ function renderProfileBadge() {
 
 /** Render the 9-section home grid. Async so it can load the Bexley plan. */
 export async function renderHome(state) {
+  const tasksDone = areTodaysTasksDone();
+  const taskIds = getTodaysTasks().map((t) => t.id);
+
   const cards = SECTIONS.map((sec) => {
     const data = state.sections[sec.id] || { completed: 0, correct: 0, total: 0 };
-    const pct = data.total > 0 ? Math.round((data.correct / data.total) * 100) : 0;
+    const safeCorrect = Math.min(data.correct || 0, data.total || 0);
+    const pct = data.total > 0 ? Math.round((safeCorrect / data.total) * 100) : 0;
+    const locked = !tasksDone && !taskIds.includes(sec.id) && !['videos'].includes(sec.id);
+
+    if (locked) {
+      return `
+        <div class="section-card section-card--locked" data-locked="1" title="Finish today's tasks first">
+          <span class="card-lock">\u{1F512}</span>
+          <span class="card-icon">${sec.icon}</span>
+          <span class="card-name">${sec.name}</span>
+          <span class="card-count">Locked until tasks done</span>
+        </div>`;
+    }
 
     return `
       <a class="section-card" href="#/${sec.id}" data-section="${sec.id}">
@@ -321,7 +418,8 @@ export async function renderHome(state) {
   return `
     ${renderHeader(state)}
     <h1 class="app-title">${(getActiveProfile() || {}).name || 'Jacob'}'s 11 Plus Tutor</h1>
-    <p class="app-subtitle">Choose a subject to practise</p>
+    <p class="app-subtitle">${tasksDone ? 'Free choice, all tasks done' : 'Do today’s three tasks first'}</p>
+    ${renderTodayPanel()}
     ${robuxBar}
     ${renderCountdown()}
     ${renderBexleyPlan(planData)}

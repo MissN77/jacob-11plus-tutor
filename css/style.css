@@ -2141,3 +2141,26 @@ body {
 .vid-link-name { grid-area: name; font-weight: 700; color: var(--navy); }
 .vid-link-desc { grid-area: desc; font-size: 0.8rem; color: var(--text-muted); }
 .vid-link-go { grid-area: go; font-size: 0.85rem; font-weight: 700; color: var(--teal); }
+
+/* ── Today's tasks (guided daily plan) ─────────────────────────────────── */
+.today-panel { background: var(--white); border: 2px solid var(--teal); border-radius: 14px; padding: 14px 16px; margin-bottom: 16px; box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+.today-panel--done { border-color: var(--forest); background: #eef7f1; }
+.today-head { display: flex; justify-content: space-between; align-items: center; }
+.today-title { font-weight: 800; font-size: 1rem; color: var(--navy); }
+.today-progress { font-weight: 800; font-size: 0.95rem; color: var(--teal); }
+.today-panel--done .today-progress { color: var(--forest); }
+.today-sub { font-size: 0.82rem; color: var(--text-muted); margin: 4px 0 10px; }
+.today-list { display: grid; gap: 8px; }
+.today-task { display: grid; grid-template-columns: auto 1fr auto; align-items: center; gap: 10px; padding: 11px 12px; background: var(--cream); border: 2px solid var(--cream2); border-radius: 12px; text-decoration: none; }
+.today-task:hover { border-color: var(--teal); }
+.today-task-icon { font-size: 1.3rem; }
+.today-task-name { font-weight: 700; color: var(--navy); }
+.today-task-status { font-size: 0.8rem; font-weight: 700; color: var(--coral); }
+.today-task--done { background: #eef7f1; border-color: var(--forest); }
+.today-task--done .today-task-status { color: var(--forest); }
+.today-task--done .today-task-name { text-decoration: line-through; text-decoration-color: rgba(45,134,89,0.5); }
+
+/* Locked section tiles until today's tasks are done */
+.section-card--locked { position: relative; opacity: 0.55; filter: grayscale(0.4); cursor: not-allowed; background: var(--cream2); }
+.section-card--locked .card-lock { position: absolute; top: 8px; right: 10px; font-size: 1rem; }
+.section-card--locked .card-count { color: var(--text-muted); font-size: 0.7rem; }
