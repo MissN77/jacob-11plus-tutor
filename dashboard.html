@@ -303,9 +303,22 @@
   <script type="module">
     const URL = 'https://pimhwskthibxkpfjlkfu.supabase.co';
     const KEY = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InBpbWh3c2t0aGlieGtwZmpsa2Z1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODE2NDEzNjksImV4cCI6MjA5NzIxNzM2OX0.urlGrk-K0o7H3Us3sOizvZ4-S8SAB2uULHAGGYro4RY';
+    // `star` is the child_name used by the Star Academy app, which writes to a
+    // different table. Ava does almost all her work there, so without this her
+    // tab looked empty.
     const CHILDREN = {
       jacob: { name: 'Jacob', pid: 'ff567baf-d27e-43b7-94f2-90dbe19fd031' },
-      ava:   { name: 'Ava',   pid: '0e2b2a6a-f39d-416e-adb4-c62a4251a702' }
+      ava:   { name: 'Ava',   pid: '0e2b2a6a-f39d-416e-adb4-c62a4251a702', star: 'Ava' }
+    };
+
+    // Star Academy activity types, in the child's own words.
+    const STAR_LABELS = {
+      quests: 'Quests', match: 'Matching', stories: 'Reading', odd: 'Odd One Out',
+      history: 'History', maths: 'Maths', spelling: 'Spelling', science: 'Science',
+      times: 'Times Tables', english: 'English', short: 'Short Answer',
+      language: 'Languages', grammar: 'Grammar', prep: '11+ Prep',
+      geography: 'Geography', world: 'World Knowledge', re: 'RE', speed: 'Speed Test',
+      general: 'General'
     };
     let CHILD = 'jacob';
     let PID = CHILDREN[CHILD].pid;
@@ -370,6 +383,18 @@
       writing: 'Writing',
       collocations: 'Collocations'
     };
+
+
+    // A section id may come from either app. "star:odd" is Star Academy.
+    function sectionName(id) {
+      if (!id) return '';
+      if (String(id).startsWith('star:')) {
+        const t = String(id).slice(5);
+        return (STAR_LABELS[t] || prettySub(t)) + ' \u00b7 Star Academy';
+      }
+      return (SECTION_NAMES[id] || id) + (HAS_STAR ? ' \u00b7 11+ app' : '');
+    }
+    let HAS_STAR = false;
 
     // Concrete "what to do next" advice shown when a section is weak.
     const SECTION_ADVICE = {
@@ -475,12 +500,35 @@
       const el = document.getElementById('dashboard');
       el.innerHTML = '<p class="loading">Loading...</p>';
 
-      const [stats, quizzes, activity, stories] = await Promise.all([
+      const starName = CHILDREN[CHILD].star;
+      const [stats, tutorQuizzes, activity, stories, starRows, starStats] = await Promise.all([
         get('j11_player_stats', { player_id: `eq.${PID}`, select: '*' }),
         get('j11_quiz_results', { player_id: `eq.${PID}`, select: '*', order: 'completed_at.desc', limit: '100' }),
         get('j11_daily_activity', { player_id: `eq.${PID}`, select: '*', order: 'date.desc', limit: '14' }),
-        get('j11_writing', { player_id: `eq.${PID}`, select: 'title,word_count,created_at', order: 'created_at.desc', limit: '20' })
+        get('j11_writing', { player_id: `eq.${PID}`, select: 'title,word_count,created_at', order: 'created_at.desc', limit: '20' }),
+        starName
+          ? get('star_activity', { child_name: `eq.${starName}`, select: '*', order: 'completed_at.desc', limit: '500' })
+          : Promise.resolve([]),
+        starName
+          ? get('star_stats', { child_name: `eq.${starName}`, select: '*' })
+          : Promise.resolve([])
       ]);
+
+      // Star Academy rows are reshaped to look like an 11+ quiz result, so every
+      // card below (today, weekly dots, section accuracy, the report) counts both
+      // apps without knowing there are two.
+      const starQuizzes = (starRows || []).map((r) => ({
+        section: `star:${r.activity_type}`,
+        sub_section: r.activity_name || '',
+        correct: r.score,
+        total: r.total,
+        completed_at: r.completed_at,
+        details: null,
+        app: 'star'
+      }));
+      HAS_STAR = starQuizzes.length > 0 && tutorQuizzes.length > 0;
+      const quizzes = [...tutorQuizzes, ...starQuizzes]
+        .sort((a, b) => String(b.completed_at).localeCompare(String(a.completed_at)));
 
       const s = stats[0] || { total_xp: 0, level: 1, current_streak: 0, best_streak: 0 };
 
@@ -534,7 +582,7 @@
         html += `<p class="help-none" style="color:#888;">Nothing logged yet today.</p>`;
       } else {
         for (const q of todayQ) {
-          const nm = SECTION_NAMES[q.section] || q.section;
+          const nm = sectionName(q.section);
           const sub = q.sub_section ? ' &middot; ' + prettySub(q.sub_section) : '';
           const p = pct(q.correct, q.total);
           html += `<div class="recent-quiz">
@@ -591,7 +639,7 @@
       html += `<div class="card weekly-plan-card"><h2>This Week's Plan (Week ${weekIdx + 1} of 24)</h2>`;
       html += `<div class="weekly-focus-row">`;
       for (const secId of plan.sections) {
-        const name = SECTION_NAMES[secId] || secId;
+        const name = sectionName(secId);
         const target = plan.targets[secId] || '';
         const hasDone = (sectionQuizCounts[secId] || 0) > 0;
         const cls = hasDone ? 'met' : 'not-met';
@@ -632,10 +680,69 @@
           <div class="stat-box"><div class="value">${quizzes.length}</div><div class="label">Quizzes Done</div></div>
         </div>`;
 
+      // ── Star Academy, for the children who use it ──
+      if (starName) {
+        const ss = (starStats || [])[0] || {};
+        const starQ = starQuizzes.reduce((a, q) => a + (q.total || 0), 0);
+        const starC = starQuizzes.reduce((a, q) => a + Math.min(q.correct || 0, q.total || 0), 0);
+        const starLast = starQuizzes.length ? starQuizzes[0].completed_at : null;
+        html += `<div class="card"><h2>⭐ Star Academy</h2>`;
+        if (!starQuizzes.length) {
+          html += `<p class="help-none" style="color:#888;">Nothing recorded in Star Academy yet.</p>`;
+        } else {
+          html += `
+            <div class="stats-row" style="margin-bottom:12px;">
+              <div class="stat-box"><div class="value">${ss.total_gems ?? '-'}</div><div class="label">Gems</div></div>
+              <div class="stat-box"><div class="value">${starQuizzes.length}</div><div class="label">Activities</div></div>
+              <div class="stat-box"><div class="value">${starQ}</div><div class="label">Questions</div></div>
+              <div class="stat-box"><div class="value">${pct(starC, starQ)}%</div><div class="label">Correct</div></div>
+            </div>`;
+
+          // Accuracy per activity type, weakest first, so the useful bit is on top.
+          const byType = {};
+          for (const q of starQuizzes) {
+            const t = q.section.slice(5);
+            byType[t] = byType[t] || { correct: 0, total: 0, count: 0 };
+            byType[t].correct += Math.min(q.correct || 0, q.total || 0);
+            byType[t].total += q.total || 0;
+            byType[t].count += 1;
+          }
+          const typeRows = Object.entries(byType)
+            .map(([t, v]) => ({ t, ...v, p: pct(v.correct, v.total) }))
+            .filter((x) => x.total > 0)
+            .sort((a, b) => a.p - b.p);
+          html += `<div class="section-grid">`;
+          for (const r of typeRows) {
+            html += `<div class="section-card">
+              <div class="name">${STAR_LABELS[r.t] || prettySub(r.t)}</div>
+              <div class="detail">${r.count} time${r.count === 1 ? '' : 's'} &middot; ${r.correct}/${r.total}</div>
+              <div class="accuracy ${accClass(r.p)}">${r.p}%</div>
+              <div class="progress-bar"><div class="progress-fill" style="width:${r.p}%"></div></div>
+            </div>`;
+          }
+          html += `</div>`;
+          html += `<p class="report-tip" style="margin-top:10px;">Last Star Academy activity
+            ${starLast ? fmtTime(starLast) : 'unknown'}. These are counted in the cards above too.</p>`;
+
+          // Some Star Academy rows arrive with a score higher than the number of
+          // questions. They are clamped to 100% here, so those percentages read
+          // higher than they really are. Say so rather than hide it.
+          const dodgy = (starRows || []).filter((r) => (r.score || 0) > (r.total || 0));
+          if (dodgy.length) {
+            html += `<p class="report-tip" style="color:#b5402f;">Note: ${dodgy.length}
+              Star Academy result${dodgy.length === 1 ? '' : 's'} came in with a score higher
+              than the number of questions, so ${dodgy.length === 1 ? 'that one is' : 'those are'}
+              capped at 100% here. That is a scoring bug in the Star Academy app. Where it happened
+              the percentage above flatters them.</p>`;
+          }
+        }
+        html += `</div>`;
+      }
+
       // ── Jacob's Report: strengths, weaknesses, what to do next ──
       // Classify every practised section by accuracy (needs a meaningful sample).
       const graded = Object.entries(sections)
-        .map(([id, sec]) => ({ id, name: SECTION_NAMES[id] || id, p: pct(sec.correct, sec.total), correct: sec.correct, total: sec.total, count: sec.count }))
+        .map(([id, sec]) => ({ id, name: sectionName(id), p: pct(sec.correct, sec.total), correct: sec.correct, total: sec.total, count: sec.count }))
         .filter(x => x.total >= 5);
       const strengths = graded.filter(x => x.p >= 80).sort((a, b) => b.p - a.p);
       const steady = graded.filter(x => x.p >= 60 && x.p < 80).sort((a, b) => a.p - b.p);
@@ -650,7 +757,7 @@
         subs[k].correct += q.correct; subs[k].total += q.total;
       }
       const weakSubs = Object.values(subs)
-        .map(x => ({ ...x, p: pct(x.correct, x.total), name: SECTION_NAMES[x.section] || x.section }))
+        .map(x => ({ ...x, p: pct(x.correct, x.total), name: sectionName(x.section) }))
         .filter(x => x.total >= 5 && x.p < 60)
         .sort((a, b) => a.p - b.p).slice(0, 6);
 
@@ -709,7 +816,7 @@
           <p class="report-summary">Tap through these together. The answer they picked is in red, the right answer in green.</p>`;
         for (const q of recentWithDetail) {
           const p = pct(q.correct, q.total);
-          const nm = SECTION_NAMES[q.section] || q.section;
+          const nm = sectionName(q.section);
           const sub = q.sub_section ? ' &middot; ' + q.sub_section.replace(/-/g, ' ') : '';
           html += `<div class="rev-activity">
             <div class="rev-head"><span class="rev-title">${nm}${sub}</span>
@@ -775,7 +882,7 @@
           const p = pct(q.correct, q.total);
           const sub = q.sub_section ? ` (${q.sub_section})` : '';
           html += `<div class="recent-quiz">
-            <span class="quiz-section">${SECTION_NAMES[q.section] || q.section}${sub}</span>
+            <span class="quiz-section">${sectionName(q.section)}${sub}</span>
             <span class="quiz-score ${accClass(p)}">${safeScore(q.correct, q.total)} (${p}%)</span>
             <span class="quiz-time">${fmtTime(q.completed_at)}</span>
           </div>`;
@@ -815,7 +922,7 @@
         lines.push('No practice recorded yet.');
       }
       for (const q of rows) {
-        const nm = SECTION_NAMES[q.section] || q.section;
+        const nm = sectionName(q.section);
         const sub = q.sub_section ? ' - ' + prettySub(q.sub_section) : '';
         lines.push(`${nm}${sub}: ${safeScore(q.correct, q.total)} (${pct(q.correct, q.total)}%)`);
         for (const dt of (Array.isArray(q.details) ? q.details : [])) {
