@@ -12,7 +12,7 @@ const app = document.getElementById('app');
 // render so exactly one section is ever wired up at a time.
 const SECTION_HANDLER_KEYS = [
   '_mathsHandler', '_seqHandler', '_vrHandler', '_sentCompHandler',
-  '_punctuationHandler', '_writingHandler'
+  '_punctuationHandler', '_writingHandler', '_testHandler'
 ];
 function clearSectionHandlers() {
   for (const key of SECTION_HANDLER_KEYS) {
@@ -45,6 +45,7 @@ const SECTION_MODULES = {
   'collocations':        () => import('./sections/collocations.js'),
   'y4-assessments':      () => import('./sections/y4-assessments.js'),
   'piano':               () => import('./sections/piano.js'),
+  'mock-test':           () => import('./sections/mock-test.js'),
 };
 
 /** Resolve the current route from the hash. */

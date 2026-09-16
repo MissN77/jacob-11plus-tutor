@@ -1,11 +1,6 @@
 {
   "metadata": {
-    "totalQuestions": 157,
-    "sourceBreakdown": {
-      "brain_trainer": 102,
-      "mock_exam": 25,
-      "worksheets": 30
-    },
+    "totalQuestions": 216,
     "types": [
       "ooo",
       "sim",
@@ -31,15 +26,15 @@
       "hid": "Hidden Shapes"
     },
     "countsByType": {
-      "ooo": 19,
-      "sim": 15,
-      "seq": 16,
-      "ana": 16,
-      "mat": 16,
+      "ooo": 27,
+      "sim": 25,
+      "seq": 23,
+      "ana": 25,
+      "mat": 25,
       "cod": 15,
-      "ref": 16,
-      "fol": 15,
-      "net": 14,
+      "ref": 25,
+      "fol": 21,
+      "net": 15,
       "hid": 15
     },
     "schema": {
@@ -48,7 +43,8 @@
       "fills": "e=empty, g=grey, b=black, l=lightgrey",
       "rotation": "degrees (0,45,60,90,120,135,180,270)",
       "scale": "optional, default 1.0"
-    }
+    },
+    "note": "Counts are computed from the bank below, not hand-written. Every type must be non-empty: nvr.js dead-ends on an empty type."
   },
   "questions": {
     "ooo": [
@@ -351,6 +347,431 @@
         "e": "<strong>D is the odd one out!</strong> It's a hexagon (6 sides). All the others are diamonds (4 sides).",
         "source": "brain_trainer",
         "sourceIndex": 11
+      },
+      {
+        "s": [
+          [
+            "p",
+            "g",
+            45
+          ],
+          [
+            "p",
+            "g",
+            90
+          ],
+          [
+            "p",
+            "g",
+            180
+          ],
+          [
+            "p",
+            "g",
+            270
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>A is the odd one out!</strong> Three pentagons are rotated in 90° increments (90°, 180°, 270°), but A is rotated only 45° — it breaks the rotation pattern.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "h",
+            "l",
+            0
+          ],
+          [
+            "h",
+            "g",
+            0
+          ],
+          [
+            "h",
+            "l",
+            0
+          ],
+          [
+            "h",
+            "l",
+            0
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>B is the odd one out!</strong> Three hexagons are light grey, but B is mid grey — a subtle shade difference.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "d",
+            "b",
+            0
+          ],
+          [
+            "d",
+            "b",
+            0
+          ],
+          [
+            "d",
+            "g",
+            45
+          ],
+          [
+            "d",
+            "b",
+            0
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>C is the odd one out!</strong> It breaks TWO rules: it is grey (not black) AND rotated 45° (not 0°). The others are all black diamonds at 0°.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "p",
+            "g",
+            0,
+            1
+          ],
+          [
+            "p",
+            "g",
+            0,
+            1
+          ],
+          [
+            "p",
+            "g",
+            0,
+            1
+          ],
+          [
+            "h",
+            "g",
+            0,
+            1
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>D is the odd one out!</strong> It is a hexagon (6 sides), while the others are pentagons (5 sides). The fill and size are identical — only the side count differs.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "s",
+            "l",
+            0,
+            0.6
+          ],
+          [
+            "s",
+            "g",
+            0,
+            1
+          ],
+          [
+            "s",
+            "g",
+            0,
+            1
+          ],
+          [
+            "s",
+            "g",
+            0,
+            1
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>A is the odd one out!</strong> It is both smaller (0.6 scale) AND lighter (light grey vs mid grey). The others are all normal-sized mid-grey squares.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "a",
+            "b",
+            0
+          ],
+          [
+            "a",
+            "b",
+            135
+          ],
+          [
+            "a",
+            "b",
+            180
+          ],
+          [
+            "a",
+            "b",
+            270
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>B is the odd one out!</strong> Three arrows are at 0°, 180°, and 270° (90° intervals from 0°), but B is at 135° — not on the 90° grid.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "*",
+            "b",
+            0
+          ],
+          [
+            "*",
+            "b",
+            0
+          ],
+          [
+            "*",
+            "g",
+            45
+          ],
+          [
+            "*",
+            "b",
+            0
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>C is the odd one out!</strong> It breaks TWO rules: it is grey (not black) AND rotated 45°. The other three are identical black stars at 0°.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "ov",
+            "g",
+            90
+          ],
+          [
+            "ov",
+            "g",
+            90
+          ],
+          [
+            "ov",
+            "g",
+            90
+          ],
+          [
+            "ov",
+            "g",
+            0
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>D is the odd one out!</strong> Three ovals are vertical (90°), but D is horizontal (0°). The shape and fill are identical — only orientation differs.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "+",
+            "l",
+            0
+          ],
+          [
+            "+",
+            "g",
+            0
+          ],
+          [
+            "+",
+            "g",
+            0
+          ],
+          [
+            "+",
+            "g",
+            0
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>A is the odd one out!</strong> It is light grey while the others are mid grey — a very subtle shade difference in otherwise identical crosses.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "p",
+            "b",
+            0
+          ],
+          [
+            "h",
+            "b",
+            0
+          ],
+          [
+            "p",
+            "b",
+            0
+          ],
+          [
+            "p",
+            "b",
+            0
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>B is the odd one out!</strong> It is a hexagon (6 sides), while A, C and D are pentagons (5 sides). With black fill, the side count difference is harder to spot.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "t",
+            "e",
+            0,
+            1
+          ],
+          [
+            "t",
+            "e",
+            0,
+            1
+          ],
+          [
+            "t",
+            "e",
+            0,
+            1.2
+          ],
+          [
+            "t",
+            "e",
+            0,
+            1
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>C is the odd one out!</strong> It is slightly larger (1.2 scale) than the others (1.0 scale). Shape, fill and rotation are all the same — only size differs subtly.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "d",
+            "g",
+            0
+          ],
+          [
+            "d",
+            "g",
+            0
+          ],
+          [
+            "d",
+            "g",
+            0
+          ],
+          [
+            "d",
+            "g",
+            90
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>D is the odd one out!</strong> It is rotated 90° while the others are at 0°. Since diamonds have rotational symmetry this is subtle, but at 90° the proportions shift.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "a",
+            "b",
+            90,
+            0.6
+          ],
+          [
+            "a",
+            "b",
+            90,
+            1
+          ],
+          [
+            "a",
+            "b",
+            90,
+            1
+          ],
+          [
+            "a",
+            "b",
+            90,
+            1
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>A is the odd one out!</strong> It is noticeably smaller (0.6 scale). All four are black arrows pointing down, but A is the only small one.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "p",
+            "l",
+            0
+          ],
+          [
+            "p",
+            "l",
+            315
+          ],
+          [
+            "p",
+            "l",
+            0
+          ],
+          [
+            "p",
+            "l",
+            0
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>B is the odd one out!</strong> It is rotated 315° (slightly tilted) while the other three are upright at 0°. Fill and shape are identical.",
+        "source": "questions_js"
+      },
+      {
+        "s": [
+          [
+            "h",
+            "b",
+            0,
+            1
+          ],
+          [
+            "h",
+            "b",
+            0,
+            1
+          ],
+          [
+            "h",
+            "b",
+            0,
+            1.4
+          ],
+          [
+            "h",
+            "b",
+            0,
+            1
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>C is the odd one out!</strong> It is larger (1.4 scale). All are black hexagons at 0° rotation, but C is oversized compared to the others.",
+        "source": "questions_js"
       }
     ],
     "sim": [
@@ -643,6 +1064,521 @@
         "e": "<strong>C matches!</strong> It's an empty oval — same shape and fill as the original.",
         "source": "brain_trainer",
         "sourceIndex": 9
+      },
+      {
+        "src": [
+          "t",
+          "g",
+          90
+        ],
+        "opts": [
+          [
+            "t",
+            "g",
+            90
+          ],
+          [
+            "t",
+            "g",
+            0
+          ],
+          [
+            "t",
+            "b",
+            90
+          ],
+          [
+            "s",
+            "g",
+            90
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>A matches!</strong> It is a grey triangle at 90° — same shape, fill AND rotation. B has wrong rotation, C wrong fill, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "a",
+          "b",
+          180
+        ],
+        "opts": [
+          [
+            "a",
+            "b",
+            0
+          ],
+          [
+            "a",
+            "b",
+            180
+          ],
+          [
+            "a",
+            "g",
+            180
+          ],
+          [
+            "a",
+            "b",
+            90
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>B matches!</strong> Black arrow at 180°. A and D have correct shape and fill but wrong rotation. C has wrong fill.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "p",
+          "l",
+          0,
+          0.7
+        ],
+        "opts": [
+          [
+            "p",
+            "l",
+            0,
+            1
+          ],
+          [
+            "p",
+            "g",
+            0,
+            0.7
+          ],
+          [
+            "p",
+            "l",
+            0,
+            0.7
+          ],
+          [
+            "h",
+            "l",
+            0,
+            0.7
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>C matches!</strong> Light grey pentagon at 0° and 0.7 scale. A has wrong scale, B wrong fill, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "*",
+          "e",
+          45
+        ],
+        "opts": [
+          [
+            "*",
+            "e",
+            0
+          ],
+          [
+            "*",
+            "b",
+            45
+          ],
+          [
+            "*",
+            "e",
+            90
+          ],
+          [
+            "*",
+            "e",
+            45
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>D matches!</strong> Empty star at 45°. A and C have wrong rotation. B has wrong fill.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "ov",
+          "g",
+          90
+        ],
+        "opts": [
+          [
+            "ov",
+            "g",
+            90
+          ],
+          [
+            "ov",
+            "g",
+            0
+          ],
+          [
+            "ov",
+            "l",
+            90
+          ],
+          [
+            "c",
+            "g",
+            90
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>A matches!</strong> Grey oval at 90°. B is horizontal (wrong rotation), C is too light, D is a circle not an oval.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "h",
+          "b",
+          0,
+          1.3
+        ],
+        "opts": [
+          [
+            "h",
+            "b",
+            0,
+            1
+          ],
+          [
+            "h",
+            "b",
+            0,
+            1.3
+          ],
+          [
+            "h",
+            "g",
+            0,
+            1.3
+          ],
+          [
+            "h",
+            "b",
+            90,
+            1.3
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>B matches!</strong> Black hexagon at 0° and 1.3 scale. A has wrong scale, C wrong fill, D wrong rotation.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "+",
+          "g",
+          45
+        ],
+        "opts": [
+          [
+            "+",
+            "b",
+            45
+          ],
+          [
+            "+",
+            "g",
+            0
+          ],
+          [
+            "+",
+            "g",
+            45
+          ],
+          [
+            "*",
+            "g",
+            45
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>C matches!</strong> Grey cross rotated 45°. A has wrong fill, B has wrong rotation, D is a star not a cross.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "d",
+          "e",
+          0,
+          0.5
+        ],
+        "opts": [
+          [
+            "d",
+            "e",
+            0,
+            1
+          ],
+          [
+            "d",
+            "g",
+            0,
+            0.5
+          ],
+          [
+            "d",
+            "e",
+            45,
+            0.5
+          ],
+          [
+            "d",
+            "e",
+            0,
+            0.5
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>D matches!</strong> Small empty diamond at 0°. A is wrong scale, B wrong fill, C wrong rotation.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "t",
+          "b",
+          270
+        ],
+        "opts": [
+          [
+            "t",
+            "b",
+            270
+          ],
+          [
+            "t",
+            "b",
+            90
+          ],
+          [
+            "t",
+            "b",
+            180
+          ],
+          [
+            "t",
+            "g",
+            270
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>A matches!</strong> Black triangle at 270° (pointing left). B and C point the wrong way. D has wrong fill.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "a",
+          "l",
+          90,
+          1.2
+        ],
+        "opts": [
+          [
+            "a",
+            "l",
+            90,
+            1
+          ],
+          [
+            "a",
+            "l",
+            90,
+            1.2
+          ],
+          [
+            "a",
+            "l",
+            270,
+            1.2
+          ],
+          [
+            "a",
+            "g",
+            90,
+            1.2
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>B matches!</strong> Large light grey arrow at 90°. A has wrong scale, C wrong rotation, D wrong fill shade.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "p",
+          "g",
+          180
+        ],
+        "opts": [
+          [
+            "p",
+            "g",
+            0
+          ],
+          [
+            "h",
+            "g",
+            180
+          ],
+          [
+            "p",
+            "g",
+            180
+          ],
+          [
+            "p",
+            "b",
+            180
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>C matches!</strong> Grey pentagon at 180°. A wrong rotation, B is a hexagon, D wrong fill.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "ov",
+          "b",
+          0,
+          0.6
+        ],
+        "opts": [
+          [
+            "ov",
+            "b",
+            90,
+            0.6
+          ],
+          [
+            "ov",
+            "b",
+            0,
+            1
+          ],
+          [
+            "c",
+            "b",
+            0,
+            0.6
+          ],
+          [
+            "ov",
+            "b",
+            0,
+            0.6
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>D matches!</strong> Small black horizontal oval. A is vertical, B is full-sized, C is a circle.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "h",
+          "e",
+          90
+        ],
+        "opts": [
+          [
+            "h",
+            "e",
+            90
+          ],
+          [
+            "h",
+            "e",
+            0
+          ],
+          [
+            "h",
+            "l",
+            90
+          ],
+          [
+            "p",
+            "e",
+            90
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>A matches!</strong> Empty hexagon at 90°. B wrong rotation, C wrong fill, D wrong shape (pentagon).",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "*",
+          "g",
+          0,
+          1.4
+        ],
+        "opts": [
+          [
+            "*",
+            "g",
+            0,
+            1
+          ],
+          [
+            "*",
+            "g",
+            0,
+            1.4
+          ],
+          [
+            "*",
+            "b",
+            0,
+            1.4
+          ],
+          [
+            "*",
+            "g",
+            45,
+            1.4
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>B matches!</strong> Large grey star at 0°. A wrong scale, C wrong fill, D wrong rotation.",
+        "source": "questions_js"
+      },
+      {
+        "src": [
+          "+",
+          "b",
+          0,
+          0.8
+        ],
+        "opts": [
+          [
+            "+",
+            "b",
+            45,
+            0.8
+          ],
+          [
+            "+",
+            "b",
+            0,
+            1
+          ],
+          [
+            "+",
+            "b",
+            0,
+            0.8
+          ],
+          [
+            "+",
+            "g",
+            0,
+            0.8
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>C matches!</strong> Slightly small black cross at 0°. A wrong rotation, B wrong scale, D wrong fill.",
+        "source": "questions_js"
       }
     ],
     "seq": [
@@ -1067,6 +2003,613 @@
         "e": "<strong>Answer: B</strong> Star shrinks each step: large→medium→small, then back to <strong>large</strong>. Fill stays black throughout.",
         "source": "brain_trainer",
         "sourceIndex": 9
+      },
+      {
+        "seq": [
+          [
+            "a",
+            "l",
+            0,
+            1.5
+          ],
+          [
+            "a",
+            "g",
+            90,
+            1
+          ],
+          [
+            "a",
+            "b",
+            180,
+            0.5
+          ]
+        ],
+        "opts": [
+          [
+            "a",
+            "l",
+            270,
+            1.5
+          ],
+          [
+            "a",
+            "b",
+            270,
+            1
+          ],
+          [
+            "a",
+            "l",
+            270,
+            1.5
+          ],
+          [
+            "a",
+            "g",
+            0,
+            1.5
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Three rules: arrow rotates 90° CW, fill darkens l→g→b→<strong>l</strong>, scale shrinks 1.5→1.0→0.5→<strong>1.5</strong> (cycles). Step 4 = light grey arrow at 270°, large.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "t",
+            "g",
+            0
+          ],
+          [
+            "s",
+            "b",
+            90
+          ],
+          [
+            "t",
+            "e",
+            180
+          ]
+        ],
+        "opts": [
+          [
+            "s",
+            "e",
+            270
+          ],
+          [
+            "t",
+            "g",
+            270
+          ],
+          [
+            "s",
+            "b",
+            0
+          ],
+          [
+            "s",
+            "g",
+            270
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Three rules: shape alternates (t/s/t/<strong>s</strong>), fill cycles g→b→e→<strong>g</strong>, rotation +90° (0→90→180→<strong>270</strong>). Answer = grey square at 270°.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "*",
+            "b",
+            0,
+            1
+          ],
+          [
+            "*",
+            "b",
+            45,
+            0.6
+          ],
+          [
+            "*",
+            "b",
+            90,
+            1
+          ]
+        ],
+        "opts": [
+          [
+            "*",
+            "b",
+            135,
+            0.6
+          ],
+          [
+            "*",
+            "b",
+            135,
+            1
+          ],
+          [
+            "*",
+            "b",
+            90,
+            0.6
+          ],
+          [
+            "*",
+            "e",
+            135,
+            0.6
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Star rotates +45° each step AND scale alternates large/small (1.0→0.6→1.0→<strong>0.6</strong>). Step 4 = small black star at 135°.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "p",
+            "e",
+            0
+          ],
+          [
+            "p",
+            "l",
+            90
+          ],
+          [
+            "p",
+            "g",
+            180
+          ]
+        ],
+        "opts": [
+          [
+            "p",
+            "b",
+            0
+          ],
+          [
+            "p",
+            "b",
+            270
+          ],
+          [
+            "p",
+            "l",
+            270
+          ],
+          [
+            "p",
+            "g",
+            270
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Pentagon fill darkens (e→l→g→<strong>b</strong>) AND rotates +90° each step (0→90→180→<strong>270</strong>). Answer = black pentagon at 270°.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "t",
+            "g",
+            0
+          ],
+          [
+            "s",
+            "g",
+            45
+          ],
+          [
+            "p",
+            "g",
+            0
+          ]
+        ],
+        "opts": [
+          [
+            "h",
+            "g",
+            0
+          ],
+          [
+            "h",
+            "b",
+            45
+          ],
+          [
+            "h",
+            "g",
+            45
+          ],
+          [
+            "p",
+            "g",
+            45
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Two rules: sides increase (3→4→5→<strong>6</strong>) AND rotation alternates 0°/45°/0°/<strong>45°</strong>. Answer = grey hexagon at 45°.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "+",
+            "b",
+            0,
+            0.5
+          ],
+          [
+            "+",
+            "g",
+            90,
+            0.75
+          ],
+          [
+            "+",
+            "b",
+            180,
+            1
+          ]
+        ],
+        "opts": [
+          [
+            "+",
+            "b",
+            270,
+            1.25
+          ],
+          [
+            "+",
+            "g",
+            0,
+            1.25
+          ],
+          [
+            "+",
+            "b",
+            0,
+            1.25
+          ],
+          [
+            "+",
+            "g",
+            270,
+            1.25
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Cross rotates +90°, fill alternates b/g, scale grows +0.25. Step 4 = <strong>grey cross at 270°, scale 1.25</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "ov",
+            "g",
+            0,
+            1.4
+          ],
+          [
+            "ov",
+            "e",
+            90,
+            1.2
+          ],
+          [
+            "ov",
+            "g",
+            180,
+            1
+          ]
+        ],
+        "opts": [
+          [
+            "ov",
+            "e",
+            270,
+            0.8
+          ],
+          [
+            "ov",
+            "g",
+            270,
+            0.8
+          ],
+          [
+            "ov",
+            "e",
+            270,
+            1
+          ],
+          [
+            "ov",
+            "g",
+            0,
+            0.8
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Three rules: oval rotates +90°, fill alternates g/e, scale shrinks by 0.2. Step 4 = <strong>empty oval at 270°, scale 0.8</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "t",
+            "b"
+          ],
+          [
+            "p",
+            "b"
+          ],
+          [
+            "s",
+            "b"
+          ]
+        ],
+        "opts": [
+          [
+            "d",
+            "b"
+          ],
+          [
+            "h",
+            "b"
+          ],
+          [
+            "p",
+            "b"
+          ],
+          [
+            "*",
+            "b"
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Sides follow: 3→5→4→<strong>6</strong>. Pattern: odd step adds 2, even step subtracts 1 (3+2=5, 5-1=4, 4+2=<strong>6</strong>). Answer = black hexagon.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "t",
+            "e",
+            0,
+            1
+          ],
+          [
+            "t",
+            "g",
+            90,
+            0.5
+          ],
+          [
+            "t",
+            "b",
+            180,
+            1
+          ]
+        ],
+        "opts": [
+          [
+            "t",
+            "l",
+            270,
+            1
+          ],
+          [
+            "t",
+            "b",
+            270,
+            0.5
+          ],
+          [
+            "t",
+            "l",
+            270,
+            0.5
+          ],
+          [
+            "t",
+            "e",
+            270,
+            0.5
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Triangle rotates +90°, scale alternates 1.0/0.5, fill cycles e→g→b→<strong>l</strong>. Step 4 = <strong>light grey triangle at 270°, small</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "h",
+            "b",
+            0
+          ],
+          [
+            "h",
+            "g",
+            45
+          ],
+          [
+            "h",
+            "l",
+            90
+          ]
+        ],
+        "opts": [
+          [
+            "h",
+            "e",
+            180
+          ],
+          [
+            "h",
+            "l",
+            135
+          ],
+          [
+            "h",
+            "g",
+            135
+          ],
+          [
+            "h",
+            "e",
+            135
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Fill lightens b→g→l→<strong>e</strong> AND rotation +45° each step (0→45→90→<strong>135</strong>). Answer = empty hexagon at 135°.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "d",
+            "l",
+            0,
+            0.5
+          ],
+          [
+            "d",
+            "g",
+            0,
+            0.8
+          ],
+          [
+            "d",
+            "b",
+            0,
+            1.1
+          ]
+        ],
+        "opts": [
+          [
+            "d",
+            "l",
+            0,
+            1.4
+          ],
+          [
+            "d",
+            "e",
+            0,
+            1.4
+          ],
+          [
+            "d",
+            "b",
+            0,
+            1.4
+          ],
+          [
+            "d",
+            "g",
+            0,
+            1.4
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Diamond grows +0.3 each step, fill cycles l→g→b→<strong>l</strong>. Step 4 = light grey diamond at 1.4 scale.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "a",
+            "e",
+            0
+          ],
+          [
+            "a",
+            "b",
+            270
+          ],
+          [
+            "a",
+            "e",
+            180
+          ]
+        ],
+        "opts": [
+          [
+            "a",
+            "e",
+            90
+          ],
+          [
+            "a",
+            "b",
+            90
+          ],
+          [
+            "a",
+            "b",
+            180
+          ],
+          [
+            "a",
+            "e",
+            270
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Arrow rotates -90° (anti-clockwise) each step: 0→270→180→<strong>90</strong>. Fill alternates e/b. Step 4 = <strong>black arrow at 90°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "seq": [
+          [
+            "s",
+            "e",
+            0
+          ],
+          [
+            "s",
+            "l",
+            45
+          ],
+          [
+            "s",
+            "g",
+            90
+          ]
+        ],
+        "opts": [
+          [
+            "s",
+            "b",
+            180
+          ],
+          [
+            "s",
+            "l",
+            135
+          ],
+          [
+            "s",
+            "b",
+            135
+          ],
+          [
+            "s",
+            "e",
+            135
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Square rotates +45° and fill darkens e→l→g→<strong>b</strong>. Step 4 = <strong>black square at 135°</strong>.",
+        "source": "questions_js"
       }
     ],
     "ana": [
@@ -1471,6 +3014,664 @@
         "e": "<strong>Answer: B</strong> A→B: filled black becomes grey. Same rule on C: the black star becomes grey.",
         "source": "brain_trainer",
         "sourceIndex": 9
+      },
+      {
+        "pa": [
+          "a",
+          "e",
+          0
+        ],
+        "pb": [
+          "a",
+          "b",
+          90
+        ],
+        "pc": [
+          "t",
+          "e",
+          0
+        ],
+        "opts": [
+          [
+            "t",
+            "b",
+            90
+          ],
+          [
+            "t",
+            "e",
+            90
+          ],
+          [
+            "t",
+            "b",
+            0
+          ],
+          [
+            "t",
+            "g",
+            90
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> A→B: rotates 90° AND fill goes empty→black. Same two rules on C: triangle becomes <strong>black at 90°</strong>. B only rotates. C only darkens.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "s",
+          "b",
+          0,
+          1
+        ],
+        "pb": [
+          "s",
+          "g",
+          0,
+          0.5
+        ],
+        "pc": [
+          "h",
+          "b",
+          0,
+          1
+        ],
+        "opts": [
+          [
+            "h",
+            "b",
+            0,
+            0.5
+          ],
+          [
+            "h",
+            "g",
+            0,
+            0.5
+          ],
+          [
+            "h",
+            "g",
+            0,
+            1
+          ],
+          [
+            "h",
+            "b",
+            0,
+            1
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> A→B: shrinks to half AND fill lightens b→g. Both rules on C: hexagon becomes <strong>grey at 0.5 scale</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "s",
+          "g",
+          0
+        ],
+        "pb": [
+          "p",
+          "g",
+          180
+        ],
+        "pc": [
+          "p",
+          "g",
+          0
+        ],
+        "opts": [
+          [
+            "h",
+            "b",
+            180
+          ],
+          [
+            "p",
+            "g",
+            180
+          ],
+          [
+            "h",
+            "g",
+            180
+          ],
+          [
+            "h",
+            "g",
+            0
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> A→B: gains one side (4→5) AND rotates 180°. Same on C: pentagon gains a side (5→<strong>6 hexagon</strong>) AND rotates 180°.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "d",
+          "e",
+          0
+        ],
+        "pb": [
+          "d",
+          "l",
+          45
+        ],
+        "pc": [
+          "*",
+          "e",
+          0
+        ],
+        "opts": [
+          [
+            "*",
+            "l",
+            0
+          ],
+          [
+            "*",
+            "e",
+            45
+          ],
+          [
+            "*",
+            "g",
+            45
+          ],
+          [
+            "*",
+            "l",
+            45
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> A→B: fill empty→light grey AND rotates 45°. Same on C: star becomes <strong>light grey at 45°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "t",
+          "b",
+          0,
+          1
+        ],
+        "pb": [
+          "t",
+          "b",
+          90,
+          1.5
+        ],
+        "pc": [
+          "a",
+          "b",
+          0,
+          1
+        ],
+        "opts": [
+          [
+            "a",
+            "b",
+            90,
+            1.5
+          ],
+          [
+            "a",
+            "b",
+            90,
+            1
+          ],
+          [
+            "a",
+            "b",
+            0,
+            1.5
+          ],
+          [
+            "a",
+            "g",
+            90,
+            1.5
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> A→B: rotates 90° AND grows to 1.5 scale. Same on C: arrow becomes <strong>90° at 1.5 scale</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "h",
+          "b",
+          0
+        ],
+        "pb": [
+          "h",
+          "e",
+          180
+        ],
+        "pc": [
+          "p",
+          "b",
+          0
+        ],
+        "opts": [
+          [
+            "p",
+            "b",
+            180
+          ],
+          [
+            "p",
+            "e",
+            180
+          ],
+          [
+            "p",
+            "e",
+            0
+          ],
+          [
+            "h",
+            "e",
+            180
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> A→B: fill reverses b→e AND rotates 180°. Same on C: pentagon becomes <strong>empty at 180°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "t",
+          "g",
+          0
+        ],
+        "pb": [
+          "s",
+          "b",
+          0
+        ],
+        "pc": [
+          "s",
+          "g",
+          0
+        ],
+        "opts": [
+          [
+            "p",
+            "g",
+            0
+          ],
+          [
+            "s",
+            "b",
+            0
+          ],
+          [
+            "p",
+            "b",
+            0
+          ],
+          [
+            "p",
+            "e",
+            0
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> A→B: fill darkens g→b AND shape gains a side (3→4). Same on C: square (4) becomes <strong>black pentagon (5)</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "p",
+          "l",
+          0
+        ],
+        "pb": [
+          "p",
+          "g",
+          90
+        ],
+        "pc": [
+          "h",
+          "l",
+          0
+        ],
+        "opts": [
+          [
+            "h",
+            "g",
+            0
+          ],
+          [
+            "h",
+            "l",
+            90
+          ],
+          [
+            "h",
+            "b",
+            90
+          ],
+          [
+            "h",
+            "g",
+            90
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> A→B: rotates 90° AND fill darkens l→g. Same on C: hexagon becomes <strong>grey at 90°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "+",
+          "b",
+          0,
+          1
+        ],
+        "pb": [
+          "+",
+          "b",
+          180,
+          0.6
+        ],
+        "pc": [
+          "d",
+          "g",
+          0,
+          1
+        ],
+        "opts": [
+          [
+            "d",
+            "g",
+            180,
+            0.6
+          ],
+          [
+            "d",
+            "g",
+            180,
+            1
+          ],
+          [
+            "d",
+            "g",
+            0,
+            0.6
+          ],
+          [
+            "d",
+            "b",
+            180,
+            0.6
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> A→B: rotates 180° AND shrinks to 0.6. Fill stays. Same on C: grey diamond at <strong>180°, 0.6 scale</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "a",
+          "e",
+          0
+        ],
+        "pb": [
+          "a",
+          "g",
+          270
+        ],
+        "pc": [
+          "t",
+          "e",
+          90
+        ],
+        "opts": [
+          [
+            "t",
+            "g",
+            90
+          ],
+          [
+            "t",
+            "g",
+            0
+          ],
+          [
+            "t",
+            "e",
+            0
+          ],
+          [
+            "t",
+            "g",
+            180
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> A→B: fill e→g AND rotates 270° (i.e. -90°). Same on C: triangle at 90° rotates to <strong>0° and becomes grey</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "h",
+          "b",
+          0
+        ],
+        "pb": [
+          "p",
+          "l",
+          0
+        ],
+        "pc": [
+          "p",
+          "b",
+          0
+        ],
+        "opts": [
+          [
+            "s",
+            "b",
+            0
+          ],
+          [
+            "s",
+            "g",
+            0
+          ],
+          [
+            "s",
+            "l",
+            0
+          ],
+          [
+            "p",
+            "l",
+            0
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> A→B: loses a side (6→5) AND fill b→l. Same on C: pentagon (5) becomes <strong>light grey square (4)</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "*",
+          "g",
+          0
+        ],
+        "pb": [
+          "*",
+          "e",
+          135
+        ],
+        "pc": [
+          "+",
+          "g",
+          0
+        ],
+        "opts": [
+          [
+            "+",
+            "e",
+            90
+          ],
+          [
+            "+",
+            "g",
+            135
+          ],
+          [
+            "+",
+            "e",
+            180
+          ],
+          [
+            "+",
+            "e",
+            135
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> A→B: rotates 135° AND fill g→e. Same on C: cross becomes <strong>empty at 135°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "c",
+          "e",
+          0,
+          1
+        ],
+        "pb": [
+          "c",
+          "b",
+          0,
+          0.5
+        ],
+        "pc": [
+          "ov",
+          "e",
+          0,
+          1
+        ],
+        "opts": [
+          [
+            "ov",
+            "b",
+            0,
+            0.5
+          ],
+          [
+            "ov",
+            "b",
+            0,
+            1
+          ],
+          [
+            "ov",
+            "e",
+            0,
+            0.5
+          ],
+          [
+            "c",
+            "b",
+            0,
+            0.5
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> A→B: fill e→b AND shrinks to 0.5. Same on C: oval becomes <strong>black at 0.5 scale</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "d",
+          "b",
+          0
+        ],
+        "pb": [
+          "d",
+          "g",
+          90
+        ],
+        "pc": [
+          "a",
+          "b",
+          0
+        ],
+        "opts": [
+          [
+            "a",
+            "g",
+            0
+          ],
+          [
+            "a",
+            "g",
+            90
+          ],
+          [
+            "a",
+            "b",
+            90
+          ],
+          [
+            "a",
+            "g",
+            180
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> A→B: rotates 90° AND fill b→g. Same on C: arrow becomes <strong>grey at 90°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "pa": [
+          "p",
+          "e",
+          0
+        ],
+        "pb": [
+          "h",
+          "g",
+          45
+        ],
+        "pc": [
+          "s",
+          "e",
+          0
+        ],
+        "opts": [
+          [
+            "p",
+            "e",
+            45
+          ],
+          [
+            "p",
+            "g",
+            0
+          ],
+          [
+            "p",
+            "g",
+            45
+          ],
+          [
+            "s",
+            "g",
+            45
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> A→B: gains a side (5→6) AND fill e→g AND rotates 45°. Same on C: square (4) becomes <strong>grey pentagon (5) at 45°</strong>.",
+        "source": "questions_js"
       }
     ],
     "mat": [
@@ -2159,6 +4360,1188 @@
         "e": "<strong>Answer: B</strong> Each row = same shape AND same fill. Row 2 = all grey diamonds. Missing = <strong>grey diamond</strong>.",
         "source": "brain_trainer",
         "sourceIndex": 9
+      },
+      {
+        "g": [
+          [
+            [
+              "c",
+              "e",
+              0
+            ],
+            [
+              "c",
+              "g",
+              45
+            ],
+            [
+              "c",
+              "b",
+              90
+            ]
+          ],
+          [
+            [
+              "s",
+              "e",
+              0
+            ],
+            [
+              "s",
+              "g",
+              45
+            ],
+            [
+              "s",
+              "b",
+              90
+            ]
+          ],
+          [
+            [
+              "t",
+              "e",
+              0
+            ],
+            [
+              "t",
+              "g",
+              45
+            ],
+            null
+          ]
+        ],
+        "opts": [
+          [
+            "t",
+            "b",
+            90
+          ],
+          [
+            "t",
+            "b",
+            45
+          ],
+          [
+            "t",
+            "g",
+            90
+          ],
+          [
+            "s",
+            "b",
+            90
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Rows: fill darkens e→g→b AND rotation increases 0→45→90. Columns: same shape. Missing = <strong>black triangle at 90°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "d",
+              "e",
+              0,
+              0.5
+            ],
+            [
+              "s",
+              "e",
+              0,
+              1
+            ],
+            [
+              "h",
+              "e",
+              0,
+              1.5
+            ]
+          ],
+          [
+            [
+              "d",
+              "g",
+              0,
+              0.5
+            ],
+            [
+              "s",
+              "g",
+              0,
+              1
+            ],
+            null
+          ],
+          [
+            [
+              "d",
+              "b",
+              0,
+              0.5
+            ],
+            [
+              "s",
+              "b",
+              0,
+              1
+            ],
+            [
+              "h",
+              "b",
+              0,
+              1.5
+            ]
+          ]
+        ],
+        "opts": [
+          [
+            "h",
+            "e",
+            0,
+            1.5
+          ],
+          [
+            "h",
+            "g",
+            0,
+            1.5
+          ],
+          [
+            "h",
+            "b",
+            0,
+            1
+          ],
+          [
+            "s",
+            "g",
+            0,
+            1.5
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Rows: same fill. Columns: same shape. Scale increases across cols. Missing = <strong>grey hexagon at 1.5 scale</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "p",
+              "e",
+              0
+            ],
+            [
+              "p",
+              "g",
+              0
+            ],
+            [
+              "p",
+              "b",
+              0
+            ]
+          ],
+          [
+            [
+              "a",
+              "e",
+              90
+            ],
+            [
+              "a",
+              "g",
+              90
+            ],
+            [
+              "a",
+              "b",
+              90
+            ]
+          ],
+          [
+            [
+              "*",
+              "e",
+              180
+            ],
+            [
+              "*",
+              "g",
+              180
+            ],
+            null
+          ]
+        ],
+        "opts": [
+          [
+            "*",
+            "e",
+            180
+          ],
+          [
+            "*",
+            "g",
+            0
+          ],
+          [
+            "*",
+            "b",
+            180
+          ],
+          [
+            "*",
+            "b",
+            0
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Columns: fill darkens e→g→b. Rows: same shape and rotation. Missing = <strong>black star at 180°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "t",
+              "b",
+              0
+            ],
+            [
+              "s",
+              "b",
+              0
+            ],
+            [
+              "p",
+              "b",
+              0
+            ]
+          ],
+          [
+            [
+              "t",
+              "g",
+              45
+            ],
+            [
+              "s",
+              "g",
+              45
+            ],
+            [
+              "p",
+              "g",
+              45
+            ]
+          ],
+          [
+            [
+              "t",
+              "e",
+              90
+            ],
+            [
+              "s",
+              "e",
+              90
+            ],
+            null
+          ]
+        ],
+        "opts": [
+          [
+            "p",
+            "g",
+            90
+          ],
+          [
+            "p",
+            "b",
+            90
+          ],
+          [
+            "s",
+            "e",
+            90
+          ],
+          [
+            "p",
+            "e",
+            90
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Rows: shapes t→s→p. Columns: fill darkens b→g→e down. Rotation +45° per row. Missing = <strong>empty pentagon at 90°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "c",
+              "l"
+            ],
+            [
+              "d",
+              "l"
+            ],
+            [
+              "+",
+              "l"
+            ]
+          ],
+          [
+            [
+              "c",
+              "g"
+            ],
+            [
+              "d",
+              "g"
+            ],
+            [
+              "+",
+              "g"
+            ]
+          ],
+          [
+            [
+              null
+            ],
+            [
+              "d",
+              "b"
+            ],
+            [
+              "+",
+              "b"
+            ]
+          ]
+        ],
+        "opts": [
+          [
+            "c",
+            "b"
+          ],
+          [
+            "c",
+            "g"
+          ],
+          [
+            "d",
+            "b"
+          ],
+          [
+            "+",
+            "b"
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Columns: same shape. Rows: same fill (l→g→b down). Missing = <strong>black circle</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "h",
+              "b",
+              0
+            ],
+            [
+              "h",
+              "b",
+              90
+            ],
+            [
+              "h",
+              "b",
+              180
+            ]
+          ],
+          [
+            [
+              "h",
+              "g",
+              0
+            ],
+            [
+              "h",
+              "g",
+              90
+            ],
+            [
+              "h",
+              "g",
+              180
+            ]
+          ],
+          [
+            [
+              "h",
+              "e",
+              0
+            ],
+            null,
+            [
+              "h",
+              "e",
+              180
+            ]
+          ]
+        ],
+        "opts": [
+          [
+            "h",
+            "g",
+            90
+          ],
+          [
+            "h",
+            "e",
+            90
+          ],
+          [
+            "h",
+            "b",
+            90
+          ],
+          [
+            "h",
+            "e",
+            0
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Rows: rotation increases 0→90→180. Columns: fill lightens b→g→e. Missing = <strong>empty hexagon at 90°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "t",
+              "g",
+              0,
+              0.5
+            ],
+            [
+              "t",
+              "g",
+              0,
+              1
+            ],
+            [
+              "t",
+              "g",
+              0,
+              1.5
+            ]
+          ],
+          [
+            [
+              "d",
+              "g",
+              0,
+              0.5
+            ],
+            [
+              "d",
+              "g",
+              0,
+              1
+            ],
+            [
+              "d",
+              "g",
+              0,
+              1.5
+            ]
+          ],
+          [
+            [
+              "h",
+              "g",
+              0,
+              0.5
+            ],
+            [
+              "h",
+              "g",
+              0,
+              1
+            ],
+            null
+          ]
+        ],
+        "opts": [
+          [
+            "h",
+            "g",
+            0,
+            1
+          ],
+          [
+            "h",
+            "b",
+            0,
+            1.5
+          ],
+          [
+            "h",
+            "g",
+            0,
+            1.5
+          ],
+          [
+            "d",
+            "g",
+            0,
+            1.5
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Rows: scale grows 0.5→1.0→1.5. Columns: same shape per row (t/d/h). Missing = <strong>grey hexagon at 1.5 scale</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "p",
+              "e",
+              0
+            ],
+            [
+              "p",
+              "l",
+              0
+            ],
+            [
+              "p",
+              "g",
+              0
+            ]
+          ],
+          [
+            [
+              "p",
+              "e",
+              45
+            ],
+            [
+              "p",
+              "l",
+              45
+            ],
+            [
+              "p",
+              "g",
+              45
+            ]
+          ],
+          [
+            [
+              "p",
+              "e",
+              90
+            ],
+            [
+              "p",
+              "l",
+              90
+            ],
+            null
+          ]
+        ],
+        "opts": [
+          [
+            "p",
+            "b",
+            90
+          ],
+          [
+            "p",
+            "e",
+            90
+          ],
+          [
+            "p",
+            "l",
+            90
+          ],
+          [
+            "p",
+            "g",
+            90
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Columns: fill changes e→l→g. Rows: rotation increases 0→45→90. Missing = <strong>grey pentagon at 90°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "a",
+              "b",
+              0
+            ],
+            [
+              "t",
+              "b",
+              0
+            ],
+            [
+              "s",
+              "b",
+              0
+            ]
+          ],
+          [
+            [
+              "a",
+              "e",
+              0
+            ],
+            [
+              "t",
+              "e",
+              0
+            ],
+            [
+              "s",
+              "e",
+              0
+            ]
+          ],
+          [
+            [
+              null
+            ],
+            [
+              "t",
+              "b",
+              0
+            ],
+            [
+              "s",
+              "b",
+              0
+            ]
+          ]
+        ],
+        "opts": [
+          [
+            "a",
+            "b",
+            0
+          ],
+          [
+            "a",
+            "e",
+            0
+          ],
+          [
+            "t",
+            "b",
+            0
+          ],
+          [
+            "a",
+            "g",
+            0
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Columns: same shape. Rows: fill pattern b/e/b. Missing = <strong>black arrow</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "ov",
+              "e",
+              0
+            ],
+            [
+              "ov",
+              "e",
+              90
+            ],
+            [
+              "ov",
+              "e",
+              180
+            ]
+          ],
+          [
+            [
+              "+",
+              "g",
+              0
+            ],
+            [
+              "+",
+              "g",
+              90
+            ],
+            null
+          ],
+          [
+            [
+              "d",
+              "b",
+              0
+            ],
+            [
+              "d",
+              "b",
+              90
+            ],
+            [
+              "d",
+              "b",
+              180
+            ]
+          ]
+        ],
+        "opts": [
+          [
+            "+",
+            "g",
+            0
+          ],
+          [
+            "+",
+            "g",
+            180
+          ],
+          [
+            "+",
+            "b",
+            180
+          ],
+          [
+            "+",
+            "e",
+            180
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Rows: rotation 0→90→180. Columns: fill e→g→b. Missing = <strong>grey cross at 180°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "c",
+              "b",
+              0,
+              1
+            ],
+            [
+              "c",
+              "b",
+              0,
+              0.7
+            ],
+            [
+              "c",
+              "b",
+              0,
+              0.4
+            ]
+          ],
+          [
+            [
+              "ov",
+              "b",
+              0,
+              1
+            ],
+            [
+              "ov",
+              "b",
+              0,
+              0.7
+            ],
+            [
+              "ov",
+              "b",
+              0,
+              0.4
+            ]
+          ],
+          [
+            [
+              "s",
+              "b",
+              0,
+              1
+            ],
+            [
+              "s",
+              "b",
+              0,
+              0.7
+            ],
+            null
+          ]
+        ],
+        "opts": [
+          [
+            "s",
+            "b",
+            0,
+            0.7
+          ],
+          [
+            "s",
+            "g",
+            0,
+            0.4
+          ],
+          [
+            "s",
+            "b",
+            0,
+            0.4
+          ],
+          [
+            "s",
+            "b",
+            0,
+            1
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Rows: scale decreases 1.0→0.7→0.4. Columns: same shape per row. Missing = <strong>small black square at 0.4 scale</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "*",
+              "e",
+              0
+            ],
+            [
+              "*",
+              "g",
+              135
+            ],
+            [
+              "*",
+              "b",
+              270
+            ]
+          ],
+          [
+            [
+              "a",
+              "e",
+              0
+            ],
+            [
+              "a",
+              "g",
+              135
+            ],
+            [
+              "a",
+              "b",
+              270
+            ]
+          ],
+          [
+            [
+              "c",
+              "e",
+              0
+            ],
+            [
+              "c",
+              "g",
+              135
+            ],
+            null
+          ]
+        ],
+        "opts": [
+          [
+            "c",
+            "e",
+            270
+          ],
+          [
+            "c",
+            "g",
+            270
+          ],
+          [
+            "c",
+            "b",
+            0
+          ],
+          [
+            "c",
+            "b",
+            270
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Rows: fill darkens e→g→b. Columns: rotation 0→135→270. Missing = <strong>black circle at 270°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "d",
+              "g",
+              0
+            ],
+            [
+              "d",
+              "l",
+              0
+            ],
+            [
+              "d",
+              "e",
+              0
+            ]
+          ],
+          [
+            [
+              "h",
+              "g",
+              90
+            ],
+            [
+              "h",
+              "l",
+              90
+            ],
+            [
+              "h",
+              "e",
+              90
+            ]
+          ],
+          [
+            [
+              null
+            ],
+            [
+              "*",
+              "l",
+              180
+            ],
+            [
+              "*",
+              "e",
+              180
+            ]
+          ]
+        ],
+        "opts": [
+          [
+            "*",
+            "g",
+            180
+          ],
+          [
+            "*",
+            "l",
+            180
+          ],
+          [
+            "*",
+            "e",
+            180
+          ],
+          [
+            "h",
+            "g",
+            180
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Columns: fill cycles g→l→e. Rows: same shape and rotation. Missing = <strong>grey star at 180°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "t",
+              "b",
+              0
+            ],
+            [
+              "p",
+              "b",
+              45
+            ],
+            [
+              "h",
+              "b",
+              90
+            ]
+          ],
+          [
+            [
+              "t",
+              "l",
+              0
+            ],
+            null,
+            [
+              "h",
+              "l",
+              90
+            ]
+          ],
+          [
+            [
+              "t",
+              "g",
+              0
+            ],
+            [
+              "p",
+              "g",
+              45
+            ],
+            [
+              "h",
+              "g",
+              90
+            ]
+          ]
+        ],
+        "opts": [
+          [
+            "p",
+            "b",
+            45
+          ],
+          [
+            "p",
+            "l",
+            45
+          ],
+          [
+            "p",
+            "g",
+            45
+          ],
+          [
+            "p",
+            "e",
+            45
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Rows: same fill (b/l/g). Columns: same shape and rotation. Missing = <strong>light grey pentagon at 45°</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "g": [
+          [
+            [
+              "d",
+              "g",
+              0,
+              1.4
+            ],
+            [
+              "d",
+              "g",
+              90,
+              1.4
+            ],
+            [
+              "d",
+              "g",
+              180,
+              1.4
+            ]
+          ],
+          [
+            [
+              "d",
+              "g",
+              0,
+              1
+            ],
+            [
+              "d",
+              "g",
+              90,
+              1
+            ],
+            [
+              "d",
+              "g",
+              180,
+              1
+            ]
+          ],
+          [
+            [
+              "d",
+              "g",
+              0,
+              0.6
+            ],
+            [
+              "d",
+              "g",
+              90,
+              0.6
+            ],
+            null
+          ]
+        ],
+        "opts": [
+          [
+            "d",
+            "g",
+            0,
+            0.6
+          ],
+          [
+            "d",
+            "g",
+            180,
+            1
+          ],
+          [
+            "d",
+            "g",
+            180,
+            0.6
+          ],
+          [
+            "d",
+            "g",
+            90,
+            0.6
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Rows: rotation increases 0→90→180. Columns: scale decreases 1.4→1.0→0.6. Missing = <strong>grey diamond at 180°, 0.6 scale</strong>.",
+        "source": "questions_js"
       }
     ],
     "ref": [
@@ -2501,6 +5884,501 @@
         "e": "<strong>Answer: B</strong> A regular pentagon has a vertical axis of symmetry. Its reflection looks <strong>identical</strong>.",
         "source": "brain_trainer",
         "sourceIndex": 9
+      },
+      {
+        "orig": [
+          "a",
+          "b",
+          45
+        ],
+        "axis": "v",
+        "opts": [
+          [
+            "a",
+            "b",
+            135
+          ],
+          [
+            "a",
+            "b",
+            315
+          ],
+          [
+            "a",
+            "b",
+            45
+          ],
+          [
+            "a",
+            "b",
+            225
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Vertical mirror flips left/right. Arrow at 45° (up-right) reflects to 135° (up-left).",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "t",
+          "g",
+          315
+        ],
+        "axis": "h",
+        "opts": [
+          [
+            "t",
+            "g",
+            315
+          ],
+          [
+            "t",
+            "g",
+            45
+          ],
+          [
+            "t",
+            "g",
+            225
+          ],
+          [
+            "t",
+            "b",
+            45
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Horizontal mirror flips up/down. Triangle at 315° reflects to 45°.",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "a",
+          "g",
+          225
+        ],
+        "axis": "v",
+        "opts": [
+          [
+            "a",
+            "g",
+            135
+          ],
+          [
+            "a",
+            "g",
+            45
+          ],
+          [
+            "a",
+            "g",
+            315
+          ],
+          [
+            "a",
+            "b",
+            315
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Vertical mirror: arrow at 225° (down-left) reflects to 315° (down-right).",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "t",
+          "b",
+          135
+        ],
+        "axis": "h",
+        "opts": [
+          [
+            "t",
+            "b",
+            45
+          ],
+          [
+            "t",
+            "b",
+            315
+          ],
+          [
+            "t",
+            "b",
+            135
+          ],
+          [
+            "t",
+            "b",
+            225
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Horizontal mirror flips up/down. Triangle at 135° reflects to 225°.",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "a",
+          "b",
+          90
+        ],
+        "axis": "v",
+        "opts": [
+          [
+            "a",
+            "b",
+            90
+          ],
+          [
+            "a",
+            "b",
+            270
+          ],
+          [
+            "a",
+            "b",
+            0
+          ],
+          [
+            "a",
+            "b",
+            180
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Vertical mirror flips left/right only. Arrow pointing down (90°) stays pointing down. Vertical reflection doesn't change up/down.",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "a",
+          "g",
+          0
+        ],
+        "axis": "h",
+        "opts": [
+          [
+            "a",
+            "g",
+            180
+          ],
+          [
+            "a",
+            "g",
+            0
+          ],
+          [
+            "a",
+            "g",
+            90
+          ],
+          [
+            "a",
+            "b",
+            0
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Horizontal mirror flips up/down only. Arrow pointing right (0°) stays pointing right. Horizontal reflection doesn't change left/right.",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "t",
+          "e",
+          45
+        ],
+        "axis": "v",
+        "opts": [
+          [
+            "t",
+            "e",
+            315
+          ],
+          [
+            "t",
+            "e",
+            45
+          ],
+          [
+            "t",
+            "e",
+            135
+          ],
+          [
+            "t",
+            "e",
+            225
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Vertical mirror: triangle at 45° (up-right) reflects to 135° (up-left). The left-right component flips.",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "a",
+          "l",
+          315
+        ],
+        "axis": "h",
+        "opts": [
+          [
+            "a",
+            "l",
+            225
+          ],
+          [
+            "a",
+            "l",
+            135
+          ],
+          [
+            "a",
+            "l",
+            315
+          ],
+          [
+            "a",
+            "l",
+            45
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Horizontal mirror: arrow at 315° (up-right-ish) reflects to 45° (down-right-ish). The up/down component flips.",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "a",
+          "b",
+          135
+        ],
+        "axis": "v",
+        "opts": [
+          [
+            "a",
+            "b",
+            45
+          ],
+          [
+            "a",
+            "b",
+            225
+          ],
+          [
+            "a",
+            "b",
+            315
+          ],
+          [
+            "a",
+            "b",
+            135
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Vertical mirror: arrow at 135° (up-left) reflects to 45° (up-right).",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "t",
+          "g",
+          270
+        ],
+        "axis": "h",
+        "opts": [
+          [
+            "t",
+            "g",
+            270
+          ],
+          [
+            "t",
+            "g",
+            90
+          ],
+          [
+            "t",
+            "g",
+            0
+          ],
+          [
+            "t",
+            "g",
+            180
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Horizontal mirror: triangle at 270° (pointing left) reflects to 90° (pointing right). Wait — horizontal mirrors flip up/down, but a triangle at 270° has no vertical asymmetry in its pointing direction; it reflects to 90°.",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "a",
+          "e",
+          180
+        ],
+        "axis": "v",
+        "opts": [
+          [
+            "a",
+            "e",
+            90
+          ],
+          [
+            "a",
+            "e",
+            270
+          ],
+          [
+            "a",
+            "e",
+            0
+          ],
+          [
+            "a",
+            "e",
+            180
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Vertical mirror flips left/right. Arrow pointing left (180°) reflects to pointing right (0°).",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "t",
+          "b",
+          90
+        ],
+        "axis": "v",
+        "opts": [
+          [
+            "t",
+            "b",
+            0
+          ],
+          [
+            "t",
+            "b",
+            180
+          ],
+          [
+            "t",
+            "b",
+            270
+          ],
+          [
+            "t",
+            "b",
+            90
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Vertical mirror flips left/right. But a triangle at 90° points right — its base is vertical. Reflected vertically, the pointing direction doesn't change: still 90°.",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "a",
+          "g",
+          270
+        ],
+        "axis": "h",
+        "opts": [
+          [
+            "a",
+            "g",
+            90
+          ],
+          [
+            "a",
+            "g",
+            270
+          ],
+          [
+            "a",
+            "g",
+            0
+          ],
+          [
+            "a",
+            "g",
+            180
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Horizontal mirror flips up/down. Arrow pointing up (270°) reflects to pointing down (90°).",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "t",
+          "e",
+          225
+        ],
+        "axis": "v",
+        "opts": [
+          [
+            "t",
+            "e",
+            135
+          ],
+          [
+            "t",
+            "e",
+            315
+          ],
+          [
+            "t",
+            "e",
+            45
+          ],
+          [
+            "t",
+            "e",
+            225
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Vertical mirror: triangle at 225° (down-left) reflects to 315° (down-right).",
+        "source": "questions_js"
+      },
+      {
+        "orig": [
+          "a",
+          "b",
+          45
+        ],
+        "axis": "h",
+        "opts": [
+          [
+            "a",
+            "b",
+            135
+          ],
+          [
+            "a",
+            "b",
+            225
+          ],
+          [
+            "a",
+            "b",
+            315
+          ],
+          [
+            "a",
+            "b",
+            45
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Horizontal mirror flips up/down. Arrow at 45° (up-right) reflects to 315° (down-right).",
+        "source": "questions_js"
       }
     ],
     "fol": [
@@ -2939,6 +6817,1955 @@
         "e": "<strong>Answer: B</strong> Horizontal fold. Hole bottom-right. Mirror upward → holes at <strong>top-right AND bottom-right</strong>.",
         "source": "brain_trainer",
         "sourceIndex": 9
+      },
+      {
+        "fold": "v",
+        "holePos": "tr+br",
+        "opts": [
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.75,
+              0.25
+            ]
+          ],
+          [
+            [
+              0.75,
+              0.25
+            ],
+            [
+              0.75,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.75,
+              0.25
+            ],
+            [
+              0.25,
+              0.75
+            ],
+            [
+              0.75,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.75
+            ],
+            [
+              0.75,
+              0.75
+            ]
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Vertical fold with TWO holes punched (top-right and bottom-right). Each mirrors left — giving <strong>four holes</strong>, one in each corner.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "h",
+        "holePos": "bl+br",
+        "opts": [
+          [
+            [
+              0.25,
+              0.75
+            ],
+            [
+              0.75,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.75,
+              0.25
+            ],
+            [
+              0.25,
+              0.75
+            ],
+            [
+              0.75,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.75,
+              0.25
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.75
+            ]
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Horizontal fold with TWO holes punched (bottom-left and bottom-right). Each mirrors up — giving <strong>four holes</strong> in all corners.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "v",
+        "holePos": "br",
+        "opts": [
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.75,
+              0.25
+            ]
+          ],
+          [
+            [
+              0.75,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.75
+            ],
+            [
+              0.75,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.75
+            ]
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Vertical fold. Hole bottom-right. Mirror left — holes at <strong>bottom-right AND bottom-left</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "v",
+        "holePos": "mc",
+        "opts": [
+          [
+            [
+              0.25,
+              0.5
+            ],
+            [
+              0.75,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.75,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.5
+            ]
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Vertical fold. Hole punched ON the fold line (centre). When unfolded, the hole is on the crease — just <strong>one hole in the middle</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "h",
+        "holePos": "mb",
+        "opts": [
+          [
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.25
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.5
+            ],
+            [
+              0.75,
+              0.5
+            ]
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Horizontal fold. Hole mid-bottom. Mirror upward — holes at <strong>top-centre AND bottom-centre</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "h",
+        "holePos": "mc",
+        "opts": [
+          [
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.75,
+              0.5
+            ]
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Horizontal fold. Hole punched ON the fold line (centre). When unfolded, it stays as <strong>one hole in the middle</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "v",
+        "holePos": "tr+mr",
+        "opts": [
+          [
+            [
+              0.75,
+              0.25
+            ],
+            [
+              0.75,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.25,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.75,
+              0.25
+            ],
+            [
+              0.25,
+              0.5
+            ],
+            [
+              0.75,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.75,
+              0.5
+            ]
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Vertical fold with TWO holes: top-right and middle-right. Each mirrors left — giving <strong>four holes</strong>: top-left, top-right, mid-left, mid-right.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "h",
+        "holePos": "bl",
+        "opts": [
+          [
+            [
+              0.75,
+              0.25
+            ],
+            [
+              0.75,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.25,
+              0.75
+            ]
+          ]
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D</strong> Horizontal fold. Hole bottom-left. Mirror upward — holes at <strong>bottom-left AND top-left</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "v",
+        "holePos": "tr",
+        "opts": [
+          [
+            [
+              0.15,
+              0.15
+            ],
+            [
+              0.85,
+              0.15
+            ]
+          ],
+          [
+            [
+              0.85,
+              0.15
+            ]
+          ],
+          [
+            [
+              0.15,
+              0.85
+            ],
+            [
+              0.85,
+              0.85
+            ]
+          ],
+          [
+            [
+              0.15,
+              0.15
+            ]
+          ]
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A</strong> Vertical fold. Hole near top-right corner. Mirrors to top-left — two holes near the <strong>top corners</strong>.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "h",
+        "holePos": "bl+mb",
+        "opts": [
+          [
+            [
+              0.25,
+              0.75
+            ],
+            [
+              0.5,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.25,
+              0.75
+            ],
+            [
+              0.5,
+              0.75
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.25
+            ],
+            [
+              0.5,
+              0.25
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.25
+            ],
+            [
+              0.5,
+              0.75
+            ]
+          ]
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B</strong> Horizontal fold with TWO holes (bottom-left and bottom-centre). Each mirrors up — <strong>four holes</strong> total.",
+        "source": "questions_js"
+      },
+      {
+        "fold": "v",
+        "holePos": "mr",
+        "opts": [
+          [
+            [
+              0.75,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.25,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.4,
+              0.5
+            ],
+            [
+              0.6,
+              0.5
+            ]
+          ],
+          [
+            [
+              0.5,
+              0.5
+            ]
+          ]
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C</strong> Vertical fold. Hole punched on right side near the fold. When unfolded, two holes appear close together, either side of the fold line.",
+        "source": "questions_js"
+      }
+    ],
+    "cod": [
+      {
+        "ex": [
+          {
+            "s": [
+              "c",
+              "e",
+              0,
+              1.4
+            ],
+            "c": "CER"
+          },
+          {
+            "s": [
+              "c",
+              "b",
+              0,
+              1
+            ],
+            "c": "CBM"
+          },
+          {
+            "s": [
+              "t",
+              "g",
+              0,
+              0.6
+            ],
+            "c": "TGS"
+          }
+        ],
+        "tgt": [
+          "s",
+          "b",
+          0,
+          1.4
+        ],
+        "opts": [
+          "SBR",
+          "SBM",
+          "CBR",
+          "TBR"
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A (SBR)</strong> S=Square, B=Black, R=Large (1.4 scale). Distractors share 2 of 3 letters.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "a",
+              "b",
+              0
+            ],
+            "c": "ABU"
+          },
+          {
+            "s": [
+              "a",
+              "g",
+              90
+            ],
+            "c": "AGR"
+          },
+          {
+            "s": [
+              "t",
+              "e",
+              180
+            ],
+            "c": "TED"
+          }
+        ],
+        "tgt": [
+          "a",
+          "e",
+          270
+        ],
+        "opts": [
+          "AER",
+          "AEL",
+          "AED",
+          "TEL"
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B (AEL)</strong> A=Arrow, E=Empty, L=270° (left). Distractors share 2 of 3 code letters.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "h",
+              "g",
+              0,
+              0.6
+            ],
+            "c": "HGS"
+          },
+          {
+            "s": [
+              "p",
+              "b",
+              0,
+              1
+            ],
+            "c": "PBM"
+          },
+          {
+            "s": [
+              "d",
+              "e",
+              0,
+              1.4
+            ],
+            "c": "DER"
+          }
+        ],
+        "tgt": [
+          "h",
+          "b",
+          0,
+          1
+        ],
+        "opts": [
+          "HBS",
+          "HGM",
+          "HBM",
+          "PBM"
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C (HBM)</strong> H=Hexagon, B=Black, M=Medium. A has wrong size, B wrong fill, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "*",
+              "b",
+              0
+            ],
+            "c": "XBU"
+          },
+          {
+            "s": [
+              "*",
+              "e",
+              90
+            ],
+            "c": "XER"
+          },
+          {
+            "s": [
+              "+",
+              "g",
+              180
+            ],
+            "c": "KGD"
+          }
+        ],
+        "tgt": [
+          "+",
+          "b",
+          90
+        ],
+        "opts": [
+          "KBU",
+          "KBD",
+          "XBR",
+          "KBR"
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D (KBR)</strong> K=Cross, B=Black, R=90°. A has wrong rotation, B wrong rotation, C wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "t",
+              "l",
+              0,
+              1.4
+            ],
+            "c": "TLR"
+          },
+          {
+            "s": [
+              "s",
+              "g",
+              0,
+              1
+            ],
+            "c": "SGM"
+          },
+          {
+            "s": [
+              "c",
+              "b",
+              0,
+              0.6
+            ],
+            "c": "CBS"
+          }
+        ],
+        "tgt": [
+          "p",
+          "l",
+          0,
+          0.6
+        ],
+        "opts": [
+          "PLS",
+          "PLM",
+          "PGS",
+          "TLS"
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A (PLS)</strong> P=Pentagon, L=Light grey, S=Small. B wrong size, C wrong fill, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "ov",
+              "b",
+              0
+            ],
+            "c": "OBU"
+          },
+          {
+            "s": [
+              "ov",
+              "g",
+              90
+            ],
+            "c": "OGR"
+          },
+          {
+            "s": [
+              "d",
+              "e",
+              0
+            ],
+            "c": "DEU"
+          }
+        ],
+        "tgt": [
+          "ov",
+          "e",
+          180
+        ],
+        "opts": [
+          "OER",
+          "OED",
+          "OBD",
+          "DED"
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B (OED)</strong> O=Oval, E=Empty, D=180°. A wrong rotation, C wrong fill, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "h",
+              "b",
+              0,
+              1.4
+            ],
+            "c": "HBR"
+          },
+          {
+            "s": [
+              "p",
+              "g",
+              0,
+              1
+            ],
+            "c": "PGM"
+          },
+          {
+            "s": [
+              "t",
+              "e",
+              0,
+              0.6
+            ],
+            "c": "TES"
+          }
+        ],
+        "tgt": [
+          "p",
+          "b",
+          0,
+          0.6
+        ],
+        "opts": [
+          "PBM",
+          "PGS",
+          "PBS",
+          "HBS"
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C (PBS)</strong> P=Pentagon, B=Black, S=Small. A wrong size, B wrong fill, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "a",
+              "g",
+              0
+            ],
+            "c": "AGU"
+          },
+          {
+            "s": [
+              "t",
+              "b",
+              90
+            ],
+            "c": "TBR"
+          },
+          {
+            "s": [
+              "s",
+              "e",
+              180
+            ],
+            "c": "SED"
+          }
+        ],
+        "tgt": [
+          "a",
+          "b",
+          180
+        ],
+        "opts": [
+          "ABR",
+          "AGD",
+          "AED",
+          "ABD"
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D (ABD)</strong> A=Arrow, B=Black, D=180°. First distractor wrong rotation, second wrong fill, third wrong fill.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "*",
+              "g",
+              0,
+              1.4
+            ],
+            "c": "XGR"
+          },
+          {
+            "s": [
+              "c",
+              "b",
+              0,
+              1
+            ],
+            "c": "CBM"
+          },
+          {
+            "s": [
+              "*",
+              "e",
+              0,
+              0.6
+            ],
+            "c": "XES"
+          }
+        ],
+        "tgt": [
+          "c",
+          "g",
+          0,
+          1.4
+        ],
+        "opts": [
+          "CGR",
+          "CGM",
+          "XGR",
+          "CBR"
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A (CGR)</strong> C=Circle, G=Grey, R=Large. B wrong size, C wrong shape, D wrong fill.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "d",
+              "b",
+              0
+            ],
+            "c": "DBU"
+          },
+          {
+            "s": [
+              "d",
+              "l",
+              90
+            ],
+            "c": "DLR"
+          },
+          {
+            "s": [
+              "h",
+              "g",
+              180
+            ],
+            "c": "HGD"
+          }
+        ],
+        "tgt": [
+          "h",
+          "l",
+          90
+        ],
+        "opts": [
+          "HLD",
+          "HLR",
+          "DLR",
+          "HGR"
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B (HLR)</strong> H=Hexagon, L=Light grey, R=90°.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "+",
+              "b",
+              0,
+              1.4
+            ],
+            "c": "KBR"
+          },
+          {
+            "s": [
+              "+",
+              "e",
+              0,
+              1
+            ],
+            "c": "KEM"
+          },
+          {
+            "s": [
+              "s",
+              "g",
+              0,
+              0.6
+            ],
+            "c": "SGS"
+          }
+        ],
+        "tgt": [
+          "+",
+          "g",
+          0,
+          1.4
+        ],
+        "opts": [
+          "KGM",
+          "KGS",
+          "KGR",
+          "SGR"
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C (KGR)</strong> K=Cross, G=Grey, R=Large. A wrong size, B wrong size, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "p",
+              "e",
+              0
+            ],
+            "c": "PEU"
+          },
+          {
+            "s": [
+              "t",
+              "g",
+              90
+            ],
+            "c": "TGR"
+          },
+          {
+            "s": [
+              "h",
+              "b",
+              180
+            ],
+            "c": "HBD"
+          }
+        ],
+        "tgt": [
+          "t",
+          "e",
+          180
+        ],
+        "opts": [
+          "TER",
+          "TEU",
+          "TGD",
+          "TED"
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D (TED)</strong> T=Triangle, E=Empty, D=180°.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "d",
+              "g",
+              0,
+              1
+            ],
+            "c": "DGM"
+          },
+          {
+            "s": [
+              "h",
+              "b",
+              0,
+              0.6
+            ],
+            "c": "HBS"
+          },
+          {
+            "s": [
+              "c",
+              "l",
+              0,
+              1.4
+            ],
+            "c": "CLR"
+          }
+        ],
+        "tgt": [
+          "d",
+          "b",
+          0,
+          1.4
+        ],
+        "opts": [
+          "DBR",
+          "DGR",
+          "DBM",
+          "HBR"
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A (DBR)</strong> D=Diamond, B=Black, R=Large. B wrong fill, C wrong size, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "s",
+              "b",
+              0
+            ],
+            "c": "SBU"
+          },
+          {
+            "s": [
+              "s",
+              "g",
+              90
+            ],
+            "c": "SGR"
+          },
+          {
+            "s": [
+              "p",
+              "e",
+              180
+            ],
+            "c": "PED"
+          }
+        ],
+        "tgt": [
+          "s",
+          "e",
+          90
+        ],
+        "opts": [
+          "SED",
+          "SER",
+          "SEU",
+          "PER"
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B (SER)</strong> S=Square, E=Empty, R=90°. A wrong rotation, C wrong rotation, D wrong shape.",
+        "source": "questions_js"
+      },
+      {
+        "ex": [
+          {
+            "s": [
+              "ov",
+              "b",
+              0,
+              1
+            ],
+            "c": "OBM"
+          },
+          {
+            "s": [
+              "ov",
+              "g",
+              0,
+              1.4
+            ],
+            "c": "OGR"
+          },
+          {
+            "s": [
+              "t",
+              "b",
+              0,
+              0.6
+            ],
+            "c": "TBS"
+          }
+        ],
+        "tgt": [
+          "ov",
+          "b",
+          0,
+          0.6
+        ],
+        "opts": [
+          "OBM",
+          "OBR",
+          "OBS",
+          "TBS"
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C (OBS)</strong> O=Oval, B=Black, S=Small. A wrong size, B wrong size, D wrong shape.",
+        "source": "questions_js"
+      }
+    ],
+    "net": [
+      {
+        "q": "Which of these arrangements of 6 squares could fold into a cube?",
+        "opts": [
+          "A T-shape: 4 along the top, 1 below the left end, 1 below the right end",
+          "A straight line of 6 squares",
+          "A 2×3 rectangle of squares",
+          "A plus-sign shape with 4 in a row and 1 above and 1 below the second square"
+        ],
+        "a": 0,
+        "txt": true,
+        "e": "<strong>Answer: A.</strong> The T-shape described is a valid net. A straight line overlaps. A 2x3 rectangle cannot fold properly. The plus-sign with squares above and below the second square is also not valid.",
+        "source": "questions_js"
+      },
+      {
+        "q": "In a cube net shaped like a cross (1-4-1 pattern), which face is opposite the top square?",
+        "opts": [
+          "The left square",
+          "The bottom of the column (3rd from top in the vertical strip)",
+          "The right square",
+          "The square immediately below the top"
+        ],
+        "a": 1,
+        "txt": true,
+        "e": "<strong>Answer: B.</strong> In a cross-shaped net, the top square and the third square down the vertical strip become opposite faces when folded.",
+        "source": "questions_js"
+      },
+      {
+        "q": "How many different nets can a cube have? (Rotations and reflections of the same net don't count as different.)",
+        "opts": [
+          "6",
+          "8",
+          "11",
+          "14"
+        ],
+        "a": 2,
+        "txt": true,
+        "e": "<strong>Answer: C — 11.</strong> There are exactly 11 distinct nets for a cube.",
+        "source": "questions_js"
+      },
+      {
+        "q": "A net has 4 squares in a row. One extra square is attached above the second square, and one below the third square. Is this a valid cube net?",
+        "opts": [
+          "No — it has too many squares",
+          "No — two faces would overlap",
+          "No — it would leave a gap",
+          "Yes — it is a valid cube net"
+        ],
+        "a": 3,
+        "txt": true,
+        "e": "<strong>Answer: D — Yes.</strong> This S/Z-shaped net is one of the 11 valid cube nets. All 6 faces fold without overlap.",
+        "source": "questions_js"
+      },
+      {
+        "q": "Two squares share an edge in a cube net. When folded, those two squares will be...",
+        "opts": [
+          "Adjacent faces (sharing an edge on the cube)",
+          "Opposite faces",
+          "The same face",
+          "Not connected"
+        ],
+        "a": 0,
+        "txt": true,
+        "e": "<strong>Answer: A.</strong> Squares sharing an edge in the net fold to become adjacent faces on the cube.",
+        "source": "questions_js"
+      },
+      {
+        "q": "Which of these is NOT a valid cube net?",
+        "opts": [
+          "A cross shape (1-4-1)",
+          "A straight row of 6 squares",
+          "An L-shape of 4 with 2 extending from the corner",
+          "A zigzag of 6 squares"
+        ],
+        "a": 1,
+        "txt": true,
+        "e": "<strong>Answer: B.</strong> A straight row of 6 squares is NOT valid — when folded, the last square overlaps the first. The others are all valid nets.",
+        "source": "questions_js"
+      },
+      {
+        "q": "A cube net has a dot on one face and a stripe on another. When folded, the dot face and stripe face are opposite each other. In the net, how many squares apart are they?",
+        "opts": [
+          "They share an edge (1 apart)",
+          "They are 2 squares apart",
+          "They are separated by exactly one square between them",
+          "They could be any distance apart"
+        ],
+        "a": 2,
+        "txt": true,
+        "e": "<strong>Answer: C.</strong> Opposite faces in a cube net are always separated by exactly one square between them (never adjacent, never at the same position).",
+        "source": "questions_js"
+      },
+      {
+        "q": "In a cross-shaped cube net, the centre square will become which part of the cube?",
+        "opts": [
+          "Always the top",
+          "Always the bottom",
+          "Always the front",
+          "It depends which way you fold"
+        ],
+        "a": 3,
+        "txt": true,
+        "e": "<strong>Answer: D.</strong> The centre square can become any face depending on which direction you start folding. There is no fixed rule.",
+        "source": "questions_js"
+      },
+      {
+        "q": "4 squares are arranged in a 2×2 block. Two more squares are attached: one above the top-left and one to the right of the top-right. Is this a valid cube net?",
+        "opts": [
+          "Yes — it folds into a cube",
+          "No — two faces overlap",
+          "No — it only has 5 squares",
+          "No — it has a gap"
+        ],
+        "a": 0,
+        "txt": true,
+        "e": "<strong>Answer: A — Yes.</strong> This L-shaped variation has 6 squares and is one of the 11 valid cube nets.",
+        "source": "questions_js"
+      },
+      {
+        "q": "You fold a cube net and the bottom face has a circle on it. Which face is opposite?",
+        "opts": [
+          "The face that was adjacent to it in the net",
+          "The face that was separated by one square in the net",
+          "A face that shared a corner but not an edge",
+          "There is no way to tell without seeing the specific net"
+        ],
+        "a": 1,
+        "txt": true,
+        "e": "<strong>Answer: B.</strong> The opposite face in a folded cube is always the one separated by exactly one square in the net layout.",
+        "source": "questions_js"
+      },
+      {
+        "q": "A cube net is shaped like the letter L: 4 squares going down, then 2 squares going right from the bottom. When folded, which statement is TRUE?",
+        "opts": [
+          "The top square and bottom-right square are adjacent",
+          "The top square and bottom-right square are opposite",
+          "The top square and bottom-right square are on the same face",
+          "None of these is possible with 6 squares in an L"
+        ],
+        "a": 1,
+        "txt": true,
+        "e": "<strong>Answer: B.</strong> In this L-shaped net, the top square of the vertical strip and the rightmost square of the horizontal strip are separated by one square — making them opposite faces.",
+        "source": "questions_js"
+      },
+      {
+        "q": "Which statement about cube nets is FALSE?",
+        "opts": [
+          "All cube nets have exactly 6 squares",
+          "Some cube nets have 4 squares in a row",
+          "Opposite faces never share an edge in the net",
+          "All cube nets are symmetrical"
+        ],
+        "a": 3,
+        "txt": true,
+        "e": "<strong>Answer: D — FALSE.</strong> Not all cube nets are symmetrical. Several of the 11 valid nets (like some S/Z shapes) have no line of symmetry.",
+        "source": "questions_js"
+      },
+      {
+        "q": "You colour one face of a cube red. In the net, how many faces are adjacent to (touching) the red face?",
+        "opts": [
+          "4 faces",
+          "3 faces",
+          "5 faces",
+          "2 faces"
+        ],
+        "a": 0,
+        "txt": true,
+        "e": "<strong>Answer: A — 4 faces.</strong> Every face of a cube is adjacent to exactly 4 other faces and opposite to 1 face.",
+        "source": "questions_js"
+      },
+      {
+        "q": "Can a cube net contain a 2×2 block of squares?",
+        "opts": [
+          "No, never",
+          "Yes, many valid nets contain a 2×2 block",
+          "Only if the block is in the centre",
+          "Only if the other 2 squares are opposite each other"
+        ],
+        "a": 1,
+        "txt": true,
+        "e": "<strong>Answer: B — Yes.</strong> Many of the 11 valid cube nets include a 2×2 block with two additional squares attached.",
+        "source": "questions_js"
+      },
+      {
+        "q": "A cube net has letters A-F on its 6 squares. A and B share an edge. C and D share an edge. E and F share an edge. When folded, A and B must be adjacent. What else must be true?",
+        "opts": [
+          "C is opposite D",
+          "C and D are also adjacent",
+          "A is opposite B",
+          "E is opposite F"
+        ],
+        "a": 1,
+        "txt": true,
+        "e": "<strong>Answer: B.</strong> If two squares share an edge in the net, they are always adjacent faces when folded. This applies to C/D and E/F as well.",
+        "source": "questions_js"
+      }
+    ],
+    "hid": [
+      {
+        "cmp": [
+          [
+            "h",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "s",
+            "e",
+            45,
+            65,
+            65,
+            36
+          ],
+          [
+            "t",
+            "e",
+            45,
+            65,
+            55,
+            22
+          ]
+        ],
+        "opts": [
+          "t",
+          "c",
+          "h",
+          "d"
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A — triangle.</strong> A small triangle rotated 45° is hidden among the overlapping lines of the hexagon and rotated square. Trace the angled lines carefully.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "t",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "p",
+            "e",
+            0,
+            65,
+            65,
+            40
+          ],
+          [
+            "c",
+            "e",
+            0,
+            65,
+            65,
+            20
+          ]
+        ],
+        "opts": [
+          "s",
+          "c",
+          "d",
+          "h"
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B — circle.</strong> The small circle is hidden within the overlapping straight lines of the triangle and pentagon. Look for the curved outline.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "*",
+            "e",
+            0,
+            65,
+            65,
+            50
+          ],
+          [
+            "h",
+            "e",
+            30,
+            65,
+            65,
+            38
+          ],
+          [
+            "d",
+            "e",
+            0,
+            65,
+            65,
+            24
+          ]
+        ],
+        "opts": [
+          "t",
+          "c",
+          "d",
+          "s"
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C — diamond.</strong> The diamond shape is hidden within the complex overlapping lines of the star and rotated hexagon.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "c",
+            "e",
+            0,
+            65,
+            65,
+            50
+          ],
+          [
+            "t",
+            "e",
+            0,
+            65,
+            65,
+            42
+          ],
+          [
+            "t",
+            "e",
+            180,
+            65,
+            65,
+            42
+          ],
+          [
+            "*",
+            "e",
+            0,
+            65,
+            65,
+            22
+          ]
+        ],
+        "opts": [
+          "s",
+          "d",
+          "c",
+          "*"
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D — star.</strong> Two overlapping triangles (one up, one down) create a complex pattern inside the circle. The small star is hidden within.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "h",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "p",
+            "e",
+            36,
+            65,
+            65,
+            42
+          ],
+          [
+            "p",
+            "e",
+            0,
+            65,
+            65,
+            26
+          ]
+        ],
+        "opts": [
+          "p",
+          "h",
+          "t",
+          "s"
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A — pentagon.</strong> A small upright pentagon is hidden among the overlapping lines of the hexagon and the rotated larger pentagon. The similar shapes make it harder to spot.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "s",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "d",
+            "e",
+            0,
+            65,
+            65,
+            48
+          ],
+          [
+            "+",
+            "e",
+            0,
+            65,
+            65,
+            22
+          ]
+        ],
+        "opts": [
+          "d",
+          "+",
+          "t",
+          "c"
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B — cross.</strong> The cross shape is hidden where the square and diamond overlap. The perpendicular lines of the cross blend with the edges of the other shapes.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "c",
+            "e",
+            0,
+            65,
+            65,
+            50
+          ],
+          [
+            "s",
+            "e",
+            0,
+            65,
+            65,
+            48
+          ],
+          [
+            "ov",
+            "e",
+            0,
+            65,
+            65,
+            22
+          ]
+        ],
+        "opts": [
+          "s",
+          "t",
+          "ov",
+          "d"
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C — oval.</strong> The oval's curved outline is hidden among the circle's curve and the square's straight lines. Look for the elongated shape in the centre.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "t",
+            "e",
+            0,
+            65,
+            65,
+            50
+          ],
+          [
+            "t",
+            "e",
+            180,
+            65,
+            65,
+            50
+          ],
+          [
+            "c",
+            "e",
+            0,
+            65,
+            65,
+            44
+          ],
+          [
+            "h",
+            "e",
+            0,
+            65,
+            65,
+            24
+          ]
+        ],
+        "opts": [
+          "p",
+          "t",
+          "s",
+          "h"
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D — hexagon.</strong> The overlapping up and down triangles create a star-of-David pattern inside the circle. The small hexagon is hidden in the centre.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "d",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "h",
+            "e",
+            45,
+            65,
+            65,
+            42
+          ],
+          [
+            "s",
+            "e",
+            0,
+            65,
+            65,
+            22
+          ]
+        ],
+        "opts": [
+          "s",
+          "d",
+          "h",
+          "c"
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A — square.</strong> A small upright square is hidden among the angled lines of the diamond and rotated hexagon.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "p",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "t",
+            "e",
+            90,
+            65,
+            65,
+            40
+          ],
+          [
+            "a",
+            "e",
+            0,
+            65,
+            65,
+            18
+          ]
+        ],
+        "opts": [
+          "d",
+          "a",
+          "t",
+          "s"
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B — arrow.</strong> The small right-pointing arrow is hidden among the straight edges of the pentagon and sideways triangle.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "*",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "s",
+            "e",
+            0,
+            65,
+            65,
+            44
+          ],
+          [
+            "d",
+            "e",
+            45,
+            65,
+            65,
+            20
+          ]
+        ],
+        "opts": [
+          "c",
+          "t",
+          "d",
+          "h"
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C — diamond.</strong> A rotated diamond is concealed within the overlapping star points and square edges. The diamond's tilted angles blend with the star's lines.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "+",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "d",
+            "e",
+            0,
+            65,
+            65,
+            44
+          ],
+          [
+            "c",
+            "e",
+            0,
+            65,
+            65,
+            18
+          ]
+        ],
+        "opts": [
+          "s",
+          "+",
+          "d",
+          "c"
+        ],
+        "a": 3,
+        "e": "<strong>Answer: D — circle.</strong> The small circle is hidden in the centre where the cross arms and diamond edges create a complex pattern. Look for the only curved outline.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "h",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "h",
+            "e",
+            30,
+            65,
+            65,
+            40
+          ],
+          [
+            "t",
+            "e",
+            0,
+            65,
+            65,
+            22
+          ]
+        ],
+        "opts": [
+          "t",
+          "s",
+          "c",
+          "p"
+        ],
+        "a": 0,
+        "e": "<strong>Answer: A — triangle.</strong> Two overlapping hexagons at different angles create many intersecting lines. The small triangle is hidden within this pattern.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "*",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "p",
+            "e",
+            0,
+            65,
+            65,
+            42
+          ],
+          [
+            "h",
+            "e",
+            0,
+            65,
+            65,
+            20
+          ]
+        ],
+        "opts": [
+          "d",
+          "h",
+          "c",
+          "t"
+        ],
+        "a": 1,
+        "e": "<strong>Answer: B — hexagon.</strong> The small hexagon is hidden among the star's inner lines and the pentagon's edges.",
+        "source": "questions_js"
+      },
+      {
+        "cmp": [
+          [
+            "h",
+            "e",
+            0,
+            65,
+            65,
+            52
+          ],
+          [
+            "t",
+            "e",
+            0,
+            65,
+            65,
+            46
+          ],
+          [
+            "c",
+            "e",
+            0,
+            65,
+            65,
+            40
+          ],
+          [
+            "*",
+            "e",
+            0,
+            65,
+            65,
+            18
+          ]
+        ],
+        "opts": [
+          "s",
+          "p",
+          "*",
+          "d"
+        ],
+        "a": 2,
+        "e": "<strong>Answer: C — star.</strong> Multiple overlapping shapes create a dense pattern. The small star is hidden within — trace its pointed arms carefully among the other lines.",
+        "source": "questions_js"
       }
     ]
   }

@@ -271,7 +271,7 @@ function renderDataTable(c) {
   return `<figure class="maths-chart">${c.title ? `<figcaption class="maths-chart-title">${c.title}</figcaption>` : ''}`
        + `<table class="maths-data-table">${head}${body}</table></figure>`;
 }
-function renderChart(chart) {
+export function renderChart(chart) {
   if (!chart) return '';
   if (chart.type === 'bar') return renderBarChart(chart);
   if (chart.type === 'pictogram') return renderPictogram(chart);

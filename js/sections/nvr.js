@@ -139,6 +139,24 @@ function renderQuestionScreen(container) {
   const q = quizQueue[currentIndex];
   const t = TYPES.find(x => x.id === currentType);
 
+  // A type with no questions in the bank used to leave a blank screen that
+  // looked like it was still loading. Say so instead.
+  if (!q) {
+    container.innerHTML = `
+      <div class="quiz-header">
+        <a class="quiz-back" href="#/nvr" data-action="back-to-grid">←</a>
+        <span class="quiz-title">${t ? t.name : 'NVR'}</span>
+      </div>
+      <div class="section-home">
+        <div class="section-home-icon">\u{1F6A7}</div>
+        <h2>No questions here yet</h2>
+        <p>This type has nothing in the question bank, so there is nothing to
+           practise. Tell Mum and pick a different type.</p>
+        <a class="btn btn-primary" href="#/nvr" data-action="back-to-grid">All NVR types</a>
+      </div>`;
+    return;
+  }
+
   const qArea = renderQArea(currentType, q);
   const opts = renderOpts(currentType, q);
 
