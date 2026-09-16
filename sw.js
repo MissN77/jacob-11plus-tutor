@@ -1,4 +1,4 @@
-const CACHE_NAME = 'j11-tutor-v24';
+const CACHE_NAME = 'j11-tutor-v25';
 const ASSETS = [
   '/',
   '/index.html',
@@ -98,7 +98,10 @@ const ASSETS = [
 // Install: cache core assets
 self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME).then((cache) => cache.addAll(ASSETS))
+    // cache: 'reload' so a new CACHE_NAME is not filled from the browser HTTP cache
+    caches.open(CACHE_NAME).then((cache) =>
+      cache.addAll(ASSETS.map((url) => new Request(url, { cache: 'reload' })))
+    )
   );
   self.skipWaiting();
 });
