@@ -32,7 +32,8 @@ const SECTIONS = [
   { id: 'sentence-completion', name: 'Sentence Completion',  icon: '\u{1F4DD}' },
   { id: 'verbal-reasoning',    name: 'Verbal Reasoning',     icon: '\u{1F524}' },
   { id: 'word-skills',         name: 'Word Skills',          icon: '\u{1F9E0}' },
-  { id: 'maths',               name: 'Maths',                icon: '\u{1F522}' },
+  { id: 'maths-y56',           name: 'Maths (Year 5 & 6)',   icon: '\u{1F393}' },
+  { id: 'maths',               name: 'Maths (Year 4)',       icon: '\u{1F522}' },
   { id: 'nvr',                 name: 'NVR Foundations',      icon: '\u{1F532}' },
   { id: 'twinkl-nvr',          name: 'Exam Practice (Twinkl)', icon: '\u{1F48E}' },
   { id: 'writing',             name: 'Writing',              icon: '\u{270D}\uFE0F' },
@@ -66,7 +67,9 @@ function dayOfYear() {
 export function getTodaysTasks() {
   const d = dayOfYear();
   const ids = [
-    'maths',
+    // Jacob moved into Year 5, so his daily maths task is the Year 5/6 section,
+    // not the Year 4 one.
+    'maths-y56',
     TODAY_ENGLISH[d % TODAY_ENGLISH.length],
     TODAY_REASONING[d % TODAY_REASONING.length]
   ];

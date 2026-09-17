@@ -222,7 +222,9 @@ function renderWorked(app, strandId, subtopicId) {
 function startPractice(app, strandId, subtopicId) {
   const sub = findSubtopic(strandId, subtopicId);
   if (!sub) { renderMenu(app); return; }
-  const questions = shuffle(sub.practice).slice(0, Math.min(5, sub.practice.length));
+  // Ten where the bank allows it. Maths used to serve 5 while every other
+  // section served 8 to 10, so it was over before he had warmed up.
+  const questions = shuffle(sub.practice).slice(0, Math.min(10, sub.practice.length));
   currentState.questions = questions;
   currentState.questionIndex = 0;
   currentState.results = [];
