@@ -1,0 +1,20 @@
+#!/bin/sh
+# Blocks a push if any answer bank has a fault.
+#
+# Six mis-keyed answers once told Jacob he was wrong when he was right, for
+# months, because nothing checked. This is the gate that means it cannot ship
+# again without someone seeing it.
+#
+# Installed to .git/hooks/pre-push by tools/install-hooks.sh
+# To override in a genuine emergency: git push --no-verify
+
+REPO="$(git rev-parse --show-toplevel)"
+echo "→ auditing answer banks before push…"
+if ! python3 "$REPO/tools/audit-banks.py"; then
+  echo ""
+  echo "PUSH BLOCKED. An answer bank has a fault. Fix it, or push with --no-verify"
+  echo "if you genuinely mean to ship it."
+  exit 1
+fi
+echo "→ banks pass."
+exit 0

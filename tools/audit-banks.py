@@ -49,6 +49,21 @@ def answer_text(q):
             return key, v.strip()
     return None, None
 
+# ── The answer lock ────────────────────────────────────────────────────────
+# Heuristics only catch a SIGNATURE. A planted mis-key on short options slips
+# straight through them, so they are not enough on their own.
+# The lock records the exact answer TEXT of every question at a moment when the
+# banks were verified. If a later edit moves an answer index, the text changes
+# and that is a hard fault.
+# To accept a deliberate change:  python3 tools/audit-banks.py --relock
+LOCK_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'answer-lock.json')
+RELOCK = '--relock' in sys.argv
+try:
+    lock = json.load(open(LOCK_PATH))['answers']
+except Exception:
+    lock = {}
+new_lock = {}
+
 structural = []
 suspicious = []
 counts = {}
@@ -85,6 +100,19 @@ for f in sorted(glob.glob(os.path.join(ROOT, '*.json'))):
                 structural.append(
                     f'{name} {ident}: MIS-KEY PROVEN. index {idx} gives '
                     f'"{opts[idx][:60]}" but "{tkey}" says "{ttext[:60]}"')
+        # Keyed by the question's OWN WORDS plus its options, not by position,
+        # so a bank that shuffles itself does not report false changes, and two
+        # questions that share a short stem do not collide.
+        # These banks are static JSON, so the PATH is stable and unique. Keying
+        # on the stem alone collided: many passages ask "what word class is
+        # this?" with the same four options.
+        lock_key = f'{name}{path} :: {str(stem)[:80]}'
+        new_lock[lock_key] = opts[idx]
+        if not RELOCK and lock_key in lock and lock[lock_key] != opts[idx]:
+            structural.append(
+                f'{name} {ident}: ANSWER CHANGED. was "{str(lock[lock_key])[:45]}" '
+                f'and is now "{opts[idx][:45]}". If deliberate, re-run with --relock.')
+
         if len(set(o.strip() for o in opts)) != len(opts):
             structural.append(f'{name} {ident}: duplicate options -> {opts}')
         if not str(q.get('explanation') or q.get('why') or q.get('workingOut') or q.get('e') or '').strip():
@@ -119,6 +147,15 @@ for f in sorted(glob.glob(os.path.join(ROOT, '*.json'))):
             })
     counts[name] = n
 
+if RELOCK:
+    json.dump({
+        'note': 'The verified answer TEXT of every question. The audit fails if an '
+                'answer silently changes. Re-lock only when you MEANT to change one.',
+        'lockedOn': '2026-09-17',
+        'answers': new_lock,
+    }, open(LOCK_PATH, 'w'), indent=1, ensure_ascii=False)
+    print(f'RE-LOCKED {len(new_lock)} answers into {LOCK_PATH}\n')
+
 print('questions checked per file:')
 for k, v in counts.items():
     if v:
@@ -136,7 +173,25 @@ if len(other) > 40:
     print(f'   … and {len(other) - 40} more')
 print()
 
-print(f'NEEDS A HUMAN TO READ (the mis-key signature): {len(suspicious)}')
+# ── The ratchet ────────────────────────────────────────────────────────────
+# A semantic mis-key cannot be proven by a machine, so the flag list alone let
+# a planted fault through. Instead: every flagged item must be signed off ONCE
+# in tools/reviewed-flags.json. Anything flagged that is NOT on that list fails
+# the audit, so a new mis-key with this signature blocks the push until a human
+# has actually read it.
+REVIEWED_PATH = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'reviewed-flags.json')
+try:
+    reviewed = set(json.load(open(REVIEWED_PATH))['reviewed'])
+except Exception:
+    reviewed = set()
+
+def fingerprint(s):
+    return f"{s['file']}|{s['id']}|{s['keyed'][:40]}"
+
+unreviewed = [s for s in suspicious if fingerprint(s) not in reviewed]
+
+print(f'NEEDS A HUMAN TO READ (the mis-key signature): {len(suspicious)}'
+      f', of which NOT YET SIGNED OFF: {len(unreviewed)}')
 for s in suspicious[:60]:
     print(f"   {s['file']} {s['id']}")
     print(f"      Q     : {s['stem']}")
@@ -145,6 +200,20 @@ for s in suspicious[:60]:
 if len(suspicious) > 60:
     print(f'   … and {len(suspicious) - 60} more')
 
+
+if unreviewed:
+    print('\nFAILED. These are flagged and have never been signed off:')
+    for s in unreviewed:
+        print(f"   {s['file']} {s['id']}")
+        print(f"      Q     : {s['stem']}")
+        print(f"      keyed : {s['keyed']}")
+        print(f"      other : {s['longer']}")
+    print('\nRead each one. If the key is RIGHT, add its fingerprint to')
+    print(f'   {REVIEWED_PATH}')
+    print('If the key is WRONG, fix the bank. Fingerprints to add:')
+    for s in unreviewed:
+        print(f'   "{fingerprint(s)}"')
+    sys.exit(1)
 
 if FAILED:
     print('\nFAILED. Fix the structural faults above before shipping.')

@@ -1,0 +1,17 @@
+{
+  "note": "Flagged items that a HUMAN HAS READ and confirmed are correctly keyed. Anything the audit flags that is not on this list fails the audit and blocks the push. Never add a fingerprint without reading the question itself.",
+  "reviewedOn": "2026-09-17",
+  "reviewed": [
+    "comprehension.json|3|The Arctic tern",
+    "comprehension.json|1|Her father.",
+    "nvr-questions.json|.questions.net[5]|A straight row of 6 squares",
+    "nvr-questions.json|.questions.net[11]|All cube nets are symmetrical",
+    "vocabulary.json|[14].questionTypes[0]|Changed completely",
+    "vocabulary.json|[18].questionTypes[0]|Began or started",
+    "vocabulary.json|[26].questionTypes[0]|Put into prison; locked up",
+    "vocabulary.json|[57].questionTypes[0]|Dangerous; risky",
+    "vocabulary.json|[148].questionTypes[0]|Causing horror or disgust",
+    "vocabulary.json|[210].questionTypes[0]|Strange or unusual",
+    "word-skills.json|.word-classes[101]|beautify"
+  ]
+}
