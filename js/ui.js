@@ -26,6 +26,7 @@ const SECTIONS = [
   { id: 'learn-first',         name: 'Learn New Words',      icon: '\u{1F4D6}' },
   { id: 'vocabulary',          name: 'Vocabulary',           icon: '\u{1F4DA}' },
   { id: 'inference',           name: 'Inference',            icon: '\u{1F50D}' },
+  { id: 'imagery',             name: 'Reading Between the Lines', icon: '\u{1F50E}' },
   { id: 'comprehension',       name: 'Comprehension',        icon: '\u{1F4D6}' },
   { id: 'spelling',            name: 'Spelling',             icon: '\u{270F}\uFE0F' },
   { id: 'punctuation',         name: 'Punctuation',          icon: '.,!?' },
