@@ -90,6 +90,25 @@ for f in sorted(glob.glob(os.path.join(ROOT, '*.json'))):
         if not str(q.get('explanation') or q.get('why') or q.get('workingOut') or q.get('e') or '').strip():
             structural.append(f'{name} {ident}: no explanation')
 
+        # ── second cross-check: does the explanation name a DIFFERENT option? ──
+        # Most explanations quote the answer. One that quotes another option
+        # instead, and never the keyed one, is a key worth doubting.
+        why = str(q.get('explanation') or q.get('why') or q.get('workingOut') or q.get('e') or '').lower()
+        if len(why) > 15:
+            def whole(hay, needle):
+                n = needle.lower().rstrip('.!?').strip()
+                if len(n) < 6:
+                    return False
+                return re.search(r'(^|[^a-z])' + re.escape(n) + r'($|[^a-z])', hay) is not None
+            keyed_in = opts[idx].lower().rstrip('.!?').strip() in why
+            others = [o for i, o in enumerate(opts) if i != idx and whole(why, o)]
+            if not keyed_in and len(others) == 1:
+                suspicious.append({
+                    'file': name, 'id': str(ident), 'stem': stem[:95],
+                    'keyed': opts[idx][:85],
+                    'longer': 'explanation quotes "' + others[0][:60] + '" instead'
+                })
+
         # ── the flag that caught the six inference mis-keys ──
         keyed = opts[idx]
         longest = max(opts, key=len)
